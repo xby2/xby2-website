@@ -1,0 +1,91 @@
+.navbar {
+  height: 100px;
+  background-color: #ffffff;
+  border-color: #e7e7e7; /* change to white this after content created */
+}
+
+.navbar-toggle {
+  border-color: transparent;
+  padding: 30px 10px;
+  font-family: "ptSansNarrow";
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.navbar-toggle:hover, .navbar-toggle:focus {
+  background-color: transparent;
+}
+
+.navbar-brand {
+  padding: 24px 17px;
+}
+
+.modal {
+  background-color: #444;
+  opacity: 1
+}
+
+.modal .navbar-toggle {
+  color: #fff;
+}
+
+.modal-dialog {
+  margin: 0;
+}
+
+.modal-nav-content {
+  width: 100%;
+  height: auto;
+}
+
+.modal-nav-body ul {
+  list-style-type: none;
+  color: white;
+  margin: 35px 0;
+  padding: 0;
+  width: 100%;
+}
+
+.modal-nav-body ul li {
+  font-size: 20pt;
+  padding: 12px 40px;
+  font-family: "ptSansNarrow";
+  font-weight: 600;
+}
+
+.modal-nav-body ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .navbar-nav > li > a {
+    font-family: "ptSansNarrow";
+    text-transform: uppercase;
+    padding: 40px 12px;
+  }
+
+  .navbar-nav > li > a:hover, .navbar-nav > li > a.active {
+    color: #ffa500;
+  }
+
+  .navbar-nav > li > a.contact-us:hover span {
+    background-color: #ffa500;
+    color: #fff;
+  }
+
+  .contact-us span {
+    border: 1px solid #ffa500;
+    padding: 2px 12px;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar {
+    margin: 0 5%;
+  }
+
+  .container {
+    width: 840px;
+  }
+}

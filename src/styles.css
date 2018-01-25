@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: "ptSansNarrow";
+    src: url("./assets/fonts/ptSansNarrowRegular.woff") format("woff");
+    font-weight: 400;
+}
+  
+@font-face {
+    font-family: "ptSansNarrow";
+    src: url("./assets/fonts/ptSansNarrowBold.woff") format("woff");
+    font-weight: 600;
+}
+
+body {
+    background-color: #acacac;
+    margin-top: 100px;
+}
+
+@media (min-width: 992px) {
+    body {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
