@@ -1,0 +1,8 @@
+[
+    { "label": "Our Story", "link": "/our-story" },
+    { "label": "Our Expertise", "link": "/our-expertise" },
+    { "label": "Our Work", "link": "/our-work" },
+    { "label": "Our Thoughts", "link": "/our-thoughts" },
+    { "label": "Careers", "link": "/careers" },
+    { "label": "Contact Us", "link": "/contact-us", "class": "contact-us" }
+]
