@@ -7,7 +7,6 @@
 .navbar-toggle {
   border-color: transparent;
   padding: 30px 10px;
-  font-family: "ptSansNarrow";
   text-transform: uppercase;
   font-size: 16px;
 }
@@ -49,7 +48,6 @@
 .modal-nav-body ul li {
   font-size: 20pt;
   padding: 12px 40px;
-  font-family: "ptSansNarrow";
   font-weight: 600;
 }
 
@@ -60,7 +58,6 @@
 
 @media (min-width: 768px) {
   .navbar-nav > li > a {
-    font-family: "ptSansNarrow";
     text-transform: uppercase;
     padding: 40px 12px;
   }

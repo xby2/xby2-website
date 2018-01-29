@@ -16,6 +16,8 @@ import { CareersComponent } from './careers/careers.component';
 import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
 import { LinksService } from './links.service';
+import { OurWorkDetailComponent } from './our-work/our-work-detail.component';
+import { OurWorkDetailGuard } from './our-work/our-work-detail.guard';
 
 @NgModule({
   declarations: [
@@ -29,14 +31,15 @@ import { LinksService } from './links.service';
     ContactUsComponent,
     CareersComponent,
     HomeComponent,
-    FooterComponent
+    FooterComponent,
+    OurWorkDetailComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [LinksService],
+  providers: [LinksService, OurWorkDetailGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

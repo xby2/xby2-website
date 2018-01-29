@@ -7,12 +7,19 @@ import { OurThoughtsComponent } from './our-thoughts/our-thoughts.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { HomeComponent } from './home/home.component';
 import { CareersComponent } from './careers/careers.component';
+import { OurWorkDetailComponent } from './our-work/our-work-detail.component';
+import { OurWorkDetailGuard } from './our-work/our-work-detail.guard';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'our-story', component: OurStoryComponent },
   { path: 'our-expertise', component: OurExpertiseComponent },
   { path: 'our-work', component: OurWorkComponent },
+  {
+    path: 'our-work/:id',
+    component: OurWorkDetailComponent,
+    canActivate: [OurWorkDetailGuard]
+  },
   { path: 'our-thoughts', component: OurThoughtsComponent },
   { path: 'contact-us', component: ContactUsComponent },
   { path: 'careers', component: CareersComponent },

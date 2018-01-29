@@ -28,3 +28,18 @@
     </p>
   </div>
 </div>
+<div class="row our-work">
+  <h2>Our Work</h2>
+  <h3>Client Stories</h3>
+  <div *ngFor='let clientStory of clientStories'
+        class='col-sm-4'>
+    <div class='col-md-12 home-client-story'>
+      <img [src]="clientStory.imageUrl" />
+      <h4>{{clientStory.title}}</h4>
+      <hr />
+      <p>{{clientStory.description}}</p>
+      <a routerLink="/our-work/{{clientStory.id}}">Read more ></a>
+    </div>
+  </div>
+  <a class="col-sm-12" routerLink='/our-work'>See All ></a>
+</div>
