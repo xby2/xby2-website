@@ -25,12 +25,12 @@
   opacity: 1
 }
 
-.modal .navbar-toggle {
-  color: #fff;
-}
-
 .modal-dialog {
   margin: 0;
+}
+
+.modal-dialog .navbar-header {
+  background-color: #fff;
 }
 
 .modal-nav-content {

@@ -1,0 +1,113 @@
+.hero-image {
+    position: relative;
+    display: table;
+    height: 187px;
+    width: 100%;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.45), 
+        rgba(0, 0, 0, 0.45)
+      ),
+      url('../../assets/home-page.png') no-repeat top center;
+    background-size: 100% auto;
+}
+
+.post-content {
+    display: table-cell;
+    vertical-align: middle;
+    color: #fff;
+    margin: 0 10px;
+    text-align: center;
+    font-family: "ptSansNarrow";
+    font-size: 30px;
+}
+
+.row {
+    background-color: #fff;
+}
+
+h2, h3 {
+    font-family: "ptSansNarrow";
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h2 {
+    color: #ffa500;
+    font-size: 24px;
+    margin-top: 30px;
+}
+
+h3 {
+    font-weight: 600;
+    font-size: 36px;
+    color: #464646;
+    margin: 10px 0 30px 0;
+}
+
+.home-expertise {
+    height: 150px;
+}
+
+.home-expertise-img-wrapper {
+    height: 70px;
+}
+
+.home-expertise img {
+    display: block;
+    margin: 0 auto;
+}
+
+.home-expertise a {
+    color: #464646;
+}
+
+.home-expertise div.title {
+    color: #ffa500;
+    text-transform: uppercase;
+    font-family: "ptSansNarrow";
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+}
+
+.home-expertise div.title a {
+    color: #ffa500;
+    text-decoration: none;
+}
+
+.home-expertise div.title::after {
+    content: " >";
+}
+
+.home-expertise p {
+    font-family: "ptSansNarrow";
+    line-height: 1;
+    text-align: center;
+}
+
+.home-expertise p span {
+    display: block;
+    color: #ffa500;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 2;
+}
+
+@media (min-width: 768px) {
+    .hero-image {
+        height: 300px;
+    }
+
+    .post-content {
+        font-size: 48px;
+        margin: 0 80px;
+    }
+
+    .home-expertise {
+        height: 200px;
+    }
+
+    .home-expertise div.title::after {
+        content: "";
+    }
+}
