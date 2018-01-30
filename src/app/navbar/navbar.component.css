@@ -8,7 +8,6 @@
   border-color: transparent;
   padding: 30px 10px;
   text-transform: uppercase;
-  font-size: 16px;
 }
 
 .navbar-toggle:hover, .navbar-toggle:focus {
@@ -59,7 +58,7 @@
 @media (min-width: 768px) {
   .navbar-nav > li > a {
     text-transform: uppercase;
-    padding: 40px 12px;
+    padding: 40px 8px;
   }
 
   .navbar-nav > li > a:hover, .navbar-nav > li > a.active {

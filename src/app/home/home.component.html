@@ -43,3 +43,23 @@
   </div>
   <a class="col-sm-12" routerLink='/our-work'>See All ></a>
 </div>
+<div class="row row-eq-height our-thoughts">
+  <div class="visible-md visible-lg col-md-6">
+    <img class="img-responsive full-img" [src]="mindShare.authorFullImageUrl" />
+  </div>
+  <div class="col-xs-12 col-md-6">
+    <h2>Our Thoughts</h2>
+    <h3>Mind Share</h3>
+    <div class="visible-xs visible-sm">
+      <img [src]="mindShare.authorImageUrl" />
+    </div>
+    <h4>{{mindShare.title}}</h4>
+    <div class="author-info">
+      <span class="author">{{mindShare.author}}</span>
+      <span class="author-divider">/</span>
+      {{mindShare.authorTitle}}
+    </div>
+    <p>{{mindShare.shortDescription}}</p>
+    <a routerLink="/our-thoughts/{{mindShare.id}}">Read more ></a>
+  </div>
+</div>

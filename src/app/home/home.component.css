@@ -24,6 +24,13 @@
     background-color: #fff;
 }
 
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+}
+
 h2, h3 {
     text-transform: uppercase;
     text-align: center;
@@ -31,23 +38,23 @@ h2, h3 {
 
 h2 {
     color: #ffa500;
-    font-size: 24px;
+    font-size: 28px;
     margin-top: 30px;
 }
 
 h3 {
     font-weight: 600;
-    font-size: 36px;
+    font-size: 48px;
     color: #464646;
-    margin: 10px 0 30px 0;
+    margin: 10px 0 40px 0;
 }
 
 .home-expertise {
-    height: 150px;
+    height: 190px;
 }
 
 .home-expertise-img-wrapper {
-    height: 70px;
+    height: 90px;
 }
 
 .home-expertise img {
@@ -64,13 +71,13 @@ h3 {
     color: #ffa500;
     text-transform: uppercase;
     font-weight: 600;
-    font-size: 16px;
     text-align: center;
 }
 
 .home-expertise div.title a {
     color: #ffa500;
     text-decoration: none;
+    font-size: 20px;
 }
 
 .home-expertise div.title::after {
@@ -85,7 +92,7 @@ h3 {
 .home-expertise p span {
     display: block;
     color: #ffa500;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 600;
     line-height: 2;
 }
@@ -133,8 +140,57 @@ h3 {
 }
 
 .home-client-story a {
-    font-size: 16px;
     text-transform: none;
+}
+
+.our-thoughts .mind-share {
+    margin: 0 15px;
+}
+
+.our-thoughts img {
+    display: block;
+    margin: 0 auto;
+}
+
+.our-thoughts img.full-img {
+    position: absolute;
+    bottom: 0;
+    max-height: 380px;
+}
+
+.our-thoughts h4 {
+    text-align: center;
+    font-size: 36px;
+    margin: 20px 0;
+}
+
+.our-thoughts .author-info {
+    font-size: 18px;
+    text-align: center;
+    color: #919295;
+}
+
+.our-thoughts .author-info .author {
+    font-weight: 600;
+}
+
+.our-thoughts .author-info .author-divider {
+    color: #eb9c45;
+    font-weight: 600;
+}
+
+.our-thoughts p {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.our-thoughts a {
+    display: block;
+    text-align: center;
+    font-weight: 600;
+    color: #eb9c45;
+    font-size: 18px;
+    margin: 20px 0;
 }
 
 @media (min-width: 768px) {
@@ -148,7 +204,7 @@ h3 {
     }
 
     .home-expertise {
-        height: 200px;
+        height: 260px;
     }
 
     .home-expertise div.title::after {

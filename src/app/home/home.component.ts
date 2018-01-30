@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Expertise } from '../expertise';
 import { ClientStory } from '../client-story';
+import { MindShare } from '../mind-share';
 
 @Component({
   selector: 'app-home',
@@ -17,7 +18,7 @@ export class HomeComponent implements OnInit {
             'commodo dictum neque, lobortis lobortis arcu blandit ut. Ut ' +
             'dignissim nunc.',
       routerLink: '/our-expertise',
-      class: 'col-xs-6 col-sm-4'
+      class: 'col-xs-6 col-md-4'
     },
     {
       imageUrl: './assets/app-solution-architecture.png',
@@ -26,7 +27,7 @@ export class HomeComponent implements OnInit {
             'commodo dictum neque, lobortis lobortis arcu blandit ut. Ut ' +
             'dignissim nunc.',
       routerLink: '/our-expertise',
-      class: 'col-xs-6 col-sm-4'
+      class: 'col-xs-6 col-md-4'
     },
     {
       imageUrl: './assets/data-integration-architecture.png',
@@ -35,7 +36,7 @@ export class HomeComponent implements OnInit {
             'commodo dictum neque, lobortis lobortis arcu blandit ut. Ut ' +
             'dignissim nunc.',
       routerLink: '/our-expertise',
-      class: 'col-xs-6 col-sm-4'
+      class: 'col-xs-6 col-md-4'
     },
     {
       imageUrl: './assets/agile-implementation.png',
@@ -44,7 +45,7 @@ export class HomeComponent implements OnInit {
             'commodo dictum neque, lobortis lobortis arcu blandit ut. Ut ' +
             'dignissim nunc.',
       routerLink: '/our-expertise',
-      class: 'col-xs-6 col-sm-4 col-sm-offset-2'
+      class: 'col-xs-6 col-md-4 col-md-offset-2'
     },
     {
       imageUrl: './assets/project-audit-review.png',
@@ -53,7 +54,7 @@ export class HomeComponent implements OnInit {
             'commodo dictum neque, lobortis lobortis arcu blandit ut. Ut ' +
             'dignissim nunc.',
       routerLink: '/our-expertise',
-      class: 'col-xs-6 col-xs-offset-3 col-sm-4 col-sm-offset-0'
+      class: 'col-xs-6 col-xs-offset-3 col-md-4 col-md-offset-0'
     }
   ];
   clientStories: ClientStory[] = [
@@ -82,6 +83,17 @@ export class HomeComponent implements OnInit {
       id: 'life-core-system-transformation'
     },
   ];
+  mindShare: MindShare = {
+    id: 'software-development-is-like-toilet-training',
+    title: 'Software Development Is Like Toilet Training',
+    author: 'David Mitzel',
+    authorImageUrl: './assets/david-mitzel.png',
+    authorFullImageUrl: './assets/david-mitzel-full.png',
+    authorTitle: 'Architect & Senior Developer',
+    shortDescription: 'As I\'ve helped my 2-year-old daughter through the ' +
+      'first couple stages of toilet training, it occured to me that ' +
+      'sometimes software development is a similar process.'
+  };
 
   constructor() { }
 

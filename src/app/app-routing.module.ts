@@ -9,6 +9,8 @@ import { HomeComponent } from './home/home.component';
 import { CareersComponent } from './careers/careers.component';
 import { OurWorkDetailComponent } from './our-work/our-work-detail.component';
 import { OurWorkDetailGuard } from './our-work/our-work-detail.guard';
+import { OurThoughtsDetailComponent } from './our-thoughts/our-thoughts-detail.component';
+import { OurThoughtsDetailGuard } from './our-thoughts/our-thoughts-detail.guard';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -21,6 +23,11 @@ const routes: Routes = [
     canActivate: [OurWorkDetailGuard]
   },
   { path: 'our-thoughts', component: OurThoughtsComponent },
+  {
+    path: 'our-thoughts/:id',
+    component: OurThoughtsDetailComponent,
+    canActivate: [OurThoughtsDetailGuard]
+  },
   { path: 'contact-us', component: ContactUsComponent },
   { path: 'careers', component: CareersComponent },
 ];
