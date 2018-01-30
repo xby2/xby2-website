@@ -20,7 +20,8 @@ import { OurWorkDetailComponent } from './our-work/our-work-detail.component';
 import { OurWorkDetailGuard } from './our-work/our-work-detail.guard';
 import { OurThoughtsDetailComponent } from './our-thoughts/our-thoughts-detail.component';
 import { OurThoughtsDetailGuard } from './our-thoughts/our-thoughts-detail.guard';
-
+import { FormsModule } from '@angular/forms';
+import { ContactUsFormComponent } from './shared/contact-us-form/contact-us-form.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,12 +36,14 @@ import { OurThoughtsDetailGuard } from './our-thoughts/our-thoughts-detail.guard
     HomeComponent,
     FooterComponent,
     OurWorkDetailComponent,
-    OurThoughtsDetailComponent
+    OurThoughtsDetailComponent,
+    ContactUsFormComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [LinksService, OurWorkDetailGuard, OurThoughtsDetailGuard],
   bootstrap: [AppComponent]

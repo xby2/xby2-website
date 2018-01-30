@@ -38,10 +38,10 @@
       <h4>{{clientStory.title}}</h4>
       <hr />
       <p>{{clientStory.description}}</p>
-      <a routerLink="/our-work/{{clientStory.id}}">Read more ></a>
+      <a [routerLink]="['/our-work', clientStory.id]">Read more ></a>
     </div>
   </div>
-  <a class="col-sm-12" routerLink='/our-work'>See All ></a>
+  <a class="col-sm-12 see-all" routerLink='/our-work'>See All ></a>
 </div>
 <div class="row row-eq-height our-thoughts">
   <div class="visible-md visible-lg col-md-6">
@@ -60,6 +60,13 @@
       {{mindShare.authorTitle}}
     </div>
     <p>{{mindShare.shortDescription}}</p>
-    <a routerLink="/our-thoughts/{{mindShare.id}}">Read more ></a>
+    <a [routerLink]="['/our-thoughts', mindShare.id]">Read more ></a>
+  </div>
+</div>
+<div class="row contact-us">
+  <div class="contact-us-form">
+      <h2>Say Hello</h2>
+      <h3>Contact Us</h3>
+      <app-contact-us-form></app-contact-us-form>
   </div>
 </div>

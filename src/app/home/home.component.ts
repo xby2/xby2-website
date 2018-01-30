@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Expertise } from '../expertise';
 import { ClientStory } from '../client-story';
 import { MindShare } from '../mind-share';
+import { ContactMessage } from '../contact-message';
 
 @Component({
   selector: 'app-home',
