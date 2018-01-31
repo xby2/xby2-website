@@ -5,5 +5,5 @@ export class ContactMessage {
     phoneNumber: string;
     companyName?: string;
     title?: string;
-    comment: string;
+    message: string;
 }

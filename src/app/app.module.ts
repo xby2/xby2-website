@@ -21,8 +21,10 @@ import { OurWorkDetailGuard } from './our-work/our-work-detail.guard';
 import { OurThoughtsDetailComponent } from './our-thoughts/our-thoughts-detail.component';
 import { OurThoughtsDetailGuard } from './our-thoughts/our-thoughts-detail.guard';
 import { FormsModule } from '@angular/forms';
-import { ContactUsFormComponent } from './shared/contact-us-form/contact-us-form.component';
+import { ContactUsFormComponent } from './contact-us/contact-us-form.component';
 import { ExpertiseService } from './our-expertise/expertise.service';
+import { ContactService } from './contact-us/contact.service';
+import { ToastrService } from './contact-us/toastr.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -50,7 +52,9 @@ import { ExpertiseService } from './our-expertise/expertise.service';
     LinksService,
     ExpertiseService,
     OurWorkDetailGuard,
-    OurThoughtsDetailGuard
+    OurThoughtsDetailGuard,
+    ContactService,
+    ToastrService
   ],
   bootstrap: [AppComponent]
 })

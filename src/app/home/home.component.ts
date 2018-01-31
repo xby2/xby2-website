@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ClientStory } from '../client-story';
 import { MindShare } from '../mind-share';
-import { ContactMessage } from '../contact-message';
 import { Expertise } from '../our-expertise/expertise';
 import { ExpertiseService } from '../our-expertise/expertise.service';
 

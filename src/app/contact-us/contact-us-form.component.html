@@ -43,12 +43,12 @@
 
   <div class="form-group col-sm-12">
     <label class="control-label">How can we help you? (*required)</label>
-    <textarea class="form-control" #comment required
-          name="comment" [(ngModel)]="contact.comment"
+    <textarea class="form-control" #message required
+          name="message" [(ngModel)]="contact.message"
           placeholder="How can we help you? (*required)"></textarea>
   </div>
 
-  <button class="btn btn-primary" type="submit" [disabled]="form.invalid">
+  <button class="btn btn-primary" type="submit" [disabled]="form.invalid || submitDisabled">
     Submit
   </button>
 </form>
