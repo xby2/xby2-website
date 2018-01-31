@@ -18,6 +18,13 @@ body {
     font-size: 16px;
 }
 
+.row-eq-height {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
 @media (min-width: 992px) {
     body {
         margin-left: 5%;

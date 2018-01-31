@@ -1,0 +1,55 @@
+h2 {
+    color: #f89829;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+h3 {
+    color: #363636;
+    font-weight: bold;
+}
+
+h4 {
+    font-size: 28px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+p, ul {
+    margin-top: 25px;
+}
+
+a {
+    display: block;
+    text-transform: uppercase;
+    color: #f89829;
+    border-bottom: 1px solid #f89829;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.header {
+    background-color: #fff;
+    padding: 15px;
+}
+
+.expertise {
+    background-color: #ececec;
+    padding: 35px 15px;
+}
+
+@media (min-width: 768px) {
+    h4 {
+        font-size: 36px;
+    }
+
+    img {
+        float: right;
+    }
+
+    .expertise, .header {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+}

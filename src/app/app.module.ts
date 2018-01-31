@@ -22,6 +22,7 @@ import { OurThoughtsDetailComponent } from './our-thoughts/our-thoughts-detail.c
 import { OurThoughtsDetailGuard } from './our-thoughts/our-thoughts-detail.guard';
 import { FormsModule } from '@angular/forms';
 import { ContactUsFormComponent } from './shared/contact-us-form/contact-us-form.component';
+import { ExpertiseService } from './our-expertise/expertise.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -45,7 +46,12 @@ import { ContactUsFormComponent } from './shared/contact-us-form/contact-us-form
     HttpClientModule,
     FormsModule
   ],
-  providers: [LinksService, OurWorkDetailGuard, OurThoughtsDetailGuard],
+  providers: [
+    LinksService,
+    ExpertiseService,
+    OurWorkDetailGuard,
+    OurThoughtsDetailGuard
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

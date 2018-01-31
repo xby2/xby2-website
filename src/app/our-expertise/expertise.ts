@@ -4,4 +4,5 @@ export interface Expertise {
     text: string;
     routerLink: string;
     class?: string;
+    fullText: string;
 }

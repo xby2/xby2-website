@@ -11,17 +11,17 @@
   <div *ngFor='let expertise of expertises'
         class='home-expertise {{expertise.class}}'>
     <div class="home-expertise-img-wrapper">
-        <a routerLink="{{expertise.routerLink}}">
+        <a routerLink="{{expertise.expertiseLink}}">
             <img [src]="expertise.imageUrl" />
         </a>
     </div>
     <div class="title">
-      <a routerLink="{{expertise.routerLink}}">
+      <a routerLink="{{expertise.expertiseLink}}">
         {{expertise.title}}
       </a>
     </div>
     <p class="hidden-xs">
-      <a routerLink="{{expertise.routerLink}}">
+      <a routerLink="{{expertise.expertiseLink}}">
         {{expertise.text}}
         <span>></span>
       </a>

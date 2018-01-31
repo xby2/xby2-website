@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { Expertise } from '../expertise';
 import { ClientStory } from '../client-story';
 import { MindShare } from '../mind-share';
 import { ContactMessage } from '../contact-message';
+import { Expertise } from '../our-expertise/expertise';
+import { ExpertiseService } from '../our-expertise/expertise.service';
 
 @Component({
   selector: 'app-home',
@@ -11,53 +12,7 @@ import { ContactMessage } from '../contact-message';
 })
 export class HomeComponent implements OnInit {
   title = 'We are Architects for the Insurance and Healthcare Industries';
-  expertises: Expertise[] = [
-    {
-      imageUrl: './assets/enterprise-architecture.png',
-      title: 'Enterprise Architecture',
-      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ' +
-            'commodo dictum neque, lobortis lobortis arcu blandit ut. Ut ' +
-            'dignissim nunc.',
-      routerLink: '/our-expertise',
-      class: 'col-xs-6 col-md-4'
-    },
-    {
-      imageUrl: './assets/app-solution-architecture.png',
-      title: 'App/Solution Architecture',
-      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ' +
-            'commodo dictum neque, lobortis lobortis arcu blandit ut. Ut ' +
-            'dignissim nunc.',
-      routerLink: '/our-expertise',
-      class: 'col-xs-6 col-md-4'
-    },
-    {
-      imageUrl: './assets/data-integration-architecture.png',
-      title: 'Data/Integration Architecture',
-      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ' +
-            'commodo dictum neque, lobortis lobortis arcu blandit ut. Ut ' +
-            'dignissim nunc.',
-      routerLink: '/our-expertise',
-      class: 'col-xs-6 col-md-4'
-    },
-    {
-      imageUrl: './assets/agile-implementation.png',
-      title: 'Agile Implementation',
-      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ' +
-            'commodo dictum neque, lobortis lobortis arcu blandit ut. Ut ' +
-            'dignissim nunc.',
-      routerLink: '/our-expertise',
-      class: 'col-xs-6 col-md-4 col-md-offset-2'
-    },
-    {
-      imageUrl: './assets/project-audit-review.png',
-      title: 'Project Audit & Review',
-      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ' +
-            'commodo dictum neque, lobortis lobortis arcu blandit ut. Ut ' +
-            'dignissim nunc.',
-      routerLink: '/our-expertise',
-      class: 'col-xs-6 col-xs-offset-3 col-md-4 col-md-offset-0'
-    }
-  ];
+  expertises: Expertise[];
   clientStories: ClientStory[] = [
     {
       imageUrl: './assets/client-story.jpg',
@@ -96,8 +51,11 @@ export class HomeComponent implements OnInit {
       'sometimes software development is a similar process.'
   };
 
-  constructor() { }
+  constructor(private _expertiseService: ExpertiseService) { }
 
   ngOnInit() {
+    this._expertiseService.getExpertises().subscribe(
+      response => this.expertises = response
+    );
   }
 }

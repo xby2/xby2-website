@@ -24,13 +24,6 @@
     background-color: #fff;
 }
 
-.row-eq-height {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display:         flex;
-}
-
 h2, h3 {
     text-transform: uppercase;
     text-align: center;

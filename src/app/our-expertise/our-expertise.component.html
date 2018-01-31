@@ -1,3 +1,28 @@
-<p>
-  our-expertise works!
-</p>
+<div class="row header">
+  <h2>{{headerText}}</h2>
+  <h3>{{subheaderText}}</h3>
+</div>
+<div *ngFor='let expertise of expertises' class='row expertise'> 
+  <div class="row row-eq-height">
+    <div class="col-xs-8">
+      <h4>{{expertise.title}}</h4>
+    </div>
+    <div class="col-xs-4">
+      <img [src]='expertise.imageUrl' />
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <p>{{expertise.fullText}}</p>
+      <ul>
+        <li *ngFor='let point of expertise.points'>
+          {{point}}
+        </li>
+      </ul>
+      <a [routerLink]='expertise.clientStoryLink'>
+        Learn more about our {{expertise.title}}
+      </a>
+    </div>
+  </div>
+</div>
+
