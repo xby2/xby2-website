@@ -1,0 +1,28 @@
+img {
+    width: 100%;
+    padding: 50px 0;
+}
+
+.col-xs-12 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.col-sm-6 {
+    padding-left: 0;
+}
+
+#about-us, #about-us-2 {
+    position: relative;
+    display: table;
+    height: 293px;
+    width: 100%;
+    background: url('../../assets/about-us.png') no-repeat top center;
+    background-size: 100% auto;
+    margin: 50px 0;
+}
+
+#about-us-2 {
+    background: url('../../assets/about-us-2.png') no-repeat top center;
+    background-size: 100% auto;
+}

@@ -1,7 +1,7 @@
 .navbar {
   height: 100px;
   background-color: #ffffff;
-  border-color: #e7e7e7; /* change to white this after content created */
+  border-color: #fff;
 }
 
 .navbar-toggle {

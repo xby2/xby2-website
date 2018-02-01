@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { ClientStory } from '../client-story';
-import { MindShare } from '../mind-share';
 import { Expertise } from '../our-expertise/expertise';
 import { ExpertiseService } from '../our-expertise/expertise.service';
+import { ClientStory } from '../our-work/client-story';
+import { MindShare } from '../our-thoughts/mind-share';
 
 @Component({
   selector: 'app-home',
