@@ -94,49 +94,14 @@ h3 {
     background-color: #ececec;
 }
 
-.our-work a {
-    color: #ffa500;
-    display: block;
-    text-align: center;
-    font-weight: 600;
-    text-transform: uppercase;
-    padding: 15px;
-}
-
 .our-work a.see-all {
     font-size: 24px;
-}
-
-.home-client-story {
-    background-color: #fff;
-    padding-left: 0;
-    padding-right: 0;
+    color: #ffa500;
+    display: block;
+    text-transform: uppercase;
+    font-weight: 600;
     margin-bottom: 20px;
-}
-
-.home-client-story img {
-    width: 100%;
-}
-
-.home-client-story h4 {
     text-align: center;
-    color: #464646;
-    margin: 20px auto 0 auto;
-    width: 80%;
-}
-
-.home-client-story hr {
-    border: 1px solid #ffa500;
-    width: 35%;
-}
-
-.home-client-story p {
-    margin: 20px;
-    text-align: center;
-}
-
-.home-client-story a {
-    text-transform: none;
 }
 
 .our-thoughts .mind-share {
@@ -211,18 +176,5 @@ h3 {
 
     .home-expertise div.title::after {
         content: "";
-    }
-
-    .home-client-story {
-        height: 350px;
-    }
-
-    .home-client-story a {
-        position: absolute;
-        margin-left: auto;
-        margin-right: auto;
-        left: 0;
-        right: 0;
-        bottom: 5px;
     }
 }

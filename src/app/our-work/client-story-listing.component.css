@@ -1,0 +1,51 @@
+.col-md-12 {
+    background-color: #fff;
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 20px;
+}
+
+img {
+    width: 100%;
+}
+
+h4 {
+    text-align: center;
+    color: #464646;
+    margin: 20px auto 0 auto;
+    width: 80%;
+}
+
+hr {
+    border: 1px solid #ffa500;
+    width: 35%;
+}
+
+p {
+    margin: 20px;
+    text-align: center;
+}
+
+a {
+    text-transform: none;
+    color: #ffa500;
+    display: block;
+    text-align: center;
+    font-weight: 600;
+    padding: 15px;
+}
+
+@media (min-width: 768px) {
+    .col-md-12 {
+        height: 375px;
+    }
+    
+    a {
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        bottom: 5px;
+    }
+}

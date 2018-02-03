@@ -16,6 +16,7 @@ textarea.form-control {
     height: 150px;
 }
 
+/* this section should be added to style.css */
 button {
     display: block;
     margin: 0 auto;
@@ -23,18 +24,19 @@ button {
     border: 0;
     border-radius: 0;
     text-transform: uppercase;
-    padding: 5px 30px;
-    font-size: 22px;
+    padding: 7px 50px;
+    font-size: 16px;
+    font-weight: 600;
 }
 
-.btn-primary[disabled]:hover, .btn-primary[disabled]:focus {
+.btn-xby2[disabled]:hover, .btn-xby2[disabled]:focus {
     background-color: #eb9c45;
 }
 
-.btn-primary:focus {
+.btn-xby2:focus {
     background-color: #eba960;
 }
 
-.btn-primary:active, .btn-primary:hover {
+.btn-xby2:active, .btn-xby2:hover {
     background-color: #eba960;
 }

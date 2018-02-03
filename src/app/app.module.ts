@@ -25,6 +25,8 @@ import { ContactUsFormComponent } from './contact-us/contact-us-form.component';
 import { ExpertiseService } from './our-expertise/expertise.service';
 import { ContactService } from './contact-us/contact.service';
 import { ToastrService } from './contact-us/toastr.service';
+import { ClientStoryService } from './our-work/client-story.service';
+import { ClientStoryListingComponent } from './our-work/client-story-listing.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -40,7 +42,8 @@ import { ToastrService } from './contact-us/toastr.service';
     FooterComponent,
     OurWorkDetailComponent,
     OurThoughtsDetailComponent,
-    ContactUsFormComponent
+    ContactUsFormComponent,
+    ClientStoryListingComponent
   ],
   imports: [
     BrowserModule,
@@ -54,7 +57,8 @@ import { ToastrService } from './contact-us/toastr.service';
     OurWorkDetailGuard,
     OurThoughtsDetailGuard,
     ContactService,
-    ToastrService
+    ToastrService,
+    ClientStoryService
   ],
   bootstrap: [AppComponent]
 })

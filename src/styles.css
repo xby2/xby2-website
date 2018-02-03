@@ -29,13 +29,6 @@ h3 {
     font-weight: bold;
 }
 
-h4 {
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 36px;
-    margin-bottom: 40px;
-}
-
 a.xby2-link {
     display: block;
     text-transform: uppercase;
@@ -68,7 +61,7 @@ div.component-content {
         margin-right: 5%;
     }
 
-    .component-header {
+    div.component-header, div.component-content {
         padding-left: 60px;
         padding-right: 60px;
     }

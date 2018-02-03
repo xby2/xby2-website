@@ -1,3 +1,30 @@
-<p>
-  our-work works!
-</p>
+<div class="row component-header">
+  <h2>{{headerText}}</h2>
+  <h3>{{subheaderText}}</h3>
+</div>
+<div class="row component-content">
+  <div id="filter">
+    <h4>Filter Work</h4>
+    <div class="btn-group" data-toggle="buttons"
+         id="filter-work-buttons" >
+        <button type="button text-right" class="btn btn-primary active">All
+        <input type="radio" id="all"></button>
+        <button type="button" class="btn btn-primary">Insurance
+        <input type="radio" id="insurance" > </button>
+        <button type="button" class="btn btn-primary">Healthcare
+        <input  type="radio" id="healthcare"> </button>                
+     </div>
+  </div>
+
+  <app-client-story-listing
+    *ngFor='let clientStory of clientStories |
+            slice: 0:clientStoryDisplayCount'
+    [clientStory]='clientStory'>
+  </app-client-story-listing>
+  <!-- TODO:  We need to reference client stories count -->
+  <button class="btn btn-primary btn-xby2" type="button"
+          (click)="loadMoreClientStories()"
+          *ngIf="clientStoryDisplayCount != 9">
+    Load More
+  </button>
+</div>

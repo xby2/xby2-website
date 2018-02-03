@@ -3,6 +3,7 @@ import { Expertise } from '../our-expertise/expertise';
 import { ExpertiseService } from '../our-expertise/expertise.service';
 import { ClientStory } from '../our-work/client-story';
 import { MindShare } from '../our-thoughts/mind-share';
+import { ClientStoryService } from '../our-work/client-story.service';
 
 @Component({
   selector: 'app-home',
@@ -12,32 +13,7 @@ import { MindShare } from '../our-thoughts/mind-share';
 export class HomeComponent implements OnInit {
   title = 'We are Architects for the Insurance and Healthcare Industries';
   expertises: Expertise[];
-  clientStories: ClientStory[] = [
-    {
-      imageUrl: './assets/client-story.jpg',
-      title: 'Claims Modernization',
-      description: 'A Fortune 500 P&C insurer built a national reputation ' +
-        'for delivering quality service that placed it consistently among ' +
-        'the top-ranked companies in claims handling and customer...',
-      id: 'claims-modernization'
-    },
-    {
-      imageUrl: './assets/client-story.jpg',
-      title: 'Data and Analytics for Value-Based Care',
-      description: 'A Blue Cross Blue Shield affiliate created one of the ' +
-      'largest value-partnership programs in the nation.  In a continued ' +
-      'effort to maintain their edge and continually...',
-      id: 'data-and-analytics-for-value-based-care'
-    },
-    {
-      imageUrl: './assets/client-story.jpg',
-      title: 'Life Core System Transformation',
-      description: 'A multi-line P&C and Life insurer desired to replace the ' +
-      'core systems within their life division in an effort to increase ' +
-      'process automation and efficiency, enable faster...',
-      id: 'life-core-system-transformation'
-    },
-  ];
+  featuredClientStories: ClientStory[];
   mindShare: MindShare = {
     id: 'software-development-is-like-toilet-training',
     title: 'Software Development Is Like Toilet Training',
@@ -50,11 +26,16 @@ export class HomeComponent implements OnInit {
       'sometimes software development is a similar process.'
   };
 
-  constructor(private _expertiseService: ExpertiseService) { }
+  constructor(private expertiseService: ExpertiseService,
+              private clientStoryService: ClientStoryService) { }
 
   ngOnInit() {
-    this._expertiseService.getExpertises().subscribe(
+    this.expertiseService.getExpertises().subscribe(
       response => this.expertises = response
+    );
+
+    this.clientStoryService.getFeaturedClientStories().subscribe(
+      response => this.featuredClientStories = response
     );
   }
 }
