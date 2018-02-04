@@ -13,6 +13,7 @@ export class OurWorkComponent implements OnInit {
   'success and that of our clients.  We\'re proud of what we accomplish on ' +
   'their behalf.';
   clientStories: ClientStory[];
+  filteredClientStories: ClientStory[];
   clientStoryDisplayCount: number;
   initialWidth: number;
   tabletWidth = 768;
@@ -26,12 +27,27 @@ export class OurWorkComponent implements OnInit {
 
   ngOnInit() {
     this.clientStoryService.getClientStories().subscribe(
-      response => this.clientStories = response
+      response => {
+        this.clientStories = response,
+        this.filteredClientStories = response;
+      }
     );
   }
 
   loadMoreClientStories() {
     this.clientStoryDisplayCount += 3;
+  }
+
+  performFilter(filterCriteria: string) {
+    if (filterCriteria === 'all') {
+      this.filteredClientStories = this.clientStories;
+    } else {
+      this.filteredClientStories = this.clientStories.filter(
+        (clientStory: ClientStory) => clientStory.industry === filterCriteria
+      );
+    }
+
+    this.determineInitialClientStoryCount();
   }
 
   private determineInitialClientStoryCount() {

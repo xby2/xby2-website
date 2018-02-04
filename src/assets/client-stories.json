@@ -4,62 +4,71 @@
         "imageUrl": "./assets/client-story.jpg",
         "title": "Claims Modernization",
         "description": "A Fortune 500 P&C insurer built a national reputation for delivering quality service that placed it consistently among the top-ranked companies in claims handling and customer...",
-        "isFeatured": true
+        "isFeatured": true,
+        "industry": "insurance"
     },
     {
         "id": "data-and-analytics-for-value-based-care",
         "imageUrl": "./assets/client-story.jpg",
         "title": "Data and Analytics for Value-Based Care",
         "description": "A Blue Cross Blue Shield affiliate created one of the largest value-partnership programs in the nation.  In a continued effort to maintain their edge and continually...",
-        "isFeatured": true
+        "isFeatured": true,
+        "industry": "healthcare"
     },
     {
         "id": "life-core-system-transformation",
         "imageUrl": "./assets/client-story.jpg",
         "title": "Life Core System Transformation",
         "description": "A multi-line P&C and Life insurer desired to replace the core systems within their life division in an effort to increase process automation and efficiency, enable faster...",
-        "isFeatured": true
+        "isFeatured": true,
+        "industry": "insurance"
     },
     {
         "id": "insurance-1",
         "imageUrl": "./assets/client-story.jpg",
         "title": "Insurance 1",
         "description": "A Fortune 500 P&C insurer built a national reputation for delivering quality service that placed it consistently among the top-ranked companies in claims handling and customer...",
-        "isFeatured": false
+        "isFeatured": false,
+        "industry": "insurance"
     },
     {
         "id": "healthcare-1",
         "imageUrl": "./assets/client-story.jpg",
         "title": "Healthcare 1",
         "description": "A Blue Cross Blue Shield affiliate created one of the largest value-partnership programs in the nation.  In a continued effort to maintain their edge and continually...",
-        "isFeatured": false
+        "isFeatured": false,
+        "industry": "healthcare"
     },
     {
         "id": "insurance-2",
         "imageUrl": "./assets/client-story.jpg",
         "title": "Insurance 2",
         "description": "A multi-line P&C and Life insurer desired to replace the core systems within their life division in an effort to increase process automation and efficiency, enable faster...",
-        "isFeatured": false
+        "isFeatured": false,
+        "industry": "insurance"
     },
     {
         "id": "healthcare-2",
         "imageUrl": "./assets/client-story.jpg",
         "title": "Healthcare 2",
         "description": "A multi-line P&C and Life insurer desired to replace the core systems within their life division in an effort to increase process automation and efficiency, enable faster...",
-        "isFeatured": false
+        "isFeatured": false,
+        "industry": "healthcare"
     },
     {
         "id": "insurance-2",
         "imageUrl": "./assets/client-story.jpg",
         "title": "Insurance 3",
         "description": "A multi-line P&C and Life insurer desired to replace the core systems within their life division in an effort to increase process automation and efficiency, enable faster...",
-        "isFeatured": false
+        "isFeatured": false,
+        "industry": "insurance"
     },
     {
         "id": "healthcare-3",
         "imageUrl": "./assets/client-story.jpg",
         "title": "Healthcare 3",
         "description": "A multi-line P&C and Life insurer desired to replace the core systems within their life division in an effort to increase process automation and efficiency, enable faster...",
-        "isFeatured": false
+        "isFeatured": false,
+        "industry": "healthcare"
     }
 ]

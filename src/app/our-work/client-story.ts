@@ -4,4 +4,5 @@ export interface ClientStory {
     description: string;
     id: string;
     isFeatured: boolean;
+    industry: string;
 }

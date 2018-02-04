@@ -7,24 +7,33 @@
     <h4>Filter Work</h4>
     <div class="btn-group" data-toggle="buttons"
          id="filter-work-buttons" >
-        <button type="button text-right" class="btn btn-primary active">All
-        <input type="radio" id="all"></button>
-        <button type="button" class="btn btn-primary">Insurance
-        <input type="radio" id="insurance" > </button>
-        <button type="button" class="btn btn-primary">Healthcare
-        <input  type="radio" id="healthcare"> </button>                
+        <button type="button text-right" class="btn btn-primary active"
+                (click)="performFilter('all')">
+          All
+          <input type="radio" id="all">
+        </button>
+        <button type="button" class="btn btn-primary"
+               (click)="performFilter('insurance')">
+          Insurance
+          <input type="radio" id="insurance">
+        </button>
+        <button type="button" class="btn btn-primary"
+               (click)="performFilter('healthcare')">
+          Healthcare
+          <input  type="radio" id="healthcare">
+        </button>                
      </div>
   </div>
 
   <app-client-story-listing
-    *ngFor='let clientStory of clientStories |
+    *ngFor='let clientStory of filteredClientStories |
             slice: 0:clientStoryDisplayCount'
     [clientStory]='clientStory'>
   </app-client-story-listing>
   <!-- TODO:  We need to reference client stories count -->
   <button class="btn btn-primary btn-xby2" type="button"
           (click)="loadMoreClientStories()"
-          *ngIf="clientStoryDisplayCount != 9">
+          *ngIf="clientStoryDisplayCount < filteredClientStories?.length">
     Load More
   </button>
 </div>
