@@ -13,5 +13,4 @@ export class ClientStoryListingComponent implements OnInit {
 
   ngOnInit() {
   }
-
 }

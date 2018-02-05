@@ -1,3 +1,33 @@
-<p>
-  our-work-detail works!
-</p>
+<div class="row">
+  <div class="hero-image"
+      [ngStyle]="{'background': 'linear-gradient(
+                                  rgba(0, 0, 0, 0.45), 
+                                  rgba(0, 0, 0, 0.45)
+                                ), url(' + clientStory.imageUrl + ')',
+                  'background-size': '100% auto'}">
+    <div class="expertises">
+      <ul>
+        <li *ngFor='let expertise of clientStory.expertises'>
+          {{expertise}}
+        </li>
+      </ul>
+    </div>
+    <div class="client">
+      {{clientStory.client}}
+    </div>
+    <div class="description truncated">
+      {{clientStory.description}}
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12" [innerHtml]="clientStory.content">
+  </div>
+</div>
+<div *ngIf='nextClientStoryId' class="row next-client-story">
+  <div class="col-xs-12">
+    <h2>Next Client Story</h2>
+    <h3>{{nextClientStoryDescription}}</h3>
+    <a [routerLink]="['/our-work', nextClientStoryId]">></a>
+  </div>
+</div>

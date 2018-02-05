@@ -5,4 +5,7 @@ export interface ClientStory {
     id: string;
     isFeatured: boolean;
     industry: string;
+    client: string;
+    expertises: string[];
+    content: string;
 }

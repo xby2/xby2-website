@@ -27,10 +27,9 @@
 
   <app-client-story-listing
     *ngFor='let clientStory of filteredClientStories |
-            slice: 0:clientStoryDisplayCount'
+            slice: 0:clientStoryDisplayCount; index as i'
     [clientStory]='clientStory'>
   </app-client-story-listing>
-  <!-- TODO:  We need to reference client stories count -->
   <button class="btn btn-primary btn-xby2" type="button"
           (click)="loadMoreClientStories()"
           *ngIf="clientStoryDisplayCount < filteredClientStories?.length">

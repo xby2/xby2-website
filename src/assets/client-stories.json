@@ -1,74 +1,146 @@
 [
     {
         "id": "claims-modernization",
-        "imageUrl": "./assets/client-story.jpg",
+        "listingImageUrl": "./assets/client-story-listing.jpg",
+        "imageUrl": "./assets/client-story.png",
         "title": "Claims Modernization",
         "description": "A Fortune 500 P&C insurer built a national reputation for delivering quality service that placed it consistently among the top-ranked companies in claims handling and customer...",
         "isFeatured": true,
-        "industry": "insurance"
+        "industry": "insurance",
+        "client": "ABC Insurance",
+        "expertises": [
+            "Enterprise Architecture",
+            "Data Integration",
+            "Project Audit & Review"
+        ],
+        "content": "<h1>Opportunity<\/h1><p>As I\u2019ve helped my 2-year-old daughter through the first couple stages of toilet training, it occurred to me that sometimes software development is a similar process. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\/p><hr \/><h1>Insight<\/h1><p>As I\u2019ve helped my 2-year-old daughter through the first couple stages of toilet training, it occurred to me that sometimes software development is a similar process. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\/p><p>Veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\/p><hr \/><h1>Solution<\/h1><p>As I\u2019ve helped my 2-year-old daughter through the first couple stages of toilet training, it occurred to me that sometimes software development is a similar process. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<\/p>"
     },
     {
         "id": "data-and-analytics-for-value-based-care",
-        "imageUrl": "./assets/client-story.jpg",
+        "listingImageUrl": "./assets/client-story-listing.jpg",
+        "imageUrl": "./assets/client-story.png",
         "title": "Data and Analytics for Value-Based Care",
         "description": "A Blue Cross Blue Shield affiliate created one of the largest value-partnership programs in the nation.  In a continued effort to maintain their edge and continually...",
         "isFeatured": true,
-        "industry": "healthcare"
+        "industry": "healthcare",
+        "client": "ABC Insurance",
+        "expertises": [
+            "Enterprise Architecture",
+            "Data Integration",
+            "Project Audit & Review"
+        ],
+        "content": "<h1>Opportunity<\/h1><p>As I\u2019ve helped my 2-year-old daughter through the first couple stages of toilet training, it occurred to me that sometimes software development is a similar process. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\/p><hr \/><h1>Insight<\/h1><p>As I\u2019ve helped my 2-year-old daughter through the first couple stages of toilet training, it occurred to me that sometimes software development is a similar process. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\/p><p>Veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\/p><hr \/><h1>Solution<\/h1><p>As I\u2019ve helped my 2-year-old daughter through the first couple stages of toilet training, it occurred to me that sometimes software development is a similar process. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<\/p>"
     },
     {
         "id": "life-core-system-transformation",
-        "imageUrl": "./assets/client-story.jpg",
+        "listingImageUrl": "./assets/client-story-listing.jpg",
+        "imageUrl": "./assets/client-story.png",
         "title": "Life Core System Transformation",
         "description": "A multi-line P&C and Life insurer desired to replace the core systems within their life division in an effort to increase process automation and efficiency, enable faster...",
         "isFeatured": true,
-        "industry": "insurance"
+        "industry": "insurance",
+        "client": "ABC Insurance",
+        "expertises": [
+            "Enterprise Architecture",
+            "Data Integration",
+            "Project Audit & Review"
+        ],
+        "content": "<h1>Opportunity<\/h1><p>As I\u2019ve helped my 2-year-old daughter through the first couple stages of toilet training, it occurred to me that sometimes software development is a similar process. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\/p><hr \/><h1>Insight<\/h1><p>As I\u2019ve helped my 2-year-old daughter through the first couple stages of toilet training, it occurred to me that sometimes software development is a similar process. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\/p><p>Veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\/p><hr \/><h1>Solution<\/h1><p>As I\u2019ve helped my 2-year-old daughter through the first couple stages of toilet training, it occurred to me that sometimes software development is a similar process. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<\/p>"
     },
     {
         "id": "insurance-1",
-        "imageUrl": "./assets/client-story.jpg",
+        "listingImageUrl": "./assets/client-story-listing.jpg",
+        "imageUrl": "./assets/client-story.png",
         "title": "Insurance 1",
         "description": "A Fortune 500 P&C insurer built a national reputation for delivering quality service that placed it consistently among the top-ranked companies in claims handling and customer...",
         "isFeatured": false,
-        "industry": "insurance"
+        "industry": "insurance",
+        "client": "ABC Insurance",
+        "expertises": [
+            "Enterprise Architecture",
+            "Data Integration",
+            "Project Audit & Review"
+        ],
+        "content": "<h1>Opportunity<\/h1><p>As I\u2019ve helped my 2-year-old daughter through the first couple stages of toilet training, it occurred to me that sometimes software development is a similar process. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\/p><hr \/><h1>Insight<\/h1><p>As I\u2019ve helped my 2-year-old daughter through the first couple stages of toilet training, it occurred to me that sometimes software development is a similar process. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\/p><p>Veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\/p><hr \/><h1>Solution<\/h1><p>As I\u2019ve helped my 2-year-old daughter through the first couple stages of toilet training, it occurred to me that sometimes software development is a similar process. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<\/p>"
     },
     {
         "id": "healthcare-1",
-        "imageUrl": "./assets/client-story.jpg",
+        "listingImageUrl": "./assets/client-story-listing.jpg",
+        "imageUrl": "./assets/client-story.png",
         "title": "Healthcare 1",
         "description": "A Blue Cross Blue Shield affiliate created one of the largest value-partnership programs in the nation.  In a continued effort to maintain their edge and continually...",
         "isFeatured": false,
-        "industry": "healthcare"
+        "industry": "healthcare",
+        "client": "ABC Insurance",
+        "expertises": [
+            "Enterprise Architecture",
+            "Data Integration",
+            "Project Audit & Review"
+        ],
+        "content": "<h1>Opportunity<\/h1><p>As I\u2019ve helped my 2-year-old daughter through the first couple stages of toilet training, it occurred to me that sometimes software development is a similar process. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\/p><hr \/><h1>Insight<\/h1><p>As I\u2019ve helped my 2-year-old daughter through the first couple stages of toilet training, it occurred to me that sometimes software development is a similar process. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\/p><p>Veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\/p><hr \/><h1>Solution<\/h1><p>As I\u2019ve helped my 2-year-old daughter through the first couple stages of toilet training, it occurred to me that sometimes software development is a similar process. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<\/p>"
     },
     {
         "id": "insurance-2",
-        "imageUrl": "./assets/client-story.jpg",
+        "listingImageUrl": "./assets/client-story-listing.jpg",
+        "imageUrl": "./assets/client-story.png",
         "title": "Insurance 2",
         "description": "A multi-line P&C and Life insurer desired to replace the core systems within their life division in an effort to increase process automation and efficiency, enable faster...",
         "isFeatured": false,
-        "industry": "insurance"
+        "industry": "insurance",
+        "client": "ABC Insurance",
+        "expertises": [
+            "Enterprise Architecture",
+            "Data Integration",
+            "Project Audit & Review"
+        ],
+        "content": "<h1>Opportunity<\/h1><p>As I\u2019ve helped my 2-year-old daughter through the first couple stages of toilet training, it occurred to me that sometimes software development is a similar process. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\/p><hr \/><h1>Insight<\/h1><p>As I\u2019ve helped my 2-year-old daughter through the first couple stages of toilet training, it occurred to me that sometimes software development is a similar process. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\/p><p>Veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\/p><hr \/><h1>Solution<\/h1><p>As I\u2019ve helped my 2-year-old daughter through the first couple stages of toilet training, it occurred to me that sometimes software development is a similar process. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<\/p>"
     },
     {
         "id": "healthcare-2",
-        "imageUrl": "./assets/client-story.jpg",
+        "listingImageUrl": "./assets/client-story-listing.jpg",
+        "imageUrl": "./assets/client-story.png",
         "title": "Healthcare 2",
         "description": "A multi-line P&C and Life insurer desired to replace the core systems within their life division in an effort to increase process automation and efficiency, enable faster...",
         "isFeatured": false,
-        "industry": "healthcare"
+        "industry": "healthcare",
+        "client": "ABC Insurance",
+        "expertises": [
+            "Enterprise Architecture",
+            "Data Integration",
+            "Project Audit & Review"
+        ],
+        "content": "<h1>Opportunity<\/h1><p>As I\u2019ve helped my 2-year-old daughter through the first couple stages of toilet training, it occurred to me that sometimes software development is a similar process. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\/p><hr \/><h1>Insight<\/h1><p>As I\u2019ve helped my 2-year-old daughter through the first couple stages of toilet training, it occurred to me that sometimes software development is a similar process. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\/p><p>Veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\/p><hr \/><h1>Solution<\/h1><p>As I\u2019ve helped my 2-year-old daughter through the first couple stages of toilet training, it occurred to me that sometimes software development is a similar process. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<\/p>"
     },
     {
         "id": "insurance-2",
-        "imageUrl": "./assets/client-story.jpg",
+        "listingImageUrl": "./assets/client-story-listing.jpg",
+        "imageUrl": "./assets/client-story.png",
         "title": "Insurance 3",
         "description": "A multi-line P&C and Life insurer desired to replace the core systems within their life division in an effort to increase process automation and efficiency, enable faster...",
         "isFeatured": false,
-        "industry": "insurance"
+        "industry": "insurance",
+        "client": "ABC Insurance",
+        "expertises": [
+            "Enterprise Architecture",
+            "Data Integration",
+            "Project Audit & Review"
+        ],
+        "content": "<h1>Opportunity<\/h1><p>As I\u2019ve helped my 2-year-old daughter through the first couple stages of toilet training, it occurred to me that sometimes software development is a similar process. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\/p><hr \/><h1>Insight<\/h1><p>As I\u2019ve helped my 2-year-old daughter through the first couple stages of toilet training, it occurred to me that sometimes software development is a similar process. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\/p><p>Veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\/p><hr \/><h1>Solution<\/h1><p>As I\u2019ve helped my 2-year-old daughter through the first couple stages of toilet training, it occurred to me that sometimes software development is a similar process. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<\/p>"
     },
     {
         "id": "healthcare-3",
-        "imageUrl": "./assets/client-story.jpg",
+        "listingImageUrl": "./assets/client-story-listing.jpg",
+        "imageUrl": "./assets/client-story.png",
         "title": "Healthcare 3",
         "description": "A multi-line P&C and Life insurer desired to replace the core systems within their life division in an effort to increase process automation and efficiency, enable faster...",
         "isFeatured": false,
-        "industry": "healthcare"
+        "industry": "healthcare",
+        "client": "ABC Insurance",
+        "expertises": [
+            "Enterprise Architecture",
+            "Data Integration",
+            "Project Audit & Review"
+        ],
+        "content": "<h1>Opportunity<\/h1><p>As I\u2019ve helped my 2-year-old daughter through the first couple stages of toilet training, it occurred to me that sometimes software development is a similar process. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\/p><hr \/><h1>Insight<\/h1><p>As I\u2019ve helped my 2-year-old daughter through the first couple stages of toilet training, it occurred to me that sometimes software development is a similar process. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\/p><p>Veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\/p><hr \/><h1>Solution<\/h1><p>As I\u2019ve helped my 2-year-old daughter through the first couple stages of toilet training, it occurred to me that sometimes software development is a similar process. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<\/p>"
     }
 ]

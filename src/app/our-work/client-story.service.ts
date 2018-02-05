@@ -18,4 +18,10 @@ export class ClientStoryService {
       .map(clientStories =>
            clientStories.filter(clientStory => clientStory.isFeatured));
   }
+
+  getClientStory(id: string): Observable<ClientStory> {
+    return this.getClientStories()
+      .map(clientStories =>
+           clientStories.filter(clientStory => clientStory.id === id)[0]);
+  }
 }
