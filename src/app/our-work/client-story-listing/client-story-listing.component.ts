@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { ClientStory } from './client-story';
+import { ClientStory } from '../client-story';
 
 @Component({
   selector: 'app-client-story-listing',

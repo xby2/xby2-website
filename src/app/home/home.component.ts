@@ -2,8 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { Expertise } from '../our-expertise/expertise';
 import { ExpertiseService } from '../our-expertise/expertise.service';
 import { ClientStory } from '../our-work/client-story';
-import { MindShare } from '../our-thoughts/mind-share';
 import { ClientStoryService } from '../our-work/client-story.service';
+import { ActivatedRoute } from '@angular/router';
+import { MindShare } from '../our-thoughts/service/mind-share';
 
 @Component({
   selector: 'app-home',
@@ -14,28 +15,13 @@ export class HomeComponent implements OnInit {
   title = 'We are Architects for the Insurance and Healthcare Industries';
   expertises: Expertise[];
   featuredClientStories: ClientStory[];
-  mindShare: MindShare = {
-    id: 'software-development-is-like-toilet-training',
-    title: 'Software Development Is Like Toilet Training',
-    author: 'David Mitzel',
-    authorImageUrl: './assets/david-mitzel.png',
-    authorFullImageUrl: './assets/david-mitzel-full.png',
-    authorTitle: 'Architect & Senior Developer',
-    shortDescription: 'As I\'ve helped my 2-year-old daughter through the ' +
-      'first couple stages of toilet training, it occured to me that ' +
-      'sometimes software development is a similar process.'
-  };
+  featuredMindShare: MindShare;
 
-  constructor(private expertiseService: ExpertiseService,
-              private clientStoryService: ClientStoryService) { }
+  constructor(private route: ActivatedRoute) { }
 
   ngOnInit() {
-    this.expertiseService.getExpertises().subscribe(
-      response => this.expertises = response
-    );
-
-    this.clientStoryService.getFeaturedClientStories().subscribe(
-      response => this.featuredClientStories = response
-    );
+    this.expertises = this.route.snapshot.data.expertises;
+    this.featuredClientStories = this.route.snapshot.data.featuredClientStories;
+    this.featuredMindShare = this.route.snapshot.data.featuredMindShare;
   }
 }

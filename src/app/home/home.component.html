@@ -38,22 +38,23 @@
 </div>
 <div class="row row-eq-height our-thoughts">
   <div class="visible-md visible-lg col-md-6">
-    <img class="img-responsive full-img" [src]="mindShare.authorFullImageUrl" />
+    <img class="img-responsive full-img"
+         [src]="featuredMindShare.authorFullImageUrl" />
   </div>
   <div class="col-xs-12 col-md-6">
     <h2>Our Thoughts</h2>
     <h3>Mind Share</h3>
     <div class="visible-xs visible-sm">
-      <img [src]="mindShare.authorImageUrl" />
+      <img [src]="featuredMindShare.authorImageUrl" />
     </div>
-    <h4>{{mindShare.title}}</h4>
+    <h4>{{featuredMindShare.title}}</h4>
     <div class="author-info">
-      <span class="author">{{mindShare.author}}</span>
+      <span class="author">{{featuredMindShare.author}}</span>
       <span class="author-divider">/</span>
-      {{mindShare.authorTitle}}
+      {{featuredMindShare.authorTitle}}
     </div>
-    <p>{{mindShare.shortDescription}}</p>
-    <a [routerLink]="['/our-thoughts', mindShare.id]">Read more ></a>
+    <p>{{featuredMindShare.shortDescription}}</p>
+    <a [routerLink]="['/our-thoughts', featuredMindShare.id]">Read more ></a>
   </div>
 </div>
 <div class="row contact-us">

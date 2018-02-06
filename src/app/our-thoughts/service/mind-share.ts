@@ -6,4 +6,6 @@ export interface MindShare {
     authorFullImageUrl: string;
     authorTitle: string;
     shortDescription: string;
+    isFeatured: boolean;
+    industry: string;
 }

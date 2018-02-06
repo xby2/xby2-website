@@ -1,0 +1,13 @@
+<div class='col-sm-4'>
+    <div class='col-md-12'>
+      <img [src]="mindShare.authorImageUrl" />
+      <h4>{{mindShare.title}}</h4>
+      <div id="author">
+        <span class="author-name">{{mindShare.author}}</span><br />
+        <span class="author-title">{{mindShare.authorTitle}}</span>
+      </div>
+      <hr />
+      <p>{{mindShare.shortDescription}}</p>
+      <a [routerLink]="['/our-thoughts', mindShare.id]">Read more ></a>
+    </div>
+  </div>

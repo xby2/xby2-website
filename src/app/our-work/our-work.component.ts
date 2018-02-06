@@ -19,7 +19,6 @@ export class OurWorkComponent implements OnInit {
   tabletWidth = 768;
   tabletInitialClientStoryCount = 6;
   mobileInitialClientStoryCount = 3;
-  isLoadMoreButtonDisplayed: boolean;
 
   constructor(private clientStoryService: ClientStoryService) {
     this.determineInitialClientStoryCount();

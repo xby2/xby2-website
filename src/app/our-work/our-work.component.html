@@ -27,7 +27,7 @@
 
   <app-client-story-listing
     *ngFor='let clientStory of filteredClientStories |
-            slice: 0:clientStoryDisplayCount; index as i'
+            slice: 0:clientStoryDisplayCount'
     [clientStory]='clientStory'>
   </app-client-story-listing>
   <button class="btn btn-primary btn-xby2" type="button"

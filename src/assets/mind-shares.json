@@ -1,0 +1,101 @@
+[
+    {
+        "id": "software-development-is-like-toilet-training",
+        "title": "Software Development Is Like Toilet Training",
+        "author": "David Mitzel",
+        "authorImageUrl": "./assets/david-mitzel.png",
+        "authorFullImageUrl": "./assets/david-mitzel.png",
+        "authorTitle": "Architect & Senior Developer",
+        "shortDescription": "As I've helped my 2-year-old daughter through the first couple stages of toilet training, it occured to me that sometimes software development is a similiar process.",
+        "isFeatured": true,
+        "industry": "insurance"
+    },
+    {
+        "id": "software-development-is-like-toilet-training-2h",
+        "title": "Software Development Is Like Toilet Training 2h",
+        "author": "David Mitzel",
+        "authorImageUrl": "./assets/david-mitzel.png",
+        "authorFullImageUrl": "./assets/david-mitzel.png",
+        "authorTitle": "Architect & Senior Developer",
+        "shortDescription": "As I've helped my 2-year-old daughter through the first couple stages of toilet training, it occured to me that sometimes software development is a similiar process.",
+        "isFeatured": false,
+        "industry": "healthcare"
+    },
+    {
+        "id": "software-development-is-like-toilet-training-3i",
+        "title": "Software Development Is Like Toilet Training 3i",
+        "author": "David Mitzel",
+        "authorImageUrl": "./assets/david-mitzel.png",
+        "authorFullImageUrl": "./assets/david-mitzel.png",
+        "authorTitle": "Architect & Senior Developer",
+        "shortDescription": "As I've helped my 2-year-old daughter through the first couple stages of toilet training, it occured to me that sometimes software development is a similiar process.",
+        "isFeatured": false,
+        "industry": "insurance"
+    },
+    {
+        "id": "software-development-is-like-toilet-training-4h",
+        "title": "Software Development Is Like Toilet Training 4h",
+        "author": "David Mitzel",
+        "authorImageUrl": "./assets/david-mitzel.png",
+        "authorFullImageUrl": "./assets/david-mitzel.png",
+        "authorTitle": "Architect & Senior Developer",
+        "shortDescription": "As I've helped my 2-year-old daughter through the first couple stages of toilet training, it occured to me that sometimes software development is a similiar process.",
+        "isFeatured": false,
+        "industry": "healthcare"
+    },
+    {
+        "id": "software-development-is-like-toilet-training-5i",
+        "title": "Software Development Is Like Toilet Training 5i",
+        "author": "David Mitzel",
+        "authorImageUrl": "./assets/david-mitzel.png",
+        "authorFullImageUrl": "./assets/david-mitzel.png",
+        "authorTitle": "Architect & Senior Developer",
+        "shortDescription": "As I've helped my 2-year-old daughter through the first couple stages of toilet training, it occured to me that sometimes software development is a similiar process.",
+        "isFeatured": false,
+        "industry": "insurance"
+    },
+    {
+        "id": "software-development-is-like-toilet-training-6h",
+        "title": "Software Development Is Like Toilet Training 6h",
+        "author": "David Mitzel",
+        "authorImageUrl": "./assets/david-mitzel.png",
+        "authorFullImageUrl": "./assets/david-mitzel.png",
+        "authorTitle": "Architect & Senior Developer",
+        "shortDescription": "As I've helped my 2-year-old daughter through the first couple stages of toilet training, it occured to me that sometimes software development is a similiar process.",
+        "isFeatured": false,
+        "industry": "healthcare"
+    },
+    {
+        "id": "software-development-is-like-toilet-training-7i",
+        "title": "Software Development Is Like Toilet Training 7i",
+        "author": "David Mitzel",
+        "authorImageUrl": "./assets/david-mitzel.png",
+        "authorFullImageUrl": "./assets/david-mitzel.png",
+        "authorTitle": "Architect & Senior Developer",
+        "shortDescription": "As I've helped my 2-year-old daughter through the first couple stages of toilet training, it occured to me that sometimes software development is a similiar process.",
+        "isFeatured": false,
+        "industry": "insurance"
+    },
+    {
+        "id": "software-development-is-like-toilet-training-8h",
+        "title": "Software Development Is Like Toilet Training 8h",
+        "author": "David Mitzel",
+        "authorImageUrl": "./assets/david-mitzel.png",
+        "authorFullImageUrl": "./assets/david-mitzel.png",
+        "authorTitle": "Architect & Senior Developer",
+        "shortDescription": "As I've helped my 2-year-old daughter through the first couple stages of toilet training, it occured to me that sometimes software development is a similiar process.",
+        "isFeatured": false,
+        "industry": "healthcare"
+    },
+    {
+        "id": "software-development-is-like-toilet-training-9i",
+        "title": "Software Development Is Like Toilet Training 9i",
+        "author": "David Mitzel",
+        "authorImageUrl": "./assets/david-mitzel.png",
+        "authorFullImageUrl": "./assets/david-mitzel.png",
+        "authorTitle": "Architect & Senior Developer",
+        "shortDescription": "As I've helped my 2-year-old daughter through the first couple stages of toilet training, it occured to me that sometimes software development is a similiar process.",
+        "isFeatured": false,
+        "industry": "insurance"
+    }
+]

@@ -115,11 +115,11 @@
             "Data Integration",
             "Project Audit & Review"
         ],
-        "nextClientStoryId": "insurance-2",
+        "nextClientStoryId": "insurance-3",
         "content": "<h1>Opportunity<\/h1><p>As I\u2019ve helped my 2-year-old daughter through the first couple stages of toilet training, it occurred to me that sometimes software development is a similar process. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\/p><hr \/><h1>Insight<\/h1><p>As I\u2019ve helped my 2-year-old daughter through the first couple stages of toilet training, it occurred to me that sometimes software development is a similar process. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\/p><p>Veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\/p><hr \/><h1>Solution<\/h1><p>As I\u2019ve helped my 2-year-old daughter through the first couple stages of toilet training, it occurred to me that sometimes software development is a similar process. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<\/p>"
     },
     {
-        "id": "insurance-2",
+        "id": "insurance-3",
         "listingImageUrl": "./assets/client-story-listing.jpg",
         "imageUrl": "./assets/client-story.png",
         "title": "Insurance 3",
