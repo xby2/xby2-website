@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MindShare } from '../service/mind-share';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-our-thoughts-detail',
@@ -6,10 +8,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./our-thoughts-detail.component.css']
 })
 export class OurThoughtsDetailComponent implements OnInit {
+  mindShare: MindShare;
 
-  constructor() { }
+  constructor(private route: ActivatedRoute) { }
 
   ngOnInit() {
+    this.route.data.subscribe(
+      data => this.mindShare = data['mindShare']
+    );
   }
-
 }

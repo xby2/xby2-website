@@ -1,0 +1,65 @@
+h1 {
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+img {
+    width: 100%;
+}
+
+::ng-deep q {
+    quotes: "\201C" "\201D";
+    font-size: 26px;
+    margin: 0.25em 0;
+    line-height: 1.65;
+    position: relative;
+}
+
+::ng-deep q:before {
+    color: #faa500;
+    content: open-quote;
+    font-size: 96px;
+    line-height: 0.1em;
+    vertical-align: -55px;
+    margin-right: 10px;
+    font-weight: 600;
+}
+
+::ng-deep q:after {
+    color: #faa500;
+    content: close-quote;
+    font-size: 96px;
+    line-height: 0.1em;
+    vertical-align: -45px;
+    margin-left: 10px;
+    font-weight: 600;
+}
+
+::ng-deep hr {
+    border: 1px solid #ffa500;
+    margin: 40px 0;
+}
+
+::ng-deep p {
+    margin-bottom: 40px;
+}
+
+.col-xs-12 {
+    padding: 25px;
+}
+
+.col-xs-3, .col-xs-9 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.author-info, .publish-info {
+    text-transform: uppercase;
+    letter-spacing: -0.5px;
+    margin-bottom: 15px;
+}
+
+.author-info span.divider {
+    color: #faa500;
+    margin: 0 2px;
+}

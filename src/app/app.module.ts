@@ -32,6 +32,7 @@ import { ClientStoryListingComponent } from './our-work/client-story-listing/cli
 import { FeaturedMindShareResolver } from './our-thoughts/service/featured-mind-share.resolver';
 import { MindShareService } from './our-thoughts/service/mind-share.service';
 import { MindSharesResolver } from './our-thoughts/service/mind-shares.resolver';
+import { MindShareResolver } from './our-thoughts/service/mind-share.resolver';
 
 @NgModule({
   declarations: [
@@ -69,7 +70,8 @@ import { MindSharesResolver } from './our-thoughts/service/mind-shares.resolver'
     FeaturedClientStoriesResolver,
     FeaturedMindShareResolver,
     MindShareService,
-    MindSharesResolver
+    MindSharesResolver,
+    MindShareResolver
   ],
   bootstrap: [AppComponent]
 })

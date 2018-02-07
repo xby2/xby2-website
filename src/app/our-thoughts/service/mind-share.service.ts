@@ -18,4 +18,15 @@ export class MindShareService {
       .map(mindShares =>
            mindShares.filter(mindShare => mindShare.isFeatured)[0]);
   }
+
+  getMindShare(id: string): Observable<MindShare> {
+    return this.getMindShares()
+      .map(mindShares => {
+        const result = mindShares.filter(mindShare => mindShare.id)[0];
+        if (result) {
+          result.date = new Date(result.date);
+        }
+        return result;
+      });
+  }
 }

@@ -14,6 +14,7 @@ import { ExpertisesResolver } from './our-expertise/expertises.resolver';
 import { OurThoughtsDetailComponent } from './our-thoughts/our-thoughts-detail/our-thoughts-detail.component';
 import { FeaturedMindShareResolver } from './our-thoughts/service/featured-mind-share.resolver';
 import { MindSharesResolver } from './our-thoughts/service/mind-shares.resolver';
+import { MindShareResolver } from './our-thoughts/service/mind-share.resolver';
 
 const routes: Routes = [
   {
@@ -40,7 +41,8 @@ const routes: Routes = [
   },
   {
     path: 'our-thoughts/:id',
-    component: OurThoughtsDetailComponent
+    component: OurThoughtsDetailComponent,
+    resolve: { mindShare: MindShareResolver }
   },
   { path: 'contact-us', component: ContactUsComponent },
   { path: 'careers', component: CareersComponent },

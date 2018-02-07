@@ -8,4 +8,7 @@ export interface MindShare {
     shortDescription: string;
     isFeatured: boolean;
     industry: string;
+    date: Date;
+    readTimeInMinutes: number;
+    content: string;
 }

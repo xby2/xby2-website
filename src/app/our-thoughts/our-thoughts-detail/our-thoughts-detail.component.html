@@ -1,3 +1,26 @@
-<p>
-  our-thoughts-detail works!
-</p>
+<div class="row">
+  <div class="col-xs-12">
+    <h1>{{mindShare.title}}</h1>
+    <div class="author-info">
+      <span>By {{mindShare.author}}</span>
+      <span class="divider"> / </span>
+      <span>{{mindShare.date | date: 'fullDate'}}</span>
+      <span class="divider"> / </span>
+      <span>{{mindShare.readTimeInMinutes}} Minute Read</span>
+    </div>
+    <div class="col-xs-9">
+      <div class="publish-info">
+        Originally Published By
+        <a [href]="mindShare.publishUrl" target="_blank">
+          {{mindShare.publishName}}
+        </a>
+      </div>
+    </div>
+    <div class="col-xs-3">
+      <img [src]="mindShare.authorImageUrl" />
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12" [innerHtml]="mindShare.content"></div>
+</div>
