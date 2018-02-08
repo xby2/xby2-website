@@ -14,4 +14,5 @@ export interface MindShare {
     publishName: string;
     publishUrl: string;
     tags: string[];
+    nextMindShareId: string;
 }
