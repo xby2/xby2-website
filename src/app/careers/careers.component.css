@@ -1,0 +1,124 @@
+.row {
+    background-color: #fff;
+}
+
+/* This should be shared */
+
+button {
+    display: block;
+    background-color: #eb9c45;
+    border: 0;
+    border-radius: 0;
+    text-transform: uppercase;
+    padding: 7px 50px;
+    font-size: 16px;
+    font-weight: 600;
+
+    margin: 30px 0;
+}
+
+.btn-xby2[disabled]:hover, .btn-xby2[disabled]:focus {
+    background-color: #eb9c45;
+}
+
+.btn-xby2:focus {
+    background-color: #eba960;
+}
+
+.btn-xby2:active, .btn-xby2:hover {
+    background-color: #eba960;
+}
+
+
+h4 {
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 25px;
+}
+
+.col-xs-12 {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+/* end sharing */
+
+.col-xs-12.careers-wrapper {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.col-sm-5.careers-2-wrapper {
+    padding-left: 0;
+    padding-right: 5px;
+}
+
+#careers, #careers-2 {
+    position: relative;
+    display: table;
+    height: 293px;
+    width: 100%;
+    background: url('../../assets/careers.png') no-repeat top center;
+    background-size: 100% auto;
+}
+
+#careers {
+    background: url('../../assets/careers-2.png') no-repeat top center;
+    background-size: 100% auto;
+}
+
+h5 {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.perks {
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.45), 
+        rgba(0, 0, 0, 0.45)
+      ),
+      url('../../assets/perks-background.jpg') no-repeat top center;
+    background-size: cover;
+    color: #fff;
+}
+
+.perk {
+    padding: 10px 0;
+}
+
+@media (min-width: 768px) {
+    .col-xs-12.careers-wrapper {
+        padding-left: 5px;
+    }
+}
+
+
+#our-values {
+    margin: 5px 0;
+}
+
+/* our values buttons */
+.btn-group > .btn {
+    background-color: transparent;
+    padding: 5px 25px 5px 0;
+    color: #363636;
+    font-weight: normal;
+    box-shadow: none;
+    vertical-align: middle;
+}
+
+.btn-group > .active {
+    color: #f89829;
+}
+
+.btn-group > .active:focus {
+    outline: 0;
+}
+
+@media (min-width: 768px) {
+    .btn-group > .btn {
+        padding-right: 40px;
+    }
+}

@@ -1,3 +1,55 @@
-<p>
-  careers works!
-</p>
+<div class="row">
+  <div class="col-xs-12">
+    <h2>{{headerText}}</h2>
+    <h3>{{subheaderText}}</h3>
+    <button class="btn btn-primary btn-xby2">We're Hiring</button>
+  </div>
+</div>
+<div class="row">
+  <div class="hidden-xs col-sm-5 careers-2-wrapper">
+    <div id="careers-2"></div>
+  </div>
+  <div class="col-xs-12 col-sm-7 careers-wrapper">
+    <div id="careers"></div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <h4>Our Values</h4>
+    <div id="our-values">
+      <div class="btn-group" data-toggle="buttons"
+           id="our-value-buttons" >
+        <button *ngFor='let value of ourValues; let first = first'
+                 type="button"
+                 class="btn btn-primary"
+                [class.active]="first"
+                (click)="changeVisibleOurValuesDescription(value.title)">
+          {{value.title}}
+          <input type="radio" [id]="value.title">
+        </button>             
+      </div>
+    </div>
+    <p>
+      {{visibleOurValuesDescription}}
+    </p>
+  </div>
+</div>
+<div class="row perks">
+  <div class="col-xs-12">
+    <h4>Perks & Benefits</h4>
+    <div *ngFor='let perk of perks' class="col-xs-12 col-sm-4 perk">
+      <h5>{{perk.title}}</h5>
+      <p>{{perk.description}}</p>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <h4>Check Out Our Open Positions</h4>
+    <div *ngFor='let openPosition of openPositions'
+          class="col-xs-12 col-sm-4 perk">
+      <h5>{{openPosition.title}}</h5>
+      <p>{{openPosition.description}}</p>
+    </div>
+  </div>
+</div>

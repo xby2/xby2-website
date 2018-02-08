@@ -10,11 +10,12 @@
 }
 
 img {
-    width: 33%;
     display: block;
     margin: 0 auto;
     position: relative;
     top: -35px;
+    height: 90px;
+    width: 90px;
 }
 
 h4 {

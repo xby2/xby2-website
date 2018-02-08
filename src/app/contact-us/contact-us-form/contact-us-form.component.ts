@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
-import { ContactMessage } from './contact-message';
-import { ContactService } from './contact.service';
-import { ToastrService } from './toastr.service';
+import { ContactMessage } from '../service/contact-message';
+import { ToastrService } from '../service/toastr.service';
+import { ContactService } from '../service/contact.service';
 
 @Component({
   selector: 'app-contact-us-form',

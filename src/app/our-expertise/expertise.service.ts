@@ -5,11 +5,11 @@ import { HttpClient } from '@angular/common/http';
 
 @Injectable()
 export class ExpertiseService {
-  private _expertisesUrl = '../assets/expertises.json';
+  private url = '../assets/expertises.json';
 
-  constructor(private _httpClient: HttpClient) { }
+  constructor(private httpClient: HttpClient) { }
 
   getExpertises(): Observable<Expertise[]> {
-    return this._httpClient.get<Array<Expertise>>(this._expertisesUrl);
+    return this.httpClient.get<Array<Expertise>>(this.url);
   }
 }

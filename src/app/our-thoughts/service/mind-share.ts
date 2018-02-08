@@ -1,14 +1,14 @@
 export interface MindShare {
     id: string;
     title: string;
-    author: string;
+    authorName: string;
     authorImageUrl: string;
     authorFullImageUrl: string;
     authorTitle: string;
     shortDescription: string;
     isFeatured: boolean;
     industry: string;
-    date: Date;
+    publishDate: Date;
     readTimeInMinutes: number;
     content: string;
     publishName: string;

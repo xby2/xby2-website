@@ -24,9 +24,8 @@ export class MindShareService {
       .map(mindShares => {
         const result = mindShares.filter(mindShare => mindShare.id === id)[0];
         if (result) {
-          result.date = new Date(result.date);
+          result.publishDate = new Date(result.publishDate);
         }
-        console.log(result);
         return result;
       });
   }

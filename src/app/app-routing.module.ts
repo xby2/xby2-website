@@ -15,6 +15,7 @@ import { OurThoughtsDetailComponent } from './our-thoughts/our-thoughts-detail/o
 import { FeaturedMindShareResolver } from './our-thoughts/service/featured-mind-share.resolver';
 import { MindSharesResolver } from './our-thoughts/service/mind-shares.resolver';
 import { MindShareResolver } from './our-thoughts/service/mind-share.resolver';
+import { OpenPositionsResolver } from './careers/service/open-positions.resolver';
 
 const routes: Routes = [
   {
@@ -45,7 +46,11 @@ const routes: Routes = [
     resolve: { mindShare: MindShareResolver }
   },
   { path: 'contact-us', component: ContactUsComponent },
-  { path: 'careers', component: CareersComponent },
+  {
+    path: 'careers',
+    component: CareersComponent,
+    resolve: { openPositions: OpenPositionsResolver }
+  },
 ];
 
 @NgModule({

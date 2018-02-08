@@ -18,10 +18,7 @@ import { FooterComponent } from './footer/footer.component';
 import { LinksService } from './links.service';
 import { OurWorkDetailComponent } from './our-work/our-work-detail.component';
 import { FormsModule } from '@angular/forms';
-import { ContactUsFormComponent } from './contact-us/contact-us-form.component';
 import { ExpertiseService } from './our-expertise/expertise.service';
-import { ContactService } from './contact-us/contact.service';
-import { ToastrService } from './contact-us/toastr.service';
 import { ClientStoryService } from './our-work/client-story.service';
 import { ClientStoryResolver } from './our-work/client-story.resolver';
 import { FeaturedClientStoriesResolver } from './our-work/featured-client-stories.service';
@@ -33,6 +30,11 @@ import { FeaturedMindShareResolver } from './our-thoughts/service/featured-mind-
 import { MindShareService } from './our-thoughts/service/mind-share.service';
 import { MindSharesResolver } from './our-thoughts/service/mind-shares.resolver';
 import { MindShareResolver } from './our-thoughts/service/mind-share.resolver';
+import { ContactUsFormComponent } from './contact-us/contact-us-form/contact-us-form.component';
+import { ContactService } from './contact-us/service/contact.service';
+import { ToastrService } from './contact-us/service/toastr.service';
+import { OpenPositionsResolver } from './careers/service/open-positions.resolver';
+import { OpenPositionService } from './careers/service/open-position.service';
 
 @NgModule({
   declarations: [
@@ -71,7 +73,9 @@ import { MindShareResolver } from './our-thoughts/service/mind-share.resolver';
     FeaturedMindShareResolver,
     MindShareService,
     MindSharesResolver,
-    MindShareResolver
+    MindShareResolver,
+    OpenPositionsResolver,
+    OpenPositionService
   ],
   bootstrap: [AppComponent]
 })

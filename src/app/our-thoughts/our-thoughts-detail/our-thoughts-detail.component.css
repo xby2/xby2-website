@@ -82,6 +82,12 @@ h3 {
     margin-bottom: 40px;
 }
 
+::ng-deep h1 {
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 40px 0;
+}
+
 #tags-header {
     background-color: #fff;
     color: #000;
@@ -119,6 +125,10 @@ h3 {
 .details {
     padding-left: 0;
     padding-right: 0;
+}
+
+li {
+    white-space: nowrap;
 }
 
 @media (min-width: 768px) {

@@ -2,11 +2,12 @@
   <div class="col-xs-12">
     <h1>{{mindShare.title}}</h1>
     <div class="col-xs-12 details">
-      <img [src]="mindShare.authorImageUrl" />
+      <img *ngIf="mindShare.authorImageUrl"
+           [src]="'./assets/' + mindShare.authorImageUrl" />
       <div class="author-info">
-        <span>By {{mindShare.author}}</span>
+        <span>By {{mindShare.authorName}}</span>
         <span class="divider"> / </span>
-        <span>{{mindShare.date | date: 'fullDate'}}</span>
+        <span>{{mindShare.publishDate | date: 'fullDate'}}</span>
         <span class="divider"> / </span>
         <span>{{mindShare.readTimeInMinutes}} Minute Read</span>
       </div>

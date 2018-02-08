@@ -1,9 +1,10 @@
 <div class='col-sm-4'>
     <div class='col-md-12'>
-      <img [src]="mindShare.authorImageUrl" />
+      <img [style.visibility]="mindShare.authorImageUrl ? 'visible' : 'hidden'"
+           [src]="'./assets/' + mindShare.authorImageUrl" />
       <h4>{{mindShare.title}}</h4>
       <div id="author">
-        <span class="author-name">{{mindShare.author}}</span><br />
+        <span class="author-name">{{mindShare.authorName}}</span><br />
         <span class="author-title">{{mindShare.authorTitle}}</span>
       </div>
       <hr />
