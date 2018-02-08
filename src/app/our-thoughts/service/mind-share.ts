@@ -11,4 +11,6 @@ export interface MindShare {
     date: Date;
     readTimeInMinutes: number;
     content: string;
+    publishName: string;
+    publishUrl: string;
 }
