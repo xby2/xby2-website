@@ -9,6 +9,8 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class OurThoughtsDetailComponent implements OnInit {
   mindShare: MindShare;
+  nextMindShareDescription = 'A new and modern claims system for X company ' +
+  'veniam, quiz nostrud exercitation';
 
   constructor(private route: ActivatedRoute) { }
 

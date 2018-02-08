@@ -13,4 +13,5 @@ export interface MindShare {
     content: string;
     publishName: string;
     publishUrl: string;
+    tags: string[];
 }

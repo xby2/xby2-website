@@ -22,10 +22,11 @@ export class MindShareService {
   getMindShare(id: string): Observable<MindShare> {
     return this.getMindShares()
       .map(mindShares => {
-        const result = mindShares.filter(mindShare => mindShare.id)[0];
+        const result = mindShares.filter(mindShare => mindShare.id === id)[0];
         if (result) {
           result.date = new Date(result.date);
         }
+        console.log(result);
         return result;
       });
   }

@@ -4,7 +4,7 @@
         "title": "Software Development Is Like Toilet Training",
         "author": "David Mitzel",
         "authorImageUrl": "./assets/david-mitzel.png",
-        "authorFullImageUrl": "./assets/david-mitzel.png",
+        "authorFullImageUrl": "./assets/david-mitzel-full.png",
         "authorTitle": "Architect & Senior Developer",
         "shortDescription": "As I've helped my 2-year-old daughter through the first couple stages of toilet training, it occured to me that sometimes software development is a similiar process.",
         "isFeatured": true,
@@ -13,14 +13,19 @@
         "readTimeInMinutes": 5,
         "publishName": "Health Information & Technology",
         "publishUrl": "https://drive.google.com/file/d/0B7xJHW88i3NWb1BTLTU5WmNWNnM/view",
-        "content": "<p>As I\u2019ve helped my 2-year-old daughter through the first couple stages of toilet training, it occurred to me that sometimes software development is a similar process. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<\/p><hr \/><q>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.<\/q><hr \/><p>Veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\/p>"
+        "content": "<p>As I\u2019ve helped my 2-year-old daughter through the first couple stages of toilet training, it occurred to me that sometimes software development is a similar process. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<\/p><hr \/><q>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.<\/q><hr \/><p>Veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\/p>",
+        "tags": [
+            "agile",
+            "implementation"
+        ],
+        "nextMindShareId": "software-development-is-like-toilet-training-2h"
     },
     {
         "id": "software-development-is-like-toilet-training-2h",
         "title": "Software Development Is Like Toilet Training 2h",
         "author": "David Mitzel",
         "authorImageUrl": "./assets/david-mitzel.png",
-        "authorFullImageUrl": "./assets/david-mitzel.png",
+        "authorFullImageUrl": "./assets/david-mitzel-full.png",
         "authorTitle": "Architect & Senior Developer",
         "shortDescription": "As I've helped my 2-year-old daughter through the first couple stages of toilet training, it occured to me that sometimes software development is a similiar process.",
         "isFeatured": false,
@@ -28,14 +33,20 @@
         "date": "09/01/2017",
         "readTimeInMinutes": 3,
         "publishName": "Health Information & Technology",
-        "publishUrl": "https://drive.google.com/file/d/0B7xJHW88i3NWb1BTLTU5WmNWNnM/view"
+        "publishUrl": "https://drive.google.com/file/d/0B7xJHW88i3NWb1BTLTU5WmNWNnM/view",
+        "content": "<p>As I\u2019ve helped my 2-year-old daughter through the first couple stages of toilet training, it occurred to me that sometimes software development is a similar process. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<\/p><hr \/><q>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.<\/q><hr \/><p>Veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\/p>",
+        "tags": [
+            "agile",
+            "implementation"
+        ],
+        "nextMindShareId": "software-development-is-like-toilet-training-3i"
     },
     {
         "id": "software-development-is-like-toilet-training-3i",
         "title": "Software Development Is Like Toilet Training 3i",
         "author": "David Mitzel",
         "authorImageUrl": "./assets/david-mitzel.png",
-        "authorFullImageUrl": "./assets/david-mitzel.png",
+        "authorFullImageUrl": "./assets/david-mitzel-full.png",
         "authorTitle": "Architect & Senior Developer",
         "shortDescription": "As I've helped my 2-year-old daughter through the first couple stages of toilet training, it occured to me that sometimes software development is a similiar process.",
         "isFeatured": false,
@@ -43,14 +54,20 @@
         "date": "09/02/2017",
         "readTimeInMinutes": 5,
         "publishName": "Health Information & Technology",
-        "publishUrl": "https://drive.google.com/file/d/0B7xJHW88i3NWb1BTLTU5WmNWNnM/view"
+        "publishUrl": "https://drive.google.com/file/d/0B7xJHW88i3NWb1BTLTU5WmNWNnM/view",
+        "content": "<p>As I\u2019ve helped my 2-year-old daughter through the first couple stages of toilet training, it occurred to me that sometimes software development is a similar process. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<\/p><hr \/><q>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.<\/q><hr \/><p>Veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\/p>",
+        "tags": [
+            "agile",
+            "implementation"
+        ],
+        "nextMindShareId": "software-development-is-like-toilet-training-4h"
     },
     {
         "id": "software-development-is-like-toilet-training-4h",
         "title": "Software Development Is Like Toilet Training 4h",
         "author": "David Mitzel",
         "authorImageUrl": "./assets/david-mitzel.png",
-        "authorFullImageUrl": "./assets/david-mitzel.png",
+        "authorFullImageUrl": "./assets/david-mitzel-full.png",
         "authorTitle": "Architect & Senior Developer",
         "shortDescription": "As I've helped my 2-year-old daughter through the first couple stages of toilet training, it occured to me that sometimes software development is a similiar process.",
         "isFeatured": false,
@@ -58,14 +75,20 @@
         "date": "09/02/2017",
         "readTimeInMinutes": 5,
         "publishName": "Health Information & Technology",
-        "publishUrl": "https://drive.google.com/file/d/0B7xJHW88i3NWb1BTLTU5WmNWNnM/view"
+        "publishUrl": "https://drive.google.com/file/d/0B7xJHW88i3NWb1BTLTU5WmNWNnM/view",
+        "content": "<p>As I\u2019ve helped my 2-year-old daughter through the first couple stages of toilet training, it occurred to me that sometimes software development is a similar process. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<\/p><hr \/><q>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.<\/q><hr \/><p>Veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\/p>",
+        "tags": [
+            "agile",
+            "implementation"
+        ],
+        "nextMindShareId": "software-development-is-like-toilet-training-5i"
     },
     {
         "id": "software-development-is-like-toilet-training-5i",
         "title": "Software Development Is Like Toilet Training 5i",
         "author": "David Mitzel",
         "authorImageUrl": "./assets/david-mitzel.png",
-        "authorFullImageUrl": "./assets/david-mitzel.png",
+        "authorFullImageUrl": "./assets/david-mitzel-full.png",
         "authorTitle": "Architect & Senior Developer",
         "shortDescription": "As I've helped my 2-year-old daughter through the first couple stages of toilet training, it occured to me that sometimes software development is a similiar process.",
         "isFeatured": false,
@@ -73,14 +96,20 @@
         "date": "09/02/2017",
         "readTimeInMinutes": 5,
         "publishName": "Health Information & Technology",
-        "publishUrl": "https://drive.google.com/file/d/0B7xJHW88i3NWb1BTLTU5WmNWNnM/view"
+        "publishUrl": "https://drive.google.com/file/d/0B7xJHW88i3NWb1BTLTU5WmNWNnM/view",
+        "content": "<p>As I\u2019ve helped my 2-year-old daughter through the first couple stages of toilet training, it occurred to me that sometimes software development is a similar process. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<\/p><hr \/><q>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.<\/q><hr \/><p>Veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\/p>",
+        "tags": [
+            "agile",
+            "implementation"
+        ],
+        "nextMindShareId": "software-development-is-like-toilet-training-6h"
     },
     {
         "id": "software-development-is-like-toilet-training-6h",
         "title": "Software Development Is Like Toilet Training 6h",
         "author": "David Mitzel",
         "authorImageUrl": "./assets/david-mitzel.png",
-        "authorFullImageUrl": "./assets/david-mitzel.png",
+        "authorFullImageUrl": "./assets/david-mitzel-full.png",
         "authorTitle": "Architect & Senior Developer",
         "shortDescription": "As I've helped my 2-year-old daughter through the first couple stages of toilet training, it occured to me that sometimes software development is a similiar process.",
         "isFeatured": false,
@@ -88,14 +117,20 @@
         "date": "09/02/2017",
         "readTimeInMinutes": 5,
         "publishName": "Health Information & Technology",
-        "publishUrl": "https://drive.google.com/file/d/0B7xJHW88i3NWb1BTLTU5WmNWNnM/view"
+        "publishUrl": "https://drive.google.com/file/d/0B7xJHW88i3NWb1BTLTU5WmNWNnM/view",
+        "content": "<p>As I\u2019ve helped my 2-year-old daughter through the first couple stages of toilet training, it occurred to me that sometimes software development is a similar process. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<\/p><hr \/><q>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.<\/q><hr \/><p>Veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\/p>",
+        "tags": [
+            "agile",
+            "implementation"
+        ],
+        "nextMindShareId": "software-development-is-like-toilet-training-7i"
     },
     {
         "id": "software-development-is-like-toilet-training-7i",
         "title": "Software Development Is Like Toilet Training 7i",
         "author": "David Mitzel",
         "authorImageUrl": "./assets/david-mitzel.png",
-        "authorFullImageUrl": "./assets/david-mitzel.png",
+        "authorFullImageUrl": "./assets/david-mitzel-full.png",
         "authorTitle": "Architect & Senior Developer",
         "shortDescription": "As I've helped my 2-year-old daughter through the first couple stages of toilet training, it occured to me that sometimes software development is a similiar process.",
         "isFeatured": false,
@@ -103,14 +138,20 @@
         "date": "09/02/2017",
         "readTimeInMinutes": 5,
         "publishName": "Health Information & Technology",
-        "publishUrl": "https://drive.google.com/file/d/0B7xJHW88i3NWb1BTLTU5WmNWNnM/view"
+        "publishUrl": "https://drive.google.com/file/d/0B7xJHW88i3NWb1BTLTU5WmNWNnM/view",
+        "content": "<p>As I\u2019ve helped my 2-year-old daughter through the first couple stages of toilet training, it occurred to me that sometimes software development is a similar process. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<\/p><hr \/><q>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.<\/q><hr \/><p>Veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\/p>",
+        "tags": [
+            "agile",
+            "implementation"
+        ],
+        "nextMindShareId": "software-development-is-like-toilet-training-8h"
     },
     {
         "id": "software-development-is-like-toilet-training-8h",
         "title": "Software Development Is Like Toilet Training 8h",
         "author": "David Mitzel",
         "authorImageUrl": "./assets/david-mitzel.png",
-        "authorFullImageUrl": "./assets/david-mitzel.png",
+        "authorFullImageUrl": "./assets/david-mitzel-full.png",
         "authorTitle": "Architect & Senior Developer",
         "shortDescription": "As I've helped my 2-year-old daughter through the first couple stages of toilet training, it occured to me that sometimes software development is a similiar process.",
         "isFeatured": false,
@@ -118,14 +159,20 @@
         "date": "09/02/2017",
         "readTimeInMinutes": 5,
         "publishName": "Health Information & Technology",
-        "publishUrl": "https://drive.google.com/file/d/0B7xJHW88i3NWb1BTLTU5WmNWNnM/view"
+        "publishUrl": "https://drive.google.com/file/d/0B7xJHW88i3NWb1BTLTU5WmNWNnM/view",
+        "content": "<p>As I\u2019ve helped my 2-year-old daughter through the first couple stages of toilet training, it occurred to me that sometimes software development is a similar process. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<\/p><hr \/><q>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.<\/q><hr \/><p>Veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\/p>",
+        "tags": [
+            "agile",
+            "implementation"
+        ],
+        "nextMindShareId": "software-development-is-like-toilet-training-9i"
     },
     {
         "id": "software-development-is-like-toilet-training-9i",
         "title": "Software Development Is Like Toilet Training 9i",
         "author": "David Mitzel",
         "authorImageUrl": "./assets/david-mitzel.png",
-        "authorFullImageUrl": "./assets/david-mitzel.png",
+        "authorFullImageUrl": "./assets/david-mitzel-full.png",
         "authorTitle": "Architect & Senior Developer",
         "shortDescription": "As I've helped my 2-year-old daughter through the first couple stages of toilet training, it occured to me that sometimes software development is a similiar process.",
         "isFeatured": false,
@@ -133,6 +180,11 @@
         "date": "09/02/2017",
         "readTimeInMinutes": 5,
         "publishName": "Health Information & Technology",
-        "publishUrl": "https://drive.google.com/file/d/0B7xJHW88i3NWb1BTLTU5WmNWNnM/view"
+        "publishUrl": "https://drive.google.com/file/d/0B7xJHW88i3NWb1BTLTU5WmNWNnM/view",
+        "content": "<p>As I\u2019ve helped my 2-year-old daughter through the first couple stages of toilet training, it occurred to me that sometimes software development is a similar process. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<\/p><hr \/><q>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.<\/q><hr \/><p>Veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\/p>",
+        "tags": [
+            "agile",
+            "implementation"
+        ]
     }
 ]
