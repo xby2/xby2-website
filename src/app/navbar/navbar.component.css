@@ -28,7 +28,11 @@
 }
 
 .modal-dialog .navbar-header {
-  background-color: #fff;
+  background-color: #444;
+}
+
+.modal-dialog .navbar-header .navbar-toggle {
+  color: #fff;
 }
 
 .modal-nav-content {

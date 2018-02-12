@@ -3,6 +3,8 @@ import { CompanyValue } from './service/company-value';
 import { Perk } from './service/perk';
 import { ActivatedRoute } from '@angular/router';
 import { OpenPosition } from './service/open-position';
+import { CollectedOpenPosition } from './service/collected-open-position';
+import { FrequentlyAskedQuestion } from './service/frequently-asked-question';
 
 @Component({
   selector: 'app-careers',
@@ -110,12 +112,61 @@ export class CareersComponent implements OnInit {
     },
   ];
   openPositions: OpenPosition[];
+  collectedOpenPositions: CollectedOpenPosition[];
+  frequentlyAskedQuestions: FrequentlyAskedQuestion[] = [
+    {
+      question: 'What kind of workspaces will be available?',
+      answer: 'Our workspaces accomodate the needs of our various ' +
+      'capabilities and how they operate (for example, dual monitors and ' +
+      'standing desks).  Our intention is to have spaces that offer more ' +
+      'collaboration and various work styles and business needs.  We\'ll all ' +
+      'have access to a variety of options from meeting rooms, lounges, open ' +
+      'team tables, quiet zones, and more.'
+    },
+    {
+      question: 'Can I bike to work?',
+      answer: 'Our workspaces accomodate the needs of our various ' +
+      'capabilities and how they operate (for example, dual monitors and ' +
+      'standing desks).  Our intention is to have spaces that offer more ' +
+      'collaboration and various work styles and business needs.  We\'ll all ' +
+      'have access to a variety of options from meeting rooms, lounges, open ' +
+      'team tables, quiet zones, and more.'
+    },
+    {
+      question: 'I enjoy awkwardly running into my co-workers wearing sweaty ' +
+      'gym clothes.  Will there be a gym?',
+      answer: 'Our workspaces accomodate the needs of our various ' +
+      'capabilities and how they operate (for example, dual monitors and ' +
+      'standing desks).  Our intention is to have spaces that offer more ' +
+      'collaboration and various work styles and business needs.  We\'ll all ' +
+      'have access to a variety of options from meeting rooms, lounges, open ' +
+      'team tables, quiet zones, and more.'
+    },
+    {
+      question: 'Random question #5',
+      answer: 'Our workspaces accomodate the needs of our various ' +
+      'capabilities and how they operate (for example, dual monitors and ' +
+      'standing desks).  Our intention is to have spaces that offer more ' +
+      'collaboration and various work styles and business needs.  We\'ll all ' +
+      'have access to a variety of options from meeting rooms, lounges, open ' +
+      'team tables, quiet zones, and more.'
+    },
+    {
+      question: 'Random question #5',
+      answer: 'Our workspaces accomodate the needs of our various ' +
+      'capabilities and how they operate (for example, dual monitors and ' +
+      'standing desks).  Our intention is to have spaces that offer more ' +
+      'collaboration and various work styles and business needs.  We\'ll all ' +
+      'have access to a variety of options from meeting rooms, lounges, open ' +
+      'team tables, quiet zones, and more.'
+    },
+  ];
 
   constructor(private route: ActivatedRoute) { }
 
   ngOnInit() {
     this.openPositions = this.route.snapshot.data.openPositions;
-    console.log(this.openPositions);
+    this.collectedOpenPositions = this.collectOpenPositions(this.openPositions);
   }
 
   changeVisibleOurValuesDescription(title: string) {
@@ -124,6 +175,40 @@ export class CareersComponent implements OnInit {
 
     if (selectedOurValue) {
       this.visibleOurValuesDescription = selectedOurValue.description;
+    }
+  }
+
+  private collectOpenPositions(openPositions: OpenPosition[]) {
+    const collectedOpenPositions: CollectedOpenPosition[] = [];
+
+    openPositions.forEach(openPosition => {
+      const collectedOpenPosition: CollectedOpenPosition =
+        collectedOpenPositions.filter(c => c.title === openPosition.title)[0];
+
+      if (collectedOpenPosition) {
+        collectedOpenPosition
+                        .locations
+                        .push(this.convertLocationName(openPosition.location));
+        collectedOpenPosition.locations.sort();
+      } else {
+        collectedOpenPositions.push({
+          title: openPosition.title,
+          locations: [this.convertLocationName(openPosition.location)]
+        });
+      }
+    });
+
+    return collectedOpenPositions;
+  }
+
+  private convertLocationName(locationName: string): string {
+    switch (locationName) {
+      case 'Metro Detroit':
+        return 'Detroit';
+      case 'Greater Toronto':
+        return 'Toronto';
+      default:
+        return locationName;
     }
   }
 }

@@ -46,10 +46,37 @@
 <div class="row">
   <div class="col-xs-12">
     <h4>Check Out Our Open Positions</h4>
-    <div *ngFor='let openPosition of openPositions'
-          class="col-xs-12 col-sm-4 perk">
-      <h5>{{openPosition.title}}</h5>
-      <p>{{openPosition.description}}</p>
+    <button *ngFor='let collectedOpenPosition of collectedOpenPositions'
+          class="col-xs-12 col-sm-4 open-position"
+          data-toggle="collapse"
+          data-target="#collapseExample" >
+      <div class="count">
+        {{collectedOpenPosition.locations.length}}
+      </div>
+      <h5>{{collectedOpenPosition.title}}</h5>
+      <ul>
+        <li *ngFor='let location of collectedOpenPosition.locations'>
+          {{location}}
+        </li>
+      </ul>
+    </button>
+    <div class="collapse" [id]="collapseExample">
+        <div class="card card-body">
+          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+          terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer
+          labore wes anderson cred nesciunt sapiente ea proident.
+        </div>
+      </div>
+  </div>
+</div>
+<div class="row faq">
+  <div class="col-xs-12">
+    <h4>Frequently Asked Questions</h4>
+    <div id="faq-accordion">
+      <div *ngFor="let frequentlyAskedQuestion of frequentlyAskedQuestions"
+            class="frequently-asked-question">
+        <button>{{frequentlyAskedQuestion.question}}</button>
+      </div>
     </div>
   </div>
 </div>

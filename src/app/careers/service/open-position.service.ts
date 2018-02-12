@@ -17,7 +17,7 @@ export class OpenPositionService {
         return leverJobPostings.map(leverJobPosting => {
           const openPosition: OpenPosition = {
             title: leverJobPosting.text,
-            locations: ['test']
+            location: leverJobPosting.categories.location
           };
           return openPosition;
         });
