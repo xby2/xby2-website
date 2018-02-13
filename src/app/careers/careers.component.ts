@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { CompanyValue } from './service/company-value';
-import { Perk } from './service/perk';
 import { ActivatedRoute } from '@angular/router';
-import { OpenPosition } from './service/open-position';
-import { CollectedOpenPosition } from './service/collected-open-position';
-import { FrequentlyAskedQuestion } from './service/frequently-asked-question';
+import { CompanyValue } from './model/company-value';
+import { Perk } from './model/perk';
+import { OpenPosition } from './model/open-position';
+import { CollectedOpenPosition } from './model/collected-open-position';
+import { FrequentlyAskedQuestion } from './model/frequently-asked-question';
 
 @Component({
   selector: 'app-careers',

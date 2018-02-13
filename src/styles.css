@@ -25,8 +25,8 @@ h2 {
 }
 
 h3 {
-    color: #363636;
-    font-weight: bold;
+    color: #464646;
+    font-weight: 600;
 }
 
 a.xby2-link {
@@ -48,6 +48,16 @@ div.component-content {
     padding: 15px;
 }
 
+.col-xs-12.full-width {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.col-xs-12 {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
 .row-eq-height {
     display: -webkit-box;
     display: -webkit-flex;
@@ -56,9 +66,9 @@ div.component-content {
 }
 
 @media (min-width: 992px) {
-    body {
-        margin-left: 5%;
-        margin-right: 5%;
+    .col-xs-12 {
+        padding-left: 60px;
+        padding-right: 60px;
     }
 
     div.component-header, div.component-content {

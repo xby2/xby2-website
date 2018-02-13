@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { ClientStory } from './client-story';
-import { ClientStoryService } from './client-story.service';
+import { ClientStoryService } from './service/client-story.service';
+import { ClientStory } from './model/client-story';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-our-work',
@@ -20,17 +21,13 @@ export class OurWorkComponent implements OnInit {
   tabletInitialClientStoryCount = 6;
   mobileInitialClientStoryCount = 3;
 
-  constructor(private clientStoryService: ClientStoryService) {
+  constructor(private route: ActivatedRoute) {
     this.determineInitialClientStoryCount();
   }
 
   ngOnInit() {
-    this.clientStoryService.getClientStories().subscribe(
-      response => {
-        this.clientStories = response,
-        this.filteredClientStories = response;
-      }
-    );
+    this.clientStories = this.route.snapshot.data.clientStories,
+    this.filteredClientStories = this.clientStories;
   }
 
   loadMoreClientStories() {

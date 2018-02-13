@@ -1,8 +1,12 @@
-<div class="row">
+<div class="row top">
   <div class="col-sm-4">
     <app-xby2-logo></app-xby2-logo>
     <p>
       {{description}}
+    </p>
+    <p class="hidden-xs">
+      &copy; X by 2 LLC<br />
+      All rights Reserved
     </p>
   </div>
   <div class="col-sm-4">
@@ -15,21 +19,35 @@
     </ul>
   </div>
   <div class="col-sm-4">
-    <a *ngFor='let socialMediaLink of socialMediaLinks'
-      href="{{socialMediaLink.href}}" target="_blank">
-      <img src="{{socialMediaLink.imageUrl}}" />
-    </a>
-    <div class='location' *ngFor='let location of locations'>
-      <div class='name'>{{location.name}}</div>
-      <span class='address'>
-      {{location.address}}<br />
-      {{location.city}}, {{location.state}} {{location.zip}}<br />
-      {{location.phone}}
-      </span>
+    <div class="row">
+      <div class="col-xs-12 hidden-xs">
+        <a *ngFor='let socialMediaLink of socialMediaLinks'
+            href="{{socialMediaLink.href}}" target="_blank">
+          <img src="{{socialMediaLink.imageUrl}}" />
+        </a>
+      </div>
+      <div class="col-xs-12">
+        <div class='location' *ngFor='let location of locations'>
+          <div class='name'>{{location.name}}</div>
+            <span class='address'>
+            {{location.address}}<br />
+            {{location.city}}, {{location.state}} {{location.zip}}<br />
+            {{location.phone}}
+          </span>
+        </div>
+      </div>
+      <div class="col-xs-12 visible-xs">
+          <a *ngFor='let socialMediaLink of socialMediaLinks'
+            href="{{socialMediaLink.href}}" target="_blank">
+            <img src="{{socialMediaLink.imageUrl}}" />
+          </a>
+      </div>
+      <div class="col-xs-12 visible-xs">
+          <p>
+            &copy; X by 2 LLC<br />
+            All rights Reserved
+          </p>
+      </div>
     </div>
   </div>
-  <p class="copyright">
-    &copy; X by 2 LLC<br />
-    All rights Reserved
-  </p>
 </div>

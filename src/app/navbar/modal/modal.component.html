@@ -1,0 +1,27 @@
+<div class="modal" id="nav-modal" tabindex="-1" role="dialog"
+     aria-labelledby="xby2-modal">
+  <div class="modal-dialog" role="document">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed"
+              data-toggle="modal" data-target="#nav-modal"
+              aria-expanded="false" aria-controls="navbar">
+        <span>Close</span>
+      </button>
+      <a class="navbar-brand" href="#">
+        <app-xby2-logo></app-xby2-logo>
+      </a>
+    </div>
+    <div class="modal-nav-content">
+      <div class="modal-nav-body">
+        <ul>
+          <li class="modal-nav-item" *ngFor='let link of links'>
+            <a class="modal-nav-link" [routerLink]="link.link"
+               onclick="$('#nav-modal').modal('hide')">
+              {{link.label}}
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

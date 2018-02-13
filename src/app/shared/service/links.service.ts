@@ -1,12 +1,12 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import 'rxjs/add/operator/map';
-import { Link } from './link';
 import { Observable } from 'rxjs/Observable';
+import { Link } from '../model/link';
 
 @Injectable()
 export class LinksService {
-  private _linksUrl = '../assets/links.json';
+  private _linksUrl = '../assets/data/links.json';
 
   constructor(private _httpClient: HttpClient) { }
 

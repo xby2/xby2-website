@@ -5,7 +5,7 @@ import { HttpClient } from '@angular/common/http';
 
 @Injectable()
 export class ExpertiseService {
-  private url = '../assets/expertises.json';
+  private url = '../assets/data/expertises.json';
 
   constructor(private httpClient: HttpClient) { }
 

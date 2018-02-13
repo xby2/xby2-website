@@ -15,17 +15,11 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 import { CareersComponent } from './careers/careers.component';
 import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
-import { LinksService } from './links.service';
-import { OurWorkDetailComponent } from './our-work/our-work-detail.component';
 import { FormsModule } from '@angular/forms';
 import { ExpertiseService } from './our-expertise/expertise.service';
-import { ClientStoryService } from './our-work/client-story.service';
-import { ClientStoryResolver } from './our-work/client-story.resolver';
-import { FeaturedClientStoriesResolver } from './our-work/featured-client-stories.service';
 import { ExpertisesResolver } from './our-expertise/expertises.resolver';
 import { OurThoughtsDetailComponent } from './our-thoughts/our-thoughts-detail/our-thoughts-detail.component';
 import { MindShareListingComponent } from './our-thoughts/mind-share-listing/mind-share-listing.component';
-import { ClientStoryListingComponent } from './our-work/client-story-listing/client-story-listing.component';
 import { FeaturedMindShareResolver } from './our-thoughts/service/featured-mind-share.resolver';
 import { MindShareService } from './our-thoughts/service/mind-share.service';
 import { MindSharesResolver } from './our-thoughts/service/mind-shares.resolver';
@@ -35,6 +29,14 @@ import { ContactService } from './contact-us/service/contact.service';
 import { ToastrService } from './contact-us/service/toastr.service';
 import { OpenPositionsResolver } from './careers/service/open-positions.resolver';
 import { OpenPositionService } from './careers/service/open-position.service';
+import { OurWorkDetailComponent } from './our-work/our-work-detail/our-work-detail.component';
+import { ClientStoryService } from './our-work/service/client-story.service';
+import { ClientStoryResolver } from './our-work/service/client-story.resolver';
+import { FeaturedClientStoriesResolver } from './our-work/service/featured-client-stories.resolver';
+import { LinksService } from './shared/service/links.service';
+import { ModalComponent } from './navbar/modal/modal.component';
+import { HomeExpertiseComponent } from './home/home-expertise/home-expertise.component';
+import { ClientStoryListingComponent } from './shared/client-story-listing/client-story-listing.component';
 
 @NgModule({
   declarations: [
@@ -53,7 +55,9 @@ import { OpenPositionService } from './careers/service/open-position.service';
     OurThoughtsDetailComponent,
     ContactUsFormComponent,
     ClientStoryListingComponent,
-    MindShareListingComponent
+    MindShareListingComponent,
+    ModalComponent,
+    HomeExpertiseComponent
   ],
   imports: [
     BrowserModule,

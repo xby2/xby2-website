@@ -2,6 +2,7 @@ h1 {
     font-weight: 600;
     margin-bottom: 20px;
     text-transform: none;
+    border-bottom: 0;
 }
 
 img {
@@ -86,6 +87,7 @@ h3 {
     text-transform: uppercase;
     font-weight: 600;
     margin: 40px 0;
+    border-bottom: 1px solid #ffa500;
 }
 
 #tags-header {

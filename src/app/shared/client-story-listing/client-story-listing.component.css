@@ -1,8 +1,8 @@
-.col-md-12 {
+.col-sm-4 {
     background-color: #fff;
     padding-left: 0;
     padding-right: 0;
-    margin-bottom: 20px;
+    margin: 0 25px 20px 25px;
 }
 
 img {
@@ -12,19 +12,21 @@ img {
 h4 {
     text-align: center;
     color: #464646;
-    margin: 20px auto 0 auto;
+    margin: 15px auto 0 auto;
     width: 80%;
+    font-size: 22px;
 }
 
-.col-md-12 hr {
+hr {
     border: 1px solid #ffa500;
     width: 35%;
-    margin: 20px auto;
+    margin: 10px auto;
 }
 
 p {
-    margin: 20px;
+    margin: 15px;
     text-align: center;
+    line-height: 1.2;
 }
 
 a {
@@ -33,14 +35,16 @@ a {
     display: block;
     text-align: center;
     font-weight: 600;
-    padding: 15px;
+    padding: 10px;
 }
 
 @media (min-width: 768px) {
-    .col-md-12 {
-        height: 375px;
+    .col-sm-4 {
+        height: 330px;
+        width: 32%;
+        margin: 0 1% 0 0;
     }
-    
+
     a {
         position: absolute;
         margin-left: auto;
@@ -48,5 +52,21 @@ a {
         left: 0;
         right: 0;
         bottom: 5px;
+    }
+
+    h4 {
+        height: 50px;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-sm-4 {
+        height: 350px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .col-sm-4 {
+        height: 370px;
     }
 }

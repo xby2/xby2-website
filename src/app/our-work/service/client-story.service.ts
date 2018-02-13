@@ -1,11 +1,11 @@
 import { Injectable } from '@angular/core';
-import { ClientStory } from './client-story';
 import { Observable } from 'rxjs/Observable';
 import { HttpClient } from '@angular/common/http';
+import { ClientStory } from '../model/client-story';
 
 @Injectable()
 export class ClientStoryService {
-  private url = '../assets/client-stories.json';
+  private url = '../assets/data/client-stories.json';
 
   constructor(private httpClient: HttpClient) { }
 

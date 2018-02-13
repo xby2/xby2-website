@@ -1,0 +1,53 @@
+.home-expertise {
+    height: 155px;
+}
+
+.home-expertise-img-wrapper {
+    height: 60px;
+}
+
+.home-expertise img {
+    display: block;
+    margin: 0 auto;
+    width: 45px;
+}
+
+.home-expertise a {
+    color: #464646;
+    text-decoration: none;
+}
+
+.home-expertise div.title {
+    color: #ffa500;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+}
+
+.home-expertise div.title a {
+    color: #ffa500;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.home-expertise div.title::after {
+    content: " >";
+}
+
+.home-expertise p {
+    line-height: 1;
+    text-align: center;
+}
+
+.home-expertise p span {
+    display: block;
+    color: #ffa500;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 2;
+}
+
+.col-xs-6 {
+    padding-left: 25px;
+    padding-right: 25px;
+}

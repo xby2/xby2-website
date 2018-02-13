@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
-import { ClientStory } from './client-story';
 import { Resolve, ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
 import { ClientStoryService } from './client-story.service';
 import { Observable } from 'rxjs/Observable';
+import { ClientStory } from '../model/client-story';
 
 @Injectable()
 export class FeaturedClientStoriesResolver implements Resolve<ClientStory[]> {

@@ -1,42 +1,31 @@
 <div class="row">
-  <div class="hero-image">
-    <div class="caption post-content">
-      {{title}}
+  <div class="col-xs-12 full-width">
+    <div class="hero-image">
+      <h1 class="caption post-content">
+        We are Architects for the<br />
+        Insurance & Healthcare Industries
+      </h1>
     </div>
   </div>
 </div>
-<div class="row">
+<div class="row content">
   <h2>Our Expertise</h2>
   <h3>What We Do</h3>
-  <div *ngFor='let expertise of expertises'
-        class='home-expertise {{expertise.class}}'>
-    <div class="home-expertise-img-wrapper">
-        <a routerLink="{{expertise.expertiseLink}}">
-            <img [src]="expertise.imageUrl" />
-        </a>
-    </div>
-    <div class="title">
-      <a routerLink="{{expertise.expertiseLink}}">
-        {{expertise.title}}
-      </a>
-    </div>
-    <p class="hidden-xs">
-      <a routerLink="{{expertise.expertiseLink}}">
-        {{expertise.text}}
-        <span>></span>
-      </a>
-    </p>
-  </div>
+  <app-home-expertise *ngFor="let expertise of expertises"
+                      [expertise]="expertise">
+  </app-home-expertise>
 </div>
-<div class="row our-work">
+<div class="row content our-work">
   <h2>Our Work</h2>
   <h3>Client Stories</h3>
-  <app-client-story-listing *ngFor='let clientStory of featuredClientStories'
-                            [clientStory]='clientStory'>
-  </app-client-story-listing>
+  <div id="client-story-listings">
+    <app-client-story-listing *ngFor='let clientStory of featuredClientStories'
+                              [clientStory]='clientStory'>
+    </app-client-story-listing>
+  </div>
   <a class="col-sm-12 see-all" routerLink='/our-work'>See All ></a>
 </div>
-<div class="row row-eq-height our-thoughts">
+<div class="row row-eq-height content our-thoughts">
   <div class="visible-md visible-lg col-md-6">
     <img class="img-responsive full-img"
          [src]="'./assets/' + featuredMindShare.authorFullImageUrl" />

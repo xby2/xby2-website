@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { Link } from '../link';
-import { Location } from '../location';
-import { SocialMediaLink } from '../social-media-link';
-import { LinksService } from '../links.service';
+import { Location } from './model/location';
+import { Link } from '../shared/model/link';
+import { SocialMediaLink } from './model/social-media-link';
+import { LinksService } from '../shared/service/links.service';
 
 @Component({
   selector: 'app-footer',
@@ -41,10 +41,10 @@ export class FooterComponent implements OnInit {
     }
   ];
 
-  constructor(private _linksService: LinksService) { }
+  constructor(private linksService: LinksService) { }
 
   ngOnInit() {
-    this._linksService.getLinks().subscribe(
+    this.linksService.getLinks().subscribe(
       response => this.links = response
     );
   }

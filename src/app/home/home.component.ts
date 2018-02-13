@@ -1,10 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { Expertise } from '../our-expertise/expertise';
 import { ExpertiseService } from '../our-expertise/expertise.service';
-import { ClientStory } from '../our-work/client-story';
-import { ClientStoryService } from '../our-work/client-story.service';
 import { ActivatedRoute } from '@angular/router';
 import { MindShare } from '../our-thoughts/service/mind-share';
+import { ClientStory } from '../our-work/model/client-story';
 
 @Component({
   selector: 'app-home',
@@ -12,7 +11,6 @@ import { MindShare } from '../our-thoughts/service/mind-share';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  title = 'We are Architects for the Insurance and Healthcare Industries';
   expertises: Expertise[];
   featuredClientStories: ClientStory[];
   featuredMindShare: MindShare;

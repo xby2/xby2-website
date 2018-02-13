@@ -5,7 +5,7 @@ import { MindShare } from './mind-share';
 
 @Injectable()
 export class MindShareService {
-  private url = '../assets/mind-shares.json';
+  private url = '../assets/data/mind-shares.json';
 
   constructor(private httpClient: HttpClient) { }
 
