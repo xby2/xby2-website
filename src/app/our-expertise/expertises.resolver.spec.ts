@@ -1,15 +1,15 @@
 import { TestBed, inject } from '@angular/core/testing';
+import { ExpertisesResolver } from './expertises.resolver';
 
-import { HomeService } from './home.service';
-
-describe('HomeService', () => {
+describe('ExpertisesResolver', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
-      providers: [HomeService]
+      providers: [ExpertisesResolver]
     });
   });
 
-  it('should be created', inject([HomeService], (service: HomeService) => {
+  it('should be created', inject([ExpertisesResolver],
+      (service: ExpertisesResolver) => {
     expect(service).toBeTruthy();
   }));
 });

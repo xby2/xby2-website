@@ -22,4 +22,10 @@ describe('OurWorkComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('loadMoreClientStories() should increment clientStoryDisplayCount', () => {
+    component.loadMoreClientStories();
+
+    expect(component.clientStoryDisplayCount === 9);
+  });
 });

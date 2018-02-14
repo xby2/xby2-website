@@ -1,15 +1,14 @@
 import { TestBed, inject } from '@angular/core/testing';
+import { MindSharesResolver } from './mind-shares.resolver';
 
-import { MindSharesService } from './mind-shares.service';
-
-describe('MindSharesService', () => {
+describe('MindSharesResolver', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
-      providers: [MindSharesService]
+      providers: [MindSharesResolver]
     });
   });
 
-  it('should be created', inject([MindSharesService], (service: MindSharesService) => {
+  it('should be created', inject([MindSharesResolver], (service: MindSharesResolver) => {
     expect(service).toBeTruthy();
   }));
 });

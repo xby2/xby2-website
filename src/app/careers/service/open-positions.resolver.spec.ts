@@ -1,15 +1,15 @@
 import { TestBed, inject } from '@angular/core/testing';
+import { OpenPositionsResolver } from './open-positions.resolver';
 
-import { OpenPositionsResolverService } from './open-positions-resolver.service';
-
-describe('OpenPositionsResolverService', () => {
+describe('OpenPositionsResolver', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
-      providers: [OpenPositionsResolverService]
+      providers: [OpenPositionsResolver]
     });
   });
 
-  it('should be created', inject([OpenPositionsResolverService], (service: OpenPositionsResolverService) => {
+  it('should be created', inject([OpenPositionsResolver],
+      (service: OpenPositionsResolver) => {
     expect(service).toBeTruthy();
   }));
 });
