@@ -54,6 +54,11 @@ img {
     margin-right: 15px;
 }
 
+.row.inner {
+    margin-left: -25px;
+    margin-right: -25px;
+}
+
 @media (min-width: 992px) {
     ul {
         margin-left: 20px;

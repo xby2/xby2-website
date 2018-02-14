@@ -37,6 +37,7 @@ import { LinksService } from './shared/service/links.service';
 import { ModalComponent } from './navbar/modal/modal.component';
 import { HomeExpertiseComponent } from './home/home-expertise/home-expertise.component';
 import { ClientStoryListingComponent } from './shared/client-story-listing/client-story-listing.component';
+import { FeaturedMindShareComponent } from './home/featured-mind-share/featured-mind-share.component';
 
 @NgModule({
   declarations: [
@@ -57,7 +58,8 @@ import { ClientStoryListingComponent } from './shared/client-story-listing/clien
     ClientStoryListingComponent,
     MindShareListingComponent,
     ModalComponent,
-    HomeExpertiseComponent
+    HomeExpertiseComponent,
+    FeaturedMindShareComponent
   ],
   imports: [
     BrowserModule,
