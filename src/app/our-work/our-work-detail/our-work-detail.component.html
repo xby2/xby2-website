@@ -15,13 +15,13 @@
     <div class="client">
       {{clientStory.client}}
     </div>
-    <div class="description truncated">
-      {{clientStory.description}}
+    <div class="description">
+      {{clientStory.title}}
     </div>
   </div>
 </div>
 <div class="row">
-  <div class="col-xs-12" [innerHtml]="clientStory.content">
+  <div class="col-xs-12 our-work-content" [innerHtml]="clientStory.content">
   </div>
 </div>
 <div *ngIf='clientStory.nextClientStoryId' class="row next-client-story">

@@ -33,19 +33,24 @@
     text-overflow: ellipsis
 }
 
-::ng-deep h1 {
-    text-transform: uppercase;
-    font-weight: 600;
-    margin: 40px 0;
+.our-work-content {
+    padding: 20px 25px;
 }
 
-::ng-deep hr {
+::ng-deep .our-work-content h1 {
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 30px 0;
+    border-bottom: 1px solid #ffa500;
+}
+
+::ng-deep .our-work-content hr {
     border: 1px solid #ffa500;
     margin: 40px 0;
 }
 
-::ng-deep p {
-    margin-bottom: 40px;
+::ng-deep .our-work-content p {
+    margin-bottom: 20px;
 }
 
 ul {
@@ -97,7 +102,7 @@ a {
     }
 
     .col-xs-12 {
-        padding: 0 120px 0 60px;
+        padding: 20px 120px 30px 60px;
     }
 
     h3 {

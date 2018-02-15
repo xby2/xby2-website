@@ -38,6 +38,7 @@ import { ModalComponent } from './navbar/modal/modal.component';
 import { HomeExpertiseComponent } from './home/home-expertise/home-expertise.component';
 import { ClientStoryListingComponent } from './shared/client-story-listing/client-story-listing.component';
 import { FeaturedMindShareComponent } from './home/featured-mind-share/featured-mind-share.component';
+import { ClientStoriesResolver } from './our-work/service/client-stories.resolver.';
 
 @NgModule({
   declarations: [
@@ -81,7 +82,8 @@ import { FeaturedMindShareComponent } from './home/featured-mind-share/featured-
     MindSharesResolver,
     MindShareResolver,
     OpenPositionsResolver,
-    OpenPositionService
+    OpenPositionService,
+    ClientStoriesResolver
   ],
   bootstrap: [AppComponent]
 })
