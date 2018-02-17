@@ -6,7 +6,6 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import { Xby2LogoComponent } from './shared/xby2-logo.component';
 import { OurStoryComponent } from './our-story/our-story.component';
 import { OurExpertiseComponent } from './our-expertise/our-expertise.component';
 import { OurWorkComponent } from './our-work/our-work.component';
@@ -39,6 +38,7 @@ import { HomeExpertiseComponent } from './home/home-expertise/home-expertise.com
 import { ClientStoryListingComponent } from './shared/client-story-listing/client-story-listing.component';
 import { FeaturedMindShareComponent } from './home/featured-mind-share/featured-mind-share.component';
 import { ClientStoriesResolver } from './our-work/service/client-stories.resolver.';
+import { Xby2LogoComponent } from './shared/xby2-logo2/xby2-logo.component';
 
 @NgModule({
   declarations: [

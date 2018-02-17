@@ -76,3 +76,9 @@ div.component-content {
         padding-right: 60px;
     }
 }
+
+@media (min-width: 1200px) {
+    body {
+        margin-top: 9vw;
+    }
+}

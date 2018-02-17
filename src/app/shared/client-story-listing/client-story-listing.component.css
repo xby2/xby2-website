@@ -67,6 +67,19 @@ a {
 
 @media (min-width: 1200px) {
     .col-sm-4 {
-        height: 370px;
+        height: 32vw;
+    }
+
+    h4 {
+        font-size: 2.2vw;
+        height: 4vw;
+    }
+
+    hr {
+        margin: 2vw auto;
+    }
+
+    p {
+        font-size: 1.7vw;
     }
 }

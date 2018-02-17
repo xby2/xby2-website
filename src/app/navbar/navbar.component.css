@@ -53,3 +53,18 @@
     padding-right: 60px;
   }
 }
+
+@media (min-width: 1200px) {
+  .navbar {
+    height: 9vw;
+  }
+
+  .navbar-nav li a {
+    padding: 4vw 1vw;
+    font-size: 1.7vw;
+  }
+
+  .navbar-brand {
+    padding: 2vw 0vw 2vw 60px;
+  }
+}
