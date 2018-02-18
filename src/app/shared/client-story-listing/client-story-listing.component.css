@@ -67,7 +67,7 @@ a {
 
 @media (min-width: 1200px) {
     .col-sm-4 {
-        height: 32vw;
+        height: 34vw;
     }
 
     h4 {
@@ -81,5 +81,10 @@ a {
 
     p {
         font-size: 1.7vw;
+    }
+
+    a {
+        font-size: 1.8vw;
+        bottom: 1vw;
     }
 }

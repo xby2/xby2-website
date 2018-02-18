@@ -143,6 +143,14 @@ h3 {
     }
 
     .row.content {
-        padding-top: 3vw;
+        padding-top: 4vw;
+    }
+
+    .our-work a.see-all {
+        font-size: 3vw;
+    }
+
+    .full-img {
+        width: 40vw;
     }
 }

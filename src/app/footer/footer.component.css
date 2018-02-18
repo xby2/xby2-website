@@ -74,3 +74,30 @@ img {
         padding-right: 60px;
     }
 }
+
+@media (min-width: 1200px) {
+    .row.top {
+        padding-top: 4vw;
+    }
+
+    p {
+        font-size: 1.7vw;
+    }
+
+    ul li a span {
+        font-size: 1.7vw;
+        padding-bottom: 1vw;
+    }
+
+    img {
+        width: 3vw;
+    }
+
+    .location .name {
+        font-size: 1.8vw;
+    }
+
+    .location .address {
+        font-size: 1.6vw;
+    }
+}

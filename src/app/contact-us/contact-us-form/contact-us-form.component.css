@@ -50,3 +50,20 @@ button {
         padding: 60px 60px 30px 60px;
     }
 }
+
+@media (min-width: 1200px) {
+    .form-group {
+        margin-bottom: 1.2vw;
+    }
+
+    .form-control {
+        font-size: 1.6vw;
+        height: 5vw;
+        padding: 1vw 1.5vw;
+    }
+
+    button {
+        font-size: 2vw;
+        padding: 0.2vw 2vw;
+    }
+}
