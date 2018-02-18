@@ -1,7 +1,7 @@
 .hero-image {
     position: relative;
     display: table;
-    height: 187px;
+    height: 58vw;
     width: 100%;
     background: linear-gradient(
         rgba(0, 0, 0, 0.45), 
@@ -71,7 +71,7 @@ h3 {
 
 @media (min-width: 768px) {
     .hero-image {
-        height: 300px;
+        height: 43vw;
     }
 
     .post-content {
@@ -94,7 +94,7 @@ h3 {
 
 @media (min-width: 992px) {
     .hero-image {
-        height: 390px;
+        height: 36vw;
     }
 
     .post-content {
@@ -126,6 +126,10 @@ h3 {
 }
 
 @media (min-width: 1200px) {
+    .hero-image {
+        height: 32vw;
+    }
+
     .post-content {
         font-size: 6vw;
     }
@@ -136,10 +140,6 @@ h3 {
 
     h3 {
         font-size: 5vw;
-    }
-
-    .hero-image {
-        height: 40vw;
     }
 
     .row.content {

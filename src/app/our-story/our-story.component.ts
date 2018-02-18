@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./our-story.component.css']
 })
 export class OurStoryComponent implements OnInit {
-  headerText = 'Help';
+  headerText = 'About Us';
   subheaderText = 'A technology consultancy focused on the practice of ' +
   'application and data architecture in the insurance and heathcare ' +
   'industries clients.';

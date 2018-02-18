@@ -1,5 +1,17 @@
+:host {
+    background-color: #fff;
+}
+
+:host ::ng-deep h4 {
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 40px 0;
+}
+
 .row {
     background-color: #fff;
+    padding-bottom: 40px;
 }
 
 /* This should be shared */
@@ -32,20 +44,6 @@ button {
     background-color: #eba960;
 }
 
-
-h4 {
-    font-size: 36px;
-    text-transform: uppercase;
-    font-weight: 600;
-    margin-top: 25px;
-    margin-bottom: 25px;
-}
-
-.col-xs-12 {
-    padding-top: 25px;
-    padding-bottom: 25px;
-}
-
 /* end sharing */
 
 .col-xs-12.careers-wrapper {
@@ -61,7 +59,7 @@ h4 {
 #careers, #careers-2 {
     position: relative;
     display: table;
-    height: 293px;
+    height: 60vw;
     width: 100%;
     background: url('../../assets/careers.png') no-repeat top center;
     background-size: 100% auto;
@@ -127,15 +125,11 @@ h5 {
     color: #f89829;
 }
 
-.row.faq {
-    background-color: #ececec;
-}
-
-.frequently-asked-question h5 {
-    text-transform: none;
-}
-
 @media (min-width: 768px) {
+    #careers, #careers-2 {
+        height: 35vw;
+    }
+
     .col-xs-12.careers-wrapper {
         padding-left: 5px;
     }
@@ -143,6 +137,12 @@ h5 {
     .open-position {
         width:32%;
         margin-right: 1%;
+    }
+}
+
+@media (min-width: 1200px) {
+    #careers, #careers-2 {
+        height: 25vw;
     }
 }
 
@@ -154,7 +154,7 @@ h5 {
 /* our values buttons */
 .btn-group > .btn {
     background-color: transparent;
-    padding: 5px 25px 5px 0;
+    padding: 5px 20px 5px 0;
     color: #363636;
     font-weight: normal;
     box-shadow: none;

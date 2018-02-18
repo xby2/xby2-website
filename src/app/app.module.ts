@@ -39,6 +39,7 @@ import { ClientStoryListingComponent } from './shared/client-story-listing/clien
 import { FeaturedMindShareComponent } from './home/featured-mind-share/featured-mind-share.component';
 import { ClientStoriesResolver } from './our-work/service/client-stories.resolver.';
 import { Xby2LogoComponent } from './shared/xby2-logo2/xby2-logo.component';
+import { FrequentlyAskedQuestionsComponent } from './careers/frequently-asked-questions/frequently-asked-questions.component';
 
 @NgModule({
   declarations: [
@@ -60,7 +61,8 @@ import { Xby2LogoComponent } from './shared/xby2-logo2/xby2-logo.component';
     MindShareListingComponent,
     ModalComponent,
     HomeExpertiseComponent,
-    FeaturedMindShareComponent
+    FeaturedMindShareComponent,
+    FrequentlyAskedQuestionsComponent
   ],
   imports: [
     BrowserModule,

@@ -115,6 +115,7 @@ export class CareersComponent implements OnInit {
   collectedOpenPositions: CollectedOpenPosition[];
   frequentlyAskedQuestions: FrequentlyAskedQuestion[] = [
     {
+      id: 'workspaces',
       question: 'What kind of workspaces will be available?',
       answer: 'Our workspaces accomodate the needs of our various ' +
       'capabilities and how they operate (for example, dual monitors and ' +
@@ -124,6 +125,7 @@ export class CareersComponent implements OnInit {
       'team tables, quiet zones, and more.'
     },
     {
+      id: 'bike',
       question: 'Can I bike to work?',
       answer: 'Our workspaces accomodate the needs of our various ' +
       'capabilities and how they operate (for example, dual monitors and ' +
@@ -133,6 +135,7 @@ export class CareersComponent implements OnInit {
       'team tables, quiet zones, and more.'
     },
     {
+      id: 'gym',
       question: 'I enjoy awkwardly running into my co-workers wearing sweaty ' +
       'gym clothes.  Will there be a gym?',
       answer: 'Our workspaces accomodate the needs of our various ' +
@@ -143,7 +146,8 @@ export class CareersComponent implements OnInit {
       'team tables, quiet zones, and more.'
     },
     {
-      question: 'Random question #5',
+      id: 'random1',
+      question: 'Random question #1',
       answer: 'Our workspaces accomodate the needs of our various ' +
       'capabilities and how they operate (for example, dual monitors and ' +
       'standing desks).  Our intention is to have spaces that offer more ' +
@@ -152,7 +156,8 @@ export class CareersComponent implements OnInit {
       'team tables, quiet zones, and more.'
     },
     {
-      question: 'Random question #5',
+      id: 'random2',
+      question: 'Random question #2',
       answer: 'Our workspaces accomodate the needs of our various ' +
       'capabilities and how they operate (for example, dual monitors and ' +
       'standing desks).  Our intention is to have spaces that offer more ' +

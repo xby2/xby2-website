@@ -56,15 +56,15 @@
 
 @media (min-width: 1200px) {
   .navbar {
-    height: 9vw;
+    height: 6vw;
   }
 
   .navbar-nav li a {
-    padding: 4vw 1vw;
-    font-size: 1.7vw;
+    padding: 2.5vw 1vw;
+    font-size: 1.3vw;
   }
 
   .navbar-brand {
-    padding: 2vw 0vw 2vw 60px;
+    padding: 1.5vw 0vw 1.5vw 60px;
   }
 }

@@ -81,12 +81,12 @@ img {
     }
 
     p {
-        font-size: 1.7vw;
+        font-size: 1.3vw;
     }
 
     ul li a span {
-        font-size: 1.7vw;
-        padding-bottom: 1vw;
+        font-size: 1.3vw;
+        padding-bottom: 0;
     }
 
     img {
@@ -94,10 +94,10 @@ img {
     }
 
     .location .name {
-        font-size: 1.8vw;
+        font-size: 1.5vw;
     }
 
     .location .address {
-        font-size: 1.6vw;
+        font-size: 1.3vw;
     }
 }
