@@ -40,6 +40,8 @@ import { FeaturedMindShareComponent } from './home/featured-mind-share/featured-
 import { ClientStoriesResolver } from './our-work/service/client-stories.resolver.';
 import { Xby2LogoComponent } from './shared/xby2-logo2/xby2-logo.component';
 import { FrequentlyAskedQuestionsComponent } from './careers/frequently-asked-questions/frequently-asked-questions.component';
+import { CompanyValuesResolver } from './careers/service/company-values.resolver';
+import { CompanyValueService } from './careers/service/company-value.service';
 
 @NgModule({
   declarations: [
@@ -85,7 +87,9 @@ import { FrequentlyAskedQuestionsComponent } from './careers/frequently-asked-qu
     MindShareResolver,
     OpenPositionsResolver,
     OpenPositionService,
-    ClientStoriesResolver
+    ClientStoriesResolver,
+    CompanyValueService,
+    CompanyValuesResolver
   ],
   bootstrap: [AppComponent]
 })

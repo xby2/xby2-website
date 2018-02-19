@@ -90,6 +90,10 @@ h5 {
     padding: 10px 0;
 }
 
+.open-position-link {
+    text-decoration: none;
+}
+
 .open-position {
     border: 1px solid #ebebeb;
     padding: 0 15px;
@@ -133,11 +137,6 @@ h5 {
     .col-xs-12.careers-wrapper {
         padding-left: 5px;
     }
-
-    .open-position {
-        width:32%;
-        margin-right: 1%;
-    }
 }
 
 @media (min-width: 1200px) {
@@ -173,4 +172,46 @@ h5 {
     .btn-group > .btn {
         padding-right: 40px;
     }
+
+    /* career listings */
+    .row.in {
+        position:relative;
+        padding-bottom: 180px;
+    }
+    .overlay {
+      position: absolute;
+      z-index: 1;
+      bottom: 0;
+      height: 180px;
+    }
+}
+
+.listings {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.listings table {
+    width: 100%;
+}
+
+.listings table tr {
+    padding: 20px 0;
+}
+
+.listings table tr.individual-listings {
+    border-bottom: 1px solid #ececec;
+}
+
+.listings table tr.individual-listings:after {
+    content: ">";
+    vertical-align: -20px;
+}
+
+.listings table th {
+    text-transform: uppercase;
+}
+
+.listings table td {
+    padding: 20px 0;
 }

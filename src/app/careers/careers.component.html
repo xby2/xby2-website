@@ -46,26 +46,34 @@
 <div class="row">
   <div class="col-xs-12">
     <h4>Check Out Our Open Positions</h4>
-    <div *ngFor='let collectedOpenPosition of collectedOpenPositions;
-                 let i = index'>
-      <button class="col-xs-12 col-sm-4 open-position"
-              data-toggle="collapse"
-              [attr.data-target]="'#' + i">
-        <div class="count">
-          {{collectedOpenPosition.locations.length}}
+    <div *ngFor="let triple of collectedOpenPositionsTriples" class="row positions">
+      <ng-container *ngFor='let position of triple'>
+        <button class="col-xs-12 col-sm-4 open-position"
+                data-toggle="collapse" [attr.data-target]="'#' + position.id">
+          <div class="count">
+            {{position.locations.length}}
+          </div>
+          <h5>{{position.title}}</h5>
+          <ul>
+            <li *ngFor='let location of position.locations'>
+              {{location}}
+            </li>
+          </ul>
+        </button>
+        <div class="col-xs-12 overlay collapse listings" [attr.id]="position.id">
+          <table>
+            <tr>
+              <th>Position</th>
+              <th>Location</th>
+            </tr>
+            <tr class="individual-listings" 
+                *ngFor='let location of position.locations'>
+              <td>{{ position.title }}</td>
+              <td>{{ location }}</td>
+            </tr>
+          </table>
         </div>
-        <h5>{{collectedOpenPosition.title}}</h5>
-        <ul>
-          <li *ngFor='let location of collectedOpenPosition.locations'>
-            {{location}}
-          </li>
-        </ul>
-      </button>
-      <div class="collapse" [attr.id]="i">
-        <div class="card card-body">
-          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-        </div>
-      </div>
+      </ng-container>
     </div>
   </div>
 </div>

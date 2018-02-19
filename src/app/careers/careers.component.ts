@@ -6,6 +6,8 @@ import { OpenPosition } from './model/open-position';
 import { CollectedOpenPosition } from './model/collected-open-position';
 import { FrequentlyAskedQuestion } from './model/frequently-asked-question';
 
+declare var $: any;
+
 @Component({
   selector: 'app-careers',
   templateUrl: './careers.component.html',
@@ -16,57 +18,8 @@ export class CareersComponent implements OnInit {
   subheaderText = 'It takes an entire team united behind something big.  ' +
   'Together, we work hard, we laugh a lot, we brainstorm nonstop, and we ' +
   'give the best high-fives in town.';
-  ourValues: CompanyValue[] = [
-    {
-      title: 'Be One Team',
-      description: 'As I\'ve helped my 2-year-old daughter through the first ' +
-      'couple stages of toilet training, it occurred to me that sometimes ' +
-      'software development is a similiar process.  Lorem ipsum dolor sit ' +
-      'amet, consectetur adipiscing elit. Aliquam viverra sapien a tortor ' +
-      'malesuada, ut mattis mauris feugiat. Nam tincidunt enim et diam ' +
-      'lobortis, sed lacinia libero scelerisque. Nam tempus massa in ipsum ' +
-      'pellentesque, quis blandit justo dignissim. Nullam porttitor metus ' +
-      'eget luctus volutpat. Vestibulum ante est, condimentum nec purus at, ' +
-      'pellentesque feugiat erat. Aenean maximus ultricies massa, at rutrum ' +
-      'nibh semper ac. Donec cursus accumsan risus ac posuere. Fusce ' +
-      'volutpat, ullamcorper velit non, pharetra mi. Mauris mi lectus, ' +
-      'ornare eu sapien vitae, semper rutrum nunc. Donec nec venenatis ' +
-      'mauris, non hendrerit justo.'
-    },
-    {
-      title: 'Be Open',
-      description: 'As I\'ve helped my 2-year-old daughter through the first ' +
-      'couple stages of toilet training, it occurred to me that sometimes ' +
-      'software development is a similiar process.  Lorem ipsum dolor sit ' +
-      'amet, consectetur adipiscing elit. Aliquam viverra sapien a tortor ' +
-      'malesuada, ut mattis mauris feugiat. Nam tincidunt enim et diam ' +
-      'lobortis, sed lacinia libero scelerisque. Nam tempus massa in ipsum ' +
-      'pellentesque, quis blandit justo dignissim. Nullam porttitor metus ' +
-      'eget luctus volutpat. Vestibulum ante est, condimentum nec purus at, ' +
-      'pellentesque feugiat erat. Aenean maximus ultricies massa, at rutrum ' +
-      'nibh semper ac. Donec cursus accumsan risus ac posuere. Fusce ' +
-      'volutpat, ullamcorper velit non, pharetra mi. Mauris mi lectus, ' +
-      'ornare eu sapien vitae, semper rutrum nunc. Donec nec venenatis ' +
-      'mauris, non hendrerit justo.  BE OPEN'
-    },
-    {
-      title: 'Drive Impact',
-      description: 'As I\'ve helped my 2-year-old daughter through the first ' +
-      'couple stages of toilet training, it occurred to me that sometimes ' +
-      'software development is a similiar process.  Lorem ipsum dolor sit ' +
-      'amet, consectetur adipiscing elit. Aliquam viverra sapien a tortor ' +
-      'malesuada, ut mattis mauris feugiat. Nam tincidunt enim et diam ' +
-      'lobortis, sed lacinia libero scelerisque. Nam tempus massa in ipsum ' +
-      'pellentesque, quis blandit justo dignissim. Nullam porttitor metus ' +
-      'eget luctus volutpat. Vestibulum ante est, condimentum nec purus at, ' +
-      'pellentesque feugiat erat. Aenean maximus ultricies massa, at rutrum ' +
-      'nibh semper ac. Donec cursus accumsan risus ac posuere. Fusce ' +
-      'volutpat, ullamcorper velit non, pharetra mi. Mauris mi lectus, ' +
-      'ornare eu sapien vitae, semper rutrum nunc. Donec nec venenatis ' +
-      'mauris, non hendrerit justo.  DRIVE IMPACT'
-    },
-  ];
-  visibleOurValuesDescription = this.ourValues[0].description;
+  ourValues: CompanyValue[];
+  visibleOurValuesDescription: string;
   perks: Perk[] = [
     {
       title: 'Relax, we\'ve got you covered',
@@ -113,6 +66,7 @@ export class CareersComponent implements OnInit {
   ];
   openPositions: OpenPosition[];
   collectedOpenPositions: CollectedOpenPosition[];
+  collectedOpenPositionsTriples: any[];
   frequentlyAskedQuestions: FrequentlyAskedQuestion[] = [
     {
       id: 'workspaces',
@@ -170,8 +124,20 @@ export class CareersComponent implements OnInit {
   constructor(private route: ActivatedRoute) { }
 
   ngOnInit() {
+    this.ourValues = this.route.snapshot.data.companyValues;
+    this.visibleOurValuesDescription = this.ourValues[0].description;
     this.openPositions = this.route.snapshot.data.openPositions;
     this.collectedOpenPositions = this.collectOpenPositions(this.openPositions);
+    this.collectedOpenPositionsTriples =
+      this.collectOpenPositionTriples(this.collectedOpenPositions);
+
+    $(document).ready(function() {
+      $('.open-position').on('click', function() {
+        $('.listings').collapse('hide');
+        $('.row.positions').removeClass('in');
+        $(this).parents('.row').addClass('in');
+      });
+    });
   }
 
   changeVisibleOurValuesDescription(title: string) {
@@ -215,5 +181,24 @@ export class CareersComponent implements OnInit {
       default:
         return locationName;
     }
+  }
+
+  private collectOpenPositionTriples(collectedOpenPositions: CollectedOpenPosition[]): any[] {
+    const result = [];
+    let triple = [];
+    for (let i = 1; i <= collectedOpenPositions.length; i++) {
+        const single = collectedOpenPositions[i - 1];
+        single.id = i;
+        triple.push(single);
+        if (i % 3 === 0) {
+            result.push(triple);
+            triple = [];
+        }
+    }
+    if (triple.length > 0) {
+        result.push(triple);
+    }
+
+    return result;
   }
 }
