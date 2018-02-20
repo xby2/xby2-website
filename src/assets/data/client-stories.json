@@ -1,8 +1,8 @@
 [
     {
         "id": "claims-modernization",
-        "listingImageUrl": "./assets/client-story-listing.jpg",
-        "imageUrl": "./assets/client-story.png",
+        "listingImageUrl": "client-story-listing.jpg",
+        "imageUrl": "client-story.png",
         "title": "Claims Modernization",
         "description": "X by 2 provided program and technical/architecture leadership for the multi-year implementation of a new claims solution: Guidewire ClaimCenter...",
         "isFeatured": true,
@@ -18,8 +18,8 @@
     },
     {
         "id": "clinical-programs-and-medical-informatics-data-mart",
-        "listingImageUrl": "./assets/client-story-listing.jpg",
-        "imageUrl": "./assets/client-story.png",
+        "listingImageUrl": "client-story-listing.jpg",
+        "imageUrl": "client-story.png",
         "title": "Clinical Programs and Medical Informatics Data Mart",
         "description": "A Blue Cross Blue Shield affiliate created one of the largest value-partnership programs in the nation.  In a continued effort to maintain their edge and continually...",
         "isFeatured": true,
@@ -35,8 +35,8 @@
     },
     {
         "id": "life-core-system-transformation",
-        "listingImageUrl": "./assets/client-story-listing.jpg",
-        "imageUrl": "./assets/client-story.png",
+        "listingImageUrl": "client-story-listing.jpg",
+        "imageUrl": "client-story.png",
         "title": "Life Core System Transformation",
         "description": "A multi-line P&C and Life insurer desired to replace the core systems within their life division in an effort to increase process automation and efficiency, enable faster...",
         "isFeatured": true,
@@ -52,8 +52,8 @@
     },
     {
         "id": "insurance-1",
-        "listingImageUrl": "./assets/client-story-listing.jpg",
-        "imageUrl": "./assets/client-story.png",
+        "listingImageUrl": "client-story-listing.jpg",
+        "imageUrl": "client-story.png",
         "title": "Insurance 1",
         "description": "A Fortune 500 P&C insurer built a national reputation for delivering quality service that placed it consistently among the top-ranked companies in claims handling and customer...",
         "isFeatured": false,
@@ -69,8 +69,8 @@
     },
     {
         "id": "healthcare-1",
-        "listingImageUrl": "./assets/client-story-listing.jpg",
-        "imageUrl": "./assets/client-story.png",
+        "listingImageUrl": "client-story-listing.jpg",
+        "imageUrl": "client-story.png",
         "title": "Healthcare 1",
         "description": "A Blue Cross Blue Shield affiliate created one of the largest value-partnership programs in the nation.  In a continued effort to maintain their edge and continually...",
         "isFeatured": false,
@@ -86,8 +86,8 @@
     },
     {
         "id": "insurance-2",
-        "listingImageUrl": "./assets/client-story-listing.jpg",
-        "imageUrl": "./assets/client-story.png",
+        "listingImageUrl": "client-story-listing.jpg",
+        "imageUrl": "client-story.png",
         "title": "Insurance 2",
         "description": "A multi-line P&C and Life insurer desired to replace the core systems within their life division in an effort to increase process automation and efficiency, enable faster...",
         "isFeatured": false,
@@ -103,8 +103,8 @@
     },
     {
         "id": "healthcare-2",
-        "listingImageUrl": "./assets/client-story-listing.jpg",
-        "imageUrl": "./assets/client-story.png",
+        "listingImageUrl": "client-story-listing.jpg",
+        "imageUrl": "client-story.png",
         "title": "Healthcare 2",
         "description": "A multi-line P&C and Life insurer desired to replace the core systems within their life division in an effort to increase process automation and efficiency, enable faster...",
         "isFeatured": false,
@@ -120,8 +120,8 @@
     },
     {
         "id": "insurance-3",
-        "listingImageUrl": "./assets/client-story-listing.jpg",
-        "imageUrl": "./assets/client-story.png",
+        "listingImageUrl": "client-story-listing.jpg",
+        "imageUrl": "client-story.png",
         "title": "Insurance 3",
         "description": "A multi-line P&C and Life insurer desired to replace the core systems within their life division in an effort to increase process automation and efficiency, enable faster...",
         "isFeatured": false,
@@ -137,8 +137,8 @@
     },
     {
         "id": "healthcare-3",
-        "listingImageUrl": "./assets/client-story-listing.jpg",
-        "imageUrl": "./assets/client-story.png",
+        "listingImageUrl": "client-story-listing.jpg",
+        "imageUrl": "client-story.png",
         "title": "Healthcare 3",
         "description": "A multi-line P&C and Life insurer desired to replace the core systems within their life division in an effort to increase process automation and efficiency, enable faster...",
         "isFeatured": false,

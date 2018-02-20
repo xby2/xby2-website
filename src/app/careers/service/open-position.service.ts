@@ -7,12 +7,12 @@ import { OpenPosition } from '../model/open-position';
 
 @Injectable()
 export class OpenPositionService {
-  private url = 'https://api.lever.co/v0/postings/xby2?mode=json';
+  private url = 'https://api.lever.co/v0/postings/xby2';
 
   constructor(private httpClient: HttpClient) { }
 
   getOpenPositions(): Observable<OpenPosition[]> {
-    return this.httpClient.get(this.url).map(
+    return this.httpClient.get(this.url + '?mode=json').map(
       (leverJobPostings: LeverJobPosting[]) => {
         return leverJobPostings.map(leverJobPosting => {
           const openPosition: OpenPosition = {
@@ -21,6 +21,18 @@ export class OpenPositionService {
           };
           return openPosition;
         });
+      }
+    );
+  }
+
+  getOpenPosition(id: string): Observable<OpenPosition> {
+    return this.httpClient.get(this.url + '/' + id + '?mode=json').map(
+      (leverJobPosting: LeverJobPosting) => {
+        const openPosition: OpenPosition = {
+          title: leverJobPosting.text,
+          location: leverJobPosting.categories.location
+        };
+        return openPosition;
       }
     );
   }

@@ -18,6 +18,8 @@ import { OurWorkDetailComponent } from './our-work/our-work-detail/our-work-deta
 import { ClientStoryResolver } from './our-work/service/client-story.resolver';
 import { ClientStoriesResolver } from './our-work/service/client-stories.resolver.';
 import { CompanyValuesResolver } from './careers/service/company-values.resolver';
+import { OpenPositionDetailComponent } from './careers/open-position-detail/open-position-detail.component';
+import { OpenPositionResolver } from './careers/service/open-position.resolver';
 
 const routes: Routes = [
   {
@@ -57,6 +59,13 @@ const routes: Routes = [
     resolve: {
       openPositions: OpenPositionsResolver,
       companyValues: CompanyValuesResolver
+    }
+  },
+  {
+    path: 'careers/:id',
+    component: OpenPositionDetailComponent,
+    resolve: {
+      openPosition: OpenPositionResolver
     }
   },
 ];

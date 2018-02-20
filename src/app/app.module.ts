@@ -42,6 +42,8 @@ import { Xby2LogoComponent } from './shared/xby2-logo2/xby2-logo.component';
 import { FrequentlyAskedQuestionsComponent } from './careers/frequently-asked-questions/frequently-asked-questions.component';
 import { CompanyValuesResolver } from './careers/service/company-values.resolver';
 import { CompanyValueService } from './careers/service/company-value.service';
+import { OpenPositionDetailComponent } from './careers/open-position-detail/open-position-detail.component';
+import { OpenPositionResolver } from './careers/service/open-position.resolver';
 
 @NgModule({
   declarations: [
@@ -64,7 +66,8 @@ import { CompanyValueService } from './careers/service/company-value.service';
     ModalComponent,
     HomeExpertiseComponent,
     FeaturedMindShareComponent,
-    FrequentlyAskedQuestionsComponent
+    FrequentlyAskedQuestionsComponent,
+    OpenPositionDetailComponent
   ],
   imports: [
     BrowserModule,
@@ -89,7 +92,8 @@ import { CompanyValueService } from './careers/service/company-value.service';
     OpenPositionService,
     ClientStoriesResolver,
     CompanyValueService,
-    CompanyValuesResolver
+    CompanyValuesResolver,
+    OpenPositionResolver
   ],
   bootstrap: [AppComponent]
 })
