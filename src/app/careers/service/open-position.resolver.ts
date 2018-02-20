@@ -10,6 +10,6 @@ export class OpenPositionResolver implements Resolve<OpenPosition> {
 
   resolve(route: ActivatedRouteSnapshot, state: RouterStateSnapshot):
       OpenPosition | Observable<OpenPosition> | Promise<OpenPosition> {
-    throw new Error("Method not implemented.");
+    throw new Error('Method not implemented.');
   }
 }
