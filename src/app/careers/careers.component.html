@@ -53,9 +53,6 @@
                 data-toggle="collapse"
                 [attr.id]="'button' + position.id"
                 [attr.data-target]="'#' + position.id">
-          <div class="count">
-            {{position.locations.length}}
-          </div>
           <h5>{{position.title}}</h5>
           <ul>
             <li *ngFor='let location of position.locations'>

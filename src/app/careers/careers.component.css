@@ -97,13 +97,12 @@ h5 {
 .open-position {
     border: 1px solid #ebebeb;
     padding: 0 15px;
-    margin: 10px 1% 10px 0;
+    margin: 10px 0 10px 0;
     color: #ebebeb;
     text-transform: uppercase;
     background-color: transparent;
     text-align: left;
     font-weight: 400;
-    width: 32%;
 }
 
 .open-position:focus {
