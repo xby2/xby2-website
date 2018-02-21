@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
 import { Resolve, ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
 import { Observable } from 'rxjs/Observable';
-import { OpenPositionService } from './open-position.service';
 import { OpenPosition } from '../model/open-position';
+import { OpenPositionService } from '../service/open-position.service';
 
 @Injectable()
 export class OpenPositionsResolver implements Resolve<OpenPosition[]> {

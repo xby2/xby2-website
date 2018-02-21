@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { OpenPositionDetailComponent } from './open-position-detail.component';
+import { CareerDetailComponent } from './career-detail.component';
 
-describe('OpenPositionDetailComponent', () => {
-  let component: OpenPositionDetailComponent;
-  let fixture: ComponentFixture<OpenPositionDetailComponent>;
+describe('CareerDetailComponent', () => {
+  let component: CareerDetailComponent;
+  let fixture: ComponentFixture<CareerDetailComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ OpenPositionDetailComponent ]
+      declarations: [ CareerDetailComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(OpenPositionDetailComponent);
+    fixture = TestBed.createComponent(CareerDetailComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

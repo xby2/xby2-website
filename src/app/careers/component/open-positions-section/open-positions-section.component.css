@@ -1,0 +1,111 @@
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover {
+    color: #f89829;
+}
+
+button {
+    border: 1px solid #ebebeb;
+    padding: 0 15px;
+    margin: 10px 0 10px 0;
+    color: #ebebeb;
+    text-transform: uppercase;
+    background-color: transparent;
+    text-align: left;
+    font-weight: 400;
+}
+
+button:focus {
+    outline: none;
+    background-color: #f89829;
+}
+
+button h5 {
+    font-weight: 400;
+    color: #000;
+    margin-bottom: 0;
+    font-size: 16px;
+}
+
+button:focus h5 {
+    color: #fff;
+}
+
+button ul {
+    padding-left: 0;
+}
+
+button ul li {
+    display: inline;
+}
+
+li + li:before {
+    content: "/";
+    color: #f89829;
+}
+
+.open-position:focus li + li:before {
+    color: #fff;
+}
+
+.listings {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.listings table {
+    width: 100%;
+    font-size: 18px;
+}
+
+.listings table tr {
+    padding: 20px 0;
+}
+
+.listings table tr.individual-listings {
+    border-bottom: 1px solid #ececec;
+}
+
+.listings table tr.individual-listings:after {
+    content: ">";
+    vertical-align: -20px;
+    color: #f89829;
+}
+
+.listings table th {
+    text-transform: uppercase;
+}
+
+.listings table th.position-header {
+    width: 60%;
+}
+
+.listings table th.location-header {
+    width: 40%;
+}
+
+.listings table td {
+    padding: 20px 0;
+}
+
+.row.positions {
+    margin-left: 0;
+    margin-right: 0;
+    padding-bottom: 0;
+}
+
+@media (min-width: 768px) {
+    .row.in {
+        position:relative;
+        padding-bottom: 180px;
+    }
+    .overlay {
+      position: absolute;
+      z-index: 1;
+      bottom: 0;
+      height: 180px;
+    }
+}

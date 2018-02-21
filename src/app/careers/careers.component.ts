@@ -6,8 +6,6 @@ import { OpenPosition } from './model/open-position';
 import { CollectedOpenPosition } from './model/collected-open-position';
 import { FrequentlyAskedQuestion } from './model/frequently-asked-question';
 
-declare var $: any;
-
 @Component({
   selector: 'app-careers',
   templateUrl: './careers.component.html',
@@ -65,8 +63,6 @@ export class CareersComponent implements OnInit {
     },
   ];
   openPositions: OpenPosition[];
-  collectedOpenPositions: CollectedOpenPosition[];
-  collectedOpenPositionsTriples: any[];
   frequentlyAskedQuestions: FrequentlyAskedQuestion[] = [
     {
       id: 'workspaces',
@@ -127,17 +123,6 @@ export class CareersComponent implements OnInit {
     this.ourValues = this.route.snapshot.data.companyValues;
     this.visibleOurValuesDescription = this.ourValues[0].description;
     this.openPositions = this.route.snapshot.data.openPositions;
-    this.collectedOpenPositions = this.collectOpenPositions(this.openPositions);
-    this.collectedOpenPositionsTriples =
-      this.collectOpenPositionTriples(this.collectedOpenPositions);
-
-    $(document).ready(function() {
-      $('.open-position').on('click', function() {
-        $('.listings').collapse('hide');
-        $('.row.positions').removeClass('in');
-        $(this).parents('.row').addClass('in');
-      });
-    });
   }
 
   changeVisibleOurValuesDescription(title: string) {
@@ -147,58 +132,5 @@ export class CareersComponent implements OnInit {
     if (selectedOurValue) {
       this.visibleOurValuesDescription = selectedOurValue.description;
     }
-  }
-
-  private collectOpenPositions(openPositions: OpenPosition[]) {
-    const collectedOpenPositions: CollectedOpenPosition[] = [];
-
-    openPositions.forEach(openPosition => {
-      const collectedOpenPosition: CollectedOpenPosition =
-        collectedOpenPositions.filter(c => c.title === openPosition.title)[0];
-
-      if (collectedOpenPosition) {
-        collectedOpenPosition
-                        .locations
-                        .push(this.convertLocationName(openPosition.location));
-        collectedOpenPosition.locations.sort();
-      } else {
-        collectedOpenPositions.push({
-          title: openPosition.title,
-          locations: [this.convertLocationName(openPosition.location)]
-        });
-      }
-    });
-
-    return collectedOpenPositions;
-  }
-
-  private convertLocationName(locationName: string): string {
-    switch (locationName) {
-      case 'Metro Detroit':
-        return 'Detroit';
-      case 'Greater Toronto':
-        return 'Toronto';
-      default:
-        return locationName;
-    }
-  }
-
-  private collectOpenPositionTriples(collectedOpenPositions: CollectedOpenPosition[]): any[] {
-    const result = [];
-    let triple = [];
-    for (let i = 1; i <= collectedOpenPositions.length; i++) {
-        const single = collectedOpenPositions[i - 1];
-        single.id = i;
-        triple.push(single);
-        if (i % 3 === 0) {
-            result.push(triple);
-            triple = [];
-        }
-    }
-    if (triple.length > 0) {
-        result.push(triple);
-    }
-
-    return result;
   }
 }

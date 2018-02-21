@@ -16,9 +16,16 @@ export class OpenPositionService {
       (leverJobPostings: LeverJobPosting[]) => {
         return leverJobPostings.map(leverJobPosting => {
           const openPosition: OpenPosition = {
+            id: leverJobPosting.id,
             title: leverJobPosting.text,
-            location: leverJobPosting.categories.location
+            location: leverJobPosting.categories.location,
+            team: leverJobPosting.categories.team,
+            commitment: leverJobPosting.categories.commitment,
+            description: leverJobPosting.description,
+            sections: leverJobPosting.lists,
+            applyUrl: leverJobPosting.applyUrl
           };
+
           return openPosition;
         });
       }
@@ -29,9 +36,16 @@ export class OpenPositionService {
     return this.httpClient.get(this.url + '/' + id + '?mode=json').map(
       (leverJobPosting: LeverJobPosting) => {
         const openPosition: OpenPosition = {
+          id: leverJobPosting.id,
           title: leverJobPosting.text,
-          location: leverJobPosting.categories.location
+          location: leverJobPosting.categories.location,
+          team: leverJobPosting.categories.team,
+          commitment: leverJobPosting.categories.commitment,
+          description: leverJobPosting.description,
+          sections: leverJobPosting.lists,
+          applyUrl: leverJobPosting.applyUrl
         };
+
         return openPosition;
       }
     );

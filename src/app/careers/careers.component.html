@@ -43,40 +43,9 @@
     </div>
   </div>
 </div>
-<div class="row">
-  <div class="col-xs-12">
-    <h4>Check Out Our Open Positions</h4>
-    <div *ngFor="let triple of collectedOpenPositionsTriples"
-          class="row positions">
-      <ng-container *ngFor='let position of triple'>
-        <button class="col-xs-12 col-sm-4 open-position"
-                data-toggle="collapse"
-                [attr.id]="'button' + position.id"
-                [attr.data-target]="'#' + position.id">
-          <h5>{{position.title}}</h5>
-          <ul>
-            <li *ngFor='let location of position.locations'>
-              {{location}}
-            </li>
-          </ul>
-        </button>
-        <div class="col-xs-12 overlay collapse listings" [attr.id]="position.id">
-          <table>
-            <tr>
-              <th class="position-header">Position</th>
-              <th class="location-header">Location</th>
-            </tr>
-            <tr class="individual-listings" 
-                *ngFor='let location of position.locations'>
-              <td>{{ position.title }}</td>
-              <td>{{ location }}</td>
-            </tr>
-          </table>
-        </div>
-      </ng-container>
-    </div>
-  </div>
-</div>
+<app-open-positions-section
+  [openPositions]='openPositions'>
+</app-open-positions-section>
 <app-frequently-asked-questions
   [frequentlyAskedQuestions]='frequentlyAskedQuestions'>
 </app-frequently-asked-questions>

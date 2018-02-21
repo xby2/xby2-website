@@ -1,5 +1,8 @@
 export interface CollectedOpenPosition {
     id?: number;
     title: string;
-    locations: string[];
+    listings: {
+        id: string;
+        location: string,
+    }[];
 }

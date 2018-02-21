@@ -26,7 +26,6 @@ import { MindShareResolver } from './our-thoughts/service/mind-share.resolver';
 import { ContactUsFormComponent } from './contact-us/contact-us-form/contact-us-form.component';
 import { ContactService } from './contact-us/service/contact.service';
 import { ToastrService } from './contact-us/service/toastr.service';
-import { OpenPositionsResolver } from './careers/service/open-positions.resolver';
 import { OpenPositionService } from './careers/service/open-position.service';
 import { OurWorkDetailComponent } from './our-work/our-work-detail/our-work-detail.component';
 import { ClientStoryService } from './our-work/service/client-story.service';
@@ -39,11 +38,13 @@ import { ClientStoryListingComponent } from './shared/client-story-listing/clien
 import { FeaturedMindShareComponent } from './home/featured-mind-share/featured-mind-share.component';
 import { ClientStoriesResolver } from './our-work/service/client-stories.resolver.';
 import { Xby2LogoComponent } from './shared/xby2-logo2/xby2-logo.component';
-import { FrequentlyAskedQuestionsComponent } from './careers/frequently-asked-questions/frequently-asked-questions.component';
-import { CompanyValuesResolver } from './careers/service/company-values.resolver';
 import { CompanyValueService } from './careers/service/company-value.service';
-import { OpenPositionDetailComponent } from './careers/open-position-detail/open-position-detail.component';
-import { OpenPositionResolver } from './careers/service/open-position.resolver';
+import { OpenPositionsResolver } from './careers/resolver/open-positions.resolver';
+import { CompanyValuesResolver } from './careers/resolver/company-values.resolver';
+import { OpenPositionResolver } from './careers/resolver/open-position.resolver';
+import { CareerDetailComponent } from './careers/career-detail.component';
+import { FrequentlyAskedQuestionsComponent } from './careers/component/frequently-asked-questions/frequently-asked-questions.component';
+import { OpenPositionsSectionComponent } from './careers/component/open-positions-section/open-positions-section.component';
 
 @NgModule({
   declarations: [
@@ -67,7 +68,8 @@ import { OpenPositionResolver } from './careers/service/open-position.resolver';
     HomeExpertiseComponent,
     FeaturedMindShareComponent,
     FrequentlyAskedQuestionsComponent,
-    OpenPositionDetailComponent
+    CareerDetailComponent,
+    OpenPositionsSectionComponent
   ],
   imports: [
     BrowserModule,

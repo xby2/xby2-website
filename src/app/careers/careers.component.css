@@ -90,58 +90,6 @@ h5 {
     padding: 10px 0;
 }
 
-.open-position-link {
-    text-decoration: none;
-}
-
-.open-position {
-    border: 1px solid #ebebeb;
-    padding: 0 15px;
-    margin: 10px 0 10px 0;
-    color: #ebebeb;
-    text-transform: uppercase;
-    background-color: transparent;
-    text-align: left;
-    font-weight: 400;
-}
-
-.open-position:focus {
-    outline: none;
-    background-color: #f89829;
-}
-
-.open-position .count {
-    font-size: 48px;
-}
-
-.open-position h5 {
-    font-weight: 400;
-    color: #000;
-    margin-bottom: 0;
-    font-size: 16px;
-}
-
-.open-position:focus h5 {
-    color: #fff;
-}
-
-.open-position ul {
-    padding-left: 0;
-}
-
-.open-position ul li {
-    display: inline;
-}
-
-.open-position li + li:before {
-    content: "/";
-    color: #f89829;
-}
-
-.open-position:focus li + li:before {
-    color: #fff;
-}
-
 @media (min-width: 768px) {
     #careers, #careers-2 {
         height: 35vw;
@@ -191,56 +139,4 @@ h5 {
     .btn-group > .btn {
         padding-right: 40px;
     }
-
-    /* career listings */
-    .row.in {
-        position:relative;
-        padding-bottom: 180px;
-    }
-    .overlay {
-      position: absolute;
-      z-index: 1;
-      bottom: 0;
-      height: 180px;
-    }
-}
-
-.listings {
-    padding-left: 0;
-    padding-right: 0;
-}
-
-.listings table {
-    width: 100%;
-    font-size: 18px;
-}
-
-.listings table tr {
-    padding: 20px 0;
-}
-
-.listings table tr.individual-listings {
-    border-bottom: 1px solid #ececec;
-}
-
-.listings table tr.individual-listings:after {
-    content: ">";
-    vertical-align: -20px;
-    color: #f89829;
-}
-
-.listings table th {
-    text-transform: uppercase;
-}
-
-.listings table th.position-header {
-    width: 60%;
-}
-
-.listings table th.location-header {
-    width: 40%;
-}
-
-.listings table td {
-    padding: 20px 0;
 }

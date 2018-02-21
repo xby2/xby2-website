@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
-import { CompanyValueService } from './company-value.service';
 import { Resolve, ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
 import { CompanyValue } from '../model/company-value';
 import { Observable } from 'rxjs/Observable';
+import { CompanyValueService } from '../service/company-value.service';
 
 @Injectable()
 export class CompanyValuesResolver implements Resolve<CompanyValue[]> {

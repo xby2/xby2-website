@@ -12,14 +12,14 @@ import { OurThoughtsDetailComponent } from './our-thoughts/our-thoughts-detail/o
 import { FeaturedMindShareResolver } from './our-thoughts/service/featured-mind-share.resolver';
 import { MindSharesResolver } from './our-thoughts/service/mind-shares.resolver';
 import { MindShareResolver } from './our-thoughts/service/mind-share.resolver';
-import { OpenPositionsResolver } from './careers/service/open-positions.resolver';
 import { FeaturedClientStoriesResolver } from './our-work/service/featured-client-stories.resolver';
 import { OurWorkDetailComponent } from './our-work/our-work-detail/our-work-detail.component';
 import { ClientStoryResolver } from './our-work/service/client-story.resolver';
 import { ClientStoriesResolver } from './our-work/service/client-stories.resolver.';
-import { CompanyValuesResolver } from './careers/service/company-values.resolver';
-import { OpenPositionDetailComponent } from './careers/open-position-detail/open-position-detail.component';
-import { OpenPositionResolver } from './careers/service/open-position.resolver';
+import { OpenPositionsResolver } from './careers/resolver/open-positions.resolver';
+import { CompanyValuesResolver } from './careers/resolver/company-values.resolver';
+import { OpenPositionResolver } from './careers/resolver/open-position.resolver';
+import { CareerDetailComponent } from './careers/career-detail.component';
 
 const routes: Routes = [
   {
@@ -63,7 +63,7 @@ const routes: Routes = [
   },
   {
     path: 'careers/:id',
-    component: OpenPositionDetailComponent,
+    component: CareerDetailComponent,
     resolve: {
       openPosition: OpenPositionResolver
     }
