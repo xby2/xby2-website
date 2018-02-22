@@ -74,11 +74,13 @@ div.component-content {
     }
 
     h2 {
+        margin-top: 50px;
         font-size: 24px;
     }
 
     h3 {
         margin-top: 20px;
+        font-size: 48px;
     }
 }
 
