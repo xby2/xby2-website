@@ -45,6 +45,7 @@ import { OpenPositionResolver } from './careers/resolver/open-position.resolver'
 import { CareerDetailComponent } from './careers/career-detail.component';
 import { FrequentlyAskedQuestionsComponent } from './careers/component/frequently-asked-questions/frequently-asked-questions.component';
 import { OpenPositionsSectionComponent } from './careers/component/open-positions-section/open-positions-section.component';
+import { CareerDetailsActionItemsComponent } from './careers/component/career-details-action-items/career-details-action-items.component';
 
 @NgModule({
   declarations: [
@@ -69,7 +70,8 @@ import { OpenPositionsSectionComponent } from './careers/component/open-position
     FeaturedMindShareComponent,
     FrequentlyAskedQuestionsComponent,
     CareerDetailComponent,
-    OpenPositionsSectionComponent
+    OpenPositionsSectionComponent,
+    CareerDetailsActionItemsComponent
   ],
   imports: [
     BrowserModule,

@@ -32,27 +32,3 @@ div.section ul {
     text-transform: none;
     padding-left: 25px;
 }
-
-.action-items {
-    width: 150px;
-    margin: 0 auto 30px auto;
-    text-transform: uppercase;
-}
-
-.action-items .share {
-    margin-bottom: 20px;
-}
-
-a {
-    background-color: #f89829;
-    padding: 10px 0;
-    color: #fff;
-    border: 0;
-    display: block;
-    text-align: center;
-}
-
-a:hover, a:focus {
-    background-color: #faa500;
-    text-decoration: none;
-}

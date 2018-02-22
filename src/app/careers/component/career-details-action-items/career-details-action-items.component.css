@@ -1,0 +1,56 @@
+.action-items {
+    width: 150px;
+    margin: 0 auto 30px auto;
+    text-transform: uppercase;
+}
+
+.action-items .share {
+    margin-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a.apply {
+    background-color: #f89829;
+    padding: 10px 0;
+    color: #fff;
+    border: 0;
+    display: block;
+    text-align: center;
+}
+
+a.apply:hover, a.apply:focus {
+    background-color: #faa500;
+}
+
+svg {
+    color: #000;
+}
+
+.share-items {
+    display: none;
+    position: absolute;
+    top: 110px;
+    padding-bottom: 10px;
+}
+
+.share-items a {
+    margin-right: 10px;
+}
+
+.share-items:hover {
+    display: block;
+}
+
+div.share:hover + .share-items {
+    display: block;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    .action-items {
+        margin-top: 145px;
+    }
+}
