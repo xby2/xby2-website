@@ -47,13 +47,13 @@ h3 {
 
 /* end */
 
-::ng-deep q {
+:host ::ng-deep q {
     quotes: "“" "”";
     font-size: 24px;
     line-height: 1.4;
 }
 
-::ng-deep q:before {
+:host ::ng-deep q:before {
     content: open-quote;
     line-height: 0;
     position: relative;
@@ -63,7 +63,7 @@ h3 {
     margin-right: 10px;
 }
 
-::ng-deep q:after {
+:host ::ng-deep q:after {
     content: close-quote;
     display: inline;
     line-height: 0;
@@ -74,20 +74,25 @@ h3 {
     font-size: 70px;
 }
 
-::ng-deep hr {
+:host ::ng-deep hr {
     border: 1px solid #ffa500;
     margin: 40px 0;
 }
 
-::ng-deep p {
+:host ::ng-deep p {
     margin-bottom: 40px;
 }
 
-::ng-deep h1 {
+:host ::ng-deep h1 {
     text-transform: uppercase;
     font-weight: 600;
     margin: 40px 0;
     border-bottom: 1px solid #ffa500;
+}
+
+:host ::ng-deep img {
+    display: block;
+    margin: 0 auto 40px auto;
 }
 
 #tags-header {
