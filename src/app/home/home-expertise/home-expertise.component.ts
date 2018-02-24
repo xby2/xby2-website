@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Expertise } from '../../our-expertise/expertise';
+import { Expertise } from '../../our-expertise/model/expertise';
 
 @Component({
   selector: 'app-home-expertise',

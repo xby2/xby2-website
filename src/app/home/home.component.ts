@@ -1,9 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { Expertise } from '../our-expertise/expertise';
-import { ExpertiseService } from '../our-expertise/expertise.service';
 import { ActivatedRoute } from '@angular/router';
 import { MindShare } from '../our-thoughts/service/mind-share';
 import { ClientStory } from '../our-work/model/client-story';
+import { Expertise } from '../our-expertise/model/expertise';
 
 @Component({
   selector: 'app-home',

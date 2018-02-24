@@ -3,15 +3,46 @@ h4 {
     font-weight: 600;
     text-transform: uppercase;
     margin: 0;
+    display:table;
+    margin-bottom: 35px;
 }
 
-p, ul {
-    margin-top: 25px;
+img {
+    margin-left: 25px;
+    width: 48px;
 }
 
-.expertise {
+ul {
+    padding-left: 25px;
+    margin-bottom: 35px;
+}
+
+a {
+    display: block;
+    text-transform: uppercase;
+    color: #f89829;
+    border-bottom: 1px solid #f89829;
+    font-weight: 600;
+    margin-bottom: 45px;
+    line-height: 1;
+    padding-bottom: 5px;
+}
+
+.span, .text {
+    vertical-align:middle;
+    display:table-cell;
+}
+
+.row {
     background-color: #ececec;
-    padding: 35px 15px 15px 15px;
+}
+
+.first {
+    padding-top: 60px;
+}
+
+.last {
+    padding-bottom: 50px;
 }
 
 @media (min-width: 768px) {
@@ -20,11 +51,10 @@ p, ul {
     }
 
     img {
-        float: right;
+        margin-left: 50px;
     }
 
-    .expertise {
-        padding-left: 60px;
-        padding-right: 60px;
+    .col-xs-12 {
+        padding-right: 16vw;
     }
 }

@@ -31,6 +31,10 @@ h3 {
     margin-top: 5px;
 }
 
+h4 {
+    margin-bottom: 50px;
+}
+
 a.xby2-link {
     display: block;
     text-transform: uppercase;
@@ -38,17 +42,12 @@ a.xby2-link {
     border-bottom: 1px solid #f89829;
     font-weight: 600;
     margin-top: 20px;
-    margin-bottom: 30px;
-}
-
-div.component-header {
-    background-color: #fff;
-    padding: 15px 25px;
-    min-height: 58vw;
+    margin-bottom: 40px;
+    text-decoration: none;
 }
 
 div.component-content {
-    padding: 15px;
+    padding: 15px 0;
 }
 
 .col-xs-12.full-width {
@@ -69,32 +68,23 @@ div.component-content {
 }
 
 @media (min-width: 768px) {
-    div.component-header {
-        min-height: 43vw;
-    }
-
     h2 {
         margin-top: 50px;
         font-size: 24px;
     }
-
+    
     h3 {
         margin-top: 20px;
-        font-size: 48px;
+        font-size: 48px;    
+    }
+
+    div.component-content {
+        padding: 60px 0;
     }
 }
 
 @media (min-width: 992px) {
-    div.component-header {
-        min-height: 36vw;
-    }
-
     .col-xs-12 {
-        padding-left: 60px;
-        padding-right: 60px;
-    }
-
-    div.component-header, div.component-content {
         padding-left: 60px;
         padding-right: 60px;
     }
@@ -103,9 +93,5 @@ div.component-content {
 @media (min-width: 1200px) {
     body {
         margin-top: 6vw;
-    }
-
-    div.component-header {
-        min-height: 32vw;
     }
 }

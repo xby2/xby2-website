@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
 import { Resolve, ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
-import { ExpertiseService } from '../our-expertise/expertise.service';
-import { Expertise } from '../our-expertise/expertise';
 import { Observable } from 'rxjs/Observable';
+import { ExpertiseService } from '../service/expertise.service';
+import { Expertise } from '../model/expertise';
 
 @Injectable()
 export class ExpertisesResolver implements Resolve<Expertise[]> {

@@ -14,37 +14,18 @@
     padding-bottom: 40px;
 }
 
-/* This should be shared */
-
-button {
+.btn-group button {
+    margin: 0 0 15px 0;
     display: block;
     background-color: #eb9c45;
     border: 0;
     border-radius: 0;
     text-transform: uppercase;
-    padding: 7px 50px;
+    padding: 0 47px;
     font-size: 16px;
     font-weight: 600;
     margin: 30px 0;
 }
-
-.btn-group button {
-    margin: 0 0 15px 0;
-}
-
-.btn-xby2[disabled]:hover, .btn-xby2[disabled]:focus {
-    background-color: #eb9c45;
-}
-
-.btn-xby2:focus {
-    background-color: #eba960;
-}
-
-.btn-xby2:active, .btn-xby2:hover {
-    background-color: #eba960;
-}
-
-/* end sharing */
 
 .col-xs-12.careers-wrapper {
     padding-left: 0;

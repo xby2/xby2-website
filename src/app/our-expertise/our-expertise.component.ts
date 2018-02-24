@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ExpertiseService } from './expertise.service';
-import { Expertise } from './expertise';
+import { ActivatedRoute } from '@angular/router';
+import { Expertise } from './model/expertise';
 
 @Component({
   selector: 'app-our-expertise',
@@ -14,11 +14,10 @@ export class OurExpertiseComponent implements OnInit {
   'passion for transforming business through large scale enterprise ' +
   'initiatives.';
 
-  constructor(private expertiseService: ExpertiseService) { }
+  constructor(private route: ActivatedRoute) {
+    this.expertises = this.route.snapshot.data.expertises;
+  }
 
   ngOnInit() {
-    this.expertiseService.getExpertises().subscribe(
-      response => this.expertises = response
-    );
   }
 }
