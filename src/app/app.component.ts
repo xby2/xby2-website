@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, NavigationStart, NavigationEnd } from '@angular/router';
 import { Location, PopStateEvent } from '@angular/common';
+import { environment } from '../environments/environment';
+
+declare let ga: Function;
 
 @Component({
   selector: 'app-root',
@@ -11,7 +14,16 @@ export class AppComponent implements OnInit {
   private lastPoppedUrl: string;
   private yScrollStack: number[] = [];
 
-  constructor(private router: Router, private location: Location) { }
+  constructor(private router: Router, private location: Location) {
+    if (!this.hasGoogleAnalyticsTrackingId()) { return; }
+
+    this.router.events.subscribe(event => {
+      if (event instanceof NavigationEnd) {
+        ga('set', 'page', event.urlAfterRedirects);
+        ga('send', 'pageview');
+      }
+    });
+  }
 
   ngOnInit(): void {
     this.location.subscribe((ev: PopStateEvent) => {
@@ -31,5 +43,10 @@ export class AppComponent implements OnInit {
           }
         }
     });
+  }
+
+  private hasGoogleAnalyticsTrackingId() {
+    return environment.googleAnalyticsTrackingId !== null &&
+           environment.googleAnalyticsTrackingId !== '';
   }
 }
