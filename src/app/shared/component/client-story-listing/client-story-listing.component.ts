@@ -8,6 +8,8 @@ import { ClientStory } from '../../../our-work/model/client-story';
 })
 export class ClientStoryListingComponent implements OnInit {
   @Input() clientStory: ClientStory;
+  @Input() isFirst: string;
+  @Input() isLast: string;
 
   constructor() { }
 

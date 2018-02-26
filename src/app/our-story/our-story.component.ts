@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class OurStoryComponent implements OnInit {
   headerText = 'About Us';
   subheaderText = 'A technology consultancy focused on the practice of ' +
-  'application and data architecture in the insurance and heathcare ' +
+  'application and data architecture in the insurance and healthcare ' +
   'industries clients.';
 
   constructor() { }

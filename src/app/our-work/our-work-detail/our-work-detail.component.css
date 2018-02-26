@@ -1,14 +1,14 @@
 .hero-image {
     position: relative;
     display: table;
-    height: 200px;
+    height: 51vw;
     width: 100%;
 }
 
 .expertises, .client, .description {
     display: block;
     color: #fff;
-    margin: 15px;
+    margin: 4vw 25px;
     text-align: left;
     font-size: 16px;
     text-transform: uppercase;
@@ -16,45 +16,39 @@
 
 .client {
     font-weight: 600;
-    font-size: 20px;
+    font-size: 6vw;
 }
 
 .description {
     font-weight: 600;
-    font-size: 24px;
+    font-size: 9vw;
     text-transform: none;
     overflow: hidden;
-}
-
-.truncated {
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;  
-    text-overflow: ellipsis
 }
 
 .our-work-content {
     padding: 20px 25px;
 }
 
-::ng-deep .our-work-content h1 {
+:host ::ng-deep .our-work-content h1 {
     text-transform: uppercase;
     font-weight: 600;
-    margin: 30px 0;
+    margin: 30px 0 6vw 0;;
     border-bottom: 1px solid #ffa500;
 }
 
-::ng-deep .our-work-content hr {
+:host ::ng-deep .our-work-content hr {
     border: 1px solid #ffa500;
     margin: 40px 0;
 }
 
-::ng-deep .our-work-content p {
-    margin-bottom: 20px;
+:host ::ng-deep .our-work-content p {
+    margin-bottom: 6vw;
 }
 
 ul {
     padding: 0;
+    line-height: 1;
 }
 
 ul li {
@@ -67,7 +61,11 @@ li + li:before {
 
 .row.next-client-story {
     background-color: #fff;
-    padding: 20px 0;
+    padding-bottom: 20px;
+}
+
+.next-client-story .col-xs-12 {
+    padding: 0 25px;
 }
 
 h2 {
@@ -90,23 +88,48 @@ a {
 
 @media (min-width: 768px) {
     .hero-image {
-        height: 350px;
+        height: 38vw;
     }
 
     .expertises, .client, .description {
-        margin: 50px 120px 0 60px;
+        margin: 50px 120px 0 25px;
     }
 
     .client {
-        margin-top: 30px;
+        margin-top: 3vw;
+        font-size: 4vw;
+    }
+
+    .description {
+        font-size: 6vw;
+        margin-top: 5vw;
     }
 
     .col-xs-12 {
-        padding: 20px 120px 30px 60px;
+        padding: 20px 120px 30px 25px;
     }
 
     h3 {
         width: 50%;
         margin: 0 auto;
+    }
+
+    .next-client-story h2 {
+        margin: 3vw 0;
+    }
+
+    .next-client-story h3 {
+        font-size: 3vw;
+        margin-bottom: 3vw;
+    }
+}
+
+@media (min-width: 992px) {
+    .expertises, .client, .description {
+        margin-left: 60px;
+    }
+
+    .col-xs-12 {
+        padding-left: 60px;
     }
 }

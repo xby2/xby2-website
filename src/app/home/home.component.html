@@ -19,9 +19,12 @@
   <h2>Our Work</h2>
   <h3>Client Stories</h3>
   <div id="client-story-listings">
-    <app-client-story-listing *ngFor='let clientStory of featuredClientStories'
-                              [clientStory]='clientStory'>
-    </app-client-story-listing>
+    <app-client-story-listing
+        *ngFor='let clientStory of featuredClientStories; let i = index'
+        [clientStory]='clientStory'
+        [isFirst]="i % 3 === 0 ? 'first' : ''"
+        [isLast]="(i+1) % 3 === 0 ? 'last' : ''">
+      </app-client-story-listing>
   </div>
   <a class="col-sm-12 see-all" routerLink='/our-work'>See All ></a>
 </div>
