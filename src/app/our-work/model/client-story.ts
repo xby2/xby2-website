@@ -9,5 +9,6 @@ export interface ClientStory {
     client: string;
     expertises: string[];
     nextClientStoryId: string;
+    nextClientStoryDescription: string;
     content: string;
 }

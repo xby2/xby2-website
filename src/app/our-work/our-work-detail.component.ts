@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { ClientStory } from '../model/client-story';
+import { ClientStory } from './model/client-story';
 
 @Component({
   selector: 'app-our-work-detail',
@@ -9,8 +9,6 @@ import { ClientStory } from '../model/client-story';
 })
 export class OurWorkDetailComponent implements OnInit {
   clientStory: ClientStory;
-  nextClientStoryDescription = 'A new and modern claims system for X company ' +
-  'veniam, quis nostrud exercitation';
 
   constructor(private route: ActivatedRoute) { }
 

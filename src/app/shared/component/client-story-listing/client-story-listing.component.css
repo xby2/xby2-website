@@ -2,6 +2,7 @@
     background-color: #fff;
     padding-left: 0;
     padding-right: 0;
+    margin-bottom: 15px;
 }
 
 img {
@@ -11,8 +12,7 @@ img {
 h4 {
     text-align: center;
     color: #464646;
-    margin: 20px auto 0 auto;
-    width: 60%;
+    margin: 20px 15px 0 15px;
     font-size: 7vw;
 }
 
@@ -35,7 +35,7 @@ a {
     display: block;
     text-align: center;
     font-weight: 600;
-    padding: 10px 0 20px 0;
+    padding: 10px 0;
     font-size: 5vw;
 }
 

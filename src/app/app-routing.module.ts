@@ -12,7 +12,6 @@ import { FeaturedMindShareResolver } from './our-thoughts/service/featured-mind-
 import { MindSharesResolver } from './our-thoughts/service/mind-shares.resolver';
 import { MindShareResolver } from './our-thoughts/service/mind-share.resolver';
 import { FeaturedClientStoriesResolver } from './our-work/service/featured-client-stories.resolver';
-import { OurWorkDetailComponent } from './our-work/our-work-detail/our-work-detail.component';
 import { ClientStoryResolver } from './our-work/service/client-story.resolver';
 import { ClientStoriesResolver } from './our-work/service/client-stories.resolver.';
 import { OpenPositionsResolver } from './careers/resolver/open-positions.resolver';
@@ -20,6 +19,7 @@ import { CompanyValuesResolver } from './careers/resolver/company-values.resolve
 import { OpenPositionResolver } from './careers/resolver/open-position.resolver';
 import { CareerDetailComponent } from './careers/career-detail.component';
 import { ExpertisesResolver } from './our-expertise/resolver/expertises.resolver';
+import { OurWorkDetailComponent } from './our-work/our-work-detail.component';
 
 const routes: Routes = [
   {

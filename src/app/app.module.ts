@@ -25,7 +25,6 @@ import { ContactUsFormComponent } from './contact-us/contact-us-form/contact-us-
 import { ContactService } from './contact-us/service/contact.service';
 import { ToastrService } from './contact-us/service/toastr.service';
 import { OpenPositionService } from './careers/service/open-position.service';
-import { OurWorkDetailComponent } from './our-work/our-work-detail/our-work-detail.component';
 import { ClientStoryService } from './our-work/service/client-story.service';
 import { ClientStoryResolver } from './our-work/service/client-story.resolver';
 import { FeaturedClientStoriesResolver } from './our-work/service/featured-client-stories.resolver';
@@ -47,6 +46,7 @@ import { Xby2LogoComponent } from './shared/component/xby2-logo2/xby2-logo.compo
 import { ClientStoryListingComponent } from './shared/component/client-story-listing/client-story-listing.component';
 import { ExpertiseService } from './our-expertise/service/expertise.service';
 import { ExpertisesResolver } from './our-expertise/resolver/expertises.resolver';
+import { OurWorkDetailComponent } from './our-work/our-work-detail.component';
 
 @NgModule({
   declarations: [
