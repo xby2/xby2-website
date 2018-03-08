@@ -13,12 +13,6 @@ export class MindShareService {
     return this.httpClient.get<MindShare[]>(this.url);
   }
 
-  getFeaturedMindShare(): Observable<MindShare> {
-    return this.getMindShares()
-      .map(mindShares =>
-           mindShares.filter(mindShare => mindShare.isFeatured)[0]);
-  }
-
   getMindShare(id: string): Observable<MindShare> {
     return this.getMindShares()
       .map(mindShares => {

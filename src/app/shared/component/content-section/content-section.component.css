@@ -1,0 +1,60 @@
+:host ::ng-deep q {
+    quotes: "“" "”";
+    font-size: 24px;
+    line-height: 1.4;
+}
+
+:host ::ng-deep q:before {
+    content: open-quote;
+    line-height: 0;
+    position: relative;
+    top: 39px;
+    color: #ffa500;
+    font-size: 70px;
+    margin-right: 10px;
+}
+
+:host ::ng-deep q:after {
+    content: close-quote;
+    display: inline;
+    line-height: 0;
+    left: 10px;
+    position: relative;
+    top: 35px;
+    color: #ffa500;
+    font-size: 70px;
+}
+
+:host ::ng-deep hr {
+    border: 1px solid #ffa500;
+    margin: 40px 0;
+}
+
+:host ::ng-deep p {
+    margin-bottom: 1.5vw;
+}
+
+:host ::ng-deep h1 {
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 40px 0 1vw 0;
+    border-bottom: 1px solid #ffa500;
+}
+
+:host ::ng-deep h2 {
+    color: #333;
+    margin: 30px 0 1vw 0;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+:host ::ng-deep img {
+    display: block;
+    margin: 0 auto 40px auto;
+    max-width: 100%;
+}
+
+:host ::ng-deep ul {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}

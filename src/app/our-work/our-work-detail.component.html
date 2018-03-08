@@ -21,8 +21,7 @@
   </div>
 </div>
 <div class="row">
-  <div class="col-xs-12 our-work-content" [innerHtml]="clientStory.content">
-  </div>
+  <app-content-section class="col-xs-12" [content]="clientStory.content"></app-content-section>
 </div>
 <div *ngIf='clientStory.nextClientStoryId' class="row next-client-story">
   <div class="col-xs-12">

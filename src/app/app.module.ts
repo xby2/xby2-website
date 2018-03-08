@@ -15,9 +15,7 @@ import { CareersComponent } from './careers/careers.component';
 import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
 import { FormsModule } from '@angular/forms';
-import { OurThoughtsDetailComponent } from './our-thoughts/our-thoughts-detail/our-thoughts-detail.component';
 import { MindShareListingComponent } from './our-thoughts/mind-share-listing/mind-share-listing.component';
-import { FeaturedMindShareResolver } from './our-thoughts/service/featured-mind-share.resolver';
 import { MindShareService } from './our-thoughts/service/mind-share.service';
 import { MindSharesResolver } from './our-thoughts/service/mind-shares.resolver';
 import { MindShareResolver } from './our-thoughts/service/mind-share.resolver';
@@ -47,6 +45,9 @@ import { ClientStoryListingComponent } from './shared/component/client-story-lis
 import { ExpertiseService } from './our-expertise/service/expertise.service';
 import { ExpertisesResolver } from './our-expertise/resolver/expertises.resolver';
 import { OurWorkDetailComponent } from './our-work/our-work-detail.component';
+import { FeaturedMindShareResolver } from './home/resolver/featured-mind-share.resolver';
+import { OurThoughtsDetailComponent } from './our-thoughts/our-thoughts-detail.component';
+import { ContentSectionComponent } from './shared/component/content-section/content-section.component';
 
 @NgModule({
   declarations: [
@@ -73,7 +74,8 @@ import { OurWorkDetailComponent } from './our-work/our-work-detail.component';
     CareerDetailComponent,
     OpenPositionsSectionComponent,
     CareerDetailsActionItemsComponent,
-    PageHeaderComponent
+    PageHeaderComponent,
+    ContentSectionComponent
   ],
   imports: [
     BrowserModule,

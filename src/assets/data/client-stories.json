@@ -7,7 +7,7 @@
         "description": "X by 2 developed an IT roadmap, creating confidence in the client’s strategic and planning process towards increasing their market advantage.",
         "isFeatured": true,
         "industry": "insurance",
-        "client": "Amerisure",
+        "client": "Large, Mutual, Commercial Lines P&C Carrier",
         "expertises": [
             "Strategy and Roadmap",
             "Enterprise Architecture",
@@ -25,7 +25,7 @@
         "description": "X by 2 provided strategy, architecture and program leadership for the multi-year implementation of the Guidewire ClaimCenter platform.",
         "isFeatured": true,
         "industry": "insurance",
-        "client": "Auto-Owners Insurance",
+        "client": "Fortune 500 and Multi-Line Insurer",
         "expertises": [
             "Enterprise Architecture",
             "Strategy and Roadmap",
@@ -43,7 +43,7 @@
         "description": "X by 2 provided strategy and technical leadership of a core system modernization for the life division of a fortune 500 carrier.",
         "isFeatured": true,
         "industry": "healthcare",
-        "client": "Auto-Owners Insurance",
+        "client": "Fortune 500 and Multi-Line Insurer",
         "expertises": [
             "Enterprise Architecture",
             "Agile Implementation",
@@ -61,7 +61,7 @@
         "description": "X by 2 led the efforts to develop and deliver on strategies for our client’s advanced analytic and reporting capabilities for their value partnership programs.",
         "isFeatured": false,
         "industry": "healthcare",
-        "client": "Blue Cross and Blue Shield of Michigan",
+        "client": "Blue Cross Blue Shield Affiliate",
         "expertises": [
             "Data & Integration Architecture",
             "Strategy and Roadmap",
@@ -79,7 +79,7 @@
         "description": "X by 2 led the architecture review of an in-flight policy administration initiative, focusing on overall architecture and the use of agile methodology.",
         "isFeatured": false,
         "industry": "healthcare",
-        "client": "Foremost",
+        "client": "Specialty Lines Subsidiary of Fortune 500 Insurer",
         "expertises": [
             "Project Audit & Review",
             "Agile Implementation",
@@ -97,7 +97,7 @@
         "description": "X by 2 provided leadership for the client’s enterprise integration strategy and the development of an Enterprise Service Bus.",
         "isFeatured": false,
         "industry": "healthcare",
-        "client": "Geisinger Health Plan",
+        "client": "East Coast-Based and Not-for-Profit Health Insurer",
         "expertises": [
             "Integration Architecture",
             "Data Integration",

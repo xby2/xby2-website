@@ -32,34 +32,6 @@
     padding: 20px 25px;
 }
 
-:host ::ng-deep .our-work-content h1 {
-    text-transform: uppercase;
-    font-weight: 600;
-    margin: 30px 0 6vw 0;;
-    border-bottom: 1px solid #ffa500;
-}
-
-:host ::ng-deep .our-work-content h2 {
-    color: #333;
-    margin-bottom: 20px;
-    font-size: 22px;
-    font-weight: 600;
-}
-
-:host ::ng-deep .our-work-content hr {
-    border: 1px solid #ffa500;
-    margin: 40px 0;
-}
-
-:host ::ng-deep .our-work-content p {
-    margin-bottom: 6vw;
-}
-
-:host ::ng-deep .our-work-content ul {
-    padding-left: 20px;
-    margin-bottom: 20px;
-}
-
 ul {
     padding: 0;
     line-height: 1;
