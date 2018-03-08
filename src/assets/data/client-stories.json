@@ -1,8 +1,8 @@
 [
     {
         "id": "enterprise-architecture-assessment",
-        "listingImageUrl": "client-story-listing.jpg",
-        "imageUrl": "client-story.png",
+        "listingImageUrl": "ea-assessment-listing.jpg",
+        "imageUrl": "ea-assessment.jpeg",
         "title": "Enterprise Architecture Assessment",
         "description": "X by 2 developed an IT roadmap, creating confidence in the client’s strategic and planning process towards increasing their market advantage.",
         "isFeatured": true,
@@ -19,8 +19,8 @@
     },
     {
         "id": "claims-modernization",
-        "listingImageUrl": "client-story-listing.jpg",
-        "imageUrl": "client-story.png",
+        "listingImageUrl": "claims-modernization-listing.jpg",
+        "imageUrl": "claims-modernization.jpeg",
         "title": "Claims Modernization",
         "description": "X by 2 provided strategy, architecture and program leadership for the multi-year implementation of the Guidewire ClaimCenter platform.",
         "isFeatured": true,
@@ -37,8 +37,8 @@
     },
     {
         "id": "life-modernization",
-        "listingImageUrl": "client-story-listing.jpg",
-        "imageUrl": "client-story.png",
+        "listingImageUrl": "life-modernization-listing.png",
+        "imageUrl": "life-modernization.png",
         "title": "Life Modernization",
         "description": "X by 2 provided strategy and technical leadership of a core system modernization for the life division of a fortune 500 carrier.",
         "isFeatured": true,
@@ -55,8 +55,8 @@
     },
     {
         "id": "data-and-analytics-platform-for-value-based-care",
-        "listingImageUrl": "client-story-listing.jpg",
-        "imageUrl": "client-story.png",
+        "listingImageUrl": "data-analytics-listing.png",
+        "imageUrl": "data-analytics.png",
         "title": "Data and Analytics Platform for Value-Based Care",
         "description": "X by 2 led the efforts to develop and deliver on strategies for our client’s advanced analytic and reporting capabilities for their value partnership programs.",
         "isFeatured": false,
@@ -69,12 +69,12 @@
         ],
         "nextClientStoryId": "pas-architecture-review",
         "nextClientStoryDescription": "X by 2 led the architecture review of an in-flight policy administration initiative, focusing on overall architecture and the use of agile methodology.",
-        "content": "<h1>Opportunity<\/h1>\r\n<p>As a prominent health plan with a strong reputation, our client\u2019s nationally recognized value partnership and collaborative quality incentives programs - Practitioner Care Medical Home (PCMH) and Provider Group Incentive Program (PGIP) - are leading the way in controlling health care costs and improving health outcomes. In a continuing effort to grow and evolve their programs, X by 2 collaborated with the client and developed advanced medical informatics and reporting capabilities that enabled them to better evaluate the impact of systemic improvements in care processes and more quickly adapt to industry-wide changes that result from health care reform.<\/p>\r\n<p>Through its promotion of a PCMH model, our client worked to dramatically improve care quality, lower costs, increase satisfaction by providing incentives for physicians to focus on the overall health and wellness of each patient, and empower members to take more control of their own health outcomes and costs. The health insurer\u2019s ability to grow its programs; however, had become hindered by its inability to efficiently collect and analyze data for various initiatives.<\/p>\r\n<p>To help maintain its edge and continually evolve the incentive programs, our client required advanced data, analytics and reporting capabilities to enable the identification and evaluation of systemic improvements in care processes.   A key element of this was the measurement of initiative effectiveness from the perspective of results, incentive payout, projected savings and impact on the quality of care.<\/p>\r\n<h1>Engagement<\/h1>\r\n<p>X by 2 led the strategy and development efforts to deliver advanced analytic and reporting capabilities for our client\u2019s value partnership programs. In close collaboration with key business and IT leadership, X by 2 developed a single clinical programs and medical informatics approach that consolidated the insurer\u2019s vast amount of core data related to its incentive programs into a new data mart that enabled streamlined, accurate, and consistent analytic capabilities and reports in just nine months.<\/p> \r\n<p>The platform consolidated core membership, claims and provider data from disparate sources (e.g. Commercial, Medicare Advantage, etc.) into a single repository and automated advanced methods to enable analysts to identify and better understand the relationships between concepts such as:<\/p>\r\n<ul>\r\n<li><b>A Unified Person:<\/b>  identification and tracking of a person\u2019s membership over their lifetime.<\/li>\r\n<li><b>Care Relationship:<\/b>  identification and tracking of a person\u2019s Primary Care Physician (PCP) over their lifetime.<\/li>\r\n<li><b>Encounter:<\/b>  identification of inpatient, emergency, and outpatient encounters and the tracking of a person\u2019s interactions with a health facility. <\/li>\r\n<li><b>Disease Identification:<\/b> using claims history, person concepts and industry standards such as Hierarchical Chronic Condition (HCC) to identify patients with chronic illness.<\/li>\r\n<p>Using these concepts X by 2 was able to build provider performance reports such as:<\/p>\r\n<li>Generic drug usage<\/li>\r\n<li>Diabetic patient care<\/li>\r\n<li>Cardiological care for patients<\/li>\r\n<li>Transfer of care between hospital and PCP<\/li>\r\n<\/ul>\r\n<p>As part of the overall strategy and implementation, X by 2 developed an integration strategy for external data and data enrichment sources that included:<\/p>\r\n<ul>\r\n<li>EHR Systems<\/li>\r\n<li>HEDIS Engines<\/li>\r\n<li>Groupers (medical condition episode, clinical risk)<\/li>\r\n<li>Labs (Quest and JVHL)<\/li>\r\n<li>State Immunization Registry<\/li>\r\n<li>EDGE Server<\/li>\r\n<\/ul>\r\n<p>This combination of data allowed our client to more thoroughly evaluate a person\u2019s health experience, holistically view a person\u2019s care ongoing care and create advanced reporting that is shared internally and with providers. These reports are related to evidence-based care, generic prescription dispensing, inpatient use, claims, etc.<\/p>\r\n<h1>Impact<\/h1>\r\n<p>With the implementation of the platform, the health insurer is better equipped to evolve and grow its industry leading physician incentive and PCMH programs with advanced analytics. What X by 2 delivered became the single source for all analytics and reporting for our client\u2019s cross departmental data scientists, statisticians, etc. Additionally, as industry-wide changes continue via health care reform (e.g. performance-based payments), our client will be well-positioned for competitive advantage.<\/p>\r\n"
+        "content": "<h1>Opportunity<\/h1>\r\n<p>As a prominent health plan with a strong reputation, our client\u2019s nationally recognized value partnership and collaborative quality incentives programs - Practitioner Care Medical Home (PCMH) and Provider Group Incentive Program (PGIP) - are leading the way in controlling health care costs and improving health outcomes. In a continuing effort to grow and evolve their programs, X by 2 collaborated with the client and developed advanced medical informatics and reporting capabilities that enabled them to better evaluate the impact of systemic improvements in care processes and more quickly adapt to industry-wide changes that result from health care reform.<\/p>\r\n<p>Through its promotion of a PCMH model, our client worked to dramatically improve care quality, lower costs, increase satisfaction by providing incentives for physicians to focus on the overall health and wellness of each patient, and empower members to take more control of their own health outcomes and costs. The health insurer\u2019s ability to grow its programs; however, had become hindered by its inability to efficiently collect and analyze data for various initiatives.<\/p>\r\n<p>To help maintain its edge and continually evolve the incentive programs, our client required advanced data, analytics and reporting capabilities to enable the identification and evaluation of systemic improvements in care processes.   A key element of this was the measurement of initiative effectiveness from the perspective of results, incentive payout, projected savings and impact on the quality of care.<\/p>\r\n<h1>Engagement<\/h1>\r\n<p>X by 2 led the strategy and development efforts to deliver advanced analytic and reporting capabilities for our client\u2019s value partnership programs. In close collaboration with key business and IT leadership, X by 2 developed a single clinical programs and medical informatics approach that consolidated the insurer\u2019s vast amount of core data related to its incentive programs into a new data mart that enabled streamlined, accurate, and consistent analytic capabilities and reports in just nine months.<\/p> \r\n<p>The platform consolidated core membership, claims and provider data from disparate sources (e.g. Commercial, Medicare Advantage, etc.) into a single repository and automated advanced methods to enable analysts to identify and better understand the relationships between concepts such as:<\/p>\r\n<ul>\r\n<li><b>A Unified Person:<\/b>  identification and tracking of a person\u2019s membership over their lifetime.<\/li>\r\n<li><b>Care Relationship:<\/b>  identification and tracking of a person\u2019s Primary Care Physician (PCP) over their lifetime.<\/li>\r\n<li><b>Encounter:<\/b>  identification of inpatient, emergency, and outpatient encounters and the tracking of a person\u2019s interactions with a health facility. <\/li>\r\n<li><b>Disease Identification:<\/b> using claims history, person concepts and industry standards such as Hierarchical Chronic Condition (HCC) to identify patients with chronic illness.<\/li>\r\n<\/ul><p>Using these concepts X by 2 was able to build provider performance reports such as:<\/p>\r\n<ul><li>Generic drug usage<\/li>\r\n<li>Diabetic patient care<\/li>\r\n<li>Cardiological care for patients<\/li>\r\n<li>Transfer of care between hospital and PCP<\/li>\r\n<\/ul>\r\n<p>As part of the overall strategy and implementation, X by 2 developed an integration strategy for external data and data enrichment sources that included:<\/p>\r\n<ul>\r\n<li>EHR Systems<\/li>\r\n<li>HEDIS Engines<\/li>\r\n<li>Groupers (medical condition episode, clinical risk)<\/li>\r\n<li>Labs (Quest and JVHL)<\/li>\r\n<li>State Immunization Registry<\/li>\r\n<li>EDGE Server<\/li>\r\n<\/ul>\r\n<p>This combination of data allowed our client to more thoroughly evaluate a person\u2019s health experience, holistically view a person\u2019s care ongoing care and create advanced reporting that is shared internally and with providers. These reports are related to evidence-based care, generic prescription dispensing, inpatient use, claims, etc.<\/p>\r\n<h1>Impact<\/h1>\r\n<p>With the implementation of the platform, the health insurer is better equipped to evolve and grow its industry leading physician incentive and PCMH programs with advanced analytics. What X by 2 delivered became the single source for all analytics and reporting for our client\u2019s cross departmental data scientists, statisticians, etc. Additionally, as industry-wide changes continue via health care reform (e.g. performance-based payments), our client will be well-positioned for competitive advantage.<\/p>\r\n"
     },
     {
         "id": "pas-architecture-review",
-        "listingImageUrl": "client-story-listing.jpg",
-        "imageUrl": "client-story.png",
+        "listingImageUrl": "pas-review-listing.jpg",
+        "imageUrl": "pas-review.jpg",
         "title": "PAS Architecture Review",
         "description": "X by 2 led the architecture review of an in-flight policy administration initiative, focusing on overall architecture and the use of agile methodology.",
         "isFeatured": false,
@@ -91,8 +91,8 @@
     },
     {
         "id": "core-system-integration-strategy-and-implementation",
-        "listingImageUrl": "client-story-listing.jpg",
-        "imageUrl": "client-story.png",
+        "listingImageUrl": "core-system-integration-listing.png",
+        "imageUrl": "core-system-integration.png",
         "title": "Core System Integration Strategy & Implementation",
         "description": "X by 2 provided leadership for the client’s enterprise integration strategy and the development of an Enterprise Service Bus.",
         "isFeatured": false,

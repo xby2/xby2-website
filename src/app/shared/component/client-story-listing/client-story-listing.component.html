@@ -1,7 +1,11 @@
 <div class='col-sm-4 {{isFirst}} {{isLast}}'>
-    <img [src]="'./assets/' + clientStory.listingImageUrl" />
+    <a [routerLink]="['/our-work', clientStory.id]">
+        <img [src]="'./assets/client-story/' + clientStory.listingImageUrl" />
+    </a>
     <h4>{{clientStory.title}}</h4>
     <hr />
     <p>{{clientStory.description}}</p>
-    <a [routerLink]="['/our-work', clientStory.id]">Read more ></a>
+    <a class="read-more-link" [routerLink]="['/our-work', clientStory.id]">
+        Read more >
+    </a>
 </div>

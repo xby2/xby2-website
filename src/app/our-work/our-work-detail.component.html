@@ -2,9 +2,9 @@
   <div class="hero-image"
       [ngStyle]="{'background': 'linear-gradient(
                                   rgba(0, 0, 0, 0.45), 
-                                  rgba(0, 0, 0, 0.45)
-                                ), url(./assets/' + clientStory.imageUrl + ')',
-                  'background-size': '100% auto'}">
+                                  rgba(0, 0, 0, 0.45)),
+                                  0% 0% / 100%
+                                  url(./assets/client-story/' + clientStory.imageUrl + ')'}">
     <div class="expertises">
       <ul>
         <li *ngFor='let expertise of clientStory.expertises'>
