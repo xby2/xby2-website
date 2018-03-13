@@ -38,7 +38,7 @@
     {
         "id": "life-modernization",
         "listingImageUrl": "life-modernization-listing.png",
-        "imageUrl": "life-modernization.png",
+        "imageUrl": "life-modernization.jpeg",
         "title": "Life Modernization",
         "description": "X by 2 provided strategy and technical leadership of a core system modernization for the life division of a fortune 500 carrier.",
         "isFeatured": true,
@@ -55,8 +55,8 @@
     },
     {
         "id": "data-and-analytics-platform-for-value-based-care",
-        "listingImageUrl": "data-analytics-listing.png",
-        "imageUrl": "data-analytics.png",
+        "listingImageUrl": "data-analytics-listing.jpg",
+        "imageUrl": "data-analytics.jpeg",
         "title": "Data and Analytics Platform for Value-Based Care",
         "description": "X by 2 led the efforts to develop and deliver on strategies for our client’s advanced analytic and reporting capabilities for their value partnership programs.",
         "isFeatured": false,

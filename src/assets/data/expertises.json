@@ -2,11 +2,10 @@
     {
       "imageUrl": "./assets/enterprise-architecture.png",
       "title": "Enterprise Architecture",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo dictum neque, lobortis lobortis arcu blandit ut. Ut dignissim nunc.",
+      "text": "Aligning people, process, information and technology to enable an agile enterprise.",
       "expertiseLink": "/our-expertise",
       "clientStoryLink": "/our-work",
       "class": "col-xs-6 col-md-4",
-      "fullText": "In today’s world an agile enterprise is required to enable business goals and objectives. This is accomplished by understanding current capability and maturity across people, process, information and technology; identifying gaps between current and target state; and formulating the strategy and roadmap needed to realize the transformed IT organization.",
       "points": [
         "IT Strategy",
         "Information Management, Business Intelligence and Analytics",
@@ -19,11 +18,10 @@
     {
       "imageUrl": "./assets/app-solution-architecture.png",
       "title": "App/Solution Architecture",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo dictum neque, lobortis lobortis arcu blandit ut. Ut dignissim nunc.",
+      "text": "Simplifying complex business processes and technology to create a better vision and roadmap to the future.",
       "expertiseLink": "/our-expertise",
       "clientStoryLink": "/our-work",
       "class": "col-xs-6 col-md-4",
-      "fullText": "Understanding applications and processes that are critical to the business, assessing in terms of business and technology fit, and developing a pragmatic architecture and solution that enables the business.",
       "points": [
         "Application Architecture and Strategy",
         "Buy vs. Build Analysis",
@@ -33,29 +31,37 @@
     },
     {
       "imageUrl": "./assets/data-integration-architecture.png",
-      "title": "Data/Integration Architecture",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo dictum neque, lobortis lobortis arcu blandit ut. Ut dignissim nunc.",
+      "title": "Data Architecture",
+      "text": "Capturing and transforming data as the foundation for data driven decision making and next-generation customer experience.",
       "expertiseLink": "/our-expertise",
       "clientStoryLink": "/our-work",
       "class": "col-xs-6 col-md-4",
-      "fullText": "Identifying information assets that are key to business decision making and customer experience, understanding data quality, management, governance, integration, and consumption in order to develop a go-forward strategy and architecture that will enable next-generation BI capabilities.",
       "points": [
         "Data Architecture and Strategy",
         "Data Architecture Assessment",
-        "Integration Architecture and Strategy",
         "Business Intelligence and Analytics",
-        "Data Governance, Data Quality and Master Data Management",
-        "Execution Planning and Roadmap"
+        "Data Governance, Data Quality and Master Data Management"
+      ]
+    },
+    {
+      "imageUrl": "./assets/data-integration-architecture.png",
+      "title": "Integration Architecture",
+      "text": "Managing the impact of technology change through reduced dependencies and complexity.",
+      "expertiseLink": "/our-expertise",
+      "clientStoryLink": "/our-work",
+      "class": "col-xs-6 col-md-4",
+      "points": [
+        "Integration Strategy",
+        "Integration Architecture"
       ]
     },
     {
       "imageUrl": "./assets/agile-implementation.png",
-      "title": "Agile Implementation",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo dictum neque, lobortis lobortis arcu blandit ut. Ut dignissim nunc.",
+      "title": "Agile Program Delivery",
+      "text": "Leading pragmatically using proven approaches and best practices to successfully set up and deliver strategic business capabilities.",
       "expertiseLink": "/our-expertise",
       "clientStoryLink": "/our-work",
-      "class": "col-xs-6 col-md-4 col-md-offset-2",
-      "fullText": "Providing leadership, proven delivery approaches and best practices to successfully deliver complex enterprise initiatives.",
+      "class": "col-xs-6 col-md-4",
       "points": [
         "Program and Project Delivery Leadership",
         "Architecture and Technical Oversight",
@@ -65,16 +71,16 @@
     },
     {
       "imageUrl": "./assets/project-audit-review.png",
-      "title": "Project Audit & Review",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo dictum neque, lobortis lobortis arcu blandit ut. Ut dignissim nunc.",
+      "title": "Program and Architecture Assessment",
+      "text": "Utilizing experiences, industry best practices and patterns as a guide for formulating recommendation to meeting desired goal.",
       "expertiseLink": "/our-expertise",
       "clientStoryLink": "/our-work",
-      "class": "col-xs-6 col-xs-offset-3 col-md-4 col-md-offset-0",
-      "fullText": "Reviewing project direction and progress; assessing the suitability of established architecture vision and objectives; assessing the project team’s ability to deliver desired business capabilities across people, process, and technology dimensions; evaluating the current state against industry best practices, peer benchmarks, and X by 2 experience; providing objective recommendations, opportunities, and a go-forward strategy to shore up identified issues.",
+      "class": "col-xs-6 col-md-4",
       "points": [
         "Program Assessment and Rescue",
         "Architecture Audit and Review",
-        "Performance and Scalability"
+        "Performance and Scalability Optimization",
+        "Application Refactoring"
       ]
     }
   ]

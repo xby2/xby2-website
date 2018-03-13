@@ -48,6 +48,7 @@ import { OurWorkDetailComponent } from './our-work/our-work-detail.component';
 import { FeaturedMindShareResolver } from './home/resolver/featured-mind-share.resolver';
 import { OurThoughtsDetailComponent } from './our-thoughts/our-thoughts-detail.component';
 import { ContentSectionComponent } from './shared/component/content-section/content-section.component';
+import { MeetOurPeopleSectionComponent } from './careers/component/meet-our-people-section/meet-our-people-section.component';
 
 @NgModule({
   declarations: [
@@ -75,7 +76,8 @@ import { ContentSectionComponent } from './shared/component/content-section/cont
     OpenPositionsSectionComponent,
     CareerDetailsActionItemsComponent,
     PageHeaderComponent,
-    ContentSectionComponent
+    ContentSectionComponent,
+    MeetOurPeopleSectionComponent
   ],
   imports: [
     BrowserModule,

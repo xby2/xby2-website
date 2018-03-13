@@ -10,9 +10,7 @@ import { Expertise } from './model/expertise';
 export class OurExpertiseComponent implements OnInit {
   expertises: Expertise[];
   headerText = 'What We Do';
-  subheaderText = 'We\'re a seasoned team of architects and leaders with a ' +
-  'passion for transforming business through large scale enterprise ' +
-  'initiatives.';
+  subheaderText = 'Transforming business through technology.';
 
   constructor(private route: ActivatedRoute) {
     this.expertises = this.route.snapshot.data.expertises;

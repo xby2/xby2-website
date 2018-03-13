@@ -10,9 +10,8 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class OurWorkComponent implements OnInit {
   headerText = 'Client Stories';
-  subheaderText = 'Partnering still matters.  It\'s the secret to our ' +
-  'success and that of our clients.  We\'re proud of what we accomplish on ' +
-  'their behalf.';
+  subheaderText = 'Requisite skills, instincts, and judgment to guide our clients to where they ' +
+  'want to be.';
   clientStories: ClientStory[];
   filteredClientStories: ClientStory[];
   clientStoryDisplayCount: number;

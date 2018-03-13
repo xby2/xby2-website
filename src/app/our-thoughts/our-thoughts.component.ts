@@ -9,9 +9,7 @@ import { MindShare } from './service/mind-share';
 })
 export class OurThoughtsComponent implements OnInit {
   headerText = 'Mind Share';
-  subheaderText = 'We like to think we\'ve learned a few things along the ' +
-  'way.  Apparently others agree because they publish our thoughts.  Hope it ' +
-  'helps.';
+  subheaderText = 'We\'ve learned a few things along the way. Hope it helps.';
   mindShares: MindShare[];
   filteredMindShares: MindShare[];
   mindShareDisplayCount = 3;

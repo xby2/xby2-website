@@ -1,0 +1,48 @@
+#meet-our-people-section {
+    padding-bottom: 8vw;
+}
+
+.row {
+    background-color: #fff;
+}
+
+.row.inside {
+    margin-left: -25px;
+    margin-right: -25px;
+}
+
+img {
+    width: 100%;
+}
+
+h1 {
+    margin: 0;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+h2 {
+    margin: 0;
+    font-size: 16px;
+    text-transform: none;
+    color: #333;
+}
+
+p {
+    margin: 15px 0;
+    line-height: 1.2;
+}
+
+hr {
+    border-top: 1px solid #ffa500;
+    width: 25%;
+    margin: auto 0 15px 0;
+}
+
+dt,dd {
+    line-height: 1.2;
+}
+
+dd {
+    margin-bottom: 15px;
+}
