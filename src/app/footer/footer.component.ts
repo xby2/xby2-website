@@ -32,11 +32,11 @@ export class FooterComponent implements OnInit {
   }];
   socialMediaLinks: SocialMediaLink[] = [
     {
-      imageUrl: './assets/linkedin.png',
+      icon: 'fab fa-linkedin fa-2x',
       href: 'https://www.linkedin.com/company/xby2'
     },
     {
-      imageUrl: './assets/twitter.png',
+      icon: 'fab fa-twitter-square fa-2x',
       href: 'https://twitter.com/x_by_2'
     }
   ];

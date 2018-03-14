@@ -23,7 +23,7 @@
       <div class="col-xs-12 hidden-xs">
         <a *ngFor='let socialMediaLink of socialMediaLinks'
             href="{{socialMediaLink.href}}" target="_blank">
-          <img src="{{socialMediaLink.imageUrl}}" />
+          <i [class]="socialMediaLink.icon"></i>
         </a>
       </div>
       <div class="col-xs-12">
@@ -39,7 +39,7 @@
       <div class="col-xs-12 visible-xs">
           <a *ngFor='let socialMediaLink of socialMediaLinks'
             href="{{socialMediaLink.href}}" target="_blank">
-            <img src="{{socialMediaLink.imageUrl}}" />
+            <i [class]="socialMediaLink.icon"></i>
           </a>
       </div>
       <div class="col-xs-12 visible-xs">

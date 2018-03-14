@@ -59,6 +59,11 @@ img {
     margin-right: -25px;
 }
 
+svg {
+    margin-right: 10px;
+    color: #fff;
+}
+
 @media (min-width: 992px) {
     ul {
         margin-left: 20px;

@@ -93,5 +93,6 @@ div.component-content {
 @media (min-width: 1200px) {
     body {
         margin-top: 6vw;
+        font-size: 4vw;
     }
 }

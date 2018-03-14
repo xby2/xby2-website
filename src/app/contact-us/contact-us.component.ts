@@ -7,8 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactUsComponent implements OnInit {
   headerText = 'Say Hello';
-  subheaderText = 'We would love to learn about your project and answer any ' +
-  'questions that you may have.';
+  subheaderText = 'Whether you have a question or just want to say hi, give us a shout.';
 
   constructor() { }
 

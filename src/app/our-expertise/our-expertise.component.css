@@ -1,5 +1,5 @@
 h4 {
-    font-size: 28px;
+    font-size: 9vw;
     font-weight: 600;
     text-transform: uppercase;
     margin: 0;
@@ -9,7 +9,7 @@ h4 {
 
 img {
     margin-left: 25px;
-    width: 48px;
+    width: 17vw;
 }
 
 ul {
@@ -47,11 +47,12 @@ a {
 
 @media (min-width: 768px) {
     h4 {
-        font-size: 36px;
+        font-size: 5vw;
     }
 
     img {
         margin-left: 50px;
+        width: 7vw;
     }
 
     .col-xs-12 {
