@@ -49,6 +49,7 @@ import { FeaturedMindShareResolver } from './home/resolver/featured-mind-share.r
 import { OurThoughtsDetailComponent } from './our-thoughts/our-thoughts-detail.component';
 import { ContentSectionComponent } from './shared/component/content-section/content-section.component';
 import { MeetOurPeopleSectionComponent } from './careers/component/meet-our-people-section/meet-our-people-section.component';
+import { FilterWorkComponent } from './shared/component/filter-work/filter-work.component';
 
 @NgModule({
   declarations: [
@@ -77,7 +78,8 @@ import { MeetOurPeopleSectionComponent } from './careers/component/meet-our-peop
     CareerDetailsActionItemsComponent,
     PageHeaderComponent,
     ContentSectionComponent,
-    MeetOurPeopleSectionComponent
+    MeetOurPeopleSectionComponent,
+    FilterWorkComponent
   ],
   imports: [
     BrowserModule,

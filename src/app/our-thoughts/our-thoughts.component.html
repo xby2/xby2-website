@@ -1,40 +1,20 @@
 <app-page-header [headerText]='headerText'
                  [subheaderText]='subheaderText'>
 </app-page-header>
+<app-filter-work (registerClick)="performFilter($event)"></app-filter-work>
 <div class="row">
   <div class="col-xs-12">
-      <div class="col-xs-12" id="filter">
-          <h4>Filter Work</h4>
-          <div class="btn-group" data-toggle="buttons"
-               id="filter-work-buttons" >
-              <button type="button text-right" class="btn btn-primary active"
-                      (click)="performFilter('all')">
-                All
-                <input type="radio" id="all">
-              </button>
-              <button type="button" class="btn btn-primary"
-                     (click)="performFilter('insurance')">
-                Insurance
-                <input type="radio" id="insurance">
-              </button>
-              <button type="button" class="btn btn-primary"
-                     (click)="performFilter('healthcare')">
-                Healthcare
-                <input  type="radio" id="healthcare">
-              </button>                
-           </div>
-      </div>
-      <div class="col-xs-12">
-        <app-mind-share-listing
-          *ngFor='let mindShare of filteredMindShares |
-                  slice: 0:mindShareDisplayCount;'
-                  [mindShare]='mindShare'>
-        </app-mind-share-listing>
-      </div>
-      <button class="btn btn-primary btn-xby2" type="button"
-          (click)="loadMoreMindShares()"
-          *ngIf="mindShareDisplayCount < filteredMindShares?.length">
-        Load More
-      </button>
+    <app-mind-share-listing *ngFor='let mindShare of filteredMindShares |
+                                    slice: 0:mindShareDisplayCount;'
+                            [mindShare]='mindShare'>
+    </app-mind-share-listing>
+  </div>
+</div>
+<div *ngIf="mindShareDisplayCount < filteredMindShares?.length" class="row">
+  <div class="col-xs-12">
+    <button class="btn btn-primary btn-xby2" type="button"
+          (click)="loadMoreMindShares()">
+      Load More
+    </button>
   </div>
 </div>

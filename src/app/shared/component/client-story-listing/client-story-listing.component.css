@@ -2,9 +2,7 @@
     background-color: #fff;
     padding-left: 0;
     padding-right: 0;
-    margin-bottom: 15px;
-    margin-left: 25px;
-    margin-right: 25px;
+    margin-bottom: 6vw;
 }
 
 img {
@@ -13,27 +11,28 @@ img {
 
 h4 {
     text-align: center;
-    color: #464646;
-    margin: 20px 15px 0 15px;
+    color: #919295;
+    margin: 6vw 1.5vw 0 1.5vw;
     font-size: 7vw;
 }
 
 hr {
-    border: 1px solid #ffa500;
+    border-top: 1px solid #eb9c45;
     width: 35%;
     margin: 20px auto;
 }
 
 p {
-    margin: 10px 15px;
+    margin: 1.5vw;
     text-align: center;
     line-height: 1.2;
     font-size: 5vw;
+    color: #666666;
 }
 
 a.read-more-link {
     text-transform: none;
-    color: #ffa500;
+    color: #eb9c45;
     display: block;
     text-align: center;
     font-weight: 600;
@@ -43,14 +42,27 @@ a.read-more-link {
 
 @media (min-width: 768px) {
     .col-sm-4 {
-        height: 38vw;
+        height: 35vw;
         width: 32.3333333%;
-        margin: 0 0 1vw 0;
+        margin-bottom: 1.5vw;
+    }
+
+    .col-sm-4.first {
+        margin-right: 1.5%;
+    }
+    
+    .col-sm-4.last {
+        margin-left: 1.5%;
     }
 
     h4 {
         font-size: 2.3vw;
         height: 6vw;
+        margin-top: 1vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-items: center;
     }
 
     hr {
@@ -69,14 +81,6 @@ a.read-more-link {
         right: 0;
         bottom: 5px;
         font-size: 2vw;
-    }
-
-    .col-sm-4.first {
-        margin-right: 1.5%;
-    }
-    
-    .col-sm-4.last {
-        margin-left: 1.5%;
     }
 }
 

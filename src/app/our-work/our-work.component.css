@@ -1,36 +1,6 @@
-h4 {
-    display: inline;
-    color: #f89829;
-    font-size: 5vw;
-    text-transform: uppercase;
-    vertical-align: middle;
-}
-
-#filter {
-    margin: 10px 25px 20px 25px;
-}
-
-.btn-group > .btn {
-    background-color: transparent;
-    padding: 5px 1.5vw;
-    color: #363636;
-    font-weight: normal;
-    box-shadow: none;
-    vertical-align: middle;
-}
-
-.btn-group > .active {
-    color: #f89829;
-}
-
-.btn-group > .active:focus {
-    outline: 0;
-}
-
-/* this section should be added to style.css */
 button {
     display: block;
-    margin: 7vw auto;
+    margin: 0vw auto 10vw auto;
     background-color: #eb9c45;
     border: 0;
     border-radius: 0;
@@ -50,6 +20,10 @@ button {
 
 .btn-xby2:active, .btn-xby2:hover {
     background-color: #eba960;
+}
+
+.col-xs-12 {
+    margin-bottom: 5vw;
 }
 
 @media (min-width: 768px) {

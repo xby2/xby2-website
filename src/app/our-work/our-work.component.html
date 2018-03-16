@@ -1,43 +1,22 @@
 <app-page-header [headerText]='headerText'
                  [subheaderText]='subheaderText'>
 </app-page-header>
+<app-filter-work (registerClick)="performFilter($event)"></app-filter-work>
 <div class="row">
-  <div id="filter">
-    <h4>Filter Work</h4>
-    <div class="btn-group" data-toggle="buttons"
-         id="filter-work-buttons" >
-        <button type="button text-right" class="btn btn-primary active"
-                (click)="performFilter('all')">
-          All
-          <input type="radio" id="all">
-        </button>
-        <button type="button" class="btn btn-primary"
-               (click)="performFilter('insurance')">
-          Insurance
-          <input type="radio" id="insurance">
-        </button>
-        <button type="button" class="btn btn-primary"
-               (click)="performFilter('healthcare')">
-          Healthcare
-          <input type="radio" id="healthcare">
-        </button>                
-     </div>
-  </div>
-
   <div class="col-xs-12">
-      <app-client-story-listing
-        *ngFor='let clientStory of filteredClientStories |
-                slice: 0:clientStoryDisplayCount; let i = index'
-        [clientStory]='clientStory'
-        [isFirst]="i % 3 === 0 ? 'first' : ''"
-        [isLast]="(i+1) % 3 === 0 ? 'last' : ''">
-      </app-client-story-listing>
+    <app-client-story-listing
+      *ngFor='let clientStory of filteredClientStories |
+              slice: 0:clientStoryDisplayCount; let i = index'
+      [clientStory]='clientStory'
+      [isFirst]="i % 3 === 0 ? 'first' : ''"
+      [isLast]="(i+1) % 3 === 0 ? 'last' : ''">
+    </app-client-story-listing>
   </div>
-  
+</div>
+<div *ngIf="clientStoryDisplayCount < filteredClientStories?.length" class="row">
   <div class="col-xs-12">
     <button class="btn btn-primary btn-xby2" type="button"
-          (click)="loadMoreClientStories()"
-          *ngIf="clientStoryDisplayCount < filteredClientStories?.length">
+          (click)="loadMoreClientStories()">
       Load More
     </button>
   </div>
