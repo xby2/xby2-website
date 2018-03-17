@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { Location } from './model/location';
-import { Link } from '../shared/model/link';
-import { SocialMediaLink } from './model/social-media-link';
-import { LinksService } from '../shared/service/links.service';
+import { Link } from '../../model/link';
+import { SocialMediaLink } from '../../model/social-media-link';
+import { LinksService } from '../../service/links.service';
+import { Location } from '../../model/location'; 
 
 @Component({
   selector: 'app-footer',

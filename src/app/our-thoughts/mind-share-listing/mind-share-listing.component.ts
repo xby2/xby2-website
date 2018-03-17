@@ -8,10 +8,11 @@ import { MindShare } from '../service/mind-share';
 })
 export class MindShareListingComponent implements OnInit {
   @Input() mindShare: MindShare;
+  @Input() isFirst: string;
+  @Input() isLast: string;
 
   constructor() { }
 
   ngOnInit() {
   }
-
 }

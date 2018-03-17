@@ -13,11 +13,7 @@
     </app-client-story-listing>
   </div>
 </div>
-<div *ngIf="clientStoryDisplayCount < filteredClientStories?.length" class="row">
-  <div class="col-xs-12">
-    <button class="btn btn-primary btn-xby2" type="button"
-          (click)="loadMoreClientStories()">
-      Load More
-    </button>
-  </div>
-</div>
+<app-load-more-button
+  *ngIf="clientStoryDisplayCount < filteredClientStories?.length"
+  (registerClick)="loadMoreClientStories()">
+</app-load-more-button>

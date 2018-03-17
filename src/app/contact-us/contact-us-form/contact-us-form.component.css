@@ -21,6 +21,10 @@ form {
 textarea.form-control {
     height: 150px;
 }
+textarea {
+    resize: vertical;
+    min-height: 10vw;
+}
 
 button {
     display: block;

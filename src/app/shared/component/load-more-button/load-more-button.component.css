@@ -1,0 +1,29 @@
+button {
+    display: block;
+    margin: 0vw auto 10vw auto;
+    background-color: #f89829;
+    border: 0;
+    border-radius: 0;
+    text-transform: uppercase;
+    padding: 3vw 15vw;
+    font-size: 5vw;
+    font-weight: 600;
+}
+
+.btn[disabled]:hover, .btn[disabled]:focus {
+    background-color: #f89829;
+}
+
+.btn:focus,
+.btn:active,
+.btn:hover  {
+    background-color: #f89829;
+}
+
+@media (min-width: 768px) {
+    button {
+        padding: 1vw 6vw;
+        font-size: 2.5vw;
+        
+    }
+}

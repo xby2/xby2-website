@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { LinksService } from '../shared/service/links.service';
-import { Link } from '../shared/model/link';
+import { LinksService } from '../../service/links.service';
+import { Link } from '../../model/link';
 
 @Component({
   selector: 'app-navbar',

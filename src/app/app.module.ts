@@ -5,7 +5,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './navbar/navbar.component';
 import { OurStoryComponent } from './our-story/our-story.component';
 import { OurExpertiseComponent } from './our-expertise/our-expertise.component';
 import { OurWorkComponent } from './our-work/our-work.component';
@@ -13,7 +12,6 @@ import { OurThoughtsComponent } from './our-thoughts/our-thoughts.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { CareersComponent } from './careers/careers.component';
 import { HomeComponent } from './home/home.component';
-import { FooterComponent } from './footer/footer.component';
 import { FormsModule } from '@angular/forms';
 import { MindShareListingComponent } from './our-thoughts/mind-share-listing/mind-share-listing.component';
 import { MindShareService } from './our-thoughts/service/mind-share.service';
@@ -27,7 +25,6 @@ import { ClientStoryService } from './our-work/service/client-story.service';
 import { ClientStoryResolver } from './our-work/service/client-story.resolver';
 import { FeaturedClientStoriesResolver } from './our-work/service/featured-client-stories.resolver';
 import { LinksService } from './shared/service/links.service';
-import { ModalComponent } from './navbar/modal/modal.component';
 import { HomeExpertiseComponent } from './home/home-expertise/home-expertise.component';
 import { FeaturedMindShareComponent } from './home/featured-mind-share/featured-mind-share.component';
 import { ClientStoriesResolver } from './our-work/service/client-stories.resolver.';
@@ -50,11 +47,14 @@ import { OurThoughtsDetailComponent } from './our-thoughts/our-thoughts-detail.c
 import { ContentSectionComponent } from './shared/component/content-section/content-section.component';
 import { MeetOurPeopleSectionComponent } from './careers/component/meet-our-people-section/meet-our-people-section.component';
 import { FilterWorkComponent } from './shared/component/filter-work/filter-work.component';
+import { LoadMoreButtonComponent } from './shared/component/load-more-button/load-more-button.component';
+import { NavbarComponent } from './shared/component/navbar/navbar.component';
+import { FooterComponent } from './shared/component/footer/footer.component';
+import { ModalComponent } from './shared/component/navbar/modal.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent,
     Xby2LogoComponent,
     OurStoryComponent,
     OurExpertiseComponent,
@@ -63,13 +63,11 @@ import { FilterWorkComponent } from './shared/component/filter-work/filter-work.
     ContactUsComponent,
     CareersComponent,
     HomeComponent,
-    FooterComponent,
     OurWorkDetailComponent,
     OurThoughtsDetailComponent,
     ContactUsFormComponent,
     ClientStoryListingComponent,
     MindShareListingComponent,
-    ModalComponent,
     HomeExpertiseComponent,
     FeaturedMindShareComponent,
     FrequentlyAskedQuestionsComponent,
@@ -79,7 +77,11 @@ import { FilterWorkComponent } from './shared/component/filter-work/filter-work.
     PageHeaderComponent,
     ContentSectionComponent,
     MeetOurPeopleSectionComponent,
-    FilterWorkComponent
+    FilterWorkComponent,
+    LoadMoreButtonComponent,
+    NavbarComponent,
+    FooterComponent,
+    ModalComponent
   ],
   imports: [
     BrowserModule,

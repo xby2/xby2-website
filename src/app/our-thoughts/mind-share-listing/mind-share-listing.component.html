@@ -1,14 +1,11 @@
-<div class='col-sm-4'>
-    <div class='col-md-12'>
-      <img [style.visibility]="mindShare.authorImageUrl ? 'visible' : 'hidden'"
-           [src]="'./assets/' + mindShare.authorImageUrl" />
-      <h4>{{mindShare.title}}</h4>
-      <div id="author">
-        <span class="author-name">{{mindShare.authorName}}</span><br />
-        <span class="author-title">{{mindShare.authorTitle}}</span>
-      </div>
-      <hr />
-      <p>{{mindShare.shortDescription}}</p>
-      <a [routerLink]="['/our-thoughts', mindShare.id]">Read more ></a>
-    </div>
+<div class='col-sm-4 {{isFirst}} {{isLast}}'>
+  <img [src]="'./assets/' + mindShare.authorImageUrl" />
+  <h4>{{mindShare.title}}</h4>
+  <div id="author">
+    <span class="author-name">{{mindShare.authorName}}</span><br />
+    <span class="author-title">{{mindShare.authorTitle}}</span>
   </div>
+  <hr />
+  <p>{{mindShare.shortDescription}}</p>
+  <a [routerLink]="['/our-thoughts', mindShare.id]">Read more ></a>
+</div>

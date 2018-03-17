@@ -153,4 +153,8 @@ h3 {
     .full-img {
         width: 37vw;
     }
+
+    .featured-mind-share-section {
+        padding-left: 0;
+    }
 }
