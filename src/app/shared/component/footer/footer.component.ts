@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Link } from '../../model/link';
 import { SocialMediaLink } from '../../model/social-media-link';
 import { LinksService } from '../../service/links.service';
-import { Location } from '../../model/location'; 
+import { Location } from '../../model/location';
 
 @Component({
   selector: 'app-footer',
