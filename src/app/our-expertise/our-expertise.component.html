@@ -1,27 +1,8 @@
 <app-page-header [headerText]='headerText'
                  [subheaderText]='subheaderText'>
 </app-page-header>
-<div *ngFor='let expertise of expertises; let first = first; let last = last'
-      class='row' [class.first]="first" [class.last]="last"> 
-  <div class="col-xs-12">
-    <h4>
-      <span class="text">{{expertise.title}}</span>
-      <span class="span">
-        <img [src]='expertise.imageUrl' />
-      </span>
-    </h4>
-    </div>
-    <div class="col-xs-12">
-      <p>{{expertise.text}}</p>
-      <ul>
-        <li *ngFor='let point of expertise.points'>
-          {{point}}
-        </li>
-      </ul>
-      <a [routerLink]='expertise.clientStoryLink'>
-        Learn more about our {{expertise.title}} expertise
-      </a>
-    </div>
-</div>
-    
-
+<app-expertise-section *ngFor='let expertise of expertises; let first = first; let last = last'
+                       [isFirst]="first ? 'first' : ''"
+                       [isLast]="last ? 'last' : ''"
+                       [expertise]="expertise">
+</app-expertise-section>

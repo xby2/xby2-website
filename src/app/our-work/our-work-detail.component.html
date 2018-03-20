@@ -23,10 +23,8 @@
 <div class="row">
   <app-content-section class="col-xs-12" [content]="clientStory.content"></app-content-section>
 </div>
-<div *ngIf='clientStory.nextClientStoryId' class="row next-client-story">
-  <div class="col-xs-12">
-    <h2>Next Client Story</h2>
-    <h3>{{clientStory.nextClientStoryDescription}}</h3>
-    <a [routerLink]="['/our-work', clientStory.nextClientStoryId]">></a>
-  </div>
-</div>
+<app-next-item-section *ngIf='clientStory.nextClientStoryId'
+                       title="Next Client Story"
+                       [description]="clientStory.nextClientStoryDescription"
+                       [link]="['/our-work', clientStory.nextClientStoryId]">
+</app-next-item-section>

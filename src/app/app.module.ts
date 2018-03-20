@@ -51,6 +51,8 @@ import { LoadMoreButtonComponent } from './shared/component/load-more-button/loa
 import { NavbarComponent } from './shared/component/navbar/navbar.component';
 import { FooterComponent } from './shared/component/footer/footer.component';
 import { ModalComponent } from './shared/component/navbar/modal.component';
+import { NextItemSectionComponent } from './shared/component/next-item-section/next-item-section.component';
+import { ExpertiseSectionComponent } from './our-expertise/component/expertise-section/expertise-section.component';
 
 @NgModule({
   declarations: [
@@ -81,7 +83,9 @@ import { ModalComponent } from './shared/component/navbar/modal.component';
     LoadMoreButtonComponent,
     NavbarComponent,
     FooterComponent,
-    ModalComponent
+    ModalComponent,
+    NextItemSectionComponent,
+    ExpertiseSectionComponent
   ],
   imports: [
     BrowserModule,

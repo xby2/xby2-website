@@ -15,4 +15,5 @@ export interface MindShare {
     publishUrl: string;
     tags: string[];
     nextMindShareId: string;
+    nextMindShareTitle: string;
 }

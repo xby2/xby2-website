@@ -2,12 +2,17 @@
     margin-bottom: 8.5vw;
 }
 
+:host ::ng-deep p,
+:host ::ng-deep ul  {
+    font-size: 5vw;
+}
+
 :host ::ng-deep q {
     quotes: "“" "”";
-    font-size: 24px;
     line-height: 1.4;
     font-weight: 600;
     display: block;
+    font-size: 7vw;
 }
 
 :host ::ng-deep q:before {
@@ -39,8 +44,9 @@
 :host ::ng-deep h1 {
     text-transform: uppercase;
     font-weight: 600;
-    margin: 40px 0 5vw 0;
+    margin: 40px 0 12vw 0;
     border-bottom: 1px solid #ffa500;
+    font-size: 9vw;
 }
 
 :host ::ng-deep h2 {
@@ -61,17 +67,53 @@
 }
 
 :host ::ng-deep li {
-    margin-bottom: 3vw;
+    margin-bottom: 0;
 }
 
 @media (min-width: 768px) {
     :host ::ng-deep h1 {
         font-size: 5vw;
+        margin-bottom: 8vw;
+        font-size: 8vw;
     }
 
     :host ::ng-deep p,
     :host ::ng-deep ul {
         font-size: 3vw;
         margin-bottom: 4.5vw;
+    }
+
+    :host ::ng-deep q {
+        font-size: 4vw;
+    }
+}
+
+@media (min-width: 992px) {
+    :host ::ng-deep p,
+    :host ::ng-deep ul  {
+        font-size: 2vw;
+    }
+
+    :host ::ng-deep q {
+        font-size: 3vw;
+    }
+
+    :host ::ng-deep h1 {
+        margin-bottom: 5vw;
+    }
+}
+
+@media (min-width: 1200px) {
+    :host ::ng deep * {
+        margin-bottom: 2.5vw;
+    }
+
+    :host ::ng-deep q {
+        font-size: 2.5vw;
+    }
+
+    :host ::ng-deep p,
+    :host ::ng-deep ul  {
+        font-size: 1.5vw;
     }
 }

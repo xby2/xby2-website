@@ -17,7 +17,8 @@
             "insurance",
             "architecture"
         ],
-        "nextMindShareId": "the-key-to-small-project-management-keep-it-simple"
+        "nextMindShareId": "the-key-to-small-project-management-keep-it-simple",
+        "nextMindShareTitle": "The Key to (Small) Project Management: Keep it Simple"
     }, 
     {
         "id": "the-key-to-small-project-management-keep-it-simple",
@@ -36,7 +37,8 @@
             "insurance",
             "project management"
         ],
-        "nextMindShareId": "how-neglecting-non-functional-requirements-makes-systems-non-functional"
+        "nextMindShareId": "how-neglecting-non-functional-requirements-makes-systems-non-functional",
+        "nextMindShareTitle": "How Neglecting Non-Functional Requirements Makes Systems Non-Functional"
     }, 
     {
         "id": "how-neglecting-non-functional-requirements-makes-systems-non-functional",
@@ -55,7 +57,8 @@
             "insurance",
             "requirements"
         ],
-        "nextMindShareId": "architecting-an-agile-enterprise"
+        "nextMindShareId": "architecting-an-agile-enterprise",
+        "nextMindShareTitle": "Architecting an Agile Enterprise"
     }, 
     {
         "id": "architecting-an-agile-enterprise",
@@ -74,7 +77,8 @@
             "architecture",
             "agile"
         ],
-        "nextMindShareId": "life-insurance-applications-a-better-way"
+        "nextMindShareId": "life-insurance-applications-a-better-way",
+        "nextMindShareTitle": "Life Insurance Applications: A Better Way"
     },    
     {
         "id": "life-insurance-applications-a-better-way",
@@ -93,7 +97,8 @@
             "application",
             "customer experience"
         ],
-        "nextMindShareId": "the-bigger-they-are-the-tougher-the-talent"
+        "nextMindShareId": "the-bigger-they-are-the-tougher-the-talent",
+        "nextMindShareTitle": "The Bigger They Are, The Tougher The Talent"
     },   
     {
         "id": "the-bigger-they-are-the-tougher-the-talent",
@@ -112,7 +117,8 @@
             "talent",
             "recruiting"
         ],
-        "nextMindShareId": "healthcare-data-sharing-is-only-as-good-as-your-data-standards"
+        "nextMindShareId": "healthcare-data-sharing-is-only-as-good-as-your-data-standards",
+        "nextMindShareTitle": "Healthcare Data Sharing is Only as Good as Your Data Standards"
     },
     {
         "id": "healthcare-data-sharing-is-only-as-good-as-your-data-standards",
@@ -131,7 +137,8 @@
             "data",
             "standards"
         ],
-        "nextMindShareId": "why-clinical-document-architecture-doesnt-solve-data-quality-issues"
+        "nextMindShareId": "why-clinical-document-architecture-doesnt-solve-data-quality-issues",
+        "nextMindShareTitle": "Why Clinical Document Architecture Doesn't Solve Data Quality Issues"
     },
     {
         "id": "why-clinical-document-architecture-doesnt-solve-data-quality-issues",
@@ -150,7 +157,8 @@
             "data",
             "quality"
         ],
-        "nextMindShareId": "non-core-insurance-system-modernization-matters-too-part-one-assessment"
+        "nextMindShareId": "non-core-insurance-system-modernization-matters-too-part-one-assessment",
+        "nextMindShareTitle": "Non-Core Insurance System Modernization Matters Too: Part One - Assessment"
     },
 	{
         "id": "non-core-insurance-system-modernization-matters-too-part-one-assessment",
@@ -169,7 +177,8 @@
             "systems",
             "assessment"
         ],
-        "nextMindShareId": "a-short-guide-to-emerging-website-architectures"
+        "nextMindShareId": "a-short-guide-to-emerging-website-architectures",
+        "nextMindShareTitle": "A Short Guide to Emerging Website Architectures"
     },
 	{
         "id": "a-short-guide-to-emerging-website-architectures",
@@ -188,7 +197,8 @@
             "architecture",
             "framework"
         ],
-        "nextMindShareId": "non-core-system-modernization-matters-too-part-two-contracts-and-implementation"
+        "nextMindShareId": "non-core-system-modernization-matters-too-part-two-contracts-and-implementation",
+        "nextMindShareTitle": "Non-Core Insurance System Modernization Matters Too: Part Two - Contracts & Implementation"
     },
 	{
         "id": "non-core-system-modernization-matters-too-part-two-contracts-and-implementation",
@@ -207,7 +217,8 @@
             "systems",
             "implementation"
         ],
-        "nextMindShareId": "avoiding-communication-breakdowns"
+        "nextMindShareId": "avoiding-communication-breakdowns",
+        "nextMindShareTitle": "Avoiding Communication Breakdowns"
     },
 	{
         "id": "avoiding-communication-breakdowns",
@@ -226,7 +237,8 @@
             "communication",
             "consulting"
         ],
-        "nextMindShareId": "non-core-insurance-system-modernization-matters-too-part-three-sustainability"
+        "nextMindShareId": "non-core-insurance-system-modernization-matters-too-part-three-sustainability",
+        "nextMindShareTitle": "Non-Core Insurance System Modernization Matters Too: Part Three - Sustainability"
     },
 	{
         "id": "non-core-insurance-system-modernization-matters-too-part-three-sustainability",
@@ -245,7 +257,8 @@
             "systems",
             "sustainability"
         ],
-        "nextMindShareId": "automating-a-little-can-help-a-lot"
+        "nextMindShareId": "automating-a-little-can-help-a-lot",
+        "nextMindShareTitle": "Automating a Little Can Help a Lot"
     },
 	{
         "id": "automating-a-little-can-help-a-lot",
@@ -264,7 +277,8 @@
             "data",
             "automation"
         ],
-        "nextMindShareId": "emr-data-integration-still-a-long-way-to-go"
+        "nextMindShareId": "emr-data-integration-still-a-long-way-to-go",
+        "nextMindShareTitle": "EMR Data Integration: Still a Long Way to Go"
     },
 	{
         "id": "emr-data-integration-still-a-long-way-to-go",
@@ -283,7 +297,8 @@
             "data",
             "integration"
         ],
-        "nextMindShareId": "modern-business-intelligence-for-a-modern-world"
+        "nextMindShareId": "modern-business-intelligence-for-a-modern-world",
+        "nextMindShareTitle": "Modern Business Intelligence for a Modern World"
     },
 	{
         "id": "modern-business-intelligence-for-a-modern-world",
@@ -302,7 +317,8 @@
             "data",
             "business intelligence"
         ],
-        "nextMindShareId": "health-information-exchanges-the-future-is-now-for-life-insurers"
+        "nextMindShareId": "health-information-exchanges-the-future-is-now-for-life-insurers",
+        "nextMindShareTitle": "Health Information Exchanges: The Future is Now for Life Insurers"
     },
 	{
         "id": "health-information-exchanges-the-future-is-now-for-life-insurers",
@@ -321,7 +337,8 @@
             "underwriting",
             "data"
         ],
-        "nextMindShareId": "building-great-technical-solutions-requires-more-than-technical-prowess"
+        "nextMindShareId": "building-great-technical-solutions-requires-more-than-technical-prowess",
+        "nextMindShareTitle": "Building Great Technical Solutions Requires More Than Technical Prowess"
     },
 	{
         "id": "building-great-technical-solutions-requires-more-than-technical-prowess",
@@ -340,7 +357,8 @@
             "communication",
             "technology"
         ],
-        "nextMindShareId": "a-moneyball-approach-to-insurance-it-recruiting"
+        "nextMindShareId": "a-moneyball-approach-to-insurance-it-recruiting",
+        "nextMindShareTitle": "A 'Moneyball' Approach to Insurance IT Recruiting"
     },	
 	{
         "id": "a-moneyball-approach-to-insurance-it-recruiting",
@@ -359,7 +377,8 @@
             "talent",
             "recruiting"
         ],
-        "nextMindShareId": "if-its-not-mobile-dont-bother"
+        "nextMindShareId": "if-its-not-mobile-dont-bother",
+        "nextMindShareTitle": "If It's Not Mobile, Don't Bother"
     },
 	{
         "id": "if-its-not-mobile-dont-bother",
@@ -378,7 +397,8 @@
             "mobile",
             "customer experience"
         ],
-        "nextMindShareId": "how-providers-can-get-better-results-from-data-efforts"
+        "nextMindShareId": "how-providers-can-get-better-results-from-data-efforts",
+        "nextMindShareTitle": "How Providers Can Get Better Results From Data Efforts"
     },
      {
         "id": "how-providers-can-get-better-results-from-data-efforts",
@@ -396,7 +416,6 @@
         "tags": [
             "data",
             "analytics"
-        ],
-        "nextMindShareId": "when-it-comes-to-large-projects-think-architecture-first"
+        ]
     } 
    ]

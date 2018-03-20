@@ -29,10 +29,8 @@
     </ul>
   </div>
 </div>
-<div *ngIf='mindShare.nextMindShareId' class="row next-mind-share">
-  <div class="col-xs-12">
-    <h2>Next Mind Share</h2>
-    <h3>{{nextMindShareDescription}}</h3>
-    <a [routerLink]="['/our-thoughts', mindShare.nextMindShareId]">></a>
-  </div>
-</div>
+<app-next-item-section *ngIf='mindShare.nextMindShareId'
+                       title="Next Mind Share"
+                       [description]="mindShare.nextMindShareTitle"
+                       [link]="['/our-thoughts', mindShare.nextMindShareId]">
+</app-next-item-section>
