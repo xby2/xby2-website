@@ -47,11 +47,11 @@ p, ul, a {
 
 @media (min-width: 768px) {
     h4 {
-        font-size: 5vw;
+        font-size: 6vw;
     }
 
     p, ul, a {
-        font-size: 2.5vw;
+        font-size: 3vw;
     }
 
     img {
@@ -69,5 +69,25 @@ p, ul, a {
     
     .last {
         padding-bottom: 8vw;
+    }
+}
+
+@media (min-width: 992px) {
+    h4 {
+        font-size: 4vw;
+    }
+
+    p, ul, a {
+        font-size: 2vw;
+    }
+}
+
+@media (min-width: 1200px) {
+    h4 {
+        font-size: 3vw;
+    }
+
+    p, ul, a {
+        font-size: 1.5vw;
     }
 }
