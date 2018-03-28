@@ -53,6 +53,7 @@ import { FooterComponent } from './shared/component/footer/footer.component';
 import { ModalComponent } from './shared/component/navbar/modal.component';
 import { NextItemSectionComponent } from './shared/component/next-item-section/next-item-section.component';
 import { ExpertiseSectionComponent } from './our-expertise/component/expertise-section/expertise-section.component';
+import { InformationalBoxComponent } from './our-story/component/informational-box/informational-box.component';
 
 @NgModule({
   declarations: [
@@ -85,7 +86,8 @@ import { ExpertiseSectionComponent } from './our-expertise/component/expertise-s
     FooterComponent,
     ModalComponent,
     NextItemSectionComponent,
-    ExpertiseSectionComponent
+    ExpertiseSectionComponent,
+    InformationalBoxComponent
   ],
   imports: [
     BrowserModule,
