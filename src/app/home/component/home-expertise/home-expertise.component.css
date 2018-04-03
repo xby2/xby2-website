@@ -1,0 +1,35 @@
+:host {
+    margin-bottom: 2em;
+}
+
+img {
+    display: block;
+    margin: 1.5em auto;
+    width: 3em;
+}
+
+.title {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.title > a:hover {
+    color: #f9a543;
+}
+
+p > a {
+    color: #666666;
+    text-align: center;
+    display: block;
+}
+
+.md-chevron {
+    color: #f89829;
+    position: absolute;
+    bottom: -0.7em;
+    left: 49%;
+    font-size: 1.4em;
+    font-weight: bold;
+}

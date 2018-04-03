@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h2>Our Thoughts</h2>
+      <h1>Mind Share</h1>
+      <img [src]="'./assets/' + featuredMindShare.authorImageUrl" />
+      <h4>{{featuredMindShare.title}}</h4>
+      <div class="author-info">
+        <span class="author">{{featuredMindShare.authorName}}</span>
+        <span class="author-divider">/</span>
+        {{featuredMindShare.authorTitle}}
+      </div>
+      <p>{{featuredMindShare.shortDescription}}</p>
+      <a [routerLink]="['/our-thoughts', featuredMindShare.id]">Read more ></a>
+    </div>
+  </div>
+</div>

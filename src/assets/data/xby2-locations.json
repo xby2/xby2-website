@@ -1,0 +1,20 @@
+[
+    {
+    "name": "Detroit, MI",
+    "address": "35055 W Twelve Mile Rd",
+    "address2": "Suite 220",
+    "city": "Farmington Hills",
+    "state": "MI",
+    "zip": "48331",
+    "phone": "248.538.9292"
+  },
+  {
+    "name": "Toronto, ON",
+    "address": "2425 Matheson Blvd East",
+    "address2": "Suite 800",
+    "city": "Mississauga",
+    "state": "ON",
+    "zip": "L4W 5KA",
+    "phone": "905.267.0223"
+  }
+]

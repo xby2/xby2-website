@@ -11,22 +11,17 @@ import { OurWorkComponent } from './our-work/our-work.component';
 import { OurThoughtsComponent } from './our-thoughts/our-thoughts.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { CareersComponent } from './careers/careers.component';
-import { HomeComponent } from './home/home.component';
 import { FormsModule } from '@angular/forms';
 import { MindShareListingComponent } from './our-thoughts/mind-share-listing/mind-share-listing.component';
 import { MindShareService } from './our-thoughts/service/mind-share.service';
 import { MindSharesResolver } from './our-thoughts/service/mind-shares.resolver';
 import { MindShareResolver } from './our-thoughts/service/mind-share.resolver';
-import { ContactUsFormComponent } from './contact-us/contact-us-form/contact-us-form.component';
 import { ContactService } from './contact-us/service/contact.service';
 import { ToastrService } from './contact-us/service/toastr.service';
 import { OpenPositionService } from './careers/service/open-position.service';
 import { ClientStoryService } from './our-work/service/client-story.service';
 import { ClientStoryResolver } from './our-work/service/client-story.resolver';
 import { FeaturedClientStoriesResolver } from './our-work/service/featured-client-stories.resolver';
-import { LinksService } from './shared/service/links.service';
-import { HomeExpertiseComponent } from './home/home-expertise/home-expertise.component';
-import { FeaturedMindShareComponent } from './home/featured-mind-share/featured-mind-share.component';
 import { ClientStoriesResolver } from './our-work/service/client-stories.resolver.';
 import { CompanyValueService } from './careers/service/company-value.service';
 import { OpenPositionsResolver } from './careers/resolver/open-positions.resolver';
@@ -36,67 +31,44 @@ import { CareerDetailComponent } from './careers/career-detail.component';
 import { FrequentlyAskedQuestionsComponent } from './careers/component/frequently-asked-questions/frequently-asked-questions.component';
 import { OpenPositionsSectionComponent } from './careers/component/open-positions-section/open-positions-section.component';
 import { CareerDetailsActionItemsComponent } from './careers/component/career-details-action-items/career-details-action-items.component';
-import { PageHeaderComponent } from './shared/component/page-header/page-header.component';
-import { Xby2LogoComponent } from './shared/component/xby2-logo2/xby2-logo.component';
-import { ClientStoryListingComponent } from './shared/component/client-story-listing/client-story-listing.component';
 import { ExpertiseService } from './our-expertise/service/expertise.service';
 import { ExpertisesResolver } from './our-expertise/resolver/expertises.resolver';
 import { OurWorkDetailComponent } from './our-work/our-work-detail.component';
-import { FeaturedMindShareResolver } from './home/resolver/featured-mind-share.resolver';
 import { OurThoughtsDetailComponent } from './our-thoughts/our-thoughts-detail.component';
-import { ContentSectionComponent } from './shared/component/content-section/content-section.component';
 import { MeetOurPeopleSectionComponent } from './careers/component/meet-our-people-section/meet-our-people-section.component';
-import { FilterWorkComponent } from './shared/component/filter-work/filter-work.component';
-import { LoadMoreButtonComponent } from './shared/component/load-more-button/load-more-button.component';
-import { NavbarComponent } from './shared/component/navbar/navbar.component';
-import { FooterComponent } from './shared/component/footer/footer.component';
-import { ModalComponent } from './shared/component/navbar/modal.component';
-import { NextItemSectionComponent } from './shared/component/next-item-section/next-item-section.component';
 import { ExpertiseSectionComponent } from './our-expertise/component/expertise-section/expertise-section.component';
 import { InformationalBoxComponent } from './our-story/component/informational-box/informational-box.component';
+import { SharedModule } from './shared/shared.module';
+import { HomeModule } from './home/home.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    Xby2LogoComponent,
     OurStoryComponent,
     OurExpertiseComponent,
     OurWorkComponent,
     OurThoughtsComponent,
     ContactUsComponent,
     CareersComponent,
-    HomeComponent,
     OurWorkDetailComponent,
     OurThoughtsDetailComponent,
-    ContactUsFormComponent,
-    ClientStoryListingComponent,
     MindShareListingComponent,
-    HomeExpertiseComponent,
-    FeaturedMindShareComponent,
     FrequentlyAskedQuestionsComponent,
     CareerDetailComponent,
     OpenPositionsSectionComponent,
     CareerDetailsActionItemsComponent,
-    PageHeaderComponent,
-    ContentSectionComponent,
     MeetOurPeopleSectionComponent,
-    FilterWorkComponent,
-    LoadMoreButtonComponent,
-    NavbarComponent,
-    FooterComponent,
-    ModalComponent,
-    NextItemSectionComponent,
     ExpertiseSectionComponent,
-    InformationalBoxComponent
+    InformationalBoxComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    SharedModule,
+    HomeModule
   ],
   providers: [
-    LinksService,
     ExpertiseService,
     ContactService,
     ToastrService,
@@ -104,7 +76,6 @@ import { InformationalBoxComponent } from './our-story/component/informational-b
     ClientStoryResolver,
     ExpertisesResolver,
     FeaturedClientStoriesResolver,
-    FeaturedMindShareResolver,
     MindShareService,
     MindSharesResolver,
     MindShareResolver,

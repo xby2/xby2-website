@@ -1,0 +1,47 @@
+.modal {
+    background-color: #363636;   
+}
+
+.modal-dialog {
+    margin: 0;
+    max-width: none;
+}
+
+.modal-content {
+    border: 0;
+    background-color: transparent;
+}
+
+.container {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+span {
+    color: #fff;
+}
+
+ul {
+    list-style-type: none;
+    padding-top: 2em;
+}
+
+li {
+    padding: 1em 0;
+}
+
+a {
+    color: #fff;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+@media (min-width: 768px) {
+    a {
+        font-size: 2em;
+    }
+
+    ul {
+        padding-top: 3em;
+    }
+}

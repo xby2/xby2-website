@@ -1,27 +1,9 @@
-.hero-image {
-    position: relative;
-    display: table;
-    height: 58vw;
-    width: 100%;
-    background: linear-gradient(
-        rgba(0, 0, 0, 0.45), 
-        rgba(0, 0, 0, 0.45)
-      ),
-      url('../../assets/home-page.png') no-repeat top center;
-    background-size: 100% auto;
-}
-
-.post-content {
-    display: table-cell;
-    vertical-align: middle;
-    color: #fff;
-    margin: 0 10px;
+:host ::ng-deep h1,
+:host ::ng-deep h2 {
     text-align: center;
-    font-size: 30px;
-    line-height: 1;
-    padding: 0 25px;
 }
 
+/*
 .row {
     background-color: #fff;
 }
@@ -49,16 +31,6 @@ h3 {
 
 .our-work, .contact-us {
     background-color: #ececec;
-}
-
-.our-work a.see-all {
-    font-size: 24px;
-    color: #ffa500;
-    display: block;
-    text-transform: uppercase;
-    font-weight: 600;
-    margin: 20px 0 45px 0;
-    text-align: center;
 }
 
 .col-xs-12.contact-us-form {
@@ -157,4 +129,4 @@ h3 {
     .featured-mind-share-section {
         padding-left: 0;
     }
-}
+}*/

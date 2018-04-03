@@ -19,7 +19,6 @@ button {
 .btn-group > .btn {
     background-color: transparent;
     padding: 5px 1.5vw;
-    color: #363636;
     font-weight: normal;
     box-shadow: none;
     vertical-align: middle;

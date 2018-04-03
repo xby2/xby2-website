@@ -1,0 +1,18 @@
+<div class="container-fluid">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h2>Our Work</h2>
+        <h1>Client Stories</h1>
+        <div class="row">
+          <app-client-story-listing
+              *ngFor='let clientStory of featuredClientStories; let i = index'
+              class="col-lg-4"
+              [clientStory]='clientStory'>
+            </app-client-story-listing>
+        </div>
+        <a class="col-sm-12 see-all" routerLink='/our-work'>See All ></a>
+      </div>
+    </div>
+  </div>
+</div>

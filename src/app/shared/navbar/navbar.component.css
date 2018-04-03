@@ -1,0 +1,56 @@
+:host ::ng-deep button.navbar-toggler {
+  text-transform: uppercase;
+}
+
+:host ::ng-deep .container {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+:host ::ng-deep a.navbar-brand {
+  display: table;
+  font-size: inherit;
+}
+
+:host ::ng-deep svg {
+  display: table-cell;
+}
+
+:host ::ng-deep .navbar {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  height: 6em;
+  box-shadow: 0 4px 2px -2px gray;
+}
+
+a.nav-link {
+  font-family: 'ptSansNarrow';
+  text-transform: uppercase;
+  color: #363636;
+}
+
+a:hover {
+  color: #f89829;
+}
+
+nav {
+  background-color: #fff;
+}
+
+@media (min-width: 992px) {
+  :host ::ng-deep .navbar {
+    padding: 1em 0;
+  }
+
+  a.nav-link {
+    font-size: 1.1em;
+  }
+
+  img {
+    height: 4em;
+  }
+
+  .navbar {
+    height: 7em;
+  }
+}

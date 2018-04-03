@@ -4,48 +4,52 @@ label {
 
 form {
     background-color: #fff;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding: 2em 1em;
 }
 
 .form-control {
     background-color: #ececec;
     border: 0;
-    font-size: 16px;
     border-radius: 0;
     box-shadow: none;
     color: #54565b;
-    height: 50px;
+    height: 3em;
 }
 
 textarea.form-control {
-    height: 150px;
+    height: 10em;
 }
+
 textarea {
     resize: vertical;
-    min-height: 10vw;
+    min-height: 10em;
 }
 
 button {
     display: block;
     margin: 0 auto;
-    background-color: #eb9c45;
+    background-color: #f89829;
     border: 0;
     border-radius: 0;
     text-transform: uppercase;
     padding: 2px 25px;
     font-size: 16px;
+    color: #fff;
 }
 
-.btn-xby2[disabled]:hover, .btn-xby2[disabled]:focus {
-    background-color: #eb9c45;
+button[disabled],
+button[disabled]:hover,
+button[disabled]:focus {
+    background-color: #54565b;
+    color: #aaa;
 }
 
-.btn-xby2:focus {
+button:focus {
     background-color: #eba960;
 }
 
-.btn-xby2:active, .btn-xby2:hover {
+button:active,
+button:hover {
     background-color: #eba960;
 }
 
@@ -62,27 +66,4 @@ button {
 .alert-danger {
     background-color: transparent;
     border-color: transparent;
-}
-
-@media (min-width: 992px) {
-    form {
-        padding: 60px 60px 30px 60px;
-    }
-}
-
-@media (min-width: 1200px) {
-    .form-group {
-        margin-bottom: 1.2vw;
-    }
-
-    .form-control {
-        font-size: 1.6vw;
-        height: 5vw;
-        padding: 1vw 1.5vw;
-    }
-
-    button {
-        font-size: 2vw;
-        padding: 0.2vw 2vw;
-    }
 }

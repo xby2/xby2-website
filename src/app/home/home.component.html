@@ -1,49 +1,20 @@
-<div class="row">
-  <div class="col-xs-12 full-width">
-    <div class="hero-image">
-      <h1 class="caption post-content">
-        We are Architects for the<br />
-        Insurance & Healthcare Industries
-      </h1>
+<app-hero-image></app-hero-image>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h2>Our Expertise</h2>
+      <h1>What We Do</h1>
+      <div class="row">
+        <app-home-expertise *ngFor="let expertise of expertises"
+                             class="col-6 col-lg-4"
+                            [expertise]="expertise">
+        </app-home-expertise>
+      </div>
     </div>
   </div>
 </div>
-<div class="row content">
-  <h2>Our Expertise</h2>
-  <h3>What We Do</h3>
-  <app-home-expertise *ngFor="let expertise of expertises"
-                      [expertise]="expertise">
-  </app-home-expertise>
-</div>
-<div class="row content our-work">
-  <h2>Our Work</h2>
-  <h3>Client Stories</h3>
-  <div id="client-story-listings">
-    <app-client-story-listing
-        *ngFor='let clientStory of featuredClientStories; let i = index'
-        [clientStory]='clientStory'
-        [isFirst]="i % 3 === 0 ? 'first' : ''"
-        [isLast]="(i+1) % 3 === 0 ? 'last' : ''">
-      </app-client-story-listing>
-  </div>
-  <a class="col-sm-12 see-all" routerLink='/our-work'>See All ></a>
-</div>
-<div class="row row-eq-height content our-thoughts">
-  <div class="visible-md visible-lg col-md-6 full-img-wrapper">
-    <img class="img-responsive full-img"
-         [src]="'./assets/' + featuredMindShare.authorFullImageUrl" />
-  </div>
-  <div class="col-xs-12 col-md-6 featured-mind-share-section">
-    <h2>Our Thoughts</h2>
-    <h3>Mind Share</h3>
-    <app-featured-mind-share [featuredMindShare]="featuredMindShare">
-    </app-featured-mind-share>
-  </div>
-</div>
-<div class="row contact-us">
-  <div class="col-xs-12 contact-us-form">
-      <h2>Say Hello</h2>
-      <h3>Contact Us</h3>
-      <app-contact-us-form></app-contact-us-form>
-  </div>
-</div>
+<app-featured-client-stories [featuredClientStories]="featuredClientStories">
+</app-featured-client-stories>
+<app-featured-mind-share [featuredMindShare]="featuredMindShare">
+</app-featured-mind-share>
+<app-contact-form></app-contact-form>

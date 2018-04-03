@@ -1,0 +1,12 @@
+.container-fluid {
+    background-color: #ececec;
+}
+
+a.see-all {
+    font-size: 1.5em;
+    color: #f89829;
+    display: block;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+}
