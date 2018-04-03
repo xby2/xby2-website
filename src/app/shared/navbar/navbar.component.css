@@ -20,7 +20,10 @@
   padding-top: 0.5em;
   padding-bottom: 0.5em;
   height: 6em;
-  box-shadow: 0 4px 2px -2px gray;
+}
+
+.navbar {
+  box-shadow: 0 0.5em 4em 0em #888;
 }
 
 a.nav-link {
