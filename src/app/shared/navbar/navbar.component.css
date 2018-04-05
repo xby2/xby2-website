@@ -23,7 +23,7 @@
 }
 
 .navbar {
-  box-shadow: 0 0.5em 4em 0em #888;
+  box-shadow: 0 0.5em 1em -0.5em rgba(0, 0, 0, 0.25);
 }
 
 a.nav-link {
@@ -40,10 +40,6 @@ nav {
   background-color: #fff;
 }
 
-svg {
-  font-family: "ptSansNarrow";
-}
-
 a.active span {
   color: #f89829;
 }
@@ -55,13 +51,11 @@ a.active span {
 
   a.nav-link {
     font-size: 1.1em;
-  }
-
-  img {
-    height: 4em;
+    padding-left: 0.75em !important;
+    padding-right: 0.75em !important;
   }
 
   .navbar {
-    height: 7em;
+    height: 6em;
   }
 }
