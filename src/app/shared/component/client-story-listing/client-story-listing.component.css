@@ -29,7 +29,7 @@ p {
 }
 
 a.read-more-link {
-    text-transform: none;
+    text-transform: uppercase;
     color: #f89829;
     display: block;
     text-align: center;

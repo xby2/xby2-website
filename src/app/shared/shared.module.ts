@@ -16,6 +16,7 @@ import { SocialMediaLinkService } from './footer/service/social-media-link.servi
 import { Xby2LocationService } from './footer/service/xby2-location.service';
 import { ContactUsFormComponent } from '../contact-us/contact-us-form/contact-us-form.component';
 import { FormsModule } from '@angular/forms';
+import { LogoComponent } from './component/logo/logo.component';
 
 @NgModule({
   imports: [
@@ -34,7 +35,8 @@ import { FormsModule } from '@angular/forms';
     PageHeaderComponent,
     ModalComponent,
     LocationComponent,
-    ContactUsFormComponent
+    ContactUsFormComponent,
+    LogoComponent
   ],
   providers: [
     LinksService,
@@ -51,7 +53,8 @@ import { FormsModule } from '@angular/forms';
     NextItemSectionComponent,
     PageHeaderComponent,
     AppRoutingModule,
-    ContactUsFormComponent
+    ContactUsFormComponent,
+    LogoComponent
   ]
 })
 export class SharedModule { }

@@ -40,6 +40,14 @@ nav {
   background-color: #fff;
 }
 
+svg {
+  font-family: "ptSansNarrow";
+}
+
+a.active span {
+  color: #f89829;
+}
+
 @media (min-width: 992px) {
   :host ::ng-deep .navbar {
     padding: 1em 0;

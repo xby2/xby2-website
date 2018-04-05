@@ -31,30 +31,30 @@ const routes: Routes = [
       featuredMindShare: FeaturedMindShareResolver
     }
   },
-  { path: 'our-story', component: OurStoryComponent },
+  { path: 'about-us', component: OurStoryComponent },
   {
-    path: 'our-expertise',
+    path: 'services',
     component: OurExpertiseComponent,
     resolve: {
       expertises: ExpertisesResolver
     }
   },
   {
-    path: 'our-work',
+    path: 'client-stories',
     component: OurWorkComponent,
     resolve: {clientStories: ClientStoriesResolver} },
   {
-    path: 'our-work/:id',
+    path: 'client-stories/:id',
     component: OurWorkDetailComponent,
     resolve: { clientStory: ClientStoryResolver }
   },
   {
-    path: 'our-thoughts',
+    path: 'in-the-news',
     component: OurThoughtsComponent,
     resolve: { mindShares: MindSharesResolver }
   },
   {
-    path: 'our-thoughts/:id',
+    path: 'in-the-news/:id',
     component: OurThoughtsDetailComponent,
     resolve: { mindShare: MindShareResolver }
   },
