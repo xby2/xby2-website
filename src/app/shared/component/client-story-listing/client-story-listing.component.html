@@ -5,7 +5,10 @@
     <h4>{{clientStory.title}}</h4>
     <hr />
     <p>{{clientStory.description}}</p>
-    <a class="read-more-link" [routerLink]="['/our-work', clientStory.id]">
-        Read more >
-    </a>
+    <div class="card-bottom">
+        <button class="btn btn-xby2" 
+                [routerLink]="['/client-stories', clientStory.id]">
+            Read More
+        </button>
+    </div>
 </div>
