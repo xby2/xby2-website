@@ -1,5 +1,5 @@
 .container-fluid {
-    background-color: #ececec;
+    background-color: #e5e5e5;
 }
 
 h1, h2 {
@@ -10,6 +10,6 @@ h1 {
     padding-top: 0.5em;
 }
 
-h2 {
-    
+hr {
+    background-color: #fff;
 }

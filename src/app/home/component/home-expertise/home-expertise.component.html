@@ -2,11 +2,9 @@
   <a routerLink="{{expertise.expertiseLink}}">
     <img [src]="expertise.imageUrl" />
   </a>
-  <div class="title">
-    <a routerLink="{{expertise.expertiseLink}}">
-      {{expertise.title}}
-    </a>
-  </div>
+  <a class="title" routerLink="{{expertise.expertiseLink}}">
+    {{expertise.title}}
+  </a>
   <p class="d-none d-md-block">
     <a [routerLink]="expertise.expertiseLink">
       {{expertise.text}}

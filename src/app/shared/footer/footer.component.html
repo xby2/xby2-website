@@ -1,40 +1,20 @@
 <div class="container-fluid">
   <div class="container">
     <div class="row">
-      <div class="col-md logo">
-        <app-logo></app-logo>
+      <div class="col-12 col-md-6 socialMedia">
+        <a *ngFor='let socialMediaLink of socialMediaLinks'
+            href="{{socialMediaLink.link}}" target="_blank">
+          <i class="{{socialMediaLink.icon}}"></i>
+        </a>
+      </div>
+      <div class="col-12 col-md-6 description">
         <p>
           {{ description }}
         </p>
-      </div>
-      <div class="col-md links">
-        <ul>
-          <li *ngFor='let link of links'>
-            <a [routerLink]="link.link">
-              {{ link.label }}
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="col-md info">
-        <div class="row">
-          <div class="col-12 order-md-2 locations">
-            <app-location *ngFor='let location of locations'
-                          [location]='location'></app-location>
-          </div>
-          <div class="col-12 order-md-1 socialMedia">
-              <a *ngFor='let socialMediaLink of socialMediaLinks'
-                  href="{{socialMediaLink.link}}" target="_blank">
-                <i class="{{socialMediaLink.icon}}"></i>
-              </a>
-          </div>
-          <div class="col-12 d-md-none">
-            <p class="copyright">
-              &copy; X by 2 LLC<br />
-              All rights Reserved
-            </p>
-          </div>
-        </div>
+        <p class="copyright">
+          &copy; X by 2 LLC<br />
+          All rights Reserved
+        </p>
       </div>
     </div>
   </div>

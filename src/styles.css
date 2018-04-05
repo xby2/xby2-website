@@ -16,6 +16,7 @@ body {
     color: #363636;
     line-height: 1.2;
     margin-top: 6em;
+    background-image: url('./assets/bg-tile.png')
 }
 
 .container-fluid {
@@ -39,12 +40,10 @@ h1 {
     margin-bottom: 0;
 }
 
-h2 {
-    color: #f89829;
-    text-transform: uppercase;
-    font-size: 1.4em;
-    margin-bottom: 0;
-    padding-bottom: 1em;
+hr {
+    border: 1px solid #f89829;
+    border-radius: 1em;
+    margin: 2em 0;
 }
 
 button.btn-xby2 {
