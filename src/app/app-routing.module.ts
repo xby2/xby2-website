@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { OurStoryComponent } from './our-story/our-story.component';
 import { OurExpertiseComponent } from './our-expertise/our-expertise.component';
 import { OurWorkComponent } from './our-work/our-work.component';
 import { OurThoughtsComponent } from './our-thoughts/our-thoughts.component';
@@ -20,6 +19,7 @@ import { ExpertisesResolver } from './our-expertise/resolver/expertises.resolver
 import { OurWorkDetailComponent } from './our-work/our-work-detail.component';
 import { FeaturedMindShareResolver } from './home/resolver/featured-mind-share.resolver';
 import { OurThoughtsDetailComponent } from './our-thoughts/our-thoughts-detail.component';
+import { AboutUsComponent } from './about-us/about-us.component';
 
 const routes: Routes = [
   {
@@ -31,7 +31,7 @@ const routes: Routes = [
       featuredMindShare: FeaturedMindShareResolver
     }
   },
-  { path: 'about-us', component: OurStoryComponent },
+  { path: 'about-us', component: AboutUsComponent },
   {
     path: 'services',
     component: OurExpertiseComponent,

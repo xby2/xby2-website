@@ -1,4 +1,8 @@
-.row {
+.container-fluid {
+    background-color: #fff;
+}
+
+/*row {
     background-color: #fff;
     min-height: 58vw;
 }
@@ -75,3 +79,4 @@ button {
         font-size: 4vw;
     }
 }
+*/

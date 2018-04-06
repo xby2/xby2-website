@@ -1,15 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-our-story',
-  templateUrl: './our-story.component.html',
-  styleUrls: ['./our-story.component.css']
+  selector: 'app-about-us',
+  templateUrl: './about-us.component.html',
+  styleUrls: ['./about-us.component.css']
 })
-export class OurStoryComponent implements OnInit {
+export class AboutUsComponent implements OnInit {
   headerText = 'About Us';
   subheaderText = 'A technology consultancy focused on the practice of ' +
   'application and data architecture in the insurance and healthcare ' +
-  'industries clients.';
+  'industries.';
 
   constructor() { }
 

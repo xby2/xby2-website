@@ -12,6 +12,10 @@ export class InformationalBoxComponent implements OnInit {
   @Input() linkText: string;
   @Input() link: string;
 
+  countupOptions = {
+    useGrouping: false
+  };
+
   constructor() { }
 
   ngOnInit() {

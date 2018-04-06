@@ -25,8 +25,8 @@ body {
 }
 
 .container {
-    padding-top: 3em;
-    padding-bottom: 3em;
+    padding-top: 2em;
+    padding-bottom: 2em;
 }
 
 a {
@@ -37,7 +37,20 @@ h1 {
     text-transform: uppercase;
     font-weight: bold;
     font-size: 2.8em;
-    margin-bottom: 0;
+    margin-bottom: 0.5em;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.5em;
+    color: #f89829;
+}
+
+h3 {
+    font-size: 1.25em;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 hr {

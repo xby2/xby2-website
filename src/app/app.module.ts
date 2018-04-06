@@ -5,7 +5,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
-import { OurStoryComponent } from './our-story/our-story.component';
 import { OurExpertiseComponent } from './our-expertise/our-expertise.component';
 import { OurWorkComponent } from './our-work/our-work.component';
 import { OurThoughtsComponent } from './our-thoughts/our-thoughts.component';
@@ -37,14 +36,13 @@ import { OurWorkDetailComponent } from './our-work/our-work-detail.component';
 import { OurThoughtsDetailComponent } from './our-thoughts/our-thoughts-detail.component';
 import { MeetOurPeopleSectionComponent } from './careers/component/meet-our-people-section/meet-our-people-section.component';
 import { ExpertiseSectionComponent } from './our-expertise/component/expertise-section/expertise-section.component';
-import { InformationalBoxComponent } from './our-story/component/informational-box/informational-box.component';
 import { SharedModule } from './shared/shared.module';
 import { HomeModule } from './home/home.module';
+import { AboutUsModule } from './about-us/about-us.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    OurStoryComponent,
     OurExpertiseComponent,
     OurWorkComponent,
     OurThoughtsComponent,
@@ -58,15 +56,15 @@ import { HomeModule } from './home/home.module';
     OpenPositionsSectionComponent,
     CareerDetailsActionItemsComponent,
     MeetOurPeopleSectionComponent,
-    ExpertiseSectionComponent,
-    InformationalBoxComponent,
+    ExpertiseSectionComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     SharedModule,
-    HomeModule
+    HomeModule,
+    AboutUsModule
   ],
   providers: [
     ExpertiseService,

@@ -1,0 +1,18 @@
+* {
+    text-align: center;
+}
+
+.col {
+    background-color: #fff;
+}
+
+div.value {
+    font-size: 2.5em;
+    margin-bottom: 0.25em;
+}
+
+div.card {
+    height: 9em;
+    padding: 1em;
+    margin-bottom: 1em;
+}
