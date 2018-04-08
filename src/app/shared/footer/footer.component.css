@@ -6,15 +6,23 @@
     background-color: #363636;
 }
 
+.container {
+    padding: 1em;
+}
+
 p {
     color: #fff;
-    margin-bottom: 2em;
+    margin-bottom: 0;
 }
 
 a {
     color: #fff;
     font-weight: bold;
     font-size: 1.1em;
+}
+
+.socialMedia {
+    margin-bottom: 1em;
 }
 
 .socialMedia a {
@@ -29,6 +37,7 @@ a {
 @media (min-width: 768px) {
     .socialMedia {
         text-align: left;
+        margin-bottom: 0;
     }
 
     .description p {

@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { OurExpertiseComponent } from './our-expertise/our-expertise.component';
 import { OurWorkComponent } from './our-work/our-work.component';
 import { OurThoughtsComponent } from './our-thoughts/our-thoughts.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
@@ -15,18 +14,19 @@ import { OpenPositionsResolver } from './careers/resolver/open-positions.resolve
 import { CompanyValuesResolver } from './careers/resolver/company-values.resolver';
 import { OpenPositionResolver } from './careers/resolver/open-position.resolver';
 import { CareerDetailComponent } from './careers/career-detail.component';
-import { ExpertisesResolver } from './our-expertise/resolver/expertises.resolver';
 import { OurWorkDetailComponent } from './our-work/our-work-detail.component';
 import { FeaturedMindShareResolver } from './home/resolver/featured-mind-share.resolver';
 import { OurThoughtsDetailComponent } from './our-thoughts/our-thoughts-detail.component';
 import { AboutUsComponent } from './about-us/about-us.component';
+import { ServicesResolver } from './shared/resolver/services.resolver';
+import { ServicesComponent } from './services/services.component';
 
 const routes: Routes = [
   {
     path: '',
     component: HomeComponent,
     resolve: {
-      expertises: ExpertisesResolver,
+      services: ServicesResolver,
       featuredClientStories: FeaturedClientStoriesResolver,
       featuredMindShare: FeaturedMindShareResolver
     }
@@ -34,9 +34,9 @@ const routes: Routes = [
   { path: 'about-us', component: AboutUsComponent },
   {
     path: 'services',
-    component: OurExpertiseComponent,
+    component: ServicesComponent,
     resolve: {
-      expertises: ExpertisesResolver
+      services: ServicesResolver
     }
   },
   {

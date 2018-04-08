@@ -1,0 +1,44 @@
+:host {
+    margin-bottom: 2em;
+}
+
+img {
+    display: block;
+    margin: 0.5em auto;
+    width: 3em;
+}
+
+p {
+    color: #666666;
+    text-align: center;
+    display: block;
+}
+
+.card {
+    background-color: #fff;
+    padding: 0.5em;
+}
+
+.title {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.2em;
+    display: block;
+    color: #f89829;
+}
+
+@media (min-width: 768px) {
+    .card {
+        height: 12em;
+        padding: 1em;
+    }
+
+    div.card-bottom {
+        height: auto;
+        position: absolute;
+        background-color: transparent;
+        bottom: 1em;
+        width: 100%;
+        left: 0;
+    }
+}

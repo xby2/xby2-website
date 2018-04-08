@@ -5,7 +5,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
-import { OurExpertiseComponent } from './our-expertise/our-expertise.component';
 import { OurWorkComponent } from './our-work/our-work.component';
 import { OurThoughtsComponent } from './our-thoughts/our-thoughts.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
@@ -30,20 +29,19 @@ import { CareerDetailComponent } from './careers/career-detail.component';
 import { FrequentlyAskedQuestionsComponent } from './careers/component/frequently-asked-questions/frequently-asked-questions.component';
 import { OpenPositionsSectionComponent } from './careers/component/open-positions-section/open-positions-section.component';
 import { CareerDetailsActionItemsComponent } from './careers/component/career-details-action-items/career-details-action-items.component';
-import { ExpertiseService } from './our-expertise/service/expertise.service';
-import { ExpertisesResolver } from './our-expertise/resolver/expertises.resolver';
 import { OurWorkDetailComponent } from './our-work/our-work-detail.component';
 import { OurThoughtsDetailComponent } from './our-thoughts/our-thoughts-detail.component';
 import { MeetOurPeopleSectionComponent } from './careers/component/meet-our-people-section/meet-our-people-section.component';
-import { ExpertiseSectionComponent } from './our-expertise/component/expertise-section/expertise-section.component';
 import { SharedModule } from './shared/shared.module';
 import { HomeModule } from './home/home.module';
 import { AboutUsModule } from './about-us/about-us.module';
+import { ServiceService } from './shared/service/service.service';
+import { ServicesModule } from './services/services.module';
+import { ServicesResolver } from './shared/resolver/services.resolver';
 
 @NgModule({
   declarations: [
     AppComponent,
-    OurExpertiseComponent,
     OurWorkComponent,
     OurThoughtsComponent,
     ContactUsComponent,
@@ -56,7 +54,6 @@ import { AboutUsModule } from './about-us/about-us.module';
     OpenPositionsSectionComponent,
     CareerDetailsActionItemsComponent,
     MeetOurPeopleSectionComponent,
-    ExpertiseSectionComponent
   ],
   imports: [
     BrowserModule,
@@ -64,15 +61,16 @@ import { AboutUsModule } from './about-us/about-us.module';
     HttpClientModule,
     SharedModule,
     HomeModule,
-    AboutUsModule
+    AboutUsModule,
+    ServicesModule
   ],
   providers: [
-    ExpertiseService,
+    ServiceService,
     ContactService,
     ToastrService,
     ClientStoryService,
     ClientStoryResolver,
-    ExpertisesResolver,
+    ServicesResolver,
     FeaturedClientStoriesResolver,
     MindShareService,
     MindSharesResolver,

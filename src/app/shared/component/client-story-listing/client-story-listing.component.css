@@ -27,6 +27,11 @@ p {
     text-align: center;
 }
 
+.card {
+    display: block;
+    position: initial;
+}
+
 @media (min-width: 992px) {
     div {
         height: 22em;
