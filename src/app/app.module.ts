@@ -16,7 +16,6 @@ import { MindSharesResolver } from './our-thoughts/service/mind-shares.resolver'
 import { MindShareResolver } from './our-thoughts/service/mind-share.resolver';
 import { ContactService } from './contact-us/service/contact.service';
 import { ToastrService } from './contact-us/service/toastr.service';
-import { OpenPositionService } from './careers/service/open-position.service';
 import { ClientStoryService } from './our-work/service/client-story.service';
 import { ClientStoryResolver } from './our-work/service/client-story.resolver';
 import { FeaturedClientStoriesResolver } from './our-work/service/featured-client-stories.resolver';
@@ -76,7 +75,6 @@ import { ServicesResolver } from './shared/resolver/services.resolver';
     MindSharesResolver,
     MindShareResolver,
     OpenPositionsResolver,
-    OpenPositionService,
     ClientStoriesResolver,
     CompanyValueService,
     CompanyValuesResolver,

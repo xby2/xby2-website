@@ -20,6 +20,7 @@ import { OurThoughtsDetailComponent } from './our-thoughts/our-thoughts-detail.c
 import { AboutUsComponent } from './about-us/about-us.component';
 import { ServicesResolver } from './shared/resolver/services.resolver';
 import { ServicesComponent } from './services/services.component';
+import { FeaturedOpenPositionsResolver } from './home/resolver/featured-open-positions.resolver';
 
 const routes: Routes = [
   {
@@ -28,7 +29,8 @@ const routes: Routes = [
     resolve: {
       services: ServicesResolver,
       featuredClientStories: FeaturedClientStoriesResolver,
-      featuredMindShare: FeaturedMindShareResolver
+      featuredMindShare: FeaturedMindShareResolver,
+      featuredOpenPositions: FeaturedOpenPositionsResolver
     }
   },
   { path: 'about-us', component: AboutUsComponent },

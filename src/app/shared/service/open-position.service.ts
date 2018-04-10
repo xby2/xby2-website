@@ -2,8 +2,8 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs/Observable';
 import { map } from 'rxjs/operators';
-import { LeverJobPosting } from '../model/lever-job-posting';
 import { OpenPosition } from '../model/open-position';
+import { LeverJobPosting } from '../model/lever-job-posting';
 
 @Injectable()
 export class OpenPositionService {

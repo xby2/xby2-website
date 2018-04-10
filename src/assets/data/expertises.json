@@ -1,6 +1,6 @@
 [
     {
-      "imageUrl": "./assets/expertises/enterprise-architecture.svg",
+      "imageUrl": "./assets/services/enterprise-architecture.svg",
       "title": "Enterprise Architecture",
       "text": "Aligning people, process, information and technology to enable an agile enterprise.",
       "expertiseLink": "/our-expertise",
@@ -15,7 +15,7 @@
       ]
     },
     {
-      "imageUrl": "./assets/expertises/app-solution-architecture.svg",
+      "imageUrl": "./assets/services/app-solution-architecture.svg",
       "title": "App/Solution Architecture",
       "text": "Simplifying complex business processes and technology to create a better vision and roadmap to the future.",
       "expertiseLink": "/our-expertise",
@@ -28,7 +28,7 @@
       ]
     },
     {
-      "imageUrl": "./assets/expertises/data-architecture.svg",
+      "imageUrl": "./assets/services/data-architecture.svg",
       "title": "Data Architecture",
       "text": "Capturing and transforming data as the foundation for data driven decision making and next-generation customer experience.",
       "expertiseLink": "/our-expertise",
@@ -41,7 +41,7 @@
       ]
     },
     {
-      "imageUrl": "./assets/expertises/integration-architecture.svg",
+      "imageUrl": "./assets/services/integration-architecture.svg",
       "title": "Integration Architecture",
       "text": "Managing the impact of technology change through reduced dependencies and complexity.",
       "expertiseLink": "/our-expertise",
@@ -53,7 +53,7 @@
       ]
     },
     {
-      "imageUrl": "./assets/expertises/agile-program-delivery.svg",
+      "imageUrl": "./assets/services/agile-program-delivery.svg",
       "title": "Agile Program Delivery",
       "text": "Leading pragmatically using proven approaches and best practices to successfully set up and deliver strategic business capabilities.",
       "expertiseLink": "/our-expertise",
@@ -66,7 +66,7 @@
       ]
     },
     {
-      "imageUrl": "./assets/expertises/project-architecture-assessment.svg",
+      "imageUrl": "./assets/services/project-architecture-assessment.svg",
       "title": "Program and Architecture Assessment",
       "text": "Utilizing experiences, industry best practices and patterns as a guide for formulating recommendation to meeting desired goal.",
       "expertiseLink": "/our-expertise",

@@ -17,6 +17,7 @@ import { Xby2LocationService } from './footer/service/xby2-location.service';
 import { ContactUsFormComponent } from '../contact-us/contact-us-form/contact-us-form.component';
 import { FormsModule } from '@angular/forms';
 import { LogoComponent } from './component/logo/logo.component';
+import { OpenPositionService } from './service/open-position.service';
 
 @NgModule({
   imports: [
@@ -41,7 +42,8 @@ import { LogoComponent } from './component/logo/logo.component';
   providers: [
     LinksService,
     SocialMediaLinkService,
-    Xby2LocationService
+    Xby2LocationService,
+    OpenPositionService
   ],
   exports: [
     ClientStoryListingComponent,

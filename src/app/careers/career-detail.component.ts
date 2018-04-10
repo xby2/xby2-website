@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { OpenPosition } from './model/open-position';
 import { ShareLink } from './model/share-link';
+import { OpenPosition } from '../shared/model/open-position';
 
 @Component({
   selector: 'app-career-detail',

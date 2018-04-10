@@ -1,0 +1,25 @@
+<div class="card">
+    <button class="collected-open-position"
+            data-toggle="collapse"
+            [attr.id]="'button' + openPosition.listings[0].id"
+            [attr.data-target]="'#' + openPosition.listings[0].id">
+      <h3>{{openPosition.title}}</h3>
+      <ul>
+        <li *ngFor='let listing of openPosition.listings'>
+          {{listing.location}}
+        </li>
+      </ul>
+    </button>
+  <div class="collapse" [attr.id]="openPosition.listings[0].id">
+    <table>
+      <tr *ngFor='let listing of openPosition.listings'>
+        <td>
+          <button class="btn btn-xby2"
+                 [routerLink]="['/careers', listing.id]">
+            {{ listing.location }}
+          </button>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>

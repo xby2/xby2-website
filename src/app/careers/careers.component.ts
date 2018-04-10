@@ -2,9 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { CompanyValue } from './model/company-value';
 import { Perk } from './model/perk';
-import { OpenPosition } from './model/open-position';
 import { CollectedOpenPosition } from './model/collected-open-position';
 import { FrequentlyAskedQuestion } from './model/frequently-asked-question';
+import { OpenPosition } from '../shared/model/open-position';
 
 @Component({
   selector: 'app-careers',

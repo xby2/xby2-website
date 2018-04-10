@@ -6,8 +6,10 @@ import { FeaturedMindShareComponent } from './component/featured-mind-share/feat
 import { FeaturedMindShareResolver } from './resolver/featured-mind-share.resolver';
 import { SharedModule } from '../shared/shared.module';
 import { FeaturedClientStoriesComponent } from './component/featured-client-stories/featured-client-stories.component';
-import { ContactFormComponent } from './component/contact-form/contact-form.component';
 import { HomeServiceCardComponent } from './component/home-service-card/home-service-card.component';
+import { HomeCareersComponent } from './component/home-careers/home-careers.component';
+import { FeaturedOpenPositionsResolver } from './resolver/featured-open-positions.resolver';
+import { FeaturedOpenPositionCardComponent } from './component/featured-open-position-card/featured-open-position-card.component';
 
 @NgModule({
   imports: [
@@ -20,10 +22,12 @@ import { HomeServiceCardComponent } from './component/home-service-card/home-ser
     HeroImageComponent,
     FeaturedMindShareComponent,
     FeaturedClientStoriesComponent,
-    ContactFormComponent
+    HomeCareersComponent,
+    FeaturedOpenPositionCardComponent
   ],
   providers: [
-    FeaturedMindShareResolver
+    FeaturedMindShareResolver,
+    FeaturedOpenPositionsResolver
   ],
   exports: [
     HomeComponent

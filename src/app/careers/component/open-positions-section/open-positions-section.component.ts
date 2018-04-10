@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { CollectedOpenPosition } from '../../model/collected-open-position';
-import { OpenPosition } from '../../model/open-position';
+import { OpenPosition } from '../../../shared/model/open-position';
 
 declare var $: any;
 
@@ -30,7 +30,7 @@ export class OpenPositionsSectionComponent implements OnInit {
     });
   }
 
-  private collectOpenPositions(openPositions: OpenPosition[]) {
+  collectOpenPositions(openPositions: OpenPosition[]) {
     const collectedOpenPositions: CollectedOpenPosition[] = [];
 
     openPositions.forEach(openPosition => {

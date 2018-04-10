@@ -29,8 +29,7 @@ p {
 
 @media (min-width: 768px) {
     .card {
-        height: 12em;
-        padding: 1em;
+        height: 15em;
     }
 
     div.card-bottom {
