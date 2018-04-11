@@ -6,11 +6,8 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./informational-box.component.css']
 })
 export class InformationalBoxComponent implements OnInit {
-  @Input() class: string;
   @Input() title: string;
   @Input() value: number;
-  @Input() linkText: string;
-  @Input() link: string;
 
   countupOptions = {
     useGrouping: false
@@ -19,5 +16,11 @@ export class InformationalBoxComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    if (this.title == null) {
+      throw new Error('\'title\' attribute required.');
+    }
+    if (this.value == null) {
+      throw new Error('\'value\' attribute required.');
+    }
   }
 }
