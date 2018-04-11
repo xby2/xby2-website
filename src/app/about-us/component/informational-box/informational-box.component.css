@@ -11,8 +11,11 @@ div.value {
     margin-bottom: 0.25em;
 }
 
+div.value::after {
+    content: "+";
+}
+
 div.card {
-    height: 9em;
     padding: 1em;
     margin-bottom: 1em;
 }
