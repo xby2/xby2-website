@@ -34,17 +34,12 @@ p {
 
 @media (min-width: 992px) {
     div {
-        height: 22em;
+        height: 19em;
     }
 
     h4 {
-        height: 2.5em;
         margin-left: 1em;
         margin-right: 1em;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        align-items: center;
     }
     
     div.card-bottom {
