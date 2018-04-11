@@ -9,7 +9,7 @@ import { Service } from '../shared/model/service';
 })
 export class ServicesComponent implements OnInit {
   services: Service[];
-  headerText = 'What We Do';
+  headerText = 'Services';
   subheaderText = 'Transforming business through technology.';
 
   constructor(private route: ActivatedRoute) {
