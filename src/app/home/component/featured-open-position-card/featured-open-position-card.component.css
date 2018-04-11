@@ -15,6 +15,11 @@ ul {
     margin-bottom: 0;
 }
 
+button.btn-xby2 {
+    display: inline;
+    margin: 0.5em 1em;
+}
+
 ul li {
     display: inline;
 }

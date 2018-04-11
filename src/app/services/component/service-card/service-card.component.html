@@ -1,18 +1,12 @@
-<div class='row {{isFirst}} {{isLast}}'> 
-  <div class="col-xs-12">
-    <h4>
-      <span class="text">{{service.title}}</span>
-      <span class="span">
-        <img [src]='service.imageUrl' />
-      </span>
-    </h4>
-  </div>
-  <div class="col-xs-12">
-    <p>{{service.text}}</p>
-    <ul>
-      <li *ngFor='let point of service.points'>
-        {{point}}
-      </li>
-    </ul>
-  </div>
+<div class="card">
+  <img [src]='service.imageUrl' />
+  <h3>
+    <span class="text">{{service.title}}</span>
+  </h3>
+  <p>{{service.text}}</p>
+  <ul>
+    <li *ngFor='let point of service.points'>
+      {{point}}
+    </li>
+  </ul>
 </div>

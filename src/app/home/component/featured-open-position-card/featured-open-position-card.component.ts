@@ -15,7 +15,5 @@ export class FeaturedOpenPositionCardComponent implements OnInit {
     if (this.openPosition == null) {
       throw new Error ('attribute \'openPosition\' is required.');
     }
-
-    console.log(this.openPosition);
   }
 }

@@ -15,7 +15,7 @@ body {
     font-family: "ptSansNarrow";
     color: #363636;
     line-height: 1.2;
-    margin-top: 6em;
+    margin-top: 4em;
     background-image: url('./assets/bg-tile.png')
 }
 
@@ -94,12 +94,6 @@ button.btn-xby2:hover {
 @media (min-width: 768px) {
     body {
         font-size: 1.1em;
-    }
-}
-
-@media (min-width: 992px) {
-    body {
-        margin-top: 6em;
     }
 }
 

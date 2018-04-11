@@ -1,93 +1,24 @@
-h4 {
-    font-size: 9vw;
-    font-weight: 600;
-    text-transform: uppercase;
-    margin: 0;
-    display:table;
-    margin-bottom: 35px;
+.card {
+    margin-bottom: 1em;
+    padding: 0.5em;
+}
+
+p {
+    text-align: center;
 }
 
 img {
-    margin-left: 25px;
-    width: 17vw;
-}
-
-ul {
-    padding-left: 25px;
-    margin-bottom: 35px;
-}
-
-a {
+    width: 4em;
     display: block;
-    text-transform: uppercase;
+    margin: 0 auto;
+}
+
+h3 {
     color: #f89829;
-    border-bottom: 1px solid #f89829;
-    font-weight: 600;
-    margin-bottom: 45px;
-    line-height: 1;
-    padding-bottom: 5px;
-}
-
-p, ul, a {
-    font-size: 5vw;
-}
-
-.span, .text {
-    vertical-align:middle;
-    display:table-cell;
-}
-
-.first {
-    padding-top: 60px;
-}
-
-.last {
-    padding-bottom: 50px;
 }
 
 @media (min-width: 768px) {
-    h4 {
-        font-size: 6vw;
-    }
-
-    p, ul, a {
-        font-size: 3vw;
-    }
-
-    img {
-        margin-left: 50px;
-        width: 7vw;
-    }
-
-    .col-xs-12 {
-        padding-right: 16vw;
-    }
-
-    .first {
-        padding-top: 8vw;
-    }
-    
-    .last {
-        padding-bottom: 8vw;
-    }
-}
-
-@media (min-width: 992px) {
-    h4 {
-        font-size: 4vw;
-    }
-
-    p, ul, a {
-        font-size: 2vw;
-    }
-}
-
-@media (min-width: 1200px) {
-    h4 {
-        font-size: 3vw;
-    }
-
-    p, ul, a {
-        font-size: 1.5vw;
+    .card {
+        height: 20em;
     }
 }
