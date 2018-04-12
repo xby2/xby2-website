@@ -1,0 +1,16 @@
+div {
+    margin-bottom: 2em;
+}
+
+.btn-xby2-light.active {
+    background-color: #f89829;
+    color: #fff;
+}
+
+button:active {
+    background-color: #f89829;
+}
+
+button:focus {
+    box-shadow: none;
+}

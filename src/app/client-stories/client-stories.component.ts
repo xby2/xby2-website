@@ -1,17 +1,17 @@
 import { Component, OnInit } from '@angular/core';
-import { ClientStoryService } from './service/client-story.service';
-import { ClientStory } from './model/client-story';
 import { ActivatedRoute } from '@angular/router';
+import { ClientStory } from '../shared/model/client-story';
+import { ButtonGroupItem } from '../shared/model/button-group-item';
 
 @Component({
-  selector: 'app-our-work',
-  templateUrl: './our-work.component.html',
-  styleUrls: ['./our-work.component.css']
+  selector: 'app-client-stories',
+  templateUrl: './client-stories.component.html',
+  styleUrls: ['./client-stories.component.css']
 })
-export class OurWorkComponent implements OnInit {
+export class ClientStoriesComponent implements OnInit {
   headerText = 'Client Stories';
-  subheaderText = 'Requisite skills, instincts, and judgment to guide our clients to where they ' +
-  'want to be.';
+  subheaderText = 'Requisite skills, instincts, and judgment to guide our ' +
+  'clients to where they want to be.';
   clientStories: ClientStory[];
   filteredClientStories: ClientStory[];
   clientStoryDisplayCount: number;
@@ -19,6 +19,11 @@ export class OurWorkComponent implements OnInit {
   tabletWidth = 768;
   tabletInitialClientStoryCount = 6;
   mobileInitialClientStoryCount = 3;
+  buttonGroupItems: ButtonGroupItem[] = [
+    { id: 'all', label: 'All' },
+    { id: 'insurance', label: 'Insurance' },
+    { id: 'healthcare', label: 'Healthcare' },
+  ];
 
   constructor(private route: ActivatedRoute) {
     this.determineInitialClientStoryCount();

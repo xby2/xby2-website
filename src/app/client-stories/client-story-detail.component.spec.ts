@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ClientStoryDetailComponent } from './client-story-detail.component';
 
-import { LoadMoreButtonComponent } from './load-more-button.component';
 
-describe('LoadMoreButtonComponent', () => {
-  let component: LoadMoreButtonComponent;
-  let fixture: ComponentFixture<LoadMoreButtonComponent>;
+describe('ClientStoryDetailComponent', () => {
+  let component: ClientStoryDetailComponent;
+  let fixture: ComponentFixture<ClientStoryDetailComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ LoadMoreButtonComponent ]
+      declarations: [ ClientStoryDetailComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(LoadMoreButtonComponent);
+    fixture = TestBed.createComponent(ClientStoryDetailComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

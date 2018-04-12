@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { ClientStory } from '../../../our-work/model/client-story';
+import { ClientStory } from '../../model/client-story';
 
 @Component({
   selector: 'app-client-story-listing',
@@ -8,8 +8,6 @@ import { ClientStory } from '../../../our-work/model/client-story';
 })
 export class ClientStoryListingComponent implements OnInit {
   @Input() clientStory: ClientStory;
-  @Input() isFirst: string;
-  @Input() isLast: string;
 
   constructor() { }
 

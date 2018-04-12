@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { MindShare } from '../our-thoughts/service/mind-share';
-import { ClientStory } from '../our-work/model/client-story';
 import { Service } from '../shared/model/service';
 import { OpenPosition } from '../shared/model/open-position';
 import { CollectedOpenPosition } from '../careers/model/collected-open-position';
+import { ClientStory } from '../shared/model/client-story';
 
 @Component({
   selector: 'app-home',
@@ -17,6 +17,7 @@ export class HomeComponent implements OnInit {
   featuredMindShare: MindShare;
   featuredOpenPositions: OpenPosition[];
   collectedOpenPositions: CollectedOpenPosition[];
+  heroImageUrl = 'home-page.png';
 
   constructor(private route: ActivatedRoute) {
   }

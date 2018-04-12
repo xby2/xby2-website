@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { ClientStory } from '../../../our-work/model/client-story';
+import { ClientStory } from '../../../shared/model/client-story';
 
 @Component({
   selector: 'app-featured-client-stories',

@@ -1,0 +1,49 @@
+ul li {
+    display: inline;
+    font-size: 1rem;
+}
+
+li + li:before {
+    content: "/";
+}
+
+.client {
+    font-size: 1.1rem;
+    margin: 0.5em;
+}
+
+.description {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0.5em;
+}
+
+:host ::ng-deep app-hero-image .hero-image {
+    height: 9.5em;
+}
+
+@media (min-width: 768px) {
+    :host ::ng-deep app-hero-image .hero-image {
+        height: 20.5em;
+    }
+
+    .client {
+        font-size: 1.6rem;
+    }
+    
+    .description {
+        font-size: 4rem;
+    }
+}
+
+@media (min-width: 992px) {
+    :host ::ng-deep app-hero-image .hero-image {
+        height: 26.5em;
+    }
+}
+
+@media (min-width: 1200px) {
+    :host ::ng-deep app-hero-image .hero-image {
+        height: 29.5em;
+    }
+}

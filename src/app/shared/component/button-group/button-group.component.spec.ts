@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { OurWorkDetailComponent } from './our-work-detail.component';
+import { ButtonGroupComponent } from './button-group.component';
 
-describe('OurWorkDetailComponent', () => {
-  let component: OurWorkDetailComponent;
-  let fixture: ComponentFixture<OurWorkDetailComponent>;
+describe('ButtonGroupComponent', () => {
+  let component: ButtonGroupComponent;
+  let fixture: ComponentFixture<ButtonGroupComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ OurWorkDetailComponent ]
+      declarations: [ ButtonGroupComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(OurWorkDetailComponent);
+    fixture = TestBed.createComponent(ButtonGroupComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

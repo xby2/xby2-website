@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-hero-image',
@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./hero-image.component.css']
 })
 export class HeroImageComponent implements OnInit {
+  @Input() imageUrl: string;
 
   constructor() { }
 
   ngOnInit() {
+    if (this.imageUrl == null) {
+      throw new Error('\'imageUrl\' attribute required.');
+    }
   }
 
 }

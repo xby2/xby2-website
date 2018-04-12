@@ -2,8 +2,6 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ClientStoryListingComponent } from './component/client-story-listing/client-story-listing.component';
 import { ContentSectionComponent } from './component/content-section/content-section.component';
-import { FilterWorkComponent } from './component/filter-work/filter-work.component';
-import { LoadMoreButtonComponent } from './component/load-more-button/load-more-button.component';
 import { NextItemSectionComponent } from './component/next-item-section/next-item-section.component';
 import { PageHeaderComponent } from './component/page-header/page-header.component';
 import { LinksService } from './service/links.service';
@@ -18,6 +16,8 @@ import { ContactUsFormComponent } from '../contact-us/contact-us-form/contact-us
 import { FormsModule } from '@angular/forms';
 import { LogoComponent } from './component/logo/logo.component';
 import { OpenPositionService } from './service/open-position.service';
+import { ButtonGroupComponent } from './component/button-group/button-group.component';
+import { HeroImageComponent } from './component/hero-image/hero-image.component';
 
 @NgModule({
   imports: [
@@ -28,16 +28,16 @@ import { OpenPositionService } from './service/open-position.service';
   declarations: [
     ClientStoryListingComponent,
     ContentSectionComponent,
-    FilterWorkComponent,
+    ButtonGroupComponent,
     FooterComponent,
-    LoadMoreButtonComponent,
     NavbarComponent,
     NextItemSectionComponent,
     PageHeaderComponent,
     ModalComponent,
     LocationComponent,
     ContactUsFormComponent,
-    LogoComponent
+    LogoComponent,
+    HeroImageComponent
   ],
   providers: [
     LinksService,
@@ -48,15 +48,15 @@ import { OpenPositionService } from './service/open-position.service';
   exports: [
     ClientStoryListingComponent,
     ContentSectionComponent,
-    FilterWorkComponent,
+    ButtonGroupComponent,
     FooterComponent,
-    LoadMoreButtonComponent,
     NavbarComponent,
     NextItemSectionComponent,
     PageHeaderComponent,
     AppRoutingModule,
     ContactUsFormComponent,
-    LogoComponent
+    LogoComponent,
+    HeroImageComponent
   ]
 })
 export class SharedModule { }

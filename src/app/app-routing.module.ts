@@ -1,26 +1,26 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { OurWorkComponent } from './our-work/our-work.component';
 import { OurThoughtsComponent } from './our-thoughts/our-thoughts.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { HomeComponent } from './home/home.component';
 import { CareersComponent } from './careers/careers.component';
 import { MindSharesResolver } from './our-thoughts/service/mind-shares.resolver';
 import { MindShareResolver } from './our-thoughts/service/mind-share.resolver';
-import { FeaturedClientStoriesResolver } from './our-work/service/featured-client-stories.resolver';
-import { ClientStoryResolver } from './our-work/service/client-story.resolver';
-import { ClientStoriesResolver } from './our-work/service/client-stories.resolver.';
 import { OpenPositionsResolver } from './careers/resolver/open-positions.resolver';
 import { CompanyValuesResolver } from './careers/resolver/company-values.resolver';
 import { OpenPositionResolver } from './careers/resolver/open-position.resolver';
 import { CareerDetailComponent } from './careers/career-detail.component';
-import { OurWorkDetailComponent } from './our-work/our-work-detail.component';
 import { FeaturedMindShareResolver } from './home/resolver/featured-mind-share.resolver';
 import { OurThoughtsDetailComponent } from './our-thoughts/our-thoughts-detail.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { ServicesResolver } from './shared/resolver/services.resolver';
 import { ServicesComponent } from './services/services.component';
 import { FeaturedOpenPositionsResolver } from './home/resolver/featured-open-positions.resolver';
+import { FeaturedClientStoriesResolver } from './home/resolver/featured-client-stories.resolver';
+import { ClientStoriesResolver } from './client-stories/resolver/client-stories.resolver.';
+import { ClientStoryResolver } from './client-stories/resolver/client-story.resolver';
+import { ClientStoryDetailComponent } from './client-stories/client-story-detail.component';
+import { ClientStoriesComponent } from './client-stories/client-stories.component';
 
 const routes: Routes = [
   {
@@ -43,11 +43,11 @@ const routes: Routes = [
   },
   {
     path: 'client-stories',
-    component: OurWorkComponent,
+    component: ClientStoriesComponent,
     resolve: {clientStories: ClientStoriesResolver} },
   {
     path: 'client-stories/:id',
-    component: OurWorkDetailComponent,
+    component: ClientStoryDetailComponent,
     resolve: { clientStory: ClientStoryResolver }
   },
   {

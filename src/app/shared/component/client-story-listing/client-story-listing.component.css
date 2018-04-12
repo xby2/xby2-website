@@ -12,7 +12,7 @@ img {
 
 h4 {
     text-align: center;
-    margin: 0.75em 2em;
+    margin: 0.5em;
     font-size: 1.5em;
 }
 
@@ -35,11 +35,6 @@ p {
 @media (min-width: 992px) {
     div {
         height: 19em;
-    }
-
-    h4 {
-        margin-left: 1em;
-        margin-right: 1em;
     }
     
     div.card-bottom {

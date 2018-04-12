@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home.component';
-import { HeroImageComponent } from './component/hero-image/hero-image.component';
 import { FeaturedMindShareComponent } from './component/featured-mind-share/featured-mind-share.component';
 import { FeaturedMindShareResolver } from './resolver/featured-mind-share.resolver';
 import { SharedModule } from '../shared/shared.module';
@@ -11,6 +10,7 @@ import { HomeCareersComponent } from './component/home-careers/home-careers.comp
 import { FeaturedOpenPositionsResolver } from './resolver/featured-open-positions.resolver';
 import { FeaturedOpenPositionCardComponent } from './component/featured-open-position-card/featured-open-position-card.component';
 import { AuthorInfoComponent } from './component/author-info/author-info.component';
+import { FeaturedClientStoriesResolver } from './resolver/featured-client-stories.resolver';
 
 @NgModule({
   imports: [
@@ -20,7 +20,6 @@ import { AuthorInfoComponent } from './component/author-info/author-info.compone
   declarations: [
     HomeComponent,
     HomeServiceCardComponent,
-    HeroImageComponent,
     FeaturedMindShareComponent,
     FeaturedClientStoriesComponent,
     HomeCareersComponent,
@@ -29,7 +28,8 @@ import { AuthorInfoComponent } from './component/author-info/author-info.compone
   ],
   providers: [
     FeaturedMindShareResolver,
-    FeaturedOpenPositionsResolver
+    FeaturedOpenPositionsResolver,
+    FeaturedClientStoriesResolver
   ],
   exports: [
     HomeComponent
