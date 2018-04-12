@@ -14,3 +14,9 @@
 :host ::ng-deep ul {
     margin-bottom: 2em;
 }
+
+:host ::ng-deep img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto 1em auto;
+}

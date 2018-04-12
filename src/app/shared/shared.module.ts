@@ -18,6 +18,8 @@ import { LogoComponent } from './component/logo/logo.component';
 import { OpenPositionService } from './service/open-position.service';
 import { ButtonGroupComponent } from './component/button-group/button-group.component';
 import { HeroImageComponent } from './component/hero-image/hero-image.component';
+import { MindShareService } from './service/mind-share.service';
+import { AuthorInfoComponent } from './component/author-info/author-info.component';
 
 @NgModule({
   imports: [
@@ -37,13 +39,15 @@ import { HeroImageComponent } from './component/hero-image/hero-image.component'
     LocationComponent,
     ContactUsFormComponent,
     LogoComponent,
-    HeroImageComponent
+    HeroImageComponent,
+    AuthorInfoComponent
   ],
   providers: [
     LinksService,
     SocialMediaLinkService,
     Xby2LocationService,
-    OpenPositionService
+    OpenPositionService,
+    MindShareService
   ],
   exports: [
     ClientStoryListingComponent,
@@ -56,7 +60,8 @@ import { HeroImageComponent } from './component/hero-image/hero-image.component'
     AppRoutingModule,
     ContactUsFormComponent,
     LogoComponent,
-    HeroImageComponent
+    HeroImageComponent,
+    AuthorInfoComponent
   ]
 })
 export class SharedModule { }

@@ -1,3 +1,7 @@
+.container {
+    background-color: #fff;
+}
+
 ul li {
     display: inline;
     font-size: 1rem;
@@ -29,5 +33,9 @@ li + li:before {
     
     .description {
         font-size: 4rem;
+    }
+
+    .container {
+        box-shadow: 0 0 2em rgba(0, 0, 0, 0.25);
     }
 }

@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
-import { MindShare } from './mind-share';
 import { Resolve, ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
-import { MindShareService } from './mind-share.service';
 import { Observable } from 'rxjs/Observable';
+import { MindShareService } from '../../shared/service/mind-share.service';
+import { MindShare } from '../../shared/model/mind-share';
 
 @Injectable()
 export class MindShareResolver implements Resolve<MindShare> {

@@ -1,0 +1,42 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h1>{{mindShare.title}}</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <div class="details">
+        <img class="rounded-circle"
+             [src]="'./assets/authors/' + mindShare.authorImageUrl" />
+        <div class="author-info">
+          <span>By <b>{{mindShare.authorName}}</b></span>
+          <span class="divider"> / </span>
+          <span>{{mindShare.publishDate | date: 'shortDate'}}</span>
+        </div>
+        <div class="publish-info">
+          Originally Published By
+          <a [href]="mindShare.publishUrl" target="_blank">
+            {{mindShare.publishName}}
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <app-content-section class="col" [content]="mindShare.content">
+    </app-content-section>
+  </div>
+  <div class="row">
+    <div class="col">
+      <ul>
+        <li id="tags-header">Tags</li>
+        <li *ngFor='let tag of mindShare.tags'>{{tag}}</li>
+      </ul>
+    </div>
+  </div>
+</div>
+<app-next-item-section *ngIf='mindShare.nextMindShareId'
+                       [title]="mindShare.nextMindShareTitle"
+                       [link]="['/in-the-news', mindShare.nextMindShareId]">
+</app-next-item-section>

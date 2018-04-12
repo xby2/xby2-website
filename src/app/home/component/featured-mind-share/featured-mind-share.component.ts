@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { MindShare } from '../../../our-thoughts/service/mind-share';
+import { MindShare } from '../../../shared/model/mind-share';
 
 @Component({
   selector: 'app-featured-mind-share',

@@ -1,8 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Resolve, ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
 import { Observable } from 'rxjs/Observable';
-import { MindShare } from '../../our-thoughts/service/mind-share';
-import { MindShareService } from '../../our-thoughts/service/mind-share.service';
 import { OpenPosition } from '../../shared/model/open-position';
 import { OpenPositionService } from '../../shared/service/open-position.service';
 

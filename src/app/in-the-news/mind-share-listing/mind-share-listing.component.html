@@ -1,0 +1,14 @@
+<div class="card">
+  <img class="rounded-circle" [src]="'./assets/authors/' + mindShare.authorImageUrl" />
+  <h4>{{mindShare.title}}</h4>
+  <app-author-info [authorName]="mindShare.authorName"
+                   [authorTitle]="mindShare.authorTitle"></app-author-info>
+  <hr />
+  <p>{{mindShare.shortDescription}}</p>
+  <div class="card-bottom">
+    <button class="btn btn-xby2" 
+            [routerLink]="['/in-the-news', mindShare.id]">
+        Read More
+    </button>
+  </div>
+</div>

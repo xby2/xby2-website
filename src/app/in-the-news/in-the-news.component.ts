@@ -1,14 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { MindShare } from './service/mind-share';
+import { MindShare } from '../shared/model/mind-share';
+import { ButtonGroupItem } from '../shared/model/button-group-item';
 
 @Component({
-  selector: 'app-our-thoughts',
-  templateUrl: './our-thoughts.component.html',
-  styleUrls: ['./our-thoughts.component.css']
+  selector: 'app-in-the-news',
+  templateUrl: './in-the-news.component.html',
+  styleUrls: ['./in-the-news.component.css']
 })
-export class OurThoughtsComponent implements OnInit {
-  headerText = 'Mind Share';
+export class InTheNewsComponent implements OnInit {
+  headerText = 'In The News';
   subheaderText = 'We\'ve learned a few things along the way. Hope it helps.';
   mindShares: MindShare[];
   filteredMindShares: MindShare[];
@@ -17,6 +18,11 @@ export class OurThoughtsComponent implements OnInit {
   tabletWidth = 768;
   tabletInitialClientStoryCount = 6;
   mobileInitialClientStoryCount = 3;
+  buttonGroupItems: ButtonGroupItem[] = [
+    { id: 'all', label: 'All' },
+    { id: 'insurance', label: 'Insurance' },
+    { id: 'healthcare', label: 'Healthcare' },
+  ];
 
   constructor(private route: ActivatedRoute) {
     this.determineInitialMindShareCount();

@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { MindShare } from '../service/mind-share';
+import { MindShare } from '../../shared/model/mind-share';
 
 @Component({
   selector: 'app-mind-share-listing',
@@ -8,11 +8,12 @@ import { MindShare } from '../service/mind-share';
 })
 export class MindShareListingComponent implements OnInit {
   @Input() mindShare: MindShare;
-  @Input() isFirst: string;
-  @Input() isLast: string;
 
   constructor() { }
 
   ngOnInit() {
+    if (this.mindShare == null) {
+      throw new Error('\'mindShare\' attribute required.');
+    }
   }
 }

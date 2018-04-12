@@ -1,0 +1,46 @@
+div.card {
+    text-align: center;
+    padding: 0.5em;
+    margin-bottom: 4em;
+}
+
+hr {
+    border-top: 1px solid #f89829;
+    width: 35%;
+    margin: 1em auto;
+}
+
+img {
+    width: 7em;
+    margin: 0 auto -2em auto;
+    position: relative;
+    top: -3em;
+}
+
+@media (min-width: 768px) {
+    div.card {
+        height: 24em;
+    }
+
+    div.card-bottom {
+        height: auto;
+        position: absolute;
+        background-color: transparent;
+        bottom: 1em;
+        width: 100%;
+        left: 0;
+    }
+
+    h4 {
+        height: 4em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 992px) {
+    div.card {
+        height: 25em;
+    }
+}

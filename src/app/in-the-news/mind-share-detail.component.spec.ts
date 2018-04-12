@@ -1,20 +1,19 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { MindShareDetailComponent } from './mind-share-detail.component';
 
-import { OurThoughtsComponent } from './our-thoughts.component';
-
-describe('OurThoughtsComponent', () => {
-  let component: OurThoughtsComponent;
-  let fixture: ComponentFixture<OurThoughtsComponent>;
+describe('MindShareDetailComponent', () => {
+  let component: MindShareDetailComponent;
+  let fixture: ComponentFixture<MindShareDetailComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ OurThoughtsComponent ]
+      declarations: [ MindShareDetailComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(OurThoughtsComponent);
+    fixture = TestBed.createComponent(MindShareDetailComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
