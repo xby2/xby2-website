@@ -26,18 +26,3 @@ p {
     display: block;
     color: #f89829;
 }
-
-@media (min-width: 768px) {
-    .card {
-        height: 12em;
-    }
-
-    div.card-bottom {
-        height: auto;
-        position: absolute;
-        background-color: transparent;
-        bottom: 1em;
-        width: 100%;
-        left: 0;
-    }
-}

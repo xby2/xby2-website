@@ -1,3 +1,7 @@
 .container-fluid {
     background-color: #e5e5e5;
 }
+
+p {
+    text-align: center;
+}

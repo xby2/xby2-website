@@ -1,0 +1,14 @@
+.author-info {
+    font-size: 1.1em;
+    text-align: center;
+    color: #919295;
+}
+
+.author-info .author {
+    font-weight: 600;
+}
+
+.author-info .author-divider {
+    color: #f89829;
+    font-weight: 600;
+}

@@ -3,17 +3,37 @@
     <div class="col">
       <h1>In The News</h1>
       <hr />
+    </div>
+  </div>
+  <div class="row">
+    <div class="col d-md-none">
+        <img [src]="'./assets/authors/' + featuredMindShare.authorImageUrl" />
+        <h4>{{featuredMindShare.title}}</h4>
+        <app-author-info [authorName]="featuredMindShare.authorName"
+                         [authorTitle]="featuredMindShare.authorTitle" >
+        </app-author-info>
+        <p>{{featuredMindShare.shortDescription}}</p>
+        <button class="btn btn-xby2"
+                [routerLink]="['in-the-news', featuredMindShare.id]">
+          Read More
+        </button>
+    </div>
+    <div class="col-3 d-none d-md-block">
       <img [src]="'./assets/authors/' + featuredMindShare.authorImageUrl" />
+      <app-author-info [authorName]="featuredMindShare.authorName"
+                         [authorTitle]="featuredMindShare.authorTitle" >
+      </app-author-info>
+    </div>
+    <div class="col-9 d-none d-md-block text-center">
       <h4>{{featuredMindShare.title}}</h4>
-      <div class="author-info">
-        <span class="author">{{featuredMindShare.authorName}}</span>
-        <span class="author-divider">/</span>
-        {{featuredMindShare.authorTitle}}
-      </div>
       <p>{{featuredMindShare.shortDescription}}</p>
       <button class="btn btn-xby2"
-              [routerLink]="'/in-the-news'">
+             [routerLink]="['in-the-news', featuredMindShare.id]">
         Read More
+      </button>
+      <button class="btn btn-xby2 btn-xby2-light"
+              [routerLink]="'in-the-news'">
+        See All Articles
       </button>
     </div>
   </div>
