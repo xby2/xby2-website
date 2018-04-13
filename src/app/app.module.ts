@@ -5,10 +5,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
-import { ContactUsComponent } from './contact-us/contact-us.component';
 import { FormsModule } from '@angular/forms';
-import { ContactService } from './contact-us/service/contact.service';
-import { ToastrService } from './contact-us/service/toastr.service';
 import { SharedModule } from './shared/shared.module';
 import { HomeModule } from './home/home.module';
 import { AboutUsModule } from './about-us/about-us.module';
@@ -18,11 +15,11 @@ import { ServicesResolver } from './shared/resolver/services.resolver';
 import { ClientStoriesModule } from './client-stories/client-stories.module';
 import { InTheNewsModule } from './in-the-news/in-the-news.module';
 import { CareersModule } from './careers/careers.module';
+import { ContactUsModule } from './contact-us/contact-us.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    ContactUsComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
@@ -34,13 +31,8 @@ import { CareersModule } from './careers/careers.module';
     ServicesModule,
     ClientStoriesModule,
     InTheNewsModule,
-    CareersModule
-  ],
-  providers: [
-    ServiceService,
-    ContactService,
-    ToastrService,
-    ServicesResolver
+    CareersModule,
+    ContactUsModule
   ],
   bootstrap: [AppComponent]
 })

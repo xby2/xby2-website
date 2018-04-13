@@ -12,7 +12,6 @@ import { ModalComponent } from './navbar/component/modal/modal.component';
 import { LocationComponent } from './footer/component/location/location.component';
 import { SocialMediaLinkService } from './footer/service/social-media-link.service';
 import { Xby2LocationService } from './footer/service/xby2-location.service';
-import { ContactUsFormComponent } from '../contact-us/contact-us-form/contact-us-form.component';
 import { FormsModule } from '@angular/forms';
 import { LogoComponent } from './component/logo/logo.component';
 import { OpenPositionService } from './service/open-position.service';
@@ -21,6 +20,11 @@ import { HeroImageComponent } from './component/hero-image/hero-image.component'
 import { MindShareService } from './service/mind-share.service';
 import { AuthorInfoComponent } from './component/author-info/author-info.component';
 import { OpenPositionCardComponent } from './component/open-position-card/open-position-card.component';
+import { ContactUsFormComponent } from './component/contact-us-form/contact-us-form.component';
+import { ContactService } from './service/contact.service';
+import { ServicesResolver } from './resolver/services.resolver';
+import { ServiceService } from './service/service.service';
+import { ToastrService } from './service/toastr.service';
 
 @NgModule({
   imports: [
@@ -49,7 +53,11 @@ import { OpenPositionCardComponent } from './component/open-position-card/open-p
     SocialMediaLinkService,
     Xby2LocationService,
     OpenPositionService,
-    MindShareService
+    MindShareService,
+    ContactService,
+    ServicesResolver,
+    ServiceService,
+    ToastrService
   ],
   exports: [
     ClientStoryListingComponent,
@@ -64,7 +72,8 @@ import { OpenPositionCardComponent } from './component/open-position-card/open-p
     LogoComponent,
     HeroImageComponent,
     AuthorInfoComponent,
-    OpenPositionCardComponent
+    OpenPositionCardComponent,
+    ContactUsFormComponent
   ]
 })
 export class SharedModule { }

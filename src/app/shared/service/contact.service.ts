@@ -1,10 +1,10 @@
 import { Injectable } from '@angular/core';
-import { ContactMessage } from './contact-message';
 import { HttpClient, HttpHeaders, HttpErrorResponse } from '@angular/common/http';
 import { Observable } from 'rxjs/Observable';
 import { catchError } from 'rxjs/operators';
 import { ErrorObservable } from 'rxjs/observable/ErrorObservable';
 import { environment } from '../../../environments/environment';
+import { ContactMessage } from '../model/contact-message';
 
 @Injectable()
 export class ContactService {
