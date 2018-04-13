@@ -1,12 +1,7 @@
 <div class="action-items">
-  <div class="share"><i class="fas fa-share-alt"></i> Share</div>
-  <div class="share-items">
-    <a *ngFor='let shareLink of shareLinks'
-        href="{{shareLink.link}}">
-      <i class="{{shareLink.icon}}"></i>
-    </a>
-  </div>
-  <a class="apply" [href]='applyUrl' target="_blank">
-    {{ applyText }}
+  <a [href]="applyUrl" target="_blank">
+    <button class="btn btn-xby2">
+      {{ applyText }}
+    </button>
   </a>
 </div>

@@ -1,34 +1,24 @@
-h1 {
-    font-weight: 600;
-}
-
 h2 {
     color: #000;
-    font-size: 32px;
+    font-size: 1.5em;
     font-weight: 600;
-    padding-bottom: 30px;
+    padding: 1em;
 }
 
 ul {
-    padding-left: 0;
-    text-transform: uppercase;
-    padding-bottom: 30px;
+    padding-left: 1em;
 }
 
-#description {
-    padding-bottom: 30px;
+ul.open-position-traits {
+    text-align: center;
+    padding: 0;
 }
 
-ul li {
+ul.open-position-traits li {
     display: inline;
 }
 
 li + li:before {
     content: "/ ";
     color: #f89829;
-}
-
-div.section ul {
-    text-transform: none;
-    padding-left: 25px;
 }
