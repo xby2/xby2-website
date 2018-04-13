@@ -2,9 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Service } from '../shared/model/service';
 import { OpenPosition } from '../shared/model/open-position';
-import { CollectedOpenPosition } from '../careers/model/collected-open-position';
 import { ClientStory } from '../shared/model/client-story';
 import { MindShare } from '../shared/model/mind-share';
+import { CollectedOpenPosition } from '../shared/model/collected-open-position';
 
 @Component({
   selector: 'app-home',

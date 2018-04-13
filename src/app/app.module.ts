@@ -16,7 +16,6 @@ import { CompanyValuesResolver } from './careers/resolver/company-values.resolve
 import { OpenPositionResolver } from './careers/resolver/open-position.resolver';
 import { CareerDetailComponent } from './careers/career-detail.component';
 import { FrequentlyAskedQuestionsComponent } from './careers/component/frequently-asked-questions/frequently-asked-questions.component';
-import { OpenPositionsSectionComponent } from './careers/component/open-positions-section/open-positions-section.component';
 import { CareerDetailsActionItemsComponent } from './careers/component/career-details-action-items/career-details-action-items.component';
 import { MeetOurPeopleSectionComponent } from './careers/component/meet-our-people-section/meet-our-people-section.component';
 import { SharedModule } from './shared/shared.module';
@@ -27,17 +26,12 @@ import { ServicesModule } from './services/services.module';
 import { ServicesResolver } from './shared/resolver/services.resolver';
 import { ClientStoriesModule } from './client-stories/client-stories.module';
 import { InTheNewsModule } from './in-the-news/in-the-news.module';
+import { CareersModule } from './careers/careers.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ContactUsComponent,
-    CareersComponent,
-    FrequentlyAskedQuestionsComponent,
-    CareerDetailComponent,
-    OpenPositionsSectionComponent,
-    CareerDetailsActionItemsComponent,
-    MeetOurPeopleSectionComponent,
+    ContactUsComponent
   ],
   imports: [
     BrowserModule,
@@ -48,7 +42,8 @@ import { InTheNewsModule } from './in-the-news/in-the-news.module';
     AboutUsModule,
     ServicesModule,
     ClientStoriesModule,
-    InTheNewsModule
+    InTheNewsModule,
+    CareersModule
   ],
   providers: [
     ServiceService,

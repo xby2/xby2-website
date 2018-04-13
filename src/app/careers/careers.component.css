@@ -1,4 +1,20 @@
-:host {
+.pictures {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.careers-img, .careers-img-2 {
+    background: url('../../assets/careers.png') no-repeat top center;
+    background-size: 100% auto;
+    height: 12em;
+}
+
+.careers-img {
+    background: url('../../assets/careers2.png') no-repeat top center;
+    background-size: 100% auto;
+}
+
+/*:host {
     background-color: #fff;
 }
 
@@ -37,19 +53,7 @@
     padding-right: 5px;
 }
 
-#careers, #careers-2 {
-    position: relative;
-    display: table;
-    height: 60vw;
-    width: 100%;
-    background: url('../../assets/careers.png') no-repeat top center;
-    background-size: 100% auto;
-}
 
-#careers {
-    background: url('../../assets/careers-2.png') no-repeat top center;
-    background-size: 100% auto;
-}
 
 h5 {
     text-transform: uppercase;
@@ -91,8 +95,6 @@ h5 {
 #our-values {
     margin: 5px 0;
 }
-
-/* our values buttons */
 .btn-group > .btn {
     background-color: transparent;
     padding: 5px 20px 5px 0;
@@ -119,4 +121,4 @@ h5 {
     .btn-group > .btn {
         padding-right: 40px;
     }
-}
+}*/

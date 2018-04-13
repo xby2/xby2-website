@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="row">
+    <h1 class="col">Our Values</h1>
+  </div>
+  <div class="row">
+    <app-button-group class="col"
+                      [isVertical]="isButtonGroupVertical"
+                      [buttonGroupItems]="buttonGroupItems"
+                      (registerClick)="changeVisibleValue($event)">
+    </app-button-group>
+  </div>
+  <div class="row">
+    <div class="col">
+      {{ visibleValue }}
+    </div>
+  </div>
+</div>

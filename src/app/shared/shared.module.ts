@@ -20,6 +20,7 @@ import { ButtonGroupComponent } from './component/button-group/button-group.comp
 import { HeroImageComponent } from './component/hero-image/hero-image.component';
 import { MindShareService } from './service/mind-share.service';
 import { AuthorInfoComponent } from './component/author-info/author-info.component';
+import { OpenPositionCardComponent } from './component/open-position-card/open-position-card.component';
 
 @NgModule({
   imports: [
@@ -40,7 +41,8 @@ import { AuthorInfoComponent } from './component/author-info/author-info.compone
     ContactUsFormComponent,
     LogoComponent,
     HeroImageComponent,
-    AuthorInfoComponent
+    AuthorInfoComponent,
+    OpenPositionCardComponent
   ],
   providers: [
     LinksService,
@@ -61,7 +63,8 @@ import { AuthorInfoComponent } from './component/author-info/author-info.compone
     ContactUsFormComponent,
     LogoComponent,
     HeroImageComponent,
-    AuthorInfoComponent
+    AuthorInfoComponent,
+    OpenPositionCardComponent
   ]
 })
 export class SharedModule { }

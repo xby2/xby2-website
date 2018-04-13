@@ -1,14 +1,14 @@
 [
     {
-        "title": "Be One Team",
-        "description": "As I've helped my 2-year-old daughter through the first couple stages of toilet training, it occurred to me that sometimes software development is a similiar process.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam viverra sapien a tortor malesuada, ut mattis mauris feugiat. Nam tincidunt enim et diam lobortis, sed lacinia libero scelerisque. Nam tempus massa in ipsum pellentesque, quis blandit justo dignissim. Nullam porttitor metus eget luctus volutpat. Vestibulum ante est, condimentum nec purus at, pellentesque feugiat erat. Aenean maximus ultricies massa, at rutrum nibh semper ac. Donec cursus accumsan risus ac posuere. Fusce volutpat, ullamcorper velit non, pharetra mi. Mauris mi lectus, ornare eu sapien vitae, semper rutrum nunc. Donec nec venenatis mauris, non hendrerit justo."
+        "id": "honesty",
+        "description": "Earning the trust of our clients and each other by being truthful, objective and doing what we feel is right regardless of how difficult the message or situation may be."
     },
     {
-        "title": "Be Open",
-        "description": "As I've helped my 2-year-old daughter through the first couple stages of toilet training, it occurred to me that sometimes software development is a similiar process.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam viverra sapien a tortor malesuada, ut mattis mauris feugiat. Nam tincidunt enim et diam lobortis, sed lacinia libero scelerisque. Nam tempus massa in ipsum pellentesque, quis blandit justo dignissim. Nullam porttitor metus eget luctus volutpat. Vestibulum ante est, condimentum nec purus at, pellentesque feugiat erat. Aenean maximus ultricies massa, at rutrum nibh semper ac. Donec cursus accumsan risus ac posuere. Fusce volutpat, ullamcorper velit non, pharetra mi. Mauris mi lectus, ornare eu sapien vitae, semper rutrum nunc. Donec nec venenatis mauris, non hendrerit justo."
+        "id": "impact",
+        "description": "Helping solve complex problems and challenges from strategy through delivery; we are driven by results that have high impact for our clients and their business."
     },
     {
-        "title": "Drive Impact",
-        "description": " DRIVE IMPACT As I've helped my 2-year-old daughter through the first couple stages of toilet training, it occurred to me that sometimes software development is a similiar process.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam viverra sapien a tortor malesuada, ut mattis mauris feugiat. Nam tincidunt enim et diam lobortis, sed lacinia libero scelerisque. Nam tempus massa in ipsum pellentesque, quis blandit justo dignissim. Nullam porttitor metus eget luctus volutpat. Vestibulum ante est, condimentum nec purus at, pellentesque feugiat erat. Aenean maximus ultricies massa, at rutrum nibh semper ac. Donec cursus accumsan risus ac posuere. Fusce volutpat, ullamcorper velit non, pharetra mi. Mauris mi lectus, ornare eu sapien vitae, semper rutrum nunc. Donec nec venenatis mauris, non hendrerit justo."
+        "id": "excellence",
+        "description": "Aspiring to be the best at what we do; there are no excuses. We take responsibility and accountability for the quality and delivery of the projects that we lead."
     }
   ]

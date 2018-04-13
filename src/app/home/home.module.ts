@@ -8,7 +8,6 @@ import { FeaturedClientStoriesComponent } from './component/featured-client-stor
 import { HomeServiceCardComponent } from './component/home-service-card/home-service-card.component';
 import { HomeCareersComponent } from './component/home-careers/home-careers.component';
 import { FeaturedOpenPositionsResolver } from './resolver/featured-open-positions.resolver';
-import { FeaturedOpenPositionCardComponent } from './component/featured-open-position-card/featured-open-position-card.component';
 import { FeaturedClientStoriesResolver } from './resolver/featured-client-stories.resolver';
 
 @NgModule({
@@ -21,8 +20,7 @@ import { FeaturedClientStoriesResolver } from './resolver/featured-client-storie
     HomeServiceCardComponent,
     FeaturedMindShareComponent,
     FeaturedClientStoriesComponent,
-    HomeCareersComponent,
-    FeaturedOpenPositionCardComponent
+    HomeCareersComponent
   ],
   providers: [
     FeaturedMindShareResolver,

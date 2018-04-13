@@ -8,6 +8,7 @@ import { ButtonGroupItem } from '../../model/button-group-item';
 })
 export class ButtonGroupComponent implements OnInit {
   @Input() buttonGroupItems: ButtonGroupItem[];
+  @Input() isVertical: boolean;
   @Output() registerClick = new EventEmitter();
 
   activeItem: string;

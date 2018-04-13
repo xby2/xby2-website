@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { OpenPosition } from '../../../shared/model/open-position';
-import { CollectedOpenPosition } from '../../../careers/model/collected-open-position';
+import { CollectedOpenPosition } from '../../../shared/model/collected-open-position';
 
 @Component({
   selector: 'app-home-careers',
