@@ -5,6 +5,8 @@ import { Perk } from './model/perk';
 import { FrequentlyAskedQuestion } from './model/frequently-asked-question';
 import { OpenPosition } from '../shared/model/open-position';
 import { ButtonGroupItem } from '../shared/model/button-group-item';
+import { OpenPositionService } from '../shared/service/open-position.service';
+import { CollectedOpenPosition } from '../shared/model/collected-open-position';
 
 @Component({
   selector: 'app-careers',
@@ -20,19 +22,27 @@ export class CareersComponent implements OnInit {
 
   companyValues: CompanyValue[];
   ourValuesButtonGroupItems: ButtonGroupItem[] = [
-    { id: 'honesty', label: 'Honesty and Integrity' },
-    { id: 'impact', label: 'Impact and Results' },
-    { id: 'excellence', label: 'Excellence in Architecture' }
+    { id: 'leadership', label: 'Leadership' },
+    { id: 'impact', label: 'Impact' },
+    { id: 'honesty', label: 'Honesty' }
   ];
   visibleValue: string;
   perks: Perk[];
   openPositions: OpenPosition[];
+  collectedOpenPositions: CollectedOpenPosition[];
   frequentlyAskedQuestions: FrequentlyAskedQuestion[];
 
-  constructor(private route: ActivatedRoute) { }
+  constructor(private route: ActivatedRoute,
+              private openPositionService: OpenPositionService) { }
 
   ngOnInit() {
     this.companyValues = this.route.snapshot.data.companyValues;
     this.openPositions = this.route.snapshot.data.openPositions;
+    this.perks = this.route.snapshot.data.perks;
+    this.frequentlyAskedQuestions =
+      this.route.snapshot.data.frequentlyAskedQuestions;
+
+    this.collectedOpenPositions =
+      this.openPositionService.collectOpenPositions(this.openPositions);
   }
 }

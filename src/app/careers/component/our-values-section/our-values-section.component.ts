@@ -12,13 +12,6 @@ export class OurValuesSectionComponent implements OnInit {
   @Input() buttonGroupItems: ButtonGroupItem[];
 
   visibleValue: string;
-  isButtonGroupVertical: boolean;
-
-  @HostListener('window:resize', ['$event'])
-  onResize(event) {
-    this.isButtonGroupVertical =
-      this.checkIfButtonGroupVertical(window.screen.width);
-  }
 
   constructor() { }
 
@@ -31,8 +24,6 @@ export class OurValuesSectionComponent implements OnInit {
     }
 
     this.visibleValue = this.companyValues[0].description;
-    this.isButtonGroupVertical =
-      this.checkIfButtonGroupVertical(window.screen.width);
   }
 
   changeVisibleValue(id: string) {

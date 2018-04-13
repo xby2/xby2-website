@@ -1,0 +1,16 @@
+<div class="container-fluid">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h1>Perks & Benefits</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div *ngFor='let perk of perks' class="col-6 col-md-3">
+        <img [src]="'./assets/perks/' + perk.iconUrl" />
+        <h3>{{ perk.title }}</h3>
+        {{ perk.description }}
+      </div>
+    </div>
+  </div>
+</div>

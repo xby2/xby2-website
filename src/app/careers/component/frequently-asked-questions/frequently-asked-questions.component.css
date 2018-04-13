@@ -1,4 +1,43 @@
-.row.faq {
+.container-fluid {
+    background-color: #e5e5e5;
+}
+
+.panel {
+    margin-bottom: 1em;
+}
+
+.panel-heading .accordion-toggle.collapsed:after {
+    content: ">";
+}
+
+.panel-heading .accordion-toggle:after {
+    content: 'v';
+    float: right;
+    color: #666;
+}
+
+.panel-title {
+    padding: 1em 0.5em;
+}
+
+.panel-body {
+    padding: 0 0.5em 0.5em 0.5em;
+}
+
+.panel-title a {
+    text-transform: none;
+    font-size: 1.2em;
+    text-decoration: none;
+    display: block;
+    font-weight: 600;
+    color: #666;
+}
+
+.panel-title a:active {
+    color: #666;
+}
+
+/*.row.faq {
     background-color: #ececec;
 }
 
@@ -7,14 +46,8 @@
     background-color: transparent;
 }
 
-.panel-heading .accordion-toggle:after {
-    content: 'v';
-    float: right;
-    color: #ffa500;
-}
-.panel-heading .accordion-toggle.collapsed:after {
-    content: ">";
-}
+
+
 
 .panel-heading {
     background-color: transparent;
@@ -30,14 +63,5 @@
     padding: 0 0 40px 0;
 }
 
-h5.panel-title {
-    padding: 30px 0;
-}
 
-h5.panel-title a {
-    text-transform: none;
-    font-size: 20px;
-    text-decoration: none;
-    display: block;
-    font-weight: 600;
-}
+*/

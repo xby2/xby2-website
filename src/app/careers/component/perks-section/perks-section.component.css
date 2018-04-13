@@ -1,0 +1,19 @@
+.container-fluid {
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.45), 
+        rgba(0, 0, 0, 0.45)
+      ),
+      url('../../../../assets/perks-background.jpg') no-repeat top center;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+}
+
+img {
+    width: 6em;
+    margin-bottom: 1em;
+}
+
+.col-6 {
+    margin-bottom: 1em;
+}

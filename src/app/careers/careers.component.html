@@ -12,41 +12,11 @@
   [companyValues]="companyValues"
   [buttonGroupItems]="ourValuesButtonGroupItems">
 </app-our-values-section>
-<!--
-<div class="row">
-  <div class="col-xs-12">
-    <h4>Our Values</h4>
-    <div id="our-values">
-      <div class="btn-group" data-toggle="buttons"
-           id="our-value-buttons" >
-        <button *ngFor='let value of ourValues; let first = first'
-                 type="button"
-                 class="btn btn-primary"
-                [class.active]="first"
-                (click)="changeVisibleOurValuesDescription(value.title)">
-          {{value.title}}
-          <input type="radio" [id]="value.title">
-        </button>             
-      </div>
-    </div>
-    <p>
-      {{visibleOurValuesDescription}}
-    </p>
-  </div>
-</div>
 <app-meet-our-people-section></app-meet-our-people-section>
-<div class="row perks">
-  <div class="col-xs-12">
-    <h4>Perks & Benefits</h4>
-    <div *ngFor='let perk of perks' class="col-xs-12 col-sm-4 perk">
-      <h5>{{perk.title}}</h5>
-      <p>{{perk.description}}</p>
-    </div>
-  </div>
-</div>
+<app-perks-section [perks]="perks"></app-perks-section>
 <app-open-positions-section
-  [openPositions]='openPositions'>
+  [collectedOpenPositions]='collectedOpenPositions'>
 </app-open-positions-section>
 <app-frequently-asked-questions
   [frequentlyAskedQuestions]='frequentlyAskedQuestions'>
-</app-frequently-asked-questions>-->
+</app-frequently-asked-questions>

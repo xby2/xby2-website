@@ -5,6 +5,7 @@ import { OpenPosition } from '../shared/model/open-position';
 import { ClientStory } from '../shared/model/client-story';
 import { MindShare } from '../shared/model/mind-share';
 import { CollectedOpenPosition } from '../shared/model/collected-open-position';
+import { OpenPositionService } from '../shared/service/open-position.service';
 
 @Component({
   selector: 'app-home',
@@ -19,7 +20,8 @@ export class HomeComponent implements OnInit {
   collectedOpenPositions: CollectedOpenPosition[];
   heroImageUrl = 'home-page.png';
 
-  constructor(private route: ActivatedRoute) {
+  constructor(private route: ActivatedRoute,
+              private openPositionService: OpenPositionService) {
   }
 
   ngOnInit() {
@@ -42,53 +44,6 @@ export class HomeComponent implements OnInit {
     }
 
     this.collectedOpenPositions =
-      this.collectOpenPositions(this.featuredOpenPositions);
-  }
-
-  collectOpenPositions(openPositions: OpenPosition[]) {
-    const collectedOpenPositions: CollectedOpenPosition[] = [];
-
-    openPositions.forEach(openPosition => {
-      const collectedOpenPosition: CollectedOpenPosition =
-        collectedOpenPositions.filter(c => c.title === openPosition.title)[0];
-
-      if (collectedOpenPosition) {
-        collectedOpenPosition
-                  .listings
-                  .push({
-                    id: openPosition.id,
-                    location: this.convertLocationName(openPosition.location)
-                  });
-        collectedOpenPosition.listings.sort(function(a, b) {
-          const x = a.location.toLowerCase();
-          const y = b.location.toLowerCase();
-          if (x < y) { return -1; }
-          if (x > y) { return 1; }
-          return 0;
-        });
-
-      } else {
-        collectedOpenPositions.push({
-          title: openPosition.title,
-          listings: [{
-            id: openPosition.id,
-            location: this.convertLocationName(openPosition.location)
-          }]
-        });
-      }
-    });
-
-    return collectedOpenPositions;
-  }
-
-  private convertLocationName(locationName: string): string {
-    switch (locationName) {
-      case 'Metro Detroit':
-        return 'Detroit';
-      case 'Greater Toronto':
-        return 'Toronto';
-      default:
-        return locationName;
-    }
+      this.openPositionService.collectOpenPositions(this.featuredOpenPositions);
   }
 }

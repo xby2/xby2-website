@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="row">
+    <h1 class="col">Open Positions</h1>
+  </div>
+  <div class="row">
+    <app-open-position-card *ngFor="let openPosition of collectedOpenPositions"
+                            class="col-12 col-md-6 col-lg-4"
+                            [openPosition]="openPosition">
+    </app-open-position-card>
+  </div>
+</div>

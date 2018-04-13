@@ -17,5 +17,4 @@ export class HomeCareersComponent implements OnInit {
       throw new Error('attribute \'featuredOpenPositions\' is required.');
     }
   }
-
 }

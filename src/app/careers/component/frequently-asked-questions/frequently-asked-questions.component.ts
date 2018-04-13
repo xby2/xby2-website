@@ -11,6 +11,8 @@ export class FrequentlyAskedQuestionsComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    if (this.frequentlyAskedQuestions == null) {
+      throw new Error('\'frequentlyAskedQuestions\' attribute required.');
+    }
   }
-
 }

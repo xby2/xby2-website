@@ -4,6 +4,7 @@ import { Observable } from 'rxjs/Observable';
 import { map } from 'rxjs/operators';
 import { OpenPosition } from '../model/open-position';
 import { LeverJobPosting } from '../model/lever-job-posting';
+import { CollectedOpenPosition } from '../model/collected-open-position';
 
 @Injectable()
 export class OpenPositionService {
@@ -49,5 +50,52 @@ export class OpenPositionService {
         return openPosition;
       }
     );
+  }
+
+  collectOpenPositions(openPositions: OpenPosition[]) {
+    const collectedOpenPositions: CollectedOpenPosition[] = [];
+
+    openPositions.forEach(openPosition => {
+      const collectedOpenPosition: CollectedOpenPosition =
+        collectedOpenPositions.filter(c => c.title === openPosition.title)[0];
+
+      if (collectedOpenPosition) {
+        collectedOpenPosition
+                  .listings
+                  .push({
+                    id: openPosition.id,
+                    location: this.convertLocationName(openPosition.location)
+                  });
+        collectedOpenPosition.listings.sort(function(a, b) {
+          const x = a.location.toLowerCase();
+          const y = b.location.toLowerCase();
+          if (x < y) { return -1; }
+          if (x > y) { return 1; }
+          return 0;
+        });
+
+      } else {
+        collectedOpenPositions.push({
+          title: openPosition.title,
+          listings: [{
+            id: openPosition.id,
+            location: this.convertLocationName(openPosition.location)
+          }]
+        });
+      }
+    });
+
+    return collectedOpenPositions;
+  }
+
+  private convertLocationName(locationName: string): string {
+    switch (locationName) {
+      case 'Metro Detroit':
+        return 'Detroit';
+      case 'Greater Toronto':
+        return 'Toronto';
+      default:
+        return locationName;
+    }
   }
 }

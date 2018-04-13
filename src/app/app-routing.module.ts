@@ -21,6 +21,8 @@ import { MindShareDetailComponent } from './in-the-news/mind-share-detail.compon
 import { InTheNewsComponent } from './in-the-news/in-the-news.component';
 import { MindSharesResolver } from './in-the-news/resolver/mind-shares.resolver';
 import { MindShareResolver } from './in-the-news/resolver/mind-share.resolver';
+import { PerksResolver } from './careers/resolver/perks.resolver';
+import { FrequentlyAskedQuestionsResolver } from './careers/resolver/frequently-asked-questions.resolver';
 
 const routes: Routes = [
   {
@@ -66,7 +68,9 @@ const routes: Routes = [
     component: CareersComponent,
     resolve: {
       openPositions: OpenPositionsResolver,
-      companyValues: CompanyValuesResolver
+      companyValues: CompanyValuesResolver,
+      perks: PerksResolver,
+      frequentlyAskedQuestions: FrequentlyAskedQuestionsResolver
     }
   },
   {

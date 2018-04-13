@@ -6,12 +6,30 @@
 .careers-img, .careers-img-2 {
     background: url('../../assets/careers.png') no-repeat top center;
     background-size: 100% auto;
-    height: 12em;
+    height: 14em;
 }
 
 .careers-img {
     background: url('../../assets/careers2.png') no-repeat top center;
     background-size: 100% auto;
+}
+
+@media (min-width: 768px) {
+    .careers-img, .careers-img-2 {
+        height: 12em;
+    }
+}
+
+@media (min-width: 992px) {
+    .careers-img, .careers-img-2 {
+        height: 15.5em;
+    }
+}
+
+@media (min-width: 1200px) {
+    .careers-img, .careers-img-2 {
+        height: 17.5em;
+    }
 }
 
 /*:host {
