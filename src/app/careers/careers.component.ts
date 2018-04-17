@@ -18,15 +18,9 @@ export class CareersComponent implements OnInit, AfterViewInit {
   subheaderText = 'It takes an entire team united behind something big.  ' +
   'Together, we work hard, we laugh a lot, we brainstorm nonstop, and we ' +
   'give the best high-fives in town.';
-  buttonText = 'We\'re Hiring';
+  buttonText = 'Open Positions';
 
   companyValues: CompanyValue[];
-  ourValuesButtonGroupItems: ButtonGroupItem[] = [
-    { id: 'leadership', label: 'Leadership' },
-    { id: 'impact', label: 'Impact' },
-    { id: 'honesty', label: 'Honesty' }
-  ];
-  visibleValue: string;
   perks: Perk[];
   openPositions: OpenPosition[];
   collectedOpenPositions: CollectedOpenPosition[];
@@ -51,6 +45,8 @@ export class CareersComponent implements OnInit, AfterViewInit {
   }
 
   ngAfterViewInit() {
-    document.querySelector('#' + this.fragment).scrollIntoView();
+    if (this.fragment !== null && this.fragment !== undefined) {
+      document.querySelector('#' + this.fragment).scrollIntoView();
+    }
   }
 }

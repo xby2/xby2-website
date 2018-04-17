@@ -1,5 +1,5 @@
-<app-page-header [headerText]='headerText'
-                 [subheaderText]='subheaderText'>
+<app-page-header [headerText]="headerText"
+                 [subheaderText]="subheaderText">
 </app-page-header>
 
 <div class="container">
@@ -10,10 +10,10 @@
   </div>
   <div class="row">
     <app-mind-share-listing
-       class="col-12 col-md-6 col-lg-4"
-      *ngFor='let mindShare of filteredMindShares |
-              slice: 0:mindShareDisplayCount'
-      [mindShare]='mindShare'>
+       class="col-12 col-md-6 col-lg-4 mx-auto"
+      *ngFor="let mindShare of filteredMindShares |
+              slice: 0:mindShareDisplayCount"
+      [mindShare]="mindShare">
     </app-mind-share-listing>
   </div>
   <div class="row">

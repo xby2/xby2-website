@@ -5,4 +5,5 @@ export interface Service {
     class?: string;
     fullText: string;
     points: string[];
+    clientStoryId: string;
 }

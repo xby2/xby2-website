@@ -1,0 +1,21 @@
+<div class="card panel panel-default"
+    [ngClass]="isExpanded ? 'faq-expanded' : 'faq-collapsed'">
+          <div class="panel-heading">
+            <div class="panel-title">
+              <a class="accordion-toggle collapsed" data-toggle="collapse"
+                 data-parent="#accordion"
+                 [href]="'#' + frequentlyAskedQuestion.id"
+                 (click)="toggleExpand()">
+                {{ frequentlyAskedQuestion.question }}
+                <i class="fas fa-plus-square"></i>
+                <i class="fas fa-minus-square"></i>
+              </a>
+            </div>
+          </div>
+          <div [id]="frequentlyAskedQuestion.id"
+                class="panel-collapse collapse">
+            <div class="panel-body">
+              {{ frequentlyAskedQuestion.answer }}
+            </div>
+          </div>
+        </div>

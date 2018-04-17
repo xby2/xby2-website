@@ -9,9 +9,6 @@ import { CompanyValue } from '../../model/company-value';
 })
 export class OurValuesSectionComponent implements OnInit {
   @Input() companyValues: CompanyValue[];
-  @Input() buttonGroupItems: ButtonGroupItem[];
-
-  visibleValue: string;
 
   constructor() { }
 
@@ -19,23 +16,5 @@ export class OurValuesSectionComponent implements OnInit {
     if (this.companyValues == null) {
       throw new Error('\'companyValues\' attribute required.');
     }
-    if (this.buttonGroupItems == null) {
-      throw new Error('\'buttonGroupItems\' attribute required.');
-    }
-
-    this.visibleValue = this.companyValues[0].description;
-  }
-
-  changeVisibleValue(id: string) {
-    const selectedOurValue = this.companyValues
-                      .filter(ourValues => ourValues.id === id)[0];
-
-    if (selectedOurValue) {
-      this.visibleValue = selectedOurValue.description;
-    }
-  }
-
-  checkIfButtonGroupVertical(screenWidth: number): boolean {
-    return screenWidth < 768;
   }
 }

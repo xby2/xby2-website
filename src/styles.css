@@ -100,6 +100,15 @@ button.btn-xby2.btn-xby2-light {
     body {
         font-size: 1.1em;
     }
+
+    div.card-bottom {
+        height: auto;
+        position: absolute;
+        background-color: transparent;
+        bottom: 1em;
+        width: 100%;
+        left: 0;
+    }
 }
 
 @media (min-width: 1200px) {

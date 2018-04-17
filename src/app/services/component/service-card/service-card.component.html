@@ -1,12 +1,18 @@
 <div class="card">
-  <img [src]='service.imageUrl' />
+  <img [src]="service.imageUrl" />
   <h3>
     <span class="text">{{service.title}}</span>
   </h3>
   <p>{{service.text}}</p>
   <ul>
-    <li *ngFor='let point of service.points'>
+    <li *ngFor="let point of service.points">
       {{point}}
     </li>
   </ul>
+  <div class="card-bottom">
+    <button class="btn btn-xby2" 
+            [routerLink]="['/clientStories', service.clientStoryId]">
+        Read More
+    </button>
+  </div>
 </div>

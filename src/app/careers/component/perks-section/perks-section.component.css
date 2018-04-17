@@ -1,7 +1,7 @@
 .container-fluid {
     background: linear-gradient(
-        rgba(0, 0, 0, 0.45), 
-        rgba(0, 0, 0, 0.45)
+        rgba(0, 0, 0, 0.25), 
+        rgba(0, 0, 0, 0.25)
       ),
       url('../../../../assets/perks-background.jpg') no-repeat top center;
     background-size: cover;

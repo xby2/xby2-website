@@ -12,7 +12,8 @@
         "Architecture Blueprinting",
         "Reference Architecture",
         "Application Portfolio Management and Rationalization"
-      ]
+      ],
+      "clientStoryId": "enterprise-architecture-assessment"
     },
     {
       "imageUrl": "./assets/services/app-solution-architecture.svg",
@@ -25,7 +26,8 @@
         "Buy vs. Build Analysis",
         "Software Evaluation",
         "Execution Planning and Roadmap"
-      ]
+      ],
+      "clientStoryId": "claims-modernization"
     },
     {
       "imageUrl": "./assets/services/data-architecture.svg",
@@ -38,7 +40,8 @@
         "Data Architecture Assessment",
         "Business Intelligence and Analytics",
         "Data Governance, Data Quality and Master Data Management"
-      ]
+      ],
+      "clientStoryId": "life-modernization"
     },
     {
       "imageUrl": "./assets/services/integration-architecture.svg",
@@ -50,7 +53,8 @@
       "points": [
         "Integration Strategy",
         "Integration Architecture"
-      ]
+      ],
+      "clientStoryId": "data-and-analytics-platform-for-value-based-care"
     },
     {
       "imageUrl": "./assets/services/agile-program-delivery.svg",
@@ -63,7 +67,8 @@
         "Architecture and Technical Oversight",
         "Solution Implementation",
         "System Integration"
-      ]
+      ],
+      "clientStoryId": "pas-architecture-review"
     },
     {
       "imageUrl": "./assets/services/project-architecture-assessment.svg",
@@ -76,6 +81,7 @@
         "Architecture Audit and Review",
         "Performance and Scalability Optimization",
         "Application Refactoring"
-      ]
+      ],
+      "clientStoryId": "core-system-integration-strategy-and-implementation"
     }
   ]

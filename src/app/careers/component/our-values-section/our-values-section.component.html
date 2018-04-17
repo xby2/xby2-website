@@ -3,14 +3,9 @@
     <h1 class="col">Our Values</h1>
   </div>
   <div class="row">
-    <app-button-group class="col"
-                      [buttonGroupItems]="buttonGroupItems"
-                      (registerClick)="changeVisibleValue($event)">
-    </app-button-group>
-  </div>
-  <div class="row">
-    <div class="col">
-      {{ visibleValue }}
+    <div *ngFor="let companyValue of companyValues" class="col-12 col-md-4">
+      <h3>{{ companyValue.title }}</h3>
+      <p>{{ companyValue.description }}</p>
     </div>
   </div>
 </div>

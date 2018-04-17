@@ -1,9 +1,9 @@
-div {
+.card {
     background-color: #fff;
     padding-left: 0;
     padding-right: 0;
     margin-bottom: 1.5em;
-    padding-bottom: 1px;  /* why does this work? */
+    padding-bottom: 1em;
 }
 
 img {
@@ -27,22 +27,8 @@ p {
     text-align: center;
 }
 
-.card {
-    display: block;
-    position: initial;
-}
-
-@media (min-width: 992px) {
-    div {
-        height: 19em;
-    }
-    
-    div.card-bottom {
-        height: auto;
-        position: absolute;
-        background-color: transparent;
-        bottom: 1em;
-        width: 100%;
-        left: 0;
+@media (min-width: 768px) {
+    .card {
+        height: 20em;
     }
 }

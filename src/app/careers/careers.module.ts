@@ -17,6 +17,7 @@ import { PerkService } from './service/perk.service';
 import { OpenPositionsSectionComponent } from './component/open-positions-section/open-positions-section.component';
 import { FrequentlyAskedQuestionsResolver } from './resolver/frequently-asked-questions.resolver';
 import { FrequentlyAskedQuestionService } from './service/frequently-asked-question.service';
+import { FrequentlyAskedQuestionComponent } from './component/frequently-asked-question/frequently-asked-question.component';
 
 @NgModule({
   imports: [
@@ -32,6 +33,7 @@ import { FrequentlyAskedQuestionService } from './service/frequently-asked-quest
     OurValuesSectionComponent,
     PerksSectionComponent,
     OpenPositionsSectionComponent,
+    FrequentlyAskedQuestionComponent,
   ],
   providers: [
     PerksResolver,

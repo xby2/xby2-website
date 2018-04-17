@@ -2,21 +2,21 @@
     {
       "iconUrl": "coverage.svg",
       "title": "Coverage",
-      "description": "Health, life, vision, dental and disability."
+      "description": "Health, life, vision, dental and disability"
     },
     {
       "iconUrl": "retirement.svg",
       "title": "Retirement Plan",
-      "description": "401(k) plan with a company match."
+      "description": "401(k) plan with company match"
     },
     {
       "iconUrl": "pto.svg",
       "title": "Paid Time Off",
-      "description": "Vacation days, paid holidays, and unlimited sick days."
+      "description": "Vacation days, paid holidays, and unlimited sick days"
     },
     {
       "iconUrl": "perks.svg",
       "title": "Perks",
-      "description": "Fully-stocked kitchen, programs for professional development, health and wellness, professional dress, and more."
+      "description": "Professional development, health & wellness, professional dress and more"
     }
 ]
