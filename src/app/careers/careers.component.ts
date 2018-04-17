@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { CompanyValue } from './model/company-value';
 import { Perk } from './model/perk';
@@ -13,7 +13,7 @@ import { CollectedOpenPosition } from '../shared/model/collected-open-position';
   templateUrl: './careers.component.html',
   styleUrls: ['./careers.component.css']
 })
-export class CareersComponent implements OnInit {
+export class CareersComponent implements OnInit, AfterViewInit {
   headerText = 'Join our Team';
   subheaderText = 'It takes an entire team united behind something big.  ' +
   'Together, we work hard, we laugh a lot, we brainstorm nonstop, and we ' +
@@ -32,10 +32,14 @@ export class CareersComponent implements OnInit {
   collectedOpenPositions: CollectedOpenPosition[];
   frequentlyAskedQuestions: FrequentlyAskedQuestion[];
 
+  private fragment: string;
+
   constructor(private route: ActivatedRoute,
               private openPositionService: OpenPositionService) { }
 
   ngOnInit() {
+    this.route.fragment.subscribe(fragment => { this.fragment = fragment; });
+
     this.companyValues = this.route.snapshot.data.companyValues;
     this.openPositions = this.route.snapshot.data.openPositions;
     this.perks = this.route.snapshot.data.perks;
@@ -44,5 +48,9 @@ export class CareersComponent implements OnInit {
 
     this.collectedOpenPositions =
       this.openPositionService.collectOpenPositions(this.openPositions);
+  }
+
+  ngAfterViewInit() {
+    document.querySelector('#' + this.fragment).scrollIntoView();
   }
 }
