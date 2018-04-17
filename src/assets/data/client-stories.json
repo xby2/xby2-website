@@ -44,7 +44,7 @@
         "title": "Life Modernization",
         "description": "Successfully led the implementation of a core system modernization effort for the life division of a fortune 500 carrier.",
         "isFeatured": true,
-        "industry": "healthcare",
+        "industry": "insurance",
         "client": "Fortune 500 and Multi-Line Insurer",
         "expertises": [
             "Enterprise Architecture",
@@ -82,7 +82,7 @@
         "title": "PAS Architecture Review",
         "description": "Architecture review of an in-flight policy admin initiative, focusing on overall architecture and the use of agile methodology.",
         "isFeatured": false,
-        "industry": "healthcare",
+        "industry": "insurance",
         "client": "Specialty Lines Subsidiary of Fortune 500 Insurer",
         "expertises": [
             "Project Audit & Review",

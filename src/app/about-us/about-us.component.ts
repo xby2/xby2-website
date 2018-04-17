@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Route } from '@angular/compiler/src/core';
+import { ActivatedRoute } from '@angular/router';
+import { Value } from './model/value';
 
 @Component({
   selector: 'app-about-us',
@@ -10,10 +13,11 @@ export class AboutUsComponent implements OnInit {
   subheaderText = 'A technology consultancy focused on the practice of ' +
   'application and data architecture in the insurance and healthcare ' +
   'industries.';
+  values: Value[];
 
-  constructor() { }
+  constructor(private route: ActivatedRoute) { }
 
   ngOnInit() {
+    this.values = this.route.snapshot.data.values;
   }
-
 }

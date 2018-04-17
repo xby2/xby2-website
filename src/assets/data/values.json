@@ -1,0 +1,22 @@
+[
+    {
+        "iconUrl": "Group.svg",
+        "title": "Independence and Objectivity",
+        "description": "We advocate solely for our client's interests. We are open and transparent about any conflicts of interests. We have no hidden agendas or products to sell or advocate for."
+    },
+    {
+        "iconUrl": "Award-Ribbon.svg",
+        "title": "Impact and Results Driven",
+        "description": "We deliver strategic value and results. We believe having impact and results will speak for itself when it comes to growing and sustaining our business."
+    },
+    {
+        "iconUrl": "Design.svg",
+        "title": "Quality over Quantity",
+        "description": "We increase impact and reduce total cost of ownership of solutions through the quality of people we hire and retain. We hire exceptional people, so we can deliver exceptional solutions and results with the smallest number of people necessary to deliver them. There is no 'B' team."
+    },
+    {
+        "iconUrl": "Handshake.svg",
+        "title": "Client Partnership and Self-Sufficiency",
+        "description": "We enhance client capability by working side-by-side with our clients and freely sharing our knowledge and experience. We're here to help solve difficult and challenging problems with our clients, but we also want to help our clients take control of their own future."
+    }
+]

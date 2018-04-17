@@ -23,6 +23,7 @@ import { MindSharesResolver } from './in-the-news/resolver/mind-shares.resolver'
 import { MindShareResolver } from './in-the-news/resolver/mind-share.resolver';
 import { PerksResolver } from './careers/resolver/perks.resolver';
 import { FrequentlyAskedQuestionsResolver } from './careers/resolver/frequently-asked-questions.resolver';
+import { ValuesResolver } from './about-us/resolver/values.resolver';
 
 const routes: Routes = [
   {
@@ -35,7 +36,13 @@ const routes: Routes = [
       featuredOpenPositions: FeaturedOpenPositionsResolver
     }
   },
-  { path: 'about-us', component: AboutUsComponent },
+  {
+    path: 'about-us',
+    component: AboutUsComponent,
+    resolve: {
+      values: ValuesResolver
+    }
+  },
   {
     path: 'services',
     component: ServicesComponent,

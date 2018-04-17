@@ -1,3 +1,13 @@
 .container-fluid {
     background-color: #fff;
 }
+
+img {
+    width: 5em;
+    margin: 0 auto 1em auto;
+    display: block;
+}
+
+svg {
+    color: #f89829;
+}

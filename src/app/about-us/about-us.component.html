@@ -1,5 +1,5 @@
-<app-page-header [headerText]='headerText'
-                 [subheaderText]='subheaderText'>
+<app-page-header [headerText]="headerText"
+                 [subheaderText]="subheaderText">
 </app-page-header>
 <div class="container">
   <div class="row">
@@ -43,33 +43,17 @@
           1998 on a different set of principles to do what is lacking in typical IT
           consulting firms.
         </p>
-        <ul>
-            <li>
-              <b>Independence and Objectivity</b> - advocate solely for our client’s
-              interests. We are open and transparent about any conflicts of
-              interests. We have no hidden agendas or products to sell or advocate
-              for.
-            </li>
-            <li>
-              <b>Impact and Results Driven</b> - deliver strategic value and
-              results. We believe having impact and results will speak for itself
-              when it comes to growing and sustaining our business.
-            </li>
-            <li>
-              <b>Quality over Quantity</b> - increase impact and reduce total cost
-              of ownership of solutions through the quality of people we hire and
-              retain. We hire exceptional people, so we can deliver exceptional
-              solutions and results with the smallest number of people necessary to
-              deliver them. There is no "B" team.
-            </li>
-            <li>
-              <b>Client Partnership and Self-Sufficiency</b> - enhance client
-              capability by working side-by-side with our clients and freely sharing
-              our knowledge and experience. We're here to help solve difficult and
-              challenging problems with our clients, but we also want to help our
-              clients take control of their own future.
-            </li>
-        </ul>
+      </div>
+    </div>
+    <div class="row">
+        <div *ngFor="let value of values" class="col-12 col-md-6">
+          <img src="./assets/values/{{ value.iconUrl }}" />
+          <h3>{{ value.title }}</h3>
+          <p>{{ value.description }}</p>
+        </div>
+    </div>
+    <div class="row">
+      <div class="col">
         <p>
           In the end, it turns out that a different approach is exactly what the
           industry desired, creating the opportunity for X by 2 to serve some of
