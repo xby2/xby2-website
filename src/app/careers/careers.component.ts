@@ -18,7 +18,7 @@ export class CareersComponent implements OnInit, AfterViewInit {
   subheaderText = 'It takes an entire team united behind something big.  ' +
   'Together, we work hard, we laugh a lot, we brainstorm nonstop, and we ' +
   'give the best high-fives in town.';
-  buttonText = 'Open Positions';
+  buttonText = 'View Open Positions';
 
   companyValues: CompanyValue[];
   perks: Perk[];
