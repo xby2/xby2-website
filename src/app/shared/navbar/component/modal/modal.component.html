@@ -17,7 +17,7 @@
         </div>
       </nav>
       <ul>
-        <li *ngFor='let link of links'>
+        <li *ngFor="let link of links">
           <a [routerLink]="link.link" (click)="handleClickCloseButton()">
             {{link.label}}
           </a>

@@ -10,7 +10,7 @@ import { Service } from '../shared/model/service';
 export class ServicesComponent implements OnInit {
   services: Service[];
   headerText = 'Services';
-  subheaderText = 'Transforming business through technology.';
+  subheaderText = 'Guiding clients from strategy through delivery.';
 
   constructor(private route: ActivatedRoute) {
     this.services = this.route.snapshot.data.services;

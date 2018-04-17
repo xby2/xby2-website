@@ -10,9 +10,8 @@ import { Value } from './model/value';
 })
 export class AboutUsComponent implements OnInit {
   headerText = 'About Us';
-  subheaderText = 'A technology consultancy focused on the practice of ' +
-  'application and data architecture in the insurance and healthcare ' +
-  'industries.';
+  subheaderText = 'An IT consultancy committed to helping insurance and ' +
+  'healthcare organizations transform their businesss.';
   values: Value[];
 
   constructor(private route: ActivatedRoute) { }

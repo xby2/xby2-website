@@ -1,5 +1,5 @@
 <div [ngClass]="isVertical ? 'btn-group-vertical' : 'btn-group'">
-  <button *ngFor='let buttonGroupItem of buttonGroupItems'
+  <button *ngFor="let buttonGroupItem of buttonGroupItems"
           type="button" class="btn btn-xby2 btn-xby2-light"
          (click)="handleClick(buttonGroupItem.id)"
         [class.active]="buttonGroupItem.id === activeItem">

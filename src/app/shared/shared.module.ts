@@ -9,7 +9,6 @@ import { AppRoutingModule } from '../app-routing.module';
 import { FooterComponent } from './footer/footer.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ModalComponent } from './navbar/component/modal/modal.component';
-import { LocationComponent } from './footer/component/location/location.component';
 import { SocialMediaLinkService } from './footer/service/social-media-link.service';
 import { Xby2LocationService } from './footer/service/xby2-location.service';
 import { FormsModule } from '@angular/forms';
@@ -41,7 +40,6 @@ import { ToastrService } from './service/toastr.service';
     NextItemSectionComponent,
     PageHeaderComponent,
     ModalComponent,
-    LocationComponent,
     ContactUsFormComponent,
     LogoComponent,
     HeroImageComponent,

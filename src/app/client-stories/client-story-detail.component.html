@@ -1,6 +1,6 @@
 <app-hero-image [imageUrl]="'client-story/' + clientStory.imageUrl">
   <ul class="d-none d-md-block">
-    <li *ngFor='let expertise of clientStory.expertises'>
+    <li *ngFor="let expertise of clientStory.expertises">
       {{expertise}}
     </li>
   </ul>
@@ -17,7 +17,7 @@
     </app-content-section>
   </div>
 </div>
-<app-next-item-section *ngIf='clientStory.nextClientStoryId'
+<app-next-item-section *ngIf="clientStory.nextClientStoryId"
                        [title]="clientStory.nextClientStoryTitle"
                        [description]="clientStory.nextClientStoryDescription"
                        [link]="['/client-stories', clientStory.nextClientStoryId]">

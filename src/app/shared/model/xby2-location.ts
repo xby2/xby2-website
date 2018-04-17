@@ -6,4 +6,6 @@ export interface Xby2Location {
     state: string;
     zip: string;
     phone: string;
+    latitude: number;
+    longitude: number;
 }

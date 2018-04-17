@@ -31,12 +31,12 @@
     <div class="col">
       <ul>
         <li id="tags-header">Tags</li>
-        <li *ngFor='let tag of mindShare.tags'>{{tag}}</li>
+        <li *ngFor="let tag of mindShare.tags">{{tag}}</li>
       </ul>
     </div>
   </div>
 </div>
-<app-next-item-section *ngIf='mindShare.nextMindShareId'
+<app-next-item-section *ngIf="mindShare.nextMindShareId"
                        [title]="mindShare.nextMindShareTitle"
                        [link]="['/in-the-news', mindShare.nextMindShareId]">
 </app-next-item-section>

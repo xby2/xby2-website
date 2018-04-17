@@ -10,8 +10,7 @@ import { ButtonGroupItem } from '../shared/model/button-group-item';
 })
 export class ClientStoriesComponent implements OnInit {
   headerText = 'Client Stories';
-  subheaderText = 'Requisite skills, instincts, and judgment to guide our ' +
-  'clients to where they want to be.';
+  subheaderText = 'Our clients inspire us. Let their stories inspire yours.';
   clientStories: ClientStory[];
   filteredClientStories: ClientStory[];
   clientStoryDisplayCount: number;

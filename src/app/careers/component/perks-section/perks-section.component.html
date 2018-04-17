@@ -6,7 +6,7 @@
       </div>
     </div>
     <div class="row">
-      <div *ngFor="let perk of perk" class="col-6 col-md-3">
+      <div *ngFor="let perk of perks" class="col-6 col-md-3">
         <img [src]="'./assets/perks/' + perk.iconUrl" />
         <h3>{{ perk.title }}</h3>
         {{ perk.description }}

@@ -14,10 +14,8 @@ import { CollectedOpenPosition } from '../shared/model/collected-open-position';
   styleUrls: ['./careers.component.css']
 })
 export class CareersComponent implements OnInit, AfterViewInit {
-  headerText = 'Join our Team';
-  subheaderText = 'It takes an entire team united behind something big.  ' +
-  'Together, we work hard, we laugh a lot, we brainstorm nonstop, and we ' +
-  'give the best high-fives in town.';
+  headerText = 'Careers';
+  subheaderText = 'Let your skills make a difference in shaping our future.';
   buttonText = 'View Open Positions';
 
   companyValues: CompanyValue[];

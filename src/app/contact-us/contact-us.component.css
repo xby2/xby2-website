@@ -1,0 +1,8 @@
+.location {
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+agm-map {
+    height: 300px;
+}

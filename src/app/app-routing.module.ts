@@ -24,6 +24,7 @@ import { MindShareResolver } from './in-the-news/resolver/mind-share.resolver';
 import { PerksResolver } from './careers/resolver/perks.resolver';
 import { FrequentlyAskedQuestionsResolver } from './careers/resolver/frequently-asked-questions.resolver';
 import { ValuesResolver } from './about-us/resolver/values.resolver';
+import { Xby2LocationsResolver } from './contact-us/resolver/xby2-locations.resolver';
 
 const routes: Routes = [
   {
@@ -69,7 +70,13 @@ const routes: Routes = [
     component: MindShareDetailComponent,
     resolve: { mindShare: MindShareResolver }
   },
-  { path: 'contact-us', component: ContactUsComponent },
+  {
+    path: 'contact-us',
+    component: ContactUsComponent,
+    resolve: {
+      locations: Xby2LocationsResolver
+    }
+  },
   {
     path: 'careers',
     component: CareersComponent,

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Xby2Location } from '../shared/model/xby2-location';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-contact-us',
@@ -6,12 +8,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./contact-us.component.css']
 })
 export class ContactUsComponent implements OnInit {
-  headerText = 'Say Hello';
-  subheaderText = 'Whether you have a question or just want to say hi, give us a shout.';
+  headerText = 'Contact Us';
+  subheaderText = 'Have a question? Let\'s start a conversation.';
+  locations: Xby2Location;
+  centerLatitude = 43.009953;
+  centerLongitude = -81.273613;
+  zoomLevel = 6;
 
-  constructor() { }
+  constructor(private activatedRoute: ActivatedRoute) { }
 
   ngOnInit() {
+    this.locations = this.activatedRoute.snapshot.data.locations;
   }
 
 }
