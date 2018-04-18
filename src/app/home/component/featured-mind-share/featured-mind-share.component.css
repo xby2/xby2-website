@@ -25,5 +25,12 @@ a {
 }
 
 button {
-    display: inline;
+    margin-bottom: 1em;
+}
+
+@media (min-width: 768px) {
+    button {
+        display: inline;
+        text-align: center;
+    }
 }

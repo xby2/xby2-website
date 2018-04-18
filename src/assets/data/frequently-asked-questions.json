@@ -1,7 +1,7 @@
 [
     {
       "id": "travel",
-      "question": "Where do we work and does the work require travel?",
+      "question": "Does the work require travel?",
       "answer": "If an individual is local to our two offices in the Metro Detroit and Greater Toronto area, we work out of our local office. That said, we value client collaboration and proving leadership; as a result, we often travel within the US and Canada to our client sites for meetings and collaboration depending on the nature of the project. We recognize that being on the road can be difficult and we make a conscious effort to ensure that travel is manageable for work/life balance."
     },
     {
@@ -16,7 +16,7 @@
     },
     {
       "id": "remote",
-      "question": "Do we allow people to work from home/remotely?",
+      "question": "Are there remote options?",
       "answer": "Things happen; we understand the need for flexible scheduling when life throws you a curveball."
     }
 ]

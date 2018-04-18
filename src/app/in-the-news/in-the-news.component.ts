@@ -10,7 +10,7 @@ import { ButtonGroupItem } from '../shared/model/button-group-item';
 })
 export class InTheNewsComponent implements OnInit {
   headerText = 'Insights';
-  subheaderText = 'Industry insights, technology perspectives, and media coverage.';
+  subheaderText = 'Industry insights, technology perspectives and media coverage.';
   mindShares: MindShare[];
   filteredMindShares: MindShare[];
   mindShareDisplayCount = 3;
