@@ -1,15 +1,15 @@
 <app-hero-image [imageUrl]="'client-story/' + clientStory.imageUrl">
+  <div class="description">
+    {{clientStory.title}}
+  </div>
+  <div class="client">
+    {{clientStory.client}}
+  </div>
   <ul class="d-none d-md-block">
     <li *ngFor="let expertise of clientStory.expertises">
       {{expertise}}
     </li>
   </ul>
-  <div class="client">
-    {{clientStory.client}}
-  </div>
-  <div class="description">
-    {{clientStory.title}}
-  </div>
 </app-hero-image>
 <div class="container">
   <div class="row">

@@ -61,12 +61,12 @@ const routes: Routes = [
     resolve: { clientStory: ClientStoryResolver }
   },
   {
-    path: 'in-the-news',
+    path: 'insights',
     component: InTheNewsComponent,
     resolve: { mindShares: MindSharesResolver }
   },
   {
-    path: 'in-the-news/:id',
+    path: 'insights/:id',
     component: MindShareDetailComponent,
     resolve: { mindShare: MindShareResolver }
   },

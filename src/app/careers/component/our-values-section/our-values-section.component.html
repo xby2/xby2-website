@@ -4,8 +4,10 @@
   </div>
   <div class="row">
     <div *ngFor="let companyValue of companyValues" class="col-12 col-md-4">
-      <h3>{{ companyValue.title }}</h3>
-      <p>{{ companyValue.description }}</p>
+      <div class="card">
+        <h3>{{ companyValue.title }}</h3>
+        <p>{{ companyValue.description }}</p>
+      </div>
     </div>
   </div>
 </div>

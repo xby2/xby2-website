@@ -47,4 +47,8 @@ export class CareersComponent implements OnInit, AfterViewInit {
       document.querySelector('#' + this.fragment).scrollIntoView();
     }
   }
+
+  scrollToOpenPositions() {
+    document.querySelector('#open-positions').scrollIntoView();
+  }
 }

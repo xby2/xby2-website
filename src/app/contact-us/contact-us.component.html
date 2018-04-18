@@ -7,22 +7,26 @@
       <app-contact-us-form></app-contact-us-form>
     </div>
     <div class="col-12 col-md-6">
-      <div class="location" *ngFor="let location of locations">
-        <h3>{{location.name}}</h3>
-        <div class="address">
-          {{location.address}}<br />
-          {{location.city}}, {{location.state}} {{location.zip}}<br />
-          {{location.phone}}
-        </div>
-      </div>
-      <agm-map [latitude]="centerLatitude" [longitude]="centerLongitude"
-               [zoom]="zoomLevel">
+        <agm-map [latitude]="centerLatitude" [longitude]="centerLongitude"
+                [zoom]="zoomLevel">
           <agm-marker *ngFor="let location of locations"
                       [latitude]="location.latitude"
                       [longitude]="location.longitude">
               <agm-info-window>{{ location.name }}</agm-info-window>
           </agm-marker>
-      </agm-map>
+        </agm-map>
+      <div class="row">
+        <div class="col-12 col-sm-6 location" *ngFor="let location of locations">
+          <h3>{{location.name}}</h3>
+        <div class="address">
+          {{location.address}}<br />
+          {{location.city}}, {{location.state}} {{location.zip}}<br />
+          <a href="tel:{{location.phone}}">{{location.phone}}</a>
+        </div>
+        </div>
+      </div>
+      
+      
     </div>
   </div>
 </div>

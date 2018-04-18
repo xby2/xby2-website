@@ -32,6 +32,12 @@ a {
     color: #f89829;
 }
 
+a:active,
+a:visited,
+a:hover {
+    color: #f7a242;
+}
+
 h1 {
     text-transform: uppercase;
     font-weight: bold;

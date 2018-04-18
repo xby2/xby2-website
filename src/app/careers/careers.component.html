@@ -1,6 +1,7 @@
 <app-page-header [headerText]="headerText"
                  [subheaderText]="subheaderText"
-                 [buttonText]="buttonText">
+                 [buttonText]="buttonText"
+                 (buttonClick)="scrollToOpenPositions()">
 </app-page-header>
 <div class="row pictures">
   <div class="col-12 col-md-6 careers-img">

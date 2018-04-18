@@ -11,3 +11,11 @@ img {
 svg {
     color: #f89829;
 }
+
+.description {
+    text-align: center;
+}
+
+.row.values {
+    margin: 2em 0;
+}

@@ -9,7 +9,7 @@ import { ButtonGroupItem } from '../shared/model/button-group-item';
   styleUrls: ['./in-the-news.component.css']
 })
 export class InTheNewsComponent implements OnInit {
-  headerText = 'In The News';
+  headerText = 'Insights';
   subheaderText = 'Industry insights, technology perspectives, and media coverage.';
   mindShares: MindShare[];
   filteredMindShares: MindShare[];

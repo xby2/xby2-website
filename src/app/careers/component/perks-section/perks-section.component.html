@@ -1,4 +1,4 @@
-<div class="container-fluid">
+
   <div class="container">
     <div class="row">
       <div class="col">
@@ -6,11 +6,13 @@
       </div>
     </div>
     <div class="row">
-      <div *ngFor="let perk of perks" class="col-6 col-md-3">
-        <img [src]="'./assets/perks/' + perk.iconUrl" />
+      <div *ngFor="let perk of perks" class="col-12 col-sm-6 col-md-3">
+        <div class="card">
+          <img [src]="'./assets/perks/' + perk.iconUrl" />
         <h3>{{ perk.title }}</h3>
         {{ perk.description }}
+        </div>
+        
       </div>
     </div>
   </div>
-</div>
