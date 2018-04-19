@@ -3,8 +3,6 @@
       "imageUrl": "./assets/services/enterprise-architecture.svg",
       "title": "Enterprise Architecture",
       "text": "Aligning people, process, information and technology to enable an agile enterprise.",
-      "expertiseLink": "/our-expertise",
-      "clientStoryLink": "/our-work/enterprise-architecture-assessment",
       "points": [
         "IT Strategy",
         "Information Management, Business Intelligence and Analytics",
@@ -18,42 +16,35 @@
       "imageUrl": "./assets/services/app-solution-architecture.svg",
       "title": "App/Solution Architecture",
       "text": "Simplifying business processes and technology to create roadmaps to the future.",
-      "expertiseLink": "/our-expertise",
-      "clientStoryLink": "/our-work/life-modernization",
       "points": [
         "Application Architecture and Strategy",
         "Buy vs. Build Analysis",
         "Software Evaluation",
         "Execution Planning and Roadmap"
       ],
-      "clientStoryId": "claims-modernization"
+      "clientStoryId": "life-modernization"
     },
     {
       "imageUrl": "./assets/services/data-architecture.svg",
       "title": "Data Architecture",
       "text": "Transforming data for decision making and next-generation customer experience.",
-      "expertiseLink": "/our-expertise",
-      "clientStoryLink": "/our-work/data-and-analytics-platform-for-value-based-care",
       "points": [
         "Data Architecture and Strategy",
         "Data Architecture Assessment",
         "Business Intelligence and Analytics",
         "Data Governance, Data Quality and Master Data Management"
       ],
-      "clientStoryId": "life-modernization"
+      "clientStoryId": "data-and-analytics-platform-for-value-based-care"
     },
     {
       "imageUrl": "./assets/services/integration-architecture.svg",
       "title": "Integration Architecture",
       "text": "Managing the impact of technology through reduced dependencies and complexity.",
-      "expertiseLink": "/our-expertise",
-      "clientStoryLink": "/our-work/core-system-integration-strategy-and-implementation",
-
       "points": [
         "Integration Strategy",
         "Integration Architecture"
       ],
-      "clientStoryId": "data-and-analytics-platform-for-value-based-care"
+      "clientStoryId": "core-system-integration-strategy-and-implementation"
     },
     {
       "imageUrl": "./assets/services/agile-program-delivery.svg",
@@ -67,7 +58,7 @@
         "Solution Implementation",
         "System Integration"
       ],
-      "clientStoryId": "pas-architecture-review"
+      "clientStoryId": "claims-modernization"
     },
     {
       "imageUrl": "./assets/services/project-architecture-assessment.svg",
@@ -81,6 +72,6 @@
         "Performance and Scalability Optimization",
         "Application Refactoring"
       ],
-      "clientStoryId": "core-system-integration-strategy-and-implementation"
+      "clientStoryId": "pas-architecture-review"
     }
   ]
