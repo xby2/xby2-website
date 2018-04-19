@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { InformationalBoxComponent } from './informational-box.component';
+import { NO_ERRORS_SCHEMA } from '@angular/core';
 
 describe('InformationalBoxComponent', () => {
   let component: InformationalBoxComponent;
@@ -8,7 +9,8 @@ describe('InformationalBoxComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ InformationalBoxComponent ]
+      declarations: [ InformationalBoxComponent ],
+      schemas: [NO_ERRORS_SCHEMA]
     })
     .compileComponents();
   }));
@@ -16,6 +18,8 @@ describe('InformationalBoxComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(InformationalBoxComponent);
     component = fixture.componentInstance;
+    component.title = 'Value';
+    component.value = 20;
     fixture.detectChanges();
   });
 

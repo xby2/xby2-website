@@ -17,6 +17,11 @@ export class CareerDetailComponent implements OnInit {
 
   ngOnInit() {
     this.openPosition = this.route.snapshot.data.openPosition;
+
+    if (this.openPosition !== null) {
+      throw new Error('Open Position required.');
+    }
+
     this.shareLinks = [
       {
         link: this.constructLinkedInLink(),
