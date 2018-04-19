@@ -16,18 +16,6 @@
 
 @media (min-width: 768px) {
     .careers-img, .careers-img-2 {
-        height: 12em;
-    }
-}
-
-@media (min-width: 992px) {
-    .careers-img, .careers-img-2 {
-        height: 15.5em;
-    }
-}
-
-@media (min-width: 1200px) {
-    .careers-img, .careers-img-2 {
-        height: 17.5em;
+        height: 27vw;
     }
 }
