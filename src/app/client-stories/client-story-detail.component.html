@@ -17,8 +17,5 @@
     </app-content-section>
   </div>
 </div>
-<app-next-item-section *ngIf="clientStory.nextClientStoryId"
-                       [title]="clientStory.nextClientStoryTitle"
-                       [description]="clientStory.nextClientStoryDescription"
-                       [link]="['/client-stories', clientStory.nextClientStoryId]">
+<app-next-item-section *ngIf="clientStory.nextClientStoryId" [title]="clientStory.nextClientStoryTitle" [link]="['/client-stories', clientStory.nextClientStoryId]">
 </app-next-item-section>

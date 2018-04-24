@@ -14,11 +14,11 @@ export class MindShareService {
         mindShare.publishDate = new Date(mindShare.publishDate);
       });
 
+      // sorts in ascending order
       mindShares.sort(function(a, b) {
-        return a.publishDate.getDate() - b.publishDate.getDate();
+        return b.publishDate.getTime() - a.publishDate.getTime();
       });
 
-      console.log(mindShares);
       return mindShares;
     });
   }

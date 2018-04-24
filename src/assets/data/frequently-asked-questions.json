@@ -1,22 +1,26 @@
 [
-    {
-      "id": "travel",
-      "question": "Does the work require travel?",
-      "answer": "If an individual is local to our two offices in the Metro Detroit and Greater Toronto area, we work out of our local office as much as possible. That said, we value client collaboration and proving leadership; as a result, we often travel as needed within the US and Canada to our client sites for meetings and collaboration depending on the nature of the project. We recognize that being on the road can be difficult and we make a conscious effort to ensure that travel is manageable for work/life balance."
-    },
-    {
-      "id": "environment",
-      "question": "What's the work environment like?",
-      "answer": "We are a diverse group of people that strive to be the best for ourselves and our clients. We are open and transparent with each other. We brainstorm, argue and debate ideas and strategies; we practice humility to let the best ideas win on their own merits, no matter the source. We take our work seriously, but we don't take ourselves seriously.  We have plenty of formal and informal, planned and spontaneous, activities and events that bring us together and keep us connected beyond our work.  When lunch comes around, it's not uncommon to find a group playing Super Smash Bros., eating together in the kitchen or going out for a bite to eat."
-    },
-    {
-      "id": "growth",
-      "question": "Are there opportunities for growth?",
-      "answer": "Short answer - Yes. We are all on a journey of growth and both the company and individuals are expected to actively seek new challenges that propel individuals to the next level in their career. We seek to surround ourselves with smart and motivated individuals that are unafraid to challenge themselves and each other. Through those challenges, growth comes naturally. Unlike other companies where growth opportunities come through competition with each other, everyone here is running their own race to grow and excel."
-    },
-    {
-      "id": "remote",
-      "question": "Are there remote options?",
-      "answer": "Things happen; we understand the need for flexible scheduling when life throws you a curveball."
-    }
+  {
+    "id": "travel",
+    "question": "Does the work require travel?",
+    "answer":
+      "If an individual is local to our two offices in the Metro Detroit and Greater Toronto area, we work out of our local office as much as possible. That said, we value client collaboration and providing leadership; as a result, we travel as needed within the US and Canada to our client sites for meetings and collaboration depending on the nature of the project. We recognize that being on the road can be difficult and we make a conscious effort to ensure that travel is manageable for work/life balance."
+  },
+  {
+    "id": "environment",
+    "question": "What's the work environment like?",
+    "answer":
+      "We are a diverse group of people that strive to be the best for ourselves and our clients. We are open and transparent with each other. We brainstorm, argue and debate ideas and strategies; we practice humility to let the best ideas win on their own merits, no matter the source. We take our work seriously, but we don't take ourselves seriously.  We have plenty of formal and informal, planned and spontaneous, activities and events that bring us together and keep us connected beyond our work.  When lunch comes around, it's not uncommon to find a group playing Super Smash Bros., eating together in the kitchen or going out for a bite to eat."
+  },
+  {
+    "id": "growth",
+    "question": "Are there opportunities for growth?",
+    "answer":
+      "Short answer - Yes. We are all on a journey of growth and both the company and individuals are expected to actively seek new challenges that propel individuals to the next level in their career. We seek to surround ourselves with smart and motivated individuals that are unafraid to challenge themselves and each other. Through those challenges, growth comes naturally. Unlike other companies where growth opportunities come through competition with each other, everyone here is running their own race to grow and excel."
+  },
+  {
+    "id": "remote",
+    "question": "Are there remote options?",
+    "answer":
+      "Things happen; we understand the need for flexible scheduling when life throws you a curveball."
+  }
 ]
