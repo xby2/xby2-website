@@ -8,22 +8,13 @@ import { MindShareResolver } from './resolver/mind-share.resolver';
 import { MindShareListingComponent } from './mind-share-listing/mind-share-listing.component';
 
 @NgModule({
-  imports: [
-    CommonModule,
-    SharedModule
-  ],
+  imports: [CommonModule, SharedModule],
   declarations: [
     InTheNewsComponent,
     MindShareDetailComponent,
     MindShareListingComponent
   ],
-  providers: [
-    MindSharesResolver,
-    MindShareResolver
-  ],
-  exports: [
-    InTheNewsComponent,
-    MindShareDetailComponent
-  ]
+  providers: [MindSharesResolver, MindShareResolver],
+  exports: [InTheNewsComponent, MindShareDetailComponent]
 })
-export class InTheNewsModule { }
+export class InTheNewsModule {}

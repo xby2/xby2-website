@@ -10,11 +10,12 @@ import { CollectedOpenPosition } from '../model/collected-open-position';
 export class OpenPositionService {
   private url = 'https://api.lever.co/v0/postings/xby2';
 
-  constructor(private httpClient: HttpClient) { }
+  constructor(private httpClient: HttpClient) {}
 
   getOpenPositions(): Observable<OpenPosition[]> {
-    return this.httpClient.get(this.url + '?mode=json').map(
-      (leverJobPostings: LeverJobPosting[]) => {
+    return this.httpClient
+      .get(this.url + '?mode=json')
+      .map((leverJobPostings: LeverJobPosting[]) => {
         return leverJobPostings.map(leverJobPosting => {
           const openPosition: OpenPosition = {
             id: leverJobPosting.id,
@@ -29,13 +30,13 @@ export class OpenPositionService {
 
           return openPosition;
         });
-      }
-    );
+      });
   }
 
   getOpenPosition(id: string): Observable<OpenPosition> {
-    return this.httpClient.get(this.url + '/' + id + '?mode=json').map(
-      (leverJobPosting: LeverJobPosting) => {
+    return this.httpClient
+      .get(this.url + '/' + id + '?mode=json')
+      .map((leverJobPosting: LeverJobPosting) => {
         const openPosition: OpenPosition = {
           id: leverJobPosting.id,
           title: leverJobPosting.text,
@@ -48,39 +49,42 @@ export class OpenPositionService {
         };
 
         return openPosition;
-      }
-    );
+      });
   }
 
   collectOpenPositions(openPositions: OpenPosition[]) {
     const collectedOpenPositions: CollectedOpenPosition[] = [];
 
     openPositions.forEach(openPosition => {
-      const collectedOpenPosition: CollectedOpenPosition =
-        collectedOpenPositions.filter(c => c.title === openPosition.title)[0];
+      const collectedOpenPosition: CollectedOpenPosition = collectedOpenPositions.filter(
+        c => c.title === openPosition.title
+      )[0];
 
       if (collectedOpenPosition) {
-        collectedOpenPosition
-                  .listings
-                  .push({
-                    id: openPosition.id,
-                    location: this.convertLocationName(openPosition.location)
-                  });
+        collectedOpenPosition.listings.push({
+          id: openPosition.id,
+          location: this.convertLocationName(openPosition.location)
+        });
         collectedOpenPosition.listings.sort(function(a, b) {
           const x = a.location.toLowerCase();
           const y = b.location.toLowerCase();
-          if (x < y) { return -1; }
-          if (x > y) { return 1; }
+          if (x < y) {
+            return -1;
+          }
+          if (x > y) {
+            return 1;
+          }
           return 0;
         });
-
       } else {
         collectedOpenPositions.push({
           title: openPosition.title,
-          listings: [{
-            id: openPosition.id,
-            location: this.convertLocationName(openPosition.location)
-          }]
+          listings: [
+            {
+              id: openPosition.id,
+              location: this.convertLocationName(openPosition.location)
+            }
+          ]
         });
       }
     });

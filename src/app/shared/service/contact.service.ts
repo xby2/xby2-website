@@ -1,5 +1,9 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpHeaders, HttpErrorResponse } from '@angular/common/http';
+import {
+  HttpClient,
+  HttpHeaders,
+  HttpErrorResponse
+} from '@angular/common/http';
 import { Observable } from 'rxjs/Observable';
 import { catchError } from 'rxjs/operators';
 import { ErrorObservable } from 'rxjs/observable/ErrorObservable';
@@ -14,20 +18,17 @@ export class ContactService {
     this.apiUrl = environment.apiUrl;
   }
 
-  postContactForm(email: ContactMessage): Observable<any>  {
+  postContactForm(email: ContactMessage): Observable<any> {
     const body = JSON.stringify(email);
     const httpOptions = {
       headers: new HttpHeaders({
-        'Content-Type':  'application/json'
+        'Content-Type': 'application/json'
       })
     };
 
-    return this.httpClient.post<ContactMessage>(this.apiUrl + '/email',
-                                                body,
-                                                httpOptions)
-                                                .pipe(
-                                                  catchError(this.handleError)
-                                                );
+    return this.httpClient
+      .post<ContactMessage>(this.apiUrl + '/email', body, httpOptions)
+      .pipe(catchError(this.handleError));
   }
 
   private handleError(error: HttpErrorResponse) {
@@ -35,10 +36,11 @@ export class ContactService {
       console.error('An error occurred:', error.error.message);
     } else {
       console.error(
-        `Backend returned code ${error.status}, ` +
-        `body was: ${error.error}`);
+        `Backend returned code ${error.status}, ` + `body was: ${error.error}`
+      );
     }
     return new ErrorObservable(
-      'Something bad happened; please try again later.');
+      'Something bad happened; please try again later.'
+    );
   }
 }

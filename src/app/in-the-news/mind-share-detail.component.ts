@@ -11,15 +11,12 @@ import { Title } from '@angular/platform-browser';
 export class MindShareDetailComponent implements OnInit {
   mindShare: MindShare;
 
-  constructor(private route: ActivatedRoute,
-              private title: Title) { }
+  constructor(private route: ActivatedRoute, private title: Title) {}
 
   ngOnInit() {
-    this.route.data.subscribe(
-      data => {
-        this.mindShare = data['mindShare'];
-        this.title.setTitle(this.mindShare.title + ' - X by 2');
-      }
-    );
+    this.route.data.subscribe(data => {
+      this.mindShare = data['mindShare'];
+      this.title.setTitle(this.mindShare.title + ' - X by 2');
+    });
   }
 }

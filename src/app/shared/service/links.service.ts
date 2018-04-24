@@ -8,7 +8,7 @@ import { Link } from '../model/link';
 export class LinksService {
   private _linksUrl = '../assets/data/links.json';
 
-  constructor(private _httpClient: HttpClient) { }
+  constructor(private _httpClient: HttpClient) {}
 
   getLinks(): Observable<Link[]> {
     return this._httpClient.get<Array<Link>>(this._linksUrl);
