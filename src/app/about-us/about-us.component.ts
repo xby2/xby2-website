@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Route } from '@angular/compiler/src/core';
 import { ActivatedRoute } from '@angular/router';
 import { Value } from './model/value';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-about-us',
@@ -14,9 +15,11 @@ export class AboutUsComponent implements OnInit {
   'healthcare organizations transform their businesss.';
   values: Value[];
 
-  constructor(private route: ActivatedRoute) { }
+  constructor(private route: ActivatedRoute,
+              private title: Title) { }
 
   ngOnInit() {
     this.values = this.route.snapshot.data.values;
+    this.title.setTitle('About Us - X by 2');
   }
 }

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Xby2Location } from '../shared/model/xby2-location';
 import { ActivatedRoute } from '@angular/router';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-contact-us',
@@ -15,9 +16,11 @@ export class ContactUsComponent implements OnInit {
   centerLongitude = -81.273613;
   zoomLevel = 6;
 
-  constructor(private activatedRoute: ActivatedRoute) { }
+  constructor(private activatedRoute: ActivatedRoute,
+              private title: Title) { }
 
   ngOnInit() {
+    this.title.setTitle('Contact Us - X by 2');
     this.locations = this.activatedRoute.snapshot.data.locations;
   }
 

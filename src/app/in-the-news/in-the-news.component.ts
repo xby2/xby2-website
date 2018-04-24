@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { MindShare } from '../shared/model/mind-share';
 import { ButtonGroupItem } from '../shared/model/button-group-item';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-in-the-news',
@@ -24,7 +25,9 @@ export class InTheNewsComponent implements OnInit {
     { id: 'healthcare', label: 'Healthcare' },
   ];
 
-  constructor(private route: ActivatedRoute) {
+  constructor(private route: ActivatedRoute,
+              private title: Title) {
+    this.title.setTitle('Insights - X by 2');
     this.determineInitialMindShareCount();
   }
 

@@ -7,6 +7,7 @@ import { OpenPosition } from '../shared/model/open-position';
 import { ButtonGroupItem } from '../shared/model/button-group-item';
 import { OpenPositionService } from '../shared/service/open-position.service';
 import { CollectedOpenPosition } from '../shared/model/collected-open-position';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-careers',
@@ -27,9 +28,11 @@ export class CareersComponent implements OnInit, AfterViewInit {
   private fragment: string;
 
   constructor(private route: ActivatedRoute,
-              private openPositionService: OpenPositionService) { }
+              private openPositionService: OpenPositionService,
+              private title: Title) { }
 
   ngOnInit() {
+    this.title.setTitle('Careers - X by 2');
     this.route.fragment.subscribe(fragment => { this.fragment = fragment; });
 
     this.companyValues = this.route.snapshot.data.companyValues;

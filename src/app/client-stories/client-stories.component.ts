@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ClientStory } from '../shared/model/client-story';
 import { ButtonGroupItem } from '../shared/model/button-group-item';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-client-stories',
@@ -24,11 +25,13 @@ export class ClientStoriesComponent implements OnInit {
     { id: 'healthcare', label: 'Healthcare' },
   ];
 
-  constructor(private route: ActivatedRoute) {
+  constructor(private route: ActivatedRoute,
+              private title: Title) {
     this.determineInitialClientStoryCount();
   }
 
   ngOnInit() {
+    this.title.setTitle('Client Stories - X by 2');
     this.clientStories = this.route.snapshot.data.clientStories,
     this.filteredClientStories = this.clientStories;
   }

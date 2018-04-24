@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Service } from '../shared/model/service';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-services',
@@ -12,12 +13,14 @@ export class ServicesComponent implements OnInit {
   headerText = 'Services';
   subheaderText = 'Guiding clients from strategy through delivery.';
 
-  constructor(private route: ActivatedRoute) {
-    this.services = this.route.snapshot.data.services;
+  constructor(private route: ActivatedRoute,
+              private title: Title) {
   }
 
   ngOnInit() {
-    if (this.services == null) {
+    this.title.setTitle('Services - X by 2');
+    this.services = this.route.snapshot.data.services;
+    if (this.services === null) {
       throw new Error('\'services\' parameter required.');
     }
   }

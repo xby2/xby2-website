@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ShareLink } from './model/share-link';
 import { OpenPosition } from '../shared/model/open-position';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-career-detail',
@@ -13,12 +14,14 @@ export class CareerDetailComponent implements OnInit {
   applyText = 'Apply to this job';
   shareLinks: ShareLink[];
 
-  constructor(private route: ActivatedRoute) { }
+  constructor(private route: ActivatedRoute,
+              private title: Title) { }
 
   ngOnInit() {
     this.openPosition = this.route.snapshot.data.openPosition;
+    this.title.setTitle(this.openPosition.title + ' - X by 2');
 
-    if (this.openPosition !== null) {
+    if (this.openPosition === null) {
       throw new Error('Open Position required.');
     }
 

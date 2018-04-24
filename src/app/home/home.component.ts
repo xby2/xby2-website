@@ -6,6 +6,7 @@ import { ClientStory } from '../shared/model/client-story';
 import { MindShare } from '../shared/model/mind-share';
 import { CollectedOpenPosition } from '../shared/model/collected-open-position';
 import { OpenPositionService } from '../shared/service/open-position.service';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-home',
@@ -21,10 +22,12 @@ export class HomeComponent implements OnInit {
   heroImageUrl = 'home-page.png';
 
   constructor(private route: ActivatedRoute,
-              private openPositionService: OpenPositionService) {
+              private openPositionService: OpenPositionService,
+              private title: Title) {
   }
 
   ngOnInit() {
+    this.title.setTitle('X by 2');
     this.services = this.route.snapshot.data.services;
     this.featuredClientStories = this.route.snapshot.data.featuredClientStories;
     this.featuredMindShare = this.route.snapshot.data.featuredMindShare;

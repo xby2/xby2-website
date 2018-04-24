@@ -1,21 +1,10 @@
-.pictures {
-    margin-left: 0;
-    margin-right: 0;
-}
-
-.careers-img, .careers-img-2 {
-    background: url('../../assets/careers.png') no-repeat top center;
-    background-size: 100% auto;
-    height: 14em;
-}
-
-.careers-img {
-    background: url('../../assets/careers2.png') no-repeat top center;
-    background-size: 100% auto;
+.pictures img {
+    max-width: 100%;
 }
 
 @media (min-width: 768px) {
-    .careers-img, .careers-img-2 {
-        height: 27vw;
+    .col-no-padding {
+        padding-left: 0;
+        padding-right: 0;
     }
 }
