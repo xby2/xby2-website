@@ -21,10 +21,11 @@ export class HomeComponent implements OnInit {
   collectedOpenPositions: CollectedOpenPosition[];
   heroImageUrl = 'home-page.png';
 
-  constructor(private route: ActivatedRoute,
-              private openPositionService: OpenPositionService,
-              private title: Title) {
-  }
+  constructor(
+    private route: ActivatedRoute,
+    private openPositionService: OpenPositionService,
+    private title: Title
+  ) {}
 
   ngOnInit() {
     this.title.setTitle('X by 2');
@@ -34,19 +35,19 @@ export class HomeComponent implements OnInit {
     this.featuredOpenPositions = this.route.snapshot.data.featuredOpenPositions;
 
     if (this.services == null) {
-      throw new Error('attribute \'services\' required.');
+      throw new Error("attribute 'services' required.");
     }
     if (this.featuredClientStories == null) {
-      throw new Error('attribute \'featuredClientStories\' required.');
+      throw new Error("attribute 'featuredClientStories' required.");
     }
     if (this.featuredMindShare == null) {
-      throw new Error('attribute \'featuredMindShare\' required.');
-    }
-    if (this.featuredOpenPositions == null) {
-      throw new Error('attribute \'featuredOpenPositions\' required.');
+      throw new Error("attribute 'featuredMindShare' required.");
     }
 
-    this.collectedOpenPositions =
-      this.openPositionService.collectOpenPositions(this.featuredOpenPositions);
+    if (this.featuredOpenPositions !== null) {
+      this.collectedOpenPositions = this.openPositionService.collectOpenPositions(
+        this.featuredOpenPositions
+      );
+    }
   }
 }

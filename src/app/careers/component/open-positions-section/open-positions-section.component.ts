@@ -9,12 +9,7 @@ import { CollectedOpenPosition } from '../../../shared/model/collected-open-posi
 export class OpenPositionsSectionComponent implements OnInit {
   @Input() collectedOpenPositions: CollectedOpenPosition[];
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() {
-    if (this.collectedOpenPositions == null) {
-      throw new Error('\'collectedOpenPositions\' attribute required.');
-    }
-  }
-
+  ngOnInit() {}
 }

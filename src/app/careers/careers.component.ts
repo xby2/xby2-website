@@ -27,22 +27,28 @@ export class CareersComponent implements OnInit, AfterViewInit {
 
   private fragment: string;
 
-  constructor(private route: ActivatedRoute,
-              private openPositionService: OpenPositionService,
-              private title: Title) { }
+  constructor(
+    private route: ActivatedRoute,
+    private openPositionService: OpenPositionService,
+    private title: Title
+  ) {}
 
   ngOnInit() {
     this.title.setTitle('Careers - X by 2');
-    this.route.fragment.subscribe(fragment => { this.fragment = fragment; });
+    this.route.fragment.subscribe(fragment => {
+      this.fragment = fragment;
+    });
 
     this.companyValues = this.route.snapshot.data.companyValues;
     this.openPositions = this.route.snapshot.data.openPositions;
     this.perks = this.route.snapshot.data.perks;
-    this.frequentlyAskedQuestions =
-      this.route.snapshot.data.frequentlyAskedQuestions;
+    this.frequentlyAskedQuestions = this.route.snapshot.data.frequentlyAskedQuestions;
 
-    this.collectedOpenPositions =
-      this.openPositionService.collectOpenPositions(this.openPositions);
+    if (this.openPositions !== null) {
+      this.collectedOpenPositions = this.openPositionService.collectOpenPositions(
+        this.openPositions
+      );
+    }
   }
 
   ngAfterViewInit() {

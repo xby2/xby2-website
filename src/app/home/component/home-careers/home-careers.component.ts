@@ -10,11 +10,7 @@ import { CollectedOpenPosition } from '../../../shared/model/collected-open-posi
 export class HomeCareersComponent implements OnInit {
   @Input() featuredOpenPositions: CollectedOpenPosition[];
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() {
-    if (this.featuredOpenPositions == null) {
-      throw new Error('attribute \'featuredOpenPositions\' is required.');
-    }
-  }
+  ngOnInit() {}
 }
