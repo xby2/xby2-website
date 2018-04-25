@@ -35,13 +35,13 @@ export class HomeComponent implements OnInit {
     this.featuredOpenPositions = this.route.snapshot.data.featuredOpenPositions;
 
     if (this.services == null) {
-      throw new Error("attribute 'services' required.");
+      throw new Error('attribute \'services\' required.');
     }
     if (this.featuredClientStories == null) {
-      throw new Error("attribute 'featuredClientStories' required.");
+      throw new Error('attribute \'featuredClientStories\' required.');
     }
     if (this.featuredMindShare == null) {
-      throw new Error("attribute 'featuredMindShare' required.");
+      throw new Error('attribute \'featuredMindShare\' required.');
     }
 
     if (this.featuredOpenPositions !== null) {
