@@ -12,7 +12,7 @@ import { Title } from '@angular/platform-browser';
 export class AboutUsComponent implements OnInit {
   headerText = 'About Us';
   subheaderText = 'An IT consultancy committed to helping insurance and ' +
-  'healthcare organizations transform their businesss.';
+  'healthcare organizations transform their business.';
   values: Value[];
 
   constructor(private route: ActivatedRoute,

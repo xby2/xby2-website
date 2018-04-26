@@ -1,23 +1,14 @@
-<app-page-header [headerText]="headerText"
-                 [subheaderText]="subheaderText">
+<app-page-header [headerText]="headerText" [subheaderText]="subheaderText">
 </app-page-header>
 <div class="container">
   <div class="row">
-    <app-informational-box class="col-12 col-sm-6 col-lg-3"
-                           title="Years in Business"
-                           value="20">
+    <app-informational-box class="col-12 col-sm-6 col-lg-3" title="Years in Business" value="20">
     </app-informational-box>
-    <app-informational-box class="col-12 col-sm-6 col-lg-3"
-                           title="Employees"
-                           value="40">
+    <app-informational-box class="col-12 col-sm-6 col-lg-3" title="Employees" value="40">
     </app-informational-box>
-    <app-informational-box class="col-12 col-sm-6 col-lg-3"
-                           title="Projects"
-                           value="250">
+    <app-informational-box class="col-12 col-sm-6 col-lg-3" title="Projects" value="250">
     </app-informational-box>
-    <app-informational-box class="col-12 col-sm-6 col-lg-3"
-                           title="Clients"
-                           value="60">
+    <app-informational-box class="col-12 col-sm-6 col-lg-3" title="Clients" value="60">
     </app-informational-box>
   </div>
 </div>
@@ -27,24 +18,30 @@
       <div class="col">
         <h1>A Different Approach</h1>
         <p>
-          The industry doesn't need another IT consulting firm, at least not a typical one. The marketplace is inundated with consultancies that over promise and under deliver when it comes to quality results. They have tainted what was an unbiased analysis process with self-serving recommendations and placed revenue generation over client needs. These firms sell their "A" team, but their "B" team is brought in to deliver.
+          The industry doesn't need another IT consulting firm, at least not a typical one. The marketplace is inundated with consultancies
+          that over promise and under deliver when it comes to quality results. They have tainted what was an unbiased analysis
+          process with self-serving recommendations and placed revenue generation over client needs. These firms sell their
+          "A" team, but their "B" team is brought in to deliver.
         </p>
         <p>
-          A new approach is needed. Thus, in 1998 X by 2 was founded on a different set of principles to provide what others lack and set a new standard for IT consulting.
+          A new approach is needed. Thus, in 1998 X by 2 was founded on a different set of principles to provide what others lack and
+          set a new standard for IT consulting.
         </p>
       </div>
     </div>
     <div class="row values">
-        <div *ngFor="let value of values" class="col-12 col-md-6">
-          <img src="./assets/values/{{ value.iconUrl }}" />
-          <h3>{{ value.title }}</h3>
-          <p class="description">{{ value.description }}</p>
-        </div>
+      <div *ngFor="let value of values" class="col-12 col-md-6">
+        <img src="./assets/values/{{ value.iconUrl }}" />
+        <h3>{{ value.title }}</h3>
+        <p class="description">{{ value.description }}</p>
+      </div>
     </div>
     <div class="row">
       <div class="col">
         <p>
-          This different approach created the opportunity for X by 2 to serve some of the most forward-thinking insurance and healthcare organizations in North America over the last 20 years. While our day-to-day architecture practice has evolved, the core principles that shape and influence our entire organization remain the same.
+          This different approach created the opportunity for X by 2 to serve some of the most forward-thinking insurance and healthcare
+          organizations in North America over the last 20 years. While our day-to-day architecture practice has evolved,
+          the core principles that shape and influence our entire organization remain the same.
         </p>
       </div>
     </div>
