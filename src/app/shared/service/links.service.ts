@@ -6,11 +6,11 @@ import { Link } from '../model/link';
 
 @Injectable()
 export class LinksService {
-  private _linksUrl = '../assets/data/links.json';
+  private url = '../assets/data/links.json';
 
   constructor(private _httpClient: HttpClient) {}
 
   getLinks(): Observable<Link[]> {
-    return this._httpClient.get<Array<Link>>(this._linksUrl);
+    return this._httpClient.get<Array<Link>>(this.url);
   }
 }

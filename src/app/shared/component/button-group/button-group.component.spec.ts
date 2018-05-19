@@ -8,14 +8,16 @@ describe('ButtonGroupComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ButtonGroupComponent ]
-    })
-    .compileComponents();
+      declarations: [ButtonGroupComponent]
+    }).compileComponents();
   }));
 
   beforeEach(() => {
     fixture = TestBed.createComponent(ButtonGroupComponent);
     component = fixture.componentInstance;
+
+    component.buttonGroupItems = [{ id: '', label: '' }];
+
     fixture.detectChanges();
   });
 

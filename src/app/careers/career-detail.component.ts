@@ -14,8 +14,7 @@ export class CareerDetailComponent implements OnInit {
   applyText = 'Apply to this job';
   shareLinks: ShareLink[];
 
-  constructor(private route: ActivatedRoute,
-              private title: Title) { }
+  constructor(private route: ActivatedRoute, private title: Title) {}
 
   ngOnInit() {
     this.openPosition = this.route.snapshot.data.openPosition;

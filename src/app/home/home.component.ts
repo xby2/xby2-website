@@ -7,6 +7,7 @@ import { MindShare } from '../shared/model/mind-share';
 import { CollectedOpenPosition } from '../shared/model/collected-open-position';
 import { OpenPositionService } from '../shared/service/open-position.service';
 import { Title } from '@angular/platform-browser';
+import { Preconditions } from '../shared/model/preconditions';
 
 @Component({
   selector: 'app-home',
@@ -34,15 +35,15 @@ export class HomeComponent implements OnInit {
     this.featuredMindShare = this.route.snapshot.data.featuredMindShare;
     this.featuredOpenPositions = this.route.snapshot.data.featuredOpenPositions;
 
-    if (this.services == null) {
-      throw new Error('attribute \'services\' required.');
-    }
-    if (this.featuredClientStories == null) {
-      throw new Error('attribute \'featuredClientStories\' required.');
-    }
-    if (this.featuredMindShare == null) {
-      throw new Error('attribute \'featuredMindShare\' required.');
-    }
+    Preconditions.IsNotUndefinedOrNull('services', this.services);
+    Preconditions.IsNotUndefinedOrNull(
+      'featuredClientStories',
+      this.featuredClientStories
+    );
+    Preconditions.IsNotUndefinedOrNull(
+      'featuredMindShare',
+      this.featuredMindShare
+    );
 
     if (this.featuredOpenPositions !== null) {
       this.collectedOpenPositions = this.openPositionService.collectOpenPositions(

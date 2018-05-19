@@ -1,4 +1,4 @@
-export interface ButtonGroupItem {
-    id: string;
-    label: string;
+export class ButtonGroupItem {
+  id: string;
+  label: string;
 }

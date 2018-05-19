@@ -6,44 +6,41 @@ import { RouterTestingModule } from '@angular/router/testing';
 import { ActivatedRoute } from '@angular/router';
 import { of } from 'rxjs/observable/of';
 import { OpenPosition } from '../shared/model/open-position';
+import { Title } from '@angular/platform-browser';
 
 describe('CareerDetailComponent', () => {
   let component: CareerDetailComponent;
   let fixture: ComponentFixture<CareerDetailComponent>;
 
   beforeEach(async(() => {
+    const mockTitle = {
+      setTitle(value) {
+        return;
+      }
+    };
+    const mockActivatedRoute = {
+      snapshot: {
+        data: {
+          openPosition: {}
+        }
+      }
+    };
+
     TestBed.configureTestingModule({
       imports: [RouterTestingModule],
-      declarations: [ CareerDetailComponent ],
+      declarations: [CareerDetailComponent],
       providers: [
         {
+          provide: Title,
+          useValue: mockTitle
+        },
+        {
           provide: ActivatedRoute,
-          useValue: {
-            snapshot: {
-              data: of({
-                openPosition: {
-                  id: '1234',
-                  location: 'test location',
-                  title: 'Test Title',
-                  commitment: 'test commitment',
-                  team: 'test team',
-                  description: 'test desc',
-                  sections: [
-                    {
-                      text: 'test text',
-                      content: 'test content'
-                    }
-                  ],
-                  applyUrl: 'test apply url'
-                }
-              })
-            }
-          }
+          useValue: mockActivatedRoute
         }
       ],
       schemas: [NO_ERRORS_SCHEMA]
-    })
-    .compileComponents();
+    }).compileComponents();
   }));
 
   beforeEach(() => {

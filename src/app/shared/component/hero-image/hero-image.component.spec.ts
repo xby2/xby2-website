@@ -8,14 +8,16 @@ describe('HeroImageComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ HeroImageComponent ]
-    })
-    .compileComponents();
+      declarations: [HeroImageComponent]
+    }).compileComponents();
   }));
 
   beforeEach(() => {
     fixture = TestBed.createComponent(HeroImageComponent);
     component = fixture.componentInstance;
+
+    component.imageUrl = '';
+
     fixture.detectChanges();
   });
 

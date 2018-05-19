@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Preconditions } from '../../model/preconditions';
 
 @Component({
   selector: 'app-author-info',
@@ -9,15 +10,10 @@ export class AuthorInfoComponent implements OnInit {
   @Input() authorName: string;
   @Input() authorTitle: string;
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit() {
-    if (this.authorName == null) {
-      throw new Error('\'authorName\' attribute required');
-    }
-    if (this.authorTitle == null) {
-      throw new Error('\'authorName\' attribute required');
-    }
+    Preconditions.IsNotUndefinedOrNull('authorName', this.authorName);
+    Preconditions.IsNotUndefinedOrNull('authorTitle', this.authorTitle);
   }
-
 }

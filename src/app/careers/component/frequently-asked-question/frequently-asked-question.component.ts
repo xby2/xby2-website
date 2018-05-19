@@ -10,7 +10,7 @@ export class FrequentlyAskedQuestionComponent implements OnInit {
   @Input() frequentlyAskedQuestion: FrequentlyAskedQuestion;
   isExpanded = false;
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit() {
     if (this.frequentlyAskedQuestion == null) {

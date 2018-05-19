@@ -7,14 +7,23 @@ describe('HomeServiceCardComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ HomeServiceCardComponent ]
-    })
-    .compileComponents();
+      declarations: [HomeServiceCardComponent]
+    }).compileComponents();
   }));
 
   beforeEach(() => {
     fixture = TestBed.createComponent(HomeServiceCardComponent);
     component = fixture.componentInstance;
+
+    component.service = {
+      imageUrl: '',
+      title: '',
+      text: '',
+      fullText: '',
+      points: [],
+      clientStoryId: ''
+    };
+
     fixture.detectChanges();
   });
 

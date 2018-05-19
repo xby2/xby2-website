@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { MindShare } from '../../../shared/model/mind-share';
+import { Preconditions } from '../../../shared/model/preconditions';
 
 @Component({
   selector: 'app-featured-mind-share',
@@ -9,9 +10,12 @@ import { MindShare } from '../../../shared/model/mind-share';
 export class FeaturedMindShareComponent implements OnInit {
   @Input() featuredMindShare: MindShare;
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit() {
+    Preconditions.IsNotUndefinedOrNull(
+      'featuredMindShare',
+      this.featuredMindShare
+    );
   }
-
 }

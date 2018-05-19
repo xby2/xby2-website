@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Service } from '../../../shared/model/service';
+import { Preconditions } from '../../../shared/model/preconditions';
 
 @Component({
   selector: 'app-home-service-card',
@@ -9,9 +10,9 @@ import { Service } from '../../../shared/model/service';
 export class HomeServiceCardComponent implements OnInit {
   @Input() service: Service;
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit() {
+    Preconditions.IsNotUndefinedOrNull('service', this.service);
   }
-
 }

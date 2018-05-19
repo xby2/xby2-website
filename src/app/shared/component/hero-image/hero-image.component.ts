@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Preconditions } from '../../model/preconditions';
 
 @Component({
   selector: 'app-hero-image',
@@ -8,12 +9,9 @@ import { Component, OnInit, Input } from '@angular/core';
 export class HeroImageComponent implements OnInit {
   @Input() imageUrl: string;
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit() {
-    if (this.imageUrl == null) {
-      throw new Error('\'imageUrl\' attribute required.');
-    }
+    Preconditions.IsNotUndefinedOrNull('imageUrl', this.imageUrl);
   }
-
 }

@@ -8,14 +8,20 @@ describe('FrequentlyAskedQuestionComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ FrequentlyAskedQuestionComponent ]
-    })
-    .compileComponents();
+      declarations: [FrequentlyAskedQuestionComponent]
+    }).compileComponents();
   }));
 
   beforeEach(() => {
     fixture = TestBed.createComponent(FrequentlyAskedQuestionComponent);
     component = fixture.componentInstance;
+
+    component.frequentlyAskedQuestion = {
+      id: '1',
+      question: 'test question',
+      answer: 'test answer'
+    };
+
     fixture.detectChanges();
   });
 

@@ -1,8 +1,8 @@
-export interface CollectedOpenPosition {
-    id?: number;
-    title: string;
-    listings: {
-        id: string;
-        location: string,
-    }[];
+export class CollectedOpenPosition {
+  id?: number;
+  title: string;
+  listings: {
+    id: string;
+    location: string;
+  }[];
 }

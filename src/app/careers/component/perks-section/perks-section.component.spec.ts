@@ -8,14 +8,16 @@ describe('PerksSectionComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ PerksSectionComponent ]
-    })
-    .compileComponents();
+      declarations: [PerksSectionComponent]
+    }).compileComponents();
   }));
 
   beforeEach(() => {
     fixture = TestBed.createComponent(PerksSectionComponent);
     component = fixture.componentInstance;
+
+    component.perks = [];
+
     fixture.detectChanges();
   });
 

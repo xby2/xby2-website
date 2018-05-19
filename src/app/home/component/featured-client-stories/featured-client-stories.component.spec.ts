@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { FeaturedClientStoriesComponent } from './featured-client-stories.component';
+import { NO_ERRORS_SCHEMA } from '@angular/core';
 
 describe('FeaturedClientStoriesComponent', () => {
   let component: FeaturedClientStoriesComponent;
@@ -8,9 +9,9 @@ describe('FeaturedClientStoriesComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ FeaturedClientStoriesComponent ]
-    })
-    .compileComponents();
+      declarations: [FeaturedClientStoriesComponent],
+      schemas: [NO_ERRORS_SCHEMA]
+    }).compileComponents();
   }));
 
   beforeEach(() => {

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { MindShare } from '../shared/model/mind-share';
 import { Title } from '@angular/platform-browser';
+import { Preconditions } from '../shared/model/preconditions';
 
 @Component({
   selector: 'app-mind-share-detail',

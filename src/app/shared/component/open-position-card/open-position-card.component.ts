@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { CollectedOpenPosition } from '../../model/collected-open-position';
+import { Preconditions } from '../../model/preconditions';
 
 @Component({
   selector: 'app-open-position-card',
@@ -7,13 +8,14 @@ import { CollectedOpenPosition } from '../../model/collected-open-position';
   styleUrls: ['./open-position-card.component.css']
 })
 export class OpenPositionCardComponent implements OnInit {
-  @Input() openPosition: CollectedOpenPosition;
+  @Input() collectedOpenPosition: CollectedOpenPosition;
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit() {
-    if (this.openPosition == null) {
-      throw new Error ('attribute \'openPosition\' is required.');
-    }
+    Preconditions.IsNotUndefinedOrNull(
+      'collectedOpenPosition',
+      this.collectedOpenPosition
+    );
   }
 }

@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { MindShare } from '../../shared/model/mind-share';
+import { Preconditions } from '../../shared/model/preconditions';
 
 @Component({
   selector: 'app-mind-share-listing',
@@ -9,11 +10,9 @@ import { MindShare } from '../../shared/model/mind-share';
 export class MindShareListingComponent implements OnInit {
   @Input() mindShare: MindShare;
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit() {
-    if (this.mindShare == null) {
-      throw new Error('\'mindShare\' attribute required.');
-    }
+    Preconditions.IsNotUndefinedOrNull('mindShare', this.mindShare);
   }
 }

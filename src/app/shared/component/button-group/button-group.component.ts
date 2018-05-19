@@ -1,5 +1,6 @@
 import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
 import { ButtonGroupItem } from '../../model/button-group-item';
+import { Preconditions } from '../../model/preconditions';
 
 @Component({
   selector: 'app-button-group',
@@ -13,12 +14,14 @@ export class ButtonGroupComponent implements OnInit {
 
   activeItem: string;
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit() {
-    if (this.buttonGroupItems == null) {
-      throw new Error('\'buttonGroupItems\' attribute required.');
-    }
+    Preconditions.IsNotUndefinedOrNull(
+      'buttonGroupItems',
+      this.buttonGroupItems
+    );
+    Preconditions.IsArrayNotEmpty('buttonGroupItems', this.buttonGroupItems);
 
     this.activeItem = this.buttonGroupItems[0].id;
   }

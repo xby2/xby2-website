@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { OpenPositionsSectionComponent } from './open-positions-section.component';
+import { NO_ERRORS_SCHEMA } from '@angular/core';
 
 describe('OpenPositionsSectionComponent', () => {
   let component: OpenPositionsSectionComponent;
@@ -8,9 +9,9 @@ describe('OpenPositionsSectionComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ OpenPositionsSectionComponent ]
-    })
-    .compileComponents();
+      declarations: [OpenPositionsSectionComponent],
+      schemas: [NO_ERRORS_SCHEMA]
+    }).compileComponents();
   }));
 
   beforeEach(() => {

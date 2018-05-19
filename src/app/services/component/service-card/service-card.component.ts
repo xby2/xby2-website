@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Service } from '../../../shared/model/service';
+import { Preconditions } from '../../../shared/model/preconditions';
 
 @Component({
   selector: 'app-service-card',
@@ -11,11 +12,9 @@ export class ServiceCardComponent implements OnInit {
   @Input() isFirst;
   @Input() isLast;
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit() {
-    if (this.service == null) {
-      throw new Error('\'service\' attribute required.');
-    }
+    Preconditions.IsNotUndefinedOrNull('service', this.service);
   }
 }

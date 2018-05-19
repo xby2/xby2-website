@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { ClientStory } from '../../model/client-story';
+import { Preconditions } from '../../model/preconditions';
 
 @Component({
   selector: 'app-client-story-listing',
@@ -9,8 +10,9 @@ import { ClientStory } from '../../model/client-story';
 export class ClientStoryListingComponent implements OnInit {
   @Input() clientStory: ClientStory;
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit() {
+    Preconditions.IsNotUndefinedOrNull('clientStory', this.clientStory);
   }
 }

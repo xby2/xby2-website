@@ -11,15 +11,17 @@ import { Title } from '@angular/platform-browser';
 export class ClientStoryDetailComponent implements OnInit {
   clientStory: ClientStory;
 
-  constructor(private route: ActivatedRoute,
-              private title: Title) { }
+  constructor(private route: ActivatedRoute, private title: Title) {}
 
   ngOnInit() {
-    this.route.data.subscribe(
-      data => {
-        this.clientStory = data['clientStory'];
-        this.title.setTitle(this.clientStory.title + ' - X by 2');
+    this.route.data.subscribe(data => {
+      this.clientStory = data['clientStory'];
+
+      if (this.clientStory === null) {
+        throw new Error(`'clientStory' attribute required.`);
       }
-    );
+
+      this.title.setTitle(this.clientStory.title + ' - X by 2');
+    });
   }
 }

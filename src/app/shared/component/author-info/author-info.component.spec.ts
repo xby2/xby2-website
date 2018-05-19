@@ -8,14 +8,17 @@ describe('AuthorInfoComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AuthorInfoComponent ]
-    })
-    .compileComponents();
+      declarations: [AuthorInfoComponent]
+    }).compileComponents();
   }));
 
   beforeEach(() => {
     fixture = TestBed.createComponent(AuthorInfoComponent);
     component = fixture.componentInstance;
+
+    component.authorName = '';
+    component.authorTitle = '';
+
     fixture.detectChanges();
   });
 

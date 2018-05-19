@@ -8,14 +8,16 @@ describe('OurValuesSectionComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ OurValuesSectionComponent ]
-    })
-    .compileComponents();
+      declarations: [OurValuesSectionComponent]
+    }).compileComponents();
   }));
 
   beforeEach(() => {
     fixture = TestBed.createComponent(OurValuesSectionComponent);
     component = fixture.componentInstance;
+
+    component.companyValues = [];
+
     fixture.detectChanges();
   });
 
