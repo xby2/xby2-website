@@ -16,11 +16,10 @@ import { ClientStoriesModule } from './client-stories/client-stories.module';
 import { InTheNewsModule } from './in-the-news/in-the-news.module';
 import { CareersModule } from './careers/careers.module';
 import { ContactUsModule } from './contact-us/contact-us.module';
+import { CoreModule } from './core/core.module';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -32,8 +31,9 @@ import { ContactUsModule } from './contact-us/contact-us.module';
     ClientStoriesModule,
     InTheNewsModule,
     CareersModule,
-    ContactUsModule
+    ContactUsModule,
+    CoreModule
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

@@ -23,14 +23,9 @@ import { ContactUsFormComponent } from './component/contact-us-form/contact-us-f
 import { ContactService } from './service/contact.service';
 import { ServicesResolver } from './resolver/services.resolver';
 import { ServiceService } from './service/service.service';
-import { ToastrService } from './service/toastr.service';
 
 @NgModule({
-  imports: [
-    CommonModule,
-    AppRoutingModule,
-    FormsModule
-  ],
+  imports: [CommonModule, AppRoutingModule, FormsModule],
   declarations: [
     ClientStoryListingComponent,
     ContentSectionComponent,
@@ -54,8 +49,7 @@ import { ToastrService } from './service/toastr.service';
     MindShareService,
     ContactService,
     ServicesResolver,
-    ServiceService,
-    ToastrService
+    ServiceService
   ],
   exports: [
     ClientStoryListingComponent,
@@ -74,4 +68,4 @@ import { ToastrService } from './service/toastr.service';
     ContactUsFormComponent
   ]
 })
-export class SharedModule { }
+export class SharedModule {}

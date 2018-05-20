@@ -1,8 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { ContactMessage } from '../../model/contact-message';
 import { ContactService } from '../../service/contact.service';
-import { ToastrService } from '../../service/toastr.service';
+import { TOASTR_TOKEN, Toastr } from '../../../core/service/toastr.service';
 
 @Component({
   selector: 'app-contact-us-form',
@@ -15,7 +15,7 @@ export class ContactUsFormComponent implements OnInit {
 
   constructor(
     private contactService: ContactService,
-    private toastr: ToastrService
+    @Inject(TOASTR_TOKEN) private toastr: Toastr
   ) {}
 
   ngOnInit() {}
