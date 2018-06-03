@@ -10,7 +10,7 @@ import { Title } from '@angular/platform-browser';
 import { Preconditions } from '../shared/model/preconditions';
 
 @Component({
-  selector: 'app-home',
+  selector: 'xby2-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })

@@ -1,7 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-frequently-asked-questions',
+  selector: 'xby2-frequently-asked-questions',
   templateUrl: './frequently-asked-questions.component.html',
   styleUrls: ['./frequently-asked-questions.component.css']
 })

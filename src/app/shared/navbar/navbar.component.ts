@@ -3,7 +3,7 @@ import { Link } from '../model/link';
 import { LinksService } from '../service/links.service';
 
 @Component({
-  selector: 'app-navbar',
+  selector: 'xby2-navbar',
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.css']
 })

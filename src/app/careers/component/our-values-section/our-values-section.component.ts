@@ -3,7 +3,7 @@ import { ButtonGroupItem } from '../../../shared/model/button-group-item';
 import { CompanyValue } from '../../model/company-value';
 
 @Component({
-  selector: 'app-our-values-section',
+  selector: 'xby2-our-values-section',
   templateUrl: './our-values-section.component.html',
   styleUrls: ['./our-values-section.component.css']
 })

@@ -4,7 +4,7 @@ import { ClientStory } from '../shared/model/client-story';
 import { Title } from '@angular/platform-browser';
 
 @Component({
-  selector: 'app-client-story-detail',
+  selector: 'xby2-client-story-detail',
   templateUrl: './client-story-detail.component.html',
   styleUrls: ['./client-story-detail.component.css']
 })

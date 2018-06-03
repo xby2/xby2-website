@@ -5,7 +5,7 @@ import { Title } from '@angular/platform-browser';
 import { Preconditions } from '../shared/model/preconditions';
 
 @Component({
-  selector: 'app-mind-share-detail',
+  selector: 'xby2-mind-share-detail',
   templateUrl: './mind-share-detail.component.html',
   styleUrls: ['./mind-share-detail.component.css']
 })

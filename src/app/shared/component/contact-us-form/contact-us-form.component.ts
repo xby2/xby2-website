@@ -5,7 +5,7 @@ import { ContactService } from '../../service/contact.service';
 import { TOASTR_TOKEN, Toastr } from '../../../core/service/toastr.service';
 
 @Component({
-  selector: 'app-contact-us-form',
+  selector: 'xby2-contact-us-form',
   templateUrl: './contact-us-form.component.html',
   styleUrls: ['./contact-us-form.component.css']
 })

@@ -4,11 +4,11 @@
       <div class="col">
         <h1>Client Stories</h1>
         <div class="row">
-          <app-client-story-listing
+          <xby2-client-story-listing
               *ngFor="let clientStory of featuredClientStories; let i = index"
               class="col-md-6 col-lg-4 mx-auto"
               [clientStory]="clientStory">
-            </app-client-story-listing>
+            </xby2-client-story-listing>
         </div>
         <button class="btn btn-xby2 btn-xby2-light"
                 [routerLink]="'/client-stories'">

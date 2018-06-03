@@ -3,7 +3,7 @@ import { Service } from '../../../shared/model/service';
 import { Preconditions } from '../../../shared/model/preconditions';
 
 @Component({
-  selector: 'app-service-card',
+  selector: 'xby2-service-card',
   templateUrl: './service-card.component.html',
   styleUrls: ['./service-card.component.css']
 })

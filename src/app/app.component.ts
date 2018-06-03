@@ -6,7 +6,7 @@ import { environment } from '../environments/environment';
 declare let ga: Function;
 
 @Component({
-  selector: 'app-root',
+  selector: 'xby2-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })

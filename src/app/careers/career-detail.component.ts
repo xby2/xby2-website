@@ -5,7 +5,7 @@ import { OpenPosition } from '../shared/model/open-position';
 import { Title } from '@angular/platform-browser';
 
 @Component({
-  selector: 'app-career-detail',
+  selector: 'xby2-career-detail',
   templateUrl: './career-detail.component.html',
   styleUrls: ['./career-detail.component.css']
 })

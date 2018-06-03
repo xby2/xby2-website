@@ -2,7 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import { FrequentlyAskedQuestion } from '../../model/frequently-asked-question';
 
 @Component({
-  selector: 'app-frequently-asked-question',
+  selector: 'xby2-frequently-asked-question',
   templateUrl: './frequently-asked-question.component.html',
   styleUrls: ['./frequently-asked-question.component.css']
 })

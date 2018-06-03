@@ -3,7 +3,7 @@ import { ClientStory } from '../../model/client-story';
 import { Preconditions } from '../../model/preconditions';
 
 @Component({
-  selector: 'app-client-story-listing',
+  selector: 'xby2-client-story-listing',
   templateUrl: './client-story-listing.component.html',
   styleUrls: ['./client-story-listing.component.css']
 })

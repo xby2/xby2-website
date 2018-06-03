@@ -10,7 +10,7 @@ import { CollectedOpenPosition } from '../shared/model/collected-open-position';
 import { Title } from '@angular/platform-browser';
 
 @Component({
-  selector: 'app-careers',
+  selector: 'xby2-careers',
   templateUrl: './careers.component.html',
   styleUrls: ['./careers.component.css']
 })

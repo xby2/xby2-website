@@ -1,16 +1,16 @@
-<app-hero-image [imageUrl]="heroImageUrl">
+<xby2-hero-image [imageUrl]="heroImageUrl">
   We are Architects for the<br />
   Insurance & Healthcare Industries
-</app-hero-image>
+</xby2-hero-image>
 <div class="container">
   <div class="row">
     <div class="col">
       <h1>Services</h1>
       <div class="row">
-        <app-home-service-card *ngFor="let service of services"
+        <xby2-home-service-card *ngFor="let service of services"
                              class="col-12 col-md-6 col-lg-4"
                             [service]="service">
-        </app-home-service-card>
+        </xby2-home-service-card>
       </div>
       <div class="row">
         <div class="col">
@@ -23,9 +23,9 @@
     </div>
   </div>
 </div>
-<app-featured-client-stories [featuredClientStories]="featuredClientStories">
-</app-featured-client-stories>
-<app-featured-mind-share [featuredMindShare]="featuredMindShare">
-</app-featured-mind-share>
-<app-home-careers [featuredOpenPositions]="collectedOpenPositions">
-</app-home-careers>
+<xby2-featured-client-stories [featuredClientStories]="featuredClientStories">
+</xby2-featured-client-stories>
+<xby2-featured-mind-share [featuredMindShare]="featuredMindShare">
+</xby2-featured-mind-share>
+<xby2-home-careers [featuredOpenPositions]="collectedOpenPositions">
+</xby2-home-careers>

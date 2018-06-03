@@ -2,7 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import { Preconditions } from '../../model/preconditions';
 
 @Component({
-  selector: 'app-author-info',
+  selector: 'xby2-author-info',
   templateUrl: './author-info.component.html',
   styleUrls: ['./author-info.component.css']
 })

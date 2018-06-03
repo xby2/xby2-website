@@ -1,7 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-informational-box',
+  selector: 'xby2-informational-box',
   templateUrl: './informational-box.component.html',
   styleUrls: ['./informational-box.component.css']
 })

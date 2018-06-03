@@ -3,7 +3,7 @@ import { OpenPosition } from '../../../shared/model/open-position';
 import { CollectedOpenPosition } from '../../../shared/model/collected-open-position';
 
 @Component({
-  selector: 'app-home-careers',
+  selector: 'xby2-home-careers',
   templateUrl: './home-careers.component.html',
   styleUrls: ['./home-careers.component.css']
 })

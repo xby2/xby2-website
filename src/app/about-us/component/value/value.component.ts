@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-value',
+  selector: 'xby2-value',
   templateUrl: './value.component.html',
   styleUrls: ['./value.component.css']
 })

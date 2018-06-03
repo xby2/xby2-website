@@ -3,7 +3,7 @@ import { ButtonGroupItem } from '../../model/button-group-item';
 import { Preconditions } from '../../model/preconditions';
 
 @Component({
-  selector: 'app-button-group',
+  selector: 'xby2-button-group',
   templateUrl: './button-group.component.html',
   styleUrls: ['./button-group.component.css']
 })

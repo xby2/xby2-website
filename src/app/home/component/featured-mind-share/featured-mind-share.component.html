@@ -8,9 +8,9 @@
     <div class="col d-md-none">
         <img [src]="'./assets/authors/' + featuredMindShare.authorImageUrl" />
         <h4>{{featuredMindShare.title}}</h4>
-        <app-author-info [authorName]="featuredMindShare.authorName"
+        <xby2-author-info [authorName]="featuredMindShare.authorName"
                          [authorTitle]="featuredMindShare.authorTitle" >
-        </app-author-info>
+        </xby2-author-info>
         <p>{{featuredMindShare.shortDescription}}</p>
         <button class="btn btn-xby2"
                 [routerLink]="['insights', featuredMindShare.id]">
@@ -23,9 +23,9 @@
     </div>
     <div class="col-3 d-none d-md-block">
       <img [src]="'./assets/authors/' + featuredMindShare.authorImageUrl" />
-      <app-author-info [authorName]="featuredMindShare.authorName"
+      <xby2-author-info [authorName]="featuredMindShare.authorName"
                          [authorTitle]="featuredMindShare.authorTitle" >
-      </app-author-info>
+      </xby2-author-info>
     </div>
     <div class="col-9 d-none d-md-block text-center">
       <h4>{{featuredMindShare.title}}</h4>

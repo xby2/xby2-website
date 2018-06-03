@@ -2,7 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import { Preconditions } from '../../model/preconditions';
 
 @Component({
-  selector: 'app-hero-image',
+  selector: 'xby2-hero-image',
   templateUrl: './hero-image.component.html',
   styleUrls: ['./hero-image.component.css']
 })

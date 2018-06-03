@@ -3,7 +3,7 @@ import { MindShare } from '../../shared/model/mind-share';
 import { Preconditions } from '../../shared/model/preconditions';
 
 @Component({
-  selector: 'app-mind-share-listing',
+  selector: 'xby2-mind-share-listing',
   templateUrl: './mind-share-listing.component.html',
   styleUrls: ['./mind-share-listing.component.css']
 })

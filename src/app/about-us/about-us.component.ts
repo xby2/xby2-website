@@ -5,7 +5,7 @@ import { Value } from './model/value';
 import { Title } from '@angular/platform-browser';
 
 @Component({
-  selector: 'app-about-us',
+  selector: 'xby2-about-us',
   templateUrl: './about-us.component.html',
   styleUrls: ['./about-us.component.css']
 })

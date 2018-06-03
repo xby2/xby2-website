@@ -1,4 +1,4 @@
-<app-hero-image [imageUrl]="'client-story/' + clientStory.imageUrl">
+<xby2-hero-image [imageUrl]="'client-story/' + clientStory.imageUrl">
   <div class="description">
     {{clientStory.title}}
   </div>
@@ -10,12 +10,12 @@
       {{expertise}}
     </li>
   </ul>
-</app-hero-image>
+</xby2-hero-image>
 <div class="container">
   <div class="row">
-    <app-content-section class="col" [content]="clientStory.content">
-    </app-content-section>
+    <xby2-content-section class="col" [content]="clientStory.content">
+    </xby2-content-section>
   </div>
 </div>
-<app-next-item-section *ngIf="clientStory.nextClientStoryId" [title]="clientStory.nextClientStoryTitle" [link]="['/client-stories', clientStory.nextClientStoryId]">
-</app-next-item-section>
+<xby2-next-item-section *ngIf="clientStory.nextClientStoryId" [title]="clientStory.nextClientStoryTitle" [link]="['/client-stories', clientStory.nextClientStoryId]">
+</xby2-next-item-section>

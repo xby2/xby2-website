@@ -24,8 +24,8 @@
     </div>
   </div>
   <div class="row">
-    <app-content-section class="col" [content]="mindShare.content">
-    </app-content-section>
+    <xby2-content-section class="col" [content]="mindShare.content">
+    </xby2-content-section>
   </div>
   <div class="row">
     <div class="col">
@@ -36,7 +36,7 @@
     </div>
   </div>
 </div>
-<app-next-item-section *ngIf="mindShare.nextMindShareId"
+<xby2-next-item-section *ngIf="mindShare.nextMindShareId"
                        [title]="mindShare.nextMindShareTitle"
                        [link]="['/insights', mindShare.nextMindShareId]">
-</app-next-item-section>
+</xby2-next-item-section>

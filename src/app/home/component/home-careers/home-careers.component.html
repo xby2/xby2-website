@@ -5,8 +5,8 @@
         <h1>Careers</h1>
         <h4>Join our team! We're looking for people with a passion for technology, problem solving and leadership.</h4>
         <div class="row">
-          <app-open-position-card *ngFor="let openPosition of featuredOpenPositions" [collectedOpenPosition]="openPosition" class="col-12 col-md-6 col-lg-4 mx-auto">
-          </app-open-position-card>
+          <xby2-open-position-card *ngFor="let openPosition of featuredOpenPositions" [collectedOpenPosition]="openPosition" class="col-12 col-md-6 col-lg-4 mx-auto">
+          </xby2-open-position-card>
         </div>
         <button class="btn btn-xby2 btn-xby2-light" [routerLink]="'/careers'" fragment="open-positions">
           View All Jobs

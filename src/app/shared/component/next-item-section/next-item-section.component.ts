@@ -1,7 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-next-item-section',
+  selector: 'xby2-next-item-section',
   templateUrl: './next-item-section.component.html',
   styleUrls: ['./next-item-section.component.css']
 })

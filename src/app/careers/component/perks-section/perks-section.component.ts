@@ -2,7 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import { Perk } from '../../model/perk';
 
 @Component({
-  selector: 'app-perks-section',
+  selector: 'xby2-perks-section',
   templateUrl: './perks-section.component.html',
   styleUrls: ['./perks-section.component.css']
 })

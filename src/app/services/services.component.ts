@@ -5,7 +5,7 @@ import { Title } from '@angular/platform-browser';
 import { Preconditions } from '../shared/model/preconditions';
 
 @Component({
-  selector: 'app-services',
+  selector: 'xby2-services',
   templateUrl: './services.component.html',
   styleUrls: ['./services.component.css']
 })

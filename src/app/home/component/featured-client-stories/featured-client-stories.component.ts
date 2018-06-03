@@ -2,7 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import { ClientStory } from '../../../shared/model/client-story';
 
 @Component({
-  selector: 'app-featured-client-stories',
+  selector: 'xby2-featured-client-stories',
   templateUrl: './featured-client-stories.component.html',
   styleUrls: ['./featured-client-stories.component.css']
 })

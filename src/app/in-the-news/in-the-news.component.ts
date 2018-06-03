@@ -5,7 +5,7 @@ import { ButtonGroupItem } from '../shared/model/button-group-item';
 import { Title } from '@angular/platform-browser';
 
 @Component({
-  selector: 'app-in-the-news',
+  selector: 'xby2-in-the-news',
   templateUrl: './in-the-news.component.html',
   styleUrls: ['./in-the-news.component.css']
 })

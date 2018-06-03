@@ -3,7 +3,7 @@ import { Link } from '../../../model/link';
 declare var $: any;
 
 @Component({
-  selector: 'app-modal',
+  selector: 'xby2-modal',
   templateUrl: './modal.component.html',
   styleUrls: ['./modal.component.css']
 })

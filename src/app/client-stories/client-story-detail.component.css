@@ -22,7 +22,7 @@ li + li:before {
     margin: 0.5em;
 }
 
-:host ::ng-deep app-hero-image .hero-image {
+:host ::ng-deep xby2-hero-image .hero-image {
     height: 9.5em;
 }
 

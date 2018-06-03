@@ -7,7 +7,7 @@ import { SocialMediaLinkService } from './service/social-media-link.service';
 import { Xby2LocationService } from './service/xby2-location.service';
 
 @Component({
-  selector: 'app-footer',
+  selector: 'xby2-footer',
   templateUrl: './footer.component.html',
   styleUrls: ['./footer.component.css']
 })

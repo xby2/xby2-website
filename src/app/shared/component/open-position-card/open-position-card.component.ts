@@ -3,7 +3,7 @@ import { CollectedOpenPosition } from '../../model/collected-open-position';
 import { Preconditions } from '../../model/preconditions';
 
 @Component({
-  selector: 'app-open-position-card',
+  selector: 'xby2-open-position-card',
   templateUrl: './open-position-card.component.html',
   styleUrls: ['./open-position-card.component.css']
 })

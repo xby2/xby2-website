@@ -5,7 +5,7 @@ import { ButtonGroupItem } from '../shared/model/button-group-item';
 import { Title } from '@angular/platform-browser';
 
 @Component({
-  selector: 'app-client-stories',
+  selector: 'xby2-client-stories',
   templateUrl: './client-stories.component.html',
   styleUrls: ['./client-stories.component.css']
 })
