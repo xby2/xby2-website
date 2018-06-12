@@ -24,4 +24,4 @@ if (environment.googleAnalyticsTrackingId !== '') {
 
 platformBrowserDynamic()
   .bootstrapModule(AppModule)
-  .catch(err => console.log(err));
+  .catch();

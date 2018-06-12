@@ -19,13 +19,12 @@ import { HeroImageComponent } from './component/hero-image/hero-image.component'
 import { MindShareService } from './service/mind-share.service';
 import { AuthorInfoComponent } from './component/author-info/author-info.component';
 import { OpenPositionCardComponent } from './component/open-position-card/open-position-card.component';
-import { ContactUsFormComponent } from './component/contact-us-form/contact-us-form.component';
 import { ContactService } from './service/contact.service';
 import { ServicesResolver } from './resolver/services.resolver';
 import { ServiceService } from './service/service.service';
 
 @NgModule({
-  imports: [CommonModule, AppRoutingModule, FormsModule],
+  imports: [CommonModule, AppRoutingModule],
   declarations: [
     ClientStoryListingComponent,
     ContentSectionComponent,
@@ -35,7 +34,6 @@ import { ServiceService } from './service/service.service';
     NextItemSectionComponent,
     PageHeaderComponent,
     ModalComponent,
-    ContactUsFormComponent,
     LogoComponent,
     HeroImageComponent,
     AuthorInfoComponent,
@@ -60,12 +58,10 @@ import { ServiceService } from './service/service.service';
     NextItemSectionComponent,
     PageHeaderComponent,
     AppRoutingModule,
-    ContactUsFormComponent,
     LogoComponent,
     HeroImageComponent,
     AuthorInfoComponent,
-    OpenPositionCardComponent,
-    ContactUsFormComponent
+    OpenPositionCardComponent
   ]
 })
 export class SharedModule {}

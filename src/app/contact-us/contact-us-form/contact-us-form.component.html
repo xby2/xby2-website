@@ -1,0 +1,51 @@
+<form [formGroup]="contactForm" (ngSubmit)="submitForm()" novalidate>
+  <div class="row">
+    <div class="form-group col-md-6" [ngClass]="{'has-error': (contactForm.get('firstName').touched || contactForm.get('firstName').dirty) && !contactForm.get('firstName').valid }">
+      <label class="control-label">
+        First Name
+      </label>
+      <input type="text" formControlName="firstName" class="form-control" name="firstName" required placeholder="First Name*" />
+      <div *ngIf="contactForm.get('firstName').invalid && contactForm.get('firstName').touched" class="alert alert-danger">
+        First Name is required.
+      </div>
+    </div>
+
+    <div class="form-group col-md-6" [ngClass]="{'has-error': (contactForm.get('lastName').touched || contactForm.get('lastName').dirty) && !contactForm.get('lastName').valid }">
+      <label class="control-label">Last Name</label>
+      <input type="text" formControlName="lastName" class="form-control" name="lastName" required placeholder="Last Name*" />
+      <div *ngIf="contactForm.get('lastName').invalid && contactForm.get('lastName').touched" class="alert alert-danger">
+        Last Name is required.
+      </div>
+    </div>
+
+    <div class="form-group col-md-6" [ngClass]="{'has-error': (contactForm.get('email').touched || contactForm.get('email').dirty) && !contactForm.get('email').valid }">
+      <label class="control-label">Email</label>
+      <input type="text" formControlName="email" class="form-control" name="email" required placeholder="Email*" />
+      <div *ngIf="contactForm.get('email').invalid && contactForm.get('email').touched" class="alert alert-danger">
+        Email is required.
+      </div>
+    </div>
+
+    <div class="form-group col-md-6" [ngClass]="{'has-error': (contactForm.get('phoneNumber').touched || contactForm.get('phoneNumber').dirty) && !contactForm.get('phoneNumber').valid }">
+      <label class="control-label">Phone Number</label>
+      <input type="text" formControlName="phoneNumber" class="form-control" name="phoneNumber" required placeholder="Phone Number*"
+      />
+      <div *ngIf="contactForm.get('phoneNumber').invalid && contactForm.get('phoneNumber').touched" class="alert alert-danger">
+        Phone Number is required.
+      </div>
+    </div>
+
+    <div class="form-group col-md-12" [ngClass]="{'has-error': (contactForm.get('message').touched || contactForm.get('message').dirty) && !contactForm.get('message').valid }">
+      <label class="control-label">How can we help you?</label>
+      <textarea formControlName="message" class="form-control" required name="message" placeholder="How can we help you?*"></textarea>
+      <div *ngIf="contactForm.get('message').invalid && contactForm.get('message').touched" class="alert alert-danger">
+        Message is required.
+      </div>
+    </div>
+
+
+    <button class="btn btn-xby2" [disabled]="!contactForm.valid || submitDisabled" type="submit">
+      Submit
+    </button>
+  </div>
+</form>
