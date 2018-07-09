@@ -1,43 +1,16 @@
 .card {
-    margin-bottom: 1em;
+  margin-bottom: 1em;
 }
 
 .collected-open-position {
-    background-color: transparent;
-    border: 0;
-    padding: 1em;
-    outline: 0;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-    margin-bottom: 0;
+  background-color: transparent;
+  border: 0;
+  padding: 1em;
+  outline: 0;
+  text-align: center;
 }
 
 button.btn-xby2 {
-    display: inline;
-    margin: 0.5em 1em;
-}
-
-ul li {
-    display: inline;
-}
-
-li + li:before {
-    content: "/";
-    color: #f89829;
-}
-
-table {
-    width: 100%;
-    text-align: center
-}
-
-tr {
-    border-top: 1px solid #000;
-}
-
-td {
-    padding: 1em;
+  display: inline;
+  margin: 0.5em 1em;
 }
