@@ -10,7 +10,6 @@ export class FeaturedMindShareResolver implements Resolve<MindShare> {
 
   resolve(route: ActivatedRouteSnapshot, state: RouterStateSnapshot):
       MindShare | Observable<MindShare> | Promise<MindShare> {
-    return this.mindShareService
-               .getMindShare('when-it-comes-to-large-projects-think-architecture-first');
+    return this.mindShareService.getFeaturedMindShare();
   }
 }

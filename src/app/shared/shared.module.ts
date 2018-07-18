@@ -22,6 +22,7 @@ import { OpenPositionCardComponent } from './component/open-position-card/open-p
 import { ContactService } from './service/contact.service';
 import { ServicesResolver } from './resolver/services.resolver';
 import { ServiceService } from './service/service.service';
+import { IndustryService } from './service/industry.service';
 
 @NgModule({
   imports: [CommonModule, AppRoutingModule],
@@ -47,7 +48,8 @@ import { ServiceService } from './service/service.service';
     MindShareService,
     ContactService,
     ServicesResolver,
-    ServiceService
+    ServiceService,
+    IndustryService
   ],
   exports: [
     ClientStoryListingComponent,

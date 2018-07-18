@@ -4,7 +4,7 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 import { HomeComponent } from './home/home.component';
 import { CareersComponent } from './careers/careers.component';
 import { OpenPositionsResolver } from './careers/resolver/open-positions.resolver';
-import { CompanyValuesResolver } from './careers/resolver/company-values.resolver';
+import { RecruitingValuesResolver } from './careers/resolver/recruiting-values.resolver';
 import { OpenPositionResolver } from './careers/resolver/open-position.resolver';
 import { CareerDetailComponent } from './careers/career-detail.component';
 import { FeaturedMindShareResolver } from './home/resolver/featured-mind-share.resolver';
@@ -20,10 +20,11 @@ import { ClientStoriesComponent } from './client-stories/client-stories.componen
 import { MindShareDetailComponent } from './in-the-news/mind-share-detail.component';
 import { InTheNewsComponent } from './in-the-news/in-the-news.component';
 import { MindSharesResolver } from './in-the-news/resolver/mind-shares.resolver';
+import { IndustryResolver} from './shared/resolver/industry.resolver';
 import { MindShareResolver } from './in-the-news/resolver/mind-share.resolver';
 import { PerksResolver } from './careers/resolver/perks.resolver';
 import { FrequentlyAskedQuestionsResolver } from './careers/resolver/frequently-asked-questions.resolver';
-import { ValuesResolver } from './about-us/resolver/values.resolver';
+import { CompanyValuesResolver } from './about-us/resolver/company-values.resolver';
 import { Xby2LocationsResolver } from './contact-us/resolver/xby2-locations.resolver';
 
 const routes: Routes = [
@@ -41,7 +42,7 @@ const routes: Routes = [
     path: 'about-us',
     component: AboutUsComponent,
     resolve: {
-      values: ValuesResolver
+      values: CompanyValuesResolver
     }
   },
   {
@@ -54,7 +55,7 @@ const routes: Routes = [
   {
     path: 'client-stories',
     component: ClientStoriesComponent,
-    resolve: {clientStories: ClientStoriesResolver} },
+    resolve: {clientStories: ClientStoriesResolver, industries: IndustryResolver} },
   {
     path: 'client-stories/:id',
     component: ClientStoryDetailComponent,
@@ -63,7 +64,7 @@ const routes: Routes = [
   {
     path: 'insights',
     component: InTheNewsComponent,
-    resolve: { mindShares: MindSharesResolver }
+    resolve: { mindShares: MindSharesResolver, industries: IndustryResolver }
   },
   {
     path: 'insights/:id',
@@ -82,7 +83,7 @@ const routes: Routes = [
     component: CareersComponent,
     resolve: {
       openPositions: OpenPositionsResolver,
-      companyValues: CompanyValuesResolver,
+      companyValues: RecruitingValuesResolver,
       perks: PerksResolver,
       frequentlyAskedQuestions: FrequentlyAskedQuestionsResolver
     }

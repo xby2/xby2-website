@@ -10,8 +10,8 @@ import { OurValuesSectionComponent } from './component/our-values-section/our-va
 import { PerksSectionComponent } from './component/perks-section/perks-section.component';
 import { PerksResolver } from './resolver/perks.resolver';
 import { OpenPositionsResolver } from './resolver/open-positions.resolver';
-import { CompanyValueService } from './service/company-value.service';
-import { CompanyValuesResolver } from './resolver/company-values.resolver';
+import { RecruitingValueService } from './service/recruiting-value.service';
+import { RecruitingValuesResolver } from './resolver/recruiting-values.resolver';
 import { OpenPositionResolver } from './resolver/open-position.resolver';
 import { PerkService } from './service/perk.service';
 import { OpenPositionsSectionComponent } from './component/open-positions-section/open-positions-section.component';
@@ -38,8 +38,8 @@ import { FrequentlyAskedQuestionComponent } from './component/frequently-asked-q
   providers: [
     PerksResolver,
     OpenPositionsResolver,
-    CompanyValueService,
-    CompanyValuesResolver,
+    RecruitingValueService,
+    RecruitingValuesResolver,
     OpenPositionResolver,
     PerkService,
     FrequentlyAskedQuestionsResolver,

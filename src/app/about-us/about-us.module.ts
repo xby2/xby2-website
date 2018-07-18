@@ -5,8 +5,8 @@ import { InformationalBoxComponent } from './component/informational-box/informa
 import { AboutUsComponent } from './about-us.component';
 import { CountUpModule } from 'countup.js-angular2';
 import { ValueComponent } from './component/value/value.component';
-import { ValueService } from './service/value.service';
-import { ValuesResolver } from './resolver/values.resolver';
+import { CompanyValueService } from './service/company-value.service';
+import { CompanyValuesResolver } from './resolver/company-values.resolver';
 
 @NgModule({
   imports: [
@@ -20,8 +20,8 @@ import { ValuesResolver } from './resolver/values.resolver';
     ValueComponent
   ],
   providers: [
-    ValuesResolver,
-    ValueService
+      CompanyValuesResolver,
+      CompanyValueService
   ],
   exports: [
     AboutUsComponent

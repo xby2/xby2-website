@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { MindShare } from '../shared/model/mind-share';
-import { ButtonGroupItem } from '../shared/model/button-group-item';
+import { Industry } from '../shared/model/industry';
 import { Title } from '@angular/platform-browser';
 
 @Component({
@@ -19,11 +19,7 @@ export class InTheNewsComponent implements OnInit {
   tabletWidth = 768;
   tabletInitialClientStoryCount = 6;
   mobileInitialClientStoryCount = 3;
-  buttonGroupItems: ButtonGroupItem[] = [
-    { id: 'all', label: 'All' },
-    { id: 'insurance', label: 'Insurance' },
-    { id: 'healthcare', label: 'Healthcare' }
-  ];
+  buttonGroupItems: Industry[];
 
   constructor(private route: ActivatedRoute, private title: Title) {
     this.title.setTitle('Insights - X by 2');
@@ -33,6 +29,7 @@ export class InTheNewsComponent implements OnInit {
   ngOnInit() {
     this.mindShares = this.route.snapshot.data.mindShares;
     this.filteredMindShares = this.mindShares;
+    this.buttonGroupItems = this.route.snapshot.data.industries;
   }
 
   loadMoreMindShares() {

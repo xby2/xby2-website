@@ -2,10 +2,11 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Perk } from '../model/perk';
 import { Observable } from 'rxjs/Observable';
+import { environment } from '../../../environments/environment';
 
 @Injectable()
 export class PerkService {
-  private url = '../assets/data/perks.json';
+  private url = environment.baseCmsUrl + '/perks';
 
   constructor(private httpClient: HttpClient) { }
 
