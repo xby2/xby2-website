@@ -32,9 +32,9 @@ export class MindShareService {
     });
   }
 
-    getFeaturedMindShare(): Observable<MindShare> {
-      return this.getMindShares().map(mindShares => {
-        return mindShares.filter(mindShare => mindShare.isFeatured === true)[0];
-      });
-    }
+  getFeaturedMindShare(): Observable<MindShare> {
+    return this.getMindShares().map(mindShares => {
+      return mindShares.filter(mindShare => mindShare.isFeatured)[0];
+    });
+  }
 }
