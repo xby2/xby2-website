@@ -1,6 +1,6 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { CompanyValue } from './model/company-value';
+import { RecruitingValue } from './model/recruiting-value';
 import { Perk } from './model/perk';
 import { FrequentlyAskedQuestion } from './model/frequently-asked-question';
 import { OpenPosition } from '../shared/model/open-position';
@@ -19,7 +19,7 @@ export class CareersComponent implements OnInit, AfterViewInit {
   subheaderText = 'Let your skills make a difference in shaping our future.';
   buttonText = 'View Open Positions';
 
-  companyValues: CompanyValue[];
+  companyValues: RecruitingValue[];
   perks: Perk[];
   openPositions: OpenPosition[];
   collectedOpenPositions: CollectedOpenPosition[];

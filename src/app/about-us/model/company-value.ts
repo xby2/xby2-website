@@ -1,5 +1,5 @@
 export interface CompanyValue {
-    id: string;
+    iconUrl: string;
     title: string;
     description: string;
 }

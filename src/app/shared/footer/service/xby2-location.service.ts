@@ -2,10 +2,11 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs/Observable';
 import { Xby2Location } from '../../model/xby2-location';
+import { environment } from '../../../../environments/environment';
 
 @Injectable()
 export class Xby2LocationService {
-  readonly url = '../assets/data/xby2-locations.json';
+  readonly url = environment.baseCmsUrl + '/locations';
 
   constructor(private httpClient: HttpClient) { }
 

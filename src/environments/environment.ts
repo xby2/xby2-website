@@ -6,5 +6,6 @@
 export const environment = {
   production: false,
   apiUrl: 'http://localhost:4300',
-  googleAnalyticsTrackingId: ''
+  googleAnalyticsTrackingId: '',
+  baseCmsUrl: 'http://localhost/xby2/wp-json/xby2/v1'
 };

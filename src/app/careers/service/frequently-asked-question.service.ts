@@ -2,10 +2,11 @@ import { Injectable } from '@angular/core';
 import { FrequentlyAskedQuestion } from '../model/frequently-asked-question';
 import { Observable } from 'rxjs/Observable';
 import { HttpClient } from '@angular/common/http';
+import { environment } from '../../../environments/environment';
 
 @Injectable()
 export class FrequentlyAskedQuestionService {
-  private url = '../assets/data/frequently-asked-questions.json';
+  private url = environment.baseCmsUrl + '/frequently-asked-questions';
 
   constructor(private httpClient: HttpClient) { }
 

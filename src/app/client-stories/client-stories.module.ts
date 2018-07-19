@@ -6,6 +6,7 @@ import { SharedModule } from '../shared/shared.module';
 import { ClientStoriesResolver } from './resolver/client-stories.resolver.';
 import { ClientStoryResolver } from './resolver/client-story.resolver';
 import { ClientStoryService } from '../shared/service/client-story.service';
+import { IndustryResolver } from '../shared/resolver/industry.resolver';
 
 @NgModule({
   imports: [
@@ -19,7 +20,8 @@ import { ClientStoryService } from '../shared/service/client-story.service';
   providers: [
     ClientStoryService,
     ClientStoriesResolver,
-    ClientStoryResolver
+    ClientStoryResolver,
+    IndustryResolver
   ],
   exports: [
     ClientStoriesComponent,
