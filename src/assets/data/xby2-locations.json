@@ -1,5 +1,5 @@
 [
-    {
+  {
     "name": "Detroit, MI",
     "address": "35055 W Twelve Mile Rd",
     "address2": "Suite 220",
@@ -16,7 +16,7 @@
     "address2": "Suite 800",
     "city": "Mississauga",
     "state": "ON",
-    "zip": "L4W 5KA",
+    "zip": "L4W 5K4",
     "phone": "905.267.0223",
     "latitude": 43.657411,
     "longitude": -79.603429
