@@ -1,5 +1,24 @@
 [
   {
+    "id": "xby2-llc-20th-anniversary",
+    "title": "X BY 2 CELEBRATES TWENTY YEARS",
+    "authorImageUrl": "20th-anniversary.jpg",
+    "shortDescription":
+      "X by 2 LLC recently celabrated its 20th anniversary and just wants to say thank you to all its client and team members that helped make these past 20 years a success story.",
+    "isFeatured": false,
+    "isPublication": true,
+    "authorName": "Company News",
+    "authorTitle": "Press Release",
+    "industry": "consulting",
+    "publishDate": "07/25/2018",
+    "readTimeInMinutes": 5,
+    "publishUrl": "https://xby2.com/insights/xby2-llc-20th-anniversary",
+    "content":
+      "<p>X by 2 LLC would like to sincerely thank all its clients and team members over the years on its twentieth anniversary as a software architecture consultancy for the insurance and healthcare industries.  This milestone would not have been possible without the trust and support of its sixty-plus clients who have engaged X by 2 on over two hundred and fifty projects.</p> <p>X by 2 was founded in 1998 by three colleagues who left the traditional consulting ranks with an idea to deliver business technology services differently.  Initially focusing on internet-based design and commerce, the firm evolved into one specializing in enterprise and software architecture, program and project leadership, and business technology assessments and strategies.</p><p>According to David Packer, X by 2’s President, these services “enable X by 2’s clients to achieve their strategic and operational business goals.”  A lot has changed in business technology over the past twenty years, but according to Packer “our different approach created the opportunity for X by 2 to serve some of the most forward-thinking insurance and healthcare organizations in North America over the last 20 years. While our day-to-day architecture practice has evolved, the core principles that shape and influence our entire organization remain the same.”  Here’s to the next twenty years.</p>  <img src=\"/assets/mind-share-img/anniversary-image-1.jpg\" /><p>For more information please visit our <a href=\"www.xby2.com\" >home page</a></p>",
+    "tags": ["publication"],
+    "nextMindShareId": "living-in-a-devops-world-part-one"
+  },
+  {
     "id": "living-in-a-devops-world-part-one",
     "title": "Living in a DevOps World (Part 1)",
     "authorName": "Dave Farinelli",
