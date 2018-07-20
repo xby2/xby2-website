@@ -6,7 +6,7 @@ import { environment } from '../../../environments/environment';
 
 @Injectable()
 export class ServiceService {
-  private url = environment.baseCmsUrl + '/services';
+  private url = environment.baseCmsUrl + environment.endpoints.services;
 
   constructor(private httpClient: HttpClient) {}
 

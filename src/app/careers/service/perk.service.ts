@@ -6,9 +6,9 @@ import { environment } from '../../../environments/environment';
 
 @Injectable()
 export class PerkService {
-  private url = environment.baseCmsUrl + '/perks';
+  private url = environment.baseCmsUrl + environment.endpoints.perks;
 
-  constructor(private httpClient: HttpClient) { }
+  constructor(private httpClient: HttpClient) {}
 
   getPerks(): Observable<Perk[]> {
     return this.httpClient.get<Array<Perk>>(this.url);

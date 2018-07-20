@@ -6,9 +6,9 @@ import { environment } from '../../../environments/environment';
 
 @Injectable()
 export class RecruitingValueService {
-  private url = environment.baseCmsUrl + '/recruiting-values';
+  private url = environment.baseCmsUrl + environment.endpoints.recruitingValues;
 
-  constructor(private httpClient: HttpClient) { }
+  constructor(private httpClient: HttpClient) {}
 
   getCompanyValues(): Observable<RecruitingValue[]> {
     return this.httpClient.get<Array<RecruitingValue>>(this.url);

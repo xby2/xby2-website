@@ -6,7 +6,7 @@ import { environment } from '../../../environments/environment';
 
 @Injectable()
 export class ClientStoryService {
-  private url = environment.baseCmsUrl + '/client-stories';
+  private url = environment.baseCmsUrl + environment.endpoints.clientStories;
 
   constructor(private httpClient: HttpClient) {}
 
@@ -21,6 +21,13 @@ export class ClientStoryService {
   }
 
   getClientStory(id: string): Observable<ClientStory> {
+    if (environment.usingLocalData) {
+      return this.getClientStories().map(
+        clientStories =>
+          clientStories.filter(clientStory => clientStory.id === id)[0]
+      );
+    }
+
     return this.httpClient.get<ClientStory>(this.url + '/' + id);
   }
 }

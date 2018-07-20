@@ -7,5 +7,25 @@ export const environment = {
   production: false,
   apiUrl: 'http://localhost:4300',
   googleAnalyticsTrackingId: '',
-  baseCmsUrl: 'http://localhost/xby2/wp-json/xby2/v1'
+
+  /*
+    For local development using the mock API data, do the following:
+    - set usingLocalData to true.
+    - set the baseCmsUrl to ../assets/data/
+    - set all endpoints to point to their respective .json files.
+  */
+  usingLocalData: true,
+  baseCmsUrl: '../assets/data/',
+  endpoints: {
+    companyValues: 'company-values.json',
+    frequentlyAskedQuestions: 'frequently-asked-questions.json',
+    perks: 'perks.json',
+    recruitingValues: 'recruiting-values.json',
+    locations: 'locations.json',
+    clientStories: 'client-stories.json',
+    industries: 'industries.json',
+    links: 'links.json',
+    mindShares: 'mind-shares.json',
+    services: 'services.json'
+  }
 };

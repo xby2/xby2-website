@@ -6,9 +6,9 @@ import { environment } from '../../../../environments/environment';
 
 @Injectable()
 export class Xby2LocationService {
-  readonly url = environment.baseCmsUrl + '/locations';
+  readonly url = environment.baseCmsUrl + environment.endpoints.locations;
 
-  constructor(private httpClient: HttpClient) { }
+  constructor(private httpClient: HttpClient) {}
 
   getXby2Locations(): Observable<Xby2Location[]> {
     return this.httpClient.get<Array<Xby2Location>>(this.url);

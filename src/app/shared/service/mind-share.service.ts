@@ -6,7 +6,7 @@ import { environment } from '../../../environments/environment';
 
 @Injectable()
 export class MindShareService {
-  private url = environment.baseCmsUrl + '/mind-shares';
+  private url = environment.baseCmsUrl + environment.endpoints.mindShares;
 
   constructor(private httpClient: HttpClient) {}
 
@@ -26,10 +26,22 @@ export class MindShareService {
   }
 
   getMindShare(id: string): Observable<MindShare> {
-    return this.httpClient.get<MindShare>(this.url + '/' + id).map(mindShare => {
-      mindShare.publishDate = new Date(mindShare.publishDate);
-      return mindShare;
-    });
+    if (environment.usingLocalData) {
+      return this.getMindShares().map(mindShares => {
+        const result = mindShares.filter(mindShare => mindShare.id === id)[0];
+        if (result) {
+          result.publishDate = new Date(result.publishDate);
+        }
+        return result;
+      });
+    }
+
+    return this.httpClient
+      .get<MindShare>(this.url + '/' + id)
+      .map(mindShare => {
+        mindShare.publishDate = new Date(mindShare.publishDate);
+        return mindShare;
+      });
   }
 
   getFeaturedMindShare(): Observable<MindShare> {

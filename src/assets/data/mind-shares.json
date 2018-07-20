@@ -168,7 +168,8 @@
     "tags": ["insurance", "architecture"],
     "nextMindShareId": "the-key-to-small-project-management-keep-it-simple",
     "nextMindShareTitle":
-      "The Key to (Small) Project Management: Keep it Simple"
+      "The Key to (Small) Project Management: Keep it Simple",
+    "isFeatured": true
   },
   {
     "id": "the-key-to-small-project-management-keep-it-simple",
