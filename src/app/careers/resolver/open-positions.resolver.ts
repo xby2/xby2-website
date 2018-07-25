@@ -4,10 +4,10 @@ import {
   ActivatedRouteSnapshot,
   RouterStateSnapshot
 } from '@angular/router';
-import { Observable } from 'rxjs/Observable';
+import { Observable } from 'rxjs';
 import { OpenPosition } from '../../shared/model/open-position';
 import { OpenPositionService } from '../../shared/service/open-position.service';
-import 'rxjs/add/operator/catch';
+
 
 @Injectable()
 export class OpenPositionsResolver implements Resolve<OpenPosition[]> {

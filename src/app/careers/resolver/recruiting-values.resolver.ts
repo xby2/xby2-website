@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Resolve, ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
 import { RecruitingValue } from '../model/recruiting-value';
-import { Observable } from 'rxjs/Observable';
+import { Observable } from 'rxjs';
 import { RecruitingValueService } from '../service/recruiting-value.service';
 
 @Injectable()
