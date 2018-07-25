@@ -9,24 +9,19 @@
       <div class="details">
         <img class="rounded-circle"
              [src]="'./assets/authors/' + mindShare.authorImageUrl" />
-        <div *ngIf="!mindShare.isPublication" class="author-info">
-          <span>By <b>{{mindShare.authorName}}</b></span>
-          <span class="divider"> / </span>
-          <span>{{mindShare.publishDate | date: 'shortDate'}}</span>
-        </div>
-        <div *ngIf="!mindShare.isPublication" class="publish-info">
-          Originally Published By
-          <a [href]="mindShare.publishUrl" target="_blank">
-            {{mindShare.publishName}}
-          </a>
-        </div>
-        <div *ngIf="mindShare.isPublication" class="author-info">
+        <div  class="author-info">
+          <span *ngIf="!mindShare.isPublication">By </span>
           <span><b>{{mindShare.authorName}}</b></span>
           <span class="divider"> / </span>
           <span>{{mindShare.publishDate | date: 'shortDate'}}</span>
         </div>
-        <div *ngIf="mindShare.isPublication" class="publish-info">
-          <span>{{mindShare.authorTitle}}</span>
+        <div class="publish-info">
+          <span *ngIf="!mindShare.isPublication">Originally Published By
+            <a [href]="mindShare.publishUrl" target="_blank">
+              {{mindShare.publishName}}
+            </a>
+          </span>
+          <span *ngIf="mindShare.isPublication">{{mindShare.authorTitle}}</span>
         </div>
       </div>
     </div>
