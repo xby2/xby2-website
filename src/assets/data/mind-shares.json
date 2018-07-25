@@ -1,5 +1,24 @@
 [
   {
+    "id": "xby2-llc-20th-anniversary",
+    "title": "X by 2 Celebrates Twenty Years",
+    "authorImageUrl": "20th-anniversary.jpg",
+    "shortDescription":
+      "X by 2 recently crossed another significant milestone, our 20th Anniversary as a company. Thank you to all of our team members and clients that made it all possible.",
+    "isFeatured": false,
+    "isPublication": true,
+    "authorName": "Company News",
+    "authorTitle": "Press Release",
+    "industry": "consulting",
+    "publishDate": "07/25/2018",
+    "readTimeInMinutes": 5,
+    "publishUrl": "https://xby2.com/insights/xby2-llc-20th-anniversary",
+    "content":
+      "<p>X by 2 was founded in 1998 by three colleagues who left the traditional consulting ranks with an idea to deliver business technology services following a different set of principles.  Initially focusing on internet-based design and commerce, the firm evolved to focus on the practice of software and data architecture, program and project leadership, and business technology assessments and strategies.</p><p>The X by 2 difference, honed over many years of partnering with clients, is based on creativeness, persistence, and always doing what is in the best interest of its clients.  That difference has set X by 2 apart as an innovative and impactful consulting firm that has consistently delivered value to its clients in the P&C, Life, and Healthcare industries.</p><h2 class=\"text-left\">Reflections</h2><p>Reflecting on the journey, David Packer, X by 2’s President, recalls, “Our aim has always been to enable X by 2’s clients to achieve their strategic and operational business goals.”  A lot has changed in business technology over the past twenty years, but according to Packer “our different approach created the opportunity for X by 2 to serve some of the most forward-thinking insurance and healthcare organizations in North America over the last 20 years. While our day-to-day architecture practice has evolved, our core principles remain the same: objectivity, being results driven, quality over quantity, and creating client self-sufficiency remain the bedrocks of our company.”</p><h2 class=\"text-left\">In Appreciation</h2></hr><p>Accordingly, we would like to sincerely thank our clients and team members over the years on our twentieth anniversary as a software architecture consultancy.  This milestone would not have been possible without the trust and support of our sixty-plus clients who have engaged X by 2 on over two hundred and fifty projects.  Here’s to the next twenty years.</p><img src=\"/assets/mind-share-img/anniversary-image-1.jpg\" style=\"max-width: 80%;\" /><p>Learn more about X by 2 <a href=\"xby2.com/services\">Services, Expertise</a>, and <a href=\"xby2.com/careers\">Careers</a> at <a href=\"xby2.com\">xby2.com</a></p>",
+    "tags": ["publication"],
+    "nextMindShareId": "why-worry-about-business-architecture"
+  },
+  {
     "id": "why-worry-about-business-architecture",
     "title": "Why Worry About Business Architecture?",
     "authorName": "Priyanga Manoharan",
@@ -258,7 +277,8 @@
     "tags": ["insurance", "architecture"],
     "nextMindShareId": "the-key-to-small-project-management-keep-it-simple",
     "nextMindShareTitle":
-      "The Key to (Small) Project Management: Keep it Simple"
+      "The Key to (Small) Project Management: Keep it Simple",
+    "isFeatured": true
   },
   {
     "id": "the-key-to-small-project-management-keep-it-simple",
