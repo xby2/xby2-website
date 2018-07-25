@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs/Observable';
+import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { OpenPosition } from '../model/open-position';
 import { LeverJobPosting } from '../model/lever-job-posting';
@@ -13,9 +13,8 @@ export class OpenPositionService {
   constructor(private httpClient: HttpClient) {}
 
   getOpenPositions(): Observable<OpenPosition[]> {
-    return this.httpClient
-      .get(this.url + '?mode=json')
-      .map((leverJobPostings: LeverJobPosting[]) => {
+    return this.httpClient.get(this.url + '?mode=json').pipe(
+      map((leverJobPostings: LeverJobPosting[]) => {
         return leverJobPostings.map(leverJobPosting => {
           const openPosition: OpenPosition = {
             id: leverJobPosting.id,
@@ -30,13 +29,13 @@ export class OpenPositionService {
 
           return openPosition;
         });
-      });
+      })
+    );
   }
 
   getOpenPosition(id: string): Observable<OpenPosition> {
-    return this.httpClient
-      .get(this.url + '/' + id + '?mode=json')
-      .map((leverJobPosting: LeverJobPosting) => {
+    return this.httpClient.get(this.url + '/' + id + '?mode=json').pipe(
+      map((leverJobPosting: LeverJobPosting) => {
         const openPosition: OpenPosition = {
           id: leverJobPosting.id,
           title: leverJobPosting.text,
@@ -49,7 +48,8 @@ export class OpenPositionService {
         };
 
         return openPosition;
-      });
+      })
+    );
   }
 
   collectOpenPositions(openPositions: OpenPosition[]) {
