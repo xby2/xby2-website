@@ -16,5 +16,4 @@ export class MindShare {
   tags: string[];
   nextMindShareId: string;
   nextMindShareTitle: string;
-  isPublication: boolean;
 }
