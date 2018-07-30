@@ -35,7 +35,8 @@ describe('FeaturedMindShareComponent', () => {
       publishUrl: '',
       tags: [],
       nextMindShareId: '',
-      nextMindShareTitle: ''
+      nextMindShareTitle: '',
+      isPublication: false
     };
 
     fixture.detectChanges();
