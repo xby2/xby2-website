@@ -2,7 +2,11 @@ export const environment = {
   production: true,
   apiUrl: 'https://xby2-website-api-staging.azurewebsites.net',
   googleAnalyticsTrackingId: 'UA-114675726-1',
-
+  assetPrefixes: {
+      clientStories : '',
+      perks : '',
+      companyValues : ''
+  },
   /*
     For local development using the mock API data, set usingLocalData to true.
     This will connect to local JSON files instead of the CMS.

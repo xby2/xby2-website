@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ClientStory } from '../shared/model/client-story';
 import { Title } from '@angular/platform-browser';
+import {environment} from '../../environments/environment';
 
 @Component({
   selector: 'xby2-client-story-detail',
@@ -10,6 +11,7 @@ import { Title } from '@angular/platform-browser';
 })
 export class ClientStoryDetailComponent implements OnInit {
   clientStory: ClientStory;
+  assetPrefix = environment.assetPrefixes.clientStories;
 
   constructor(private route: ActivatedRoute, private title: Title) {}
 

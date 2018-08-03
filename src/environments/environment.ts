@@ -7,7 +7,11 @@ export const environment = {
   production: false,
   apiUrl: 'http://localhost:4300',
   googleAnalyticsTrackingId: '',
-
+  assetPrefixes: {
+      clientStories : './assets/client-story/',
+      perks : './assets/perks/',
+      companyValues: './assets/values/'
+  },
   /*
     For local development using the mock API data, do the following:
     - set usingLocalData to true.
