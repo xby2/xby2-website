@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Perk } from '../../model/perk';
+import {environment} from '../../../../environments/environment';
 
 @Component({
   selector: 'xby2-perks-section',
@@ -8,6 +9,7 @@ import { Perk } from '../../model/perk';
 })
 export class PerksSectionComponent implements OnInit {
   @Input() perks: Perk[];
+  assetPrefix = environment.assetPrefixes.perks;
 
   constructor() { }
 

@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { ClientStory } from '../../model/client-story';
 import { Preconditions } from '../../model/preconditions';
+import { environment } from '../../../../environments/environment';
 
 @Component({
   selector: 'xby2-client-story-listing',
@@ -9,6 +10,7 @@ import { Preconditions } from '../../model/preconditions';
 })
 export class ClientStoryListingComponent implements OnInit {
   @Input() clientStory: ClientStory;
+  assetPrefix = environment.assetPrefixes.clientStories;
 
   constructor() {}
 
