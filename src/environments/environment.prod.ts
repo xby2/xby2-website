@@ -2,6 +2,11 @@ export const environment = {
   production: true,
   apiUrl: 'https://xby2-website-api.azurewebsites.net',
   googleAnalyticsTrackingId: 'UA-114675726-2',
+  assetPrefixes: {
+    clientStories: './assets/client-story/',
+    perks: './assets/perks/',
+    companyValues: './assets/values/'
+  },
 
   /*
     For local development using the mock API data, set usingLocalData to true.
