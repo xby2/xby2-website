@@ -1,0 +1,14 @@
+[
+  {
+    "id": "all",
+    "label": "All"
+  },
+  {
+    "id": "insurance",
+    "label": "Insurance"
+  },
+  {
+    "id": "healthcare",
+    "label": "Healthcare"
+  }
+]
