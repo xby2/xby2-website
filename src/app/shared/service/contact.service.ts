@@ -4,9 +4,8 @@ import {
   HttpHeaders,
   HttpErrorResponse
 } from '@angular/common/http';
-import { Observable } from 'rxjs/Observable';
+import { Observable, throwError } from 'rxjs';
 import { catchError } from 'rxjs/operators';
-import { ErrorObservable } from 'rxjs/observable/ErrorObservable';
 import { environment } from '../../../environments/environment';
 import { ContactMessage } from '../model/contact-message';
 
@@ -39,8 +38,6 @@ export class ContactService {
         `Backend returned code ${error.status}, ` + `body was: ${error.error}`
       );
     }
-    return new ErrorObservable(
-      'Something bad happened; please try again later.'
-    );
+    return throwError('Something bad happened; please try again later.');
   }
 }

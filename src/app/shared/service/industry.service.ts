@@ -1,17 +1,16 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-
 import { Observable } from 'rxjs';
-import { Link } from '../model/link';
+import { Industry } from '../model/industry';
 import { environment } from '../../../environments/environment';
 
 @Injectable()
-export class LinksService {
-  private url = environment.baseCmsUrl + environment.endpoints.links;
+export class IndustryService {
+  private url = environment.baseCmsUrl + environment.endpoints.industries;
 
   constructor(private _httpClient: HttpClient) {}
 
-  getLinks(): Observable<Link[]> {
-    return this._httpClient.get<Array<Link>>(this.url);
+  getIndustries(): Observable<Industry[]> {
+    return this._httpClient.get<Array<Industry>>(this.url);
   }
 }

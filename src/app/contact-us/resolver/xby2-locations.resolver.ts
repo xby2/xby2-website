@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { Xby2Location } from '../../shared/model/xby2-location';
 import { Resolve, ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
 import { Xby2LocationService } from '../../shared/footer/service/xby2-location.service';
-import { Observable } from 'rxjs/Observable';
+import { Observable } from 'rxjs';
 
 @Injectable()
 export class Xby2LocationsResolver implements Resolve<Xby2Location[]> {

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ClientStory } from '../shared/model/client-story';
-import { ButtonGroupItem } from '../shared/model/button-group-item';
+import { Industry } from '../shared/model/industry';
 import { Title } from '@angular/platform-browser';
 
 @Component({
@@ -19,11 +19,7 @@ export class ClientStoriesComponent implements OnInit {
   tabletWidth = 768;
   tabletInitialClientStoryCount = 6;
   mobileInitialClientStoryCount = 3;
-  buttonGroupItems: ButtonGroupItem[] = [
-    { id: 'all', label: 'All' },
-    { id: 'insurance', label: 'Insurance' },
-    { id: 'healthcare', label: 'Healthcare' },
-  ];
+  buttonGroupItems: Industry[];
 
   constructor(private route: ActivatedRoute,
               private title: Title) {
@@ -34,6 +30,7 @@ export class ClientStoriesComponent implements OnInit {
     this.title.setTitle('Client Stories - X by 2');
     this.clientStories = this.route.snapshot.data.clientStories,
     this.filteredClientStories = this.clientStories;
+    this.buttonGroupItems = this.route.snapshot.data.industries;
   }
 
   loadMoreClientStories() {

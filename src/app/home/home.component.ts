@@ -20,7 +20,7 @@ export class HomeComponent implements OnInit {
   featuredMindShare: MindShare;
   featuredOpenPositions: OpenPosition[];
   collectedOpenPositions: CollectedOpenPosition[];
-  heroImageUrl = 'home-page.jpg';
+  heroImageUrl = './assets/home-page.jpg';
 
   constructor(
     private route: ActivatedRoute,

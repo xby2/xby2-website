@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Resolve, ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
-import { Observable } from 'rxjs/Observable';
+import { Observable } from 'rxjs';
 import { MindShare } from '../../shared/model/mind-share';
 import { MindShareService } from '../../shared/service/mind-share.service';
 
@@ -10,7 +10,6 @@ export class FeaturedMindShareResolver implements Resolve<MindShare> {
 
   resolve(route: ActivatedRouteSnapshot, state: RouterStateSnapshot):
       MindShare | Observable<MindShare> | Promise<MindShare> {
-    return this.mindShareService
-               .getMindShare('when-it-comes-to-large-projects-think-architecture-first');
+    return this.mindShareService.getFeaturedMindShare();
   }
 }

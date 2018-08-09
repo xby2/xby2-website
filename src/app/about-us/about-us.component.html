@@ -31,7 +31,7 @@
     </div>
     <div class="row values">
       <div *ngFor="let value of values" class="col-12 col-md-6">
-        <img src="./assets/values/{{ value.iconUrl }}" />
+        <img src="{{assetPrefix}}{{ value.iconUrl }}" />
         <h3>{{ value.title }}</h3>
         <p class="description">{{ value.description }}</p>
       </div>

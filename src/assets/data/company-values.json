@@ -1,17 +1,25 @@
 [
-    {
-        "id": "leadership",
-        "title": "Leadership",
-        "description": "Aspiring to be the best at what we do; there are no excuses. We take responsibility and accountability for the quality and delivery of the projects that we lead."
-    },
-    {
-        "id": "impact",
-        "title": "Impact",
-        "description": "Helping solve complex problems and challenges from strategy through delivery; we are driven by results that have high impact for our clients and their business."
-    },
-    {
-        "id": "honesty",
-        "title": "Honesty",
-        "description": "Earning the trust of our clients and each other by being truthful, objective and doing what we feel is right regardless of how difficult the message or situation may be."
-    }
+  {
+    "iconUrl": "Group.svg",
+    "title": "Objectivity",
+    "description": "Advocating solely for our client’s interests."
+  },
+  {
+    "iconUrl": "Award-Ribbon.svg",
+    "title": "Results Driven",
+    "description":
+      "Delivering strategic value that leads to a growing and sustainable business."
+  },
+  {
+    "iconUrl": "Design.svg",
+    "title": "Quality over Quantity",
+    "description":
+      "Hiring exceptional people to maximize client impact; there is no 'B' team. "
+  },
+  {
+    "iconUrl": "Handshake.svg",
+    "title": "Client Self-Sufficiency",
+    "description":
+      "Enhancing client capability through side-by-side mentoring during engagements."
+  }
 ]
