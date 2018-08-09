@@ -1,10 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { AboutUsComponent } from './about-us.component';
 import { NO_ERRORS_SCHEMA } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
-import { Value } from './model/value';
-import { BehaviorSubject } from 'rxjs/BehaviorSubject';
-import { of } from 'rxjs/Observable/of';
 import { RouterTestingModule } from '@angular/router/testing';
 
 describe('AboutUsComponent', () => {
@@ -13,11 +9,10 @@ describe('AboutUsComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [ RouterTestingModule ],
-      declarations: [ AboutUsComponent ],
+      imports: [RouterTestingModule],
+      declarations: [AboutUsComponent],
       schemas: [NO_ERRORS_SCHEMA]
-    })
-    .compileComponents();
+    }).compileComponents();
   }));
 
   beforeEach(() => {
