@@ -4,13 +4,27 @@ import { SharedModule } from '../shared/shared.module';
 import { InformationalBoxComponent } from './component/informational-box/informational-box.component';
 import { AboutUsComponent } from './about-us.component';
 import { CountUpModule } from 'countup.js-angular2';
-import { CompanyValueService } from './service/company-value.service';
-import { CompanyValuesResolver } from './resolver/company-values.resolver';
+import { ValueComponent } from './component/value/value.component';
+import { ValueService } from './service/value.service';
+import { ValuesResolver } from './resolver/values.resolver';
 
 @NgModule({
-  imports: [CommonModule, SharedModule, CountUpModule],
-  declarations: [InformationalBoxComponent, AboutUsComponent],
-  providers: [CompanyValuesResolver, CompanyValueService],
-  exports: [AboutUsComponent]
+  imports: [
+    CommonModule,
+    SharedModule,
+    CountUpModule
+  ],
+  declarations: [
+    InformationalBoxComponent,
+    AboutUsComponent,
+    ValueComponent
+  ],
+  providers: [
+    ValuesResolver,
+    ValueService
+  ],
+  exports: [
+    AboutUsComponent
+  ]
 })
-export class AboutUsModule {}
+export class AboutUsModule { }
