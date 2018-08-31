@@ -5,7 +5,7 @@ import { Title } from '@angular/platform-browser';
 import {environment} from '../../environments/environment';
 
 @Component({
-  selector: 'xby2-ICEF2018',
+  selector: 'xby2-icef2018',
   templateUrl: './ICEF2018.html',
   styleUrls: ['./media.component.css']
 })
