@@ -1,10 +1,11 @@
 import { Component, OnInit } from '@angular/core';
+import { Route } from '@angular/compiler/src/core';
 import { ActivatedRoute } from '@angular/router';
 import { Title } from '@angular/platform-browser';
 import {environment} from '../../environments/environment';
 
 @Component({
-  selector: 'media/ICEF2018',
+  selector: 'xby2-ICEF2018',
   templateUrl: './ICEF2018.html',
   styleUrls: ['./media.component.css']
 })
