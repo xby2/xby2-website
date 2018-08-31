@@ -1,0 +1,21 @@
+.container-fluid {
+    background-color: #fff;
+}
+
+img {
+    width: 5em;
+    margin: 0 auto 1em auto;
+    display: block;
+}
+
+svg {
+    color: #f89829;
+}
+
+.description {
+    text-align: center;
+}
+
+.row.values {
+    margin: 2em 0;
+}

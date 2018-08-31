@@ -9,6 +9,7 @@ import { OpenPositionResolver } from './careers/resolver/open-position.resolver'
 import { CareerDetailComponent } from './careers/career-detail.component';
 import { FeaturedMindShareResolver } from './home/resolver/featured-mind-share.resolver';
 import { AboutUsComponent } from './about-us/about-us.component';
+import { MediaComponent } from './media/media.component';
 import { ServicesResolver } from './shared/resolver/services.resolver';
 import { ServicesComponent } from './services/services.component';
 import { FeaturedOpenPositionsResolver } from './home/resolver/featured-open-positions.resolver';
@@ -44,6 +45,10 @@ const routes: Routes = [
     resolve: {
       values: CompanyValuesResolver
     }
+  },
+  {
+    path: 'media/ICEF2018',
+    component: MediaComponent
   },
   {
     path: 'services',
