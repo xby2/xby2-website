@@ -24,6 +24,7 @@ export const environment = {
     industries: 'industries',
     links: 'links',
     mindShares: 'mind-shares',
+    media: 'ICEF2018',
     services: 'services'
   }
 };
