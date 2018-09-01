@@ -16,8 +16,10 @@ svg {
 
 .pres-title {
     color: #f89829;
+    text-align: left;
 }
 
 p.presenter-info {
     font: italic bold;
+    margin-bottom: 0;
 }
