@@ -5,13 +5,13 @@ import { Title } from '@angular/platform-browser';
 import {environment} from '../../environments/environment';
 
 @Component({
-  selector: 'xby2-ICEF2018',
+  selector: 'xby2-icef2018',
   templateUrl: './ICEF2018.html',
   styleUrls: ['./media.component.css']
 })
 export class MediaComponent implements OnInit {
-  headerText = 'ICEF 2018';
-  subheaderText = 'Reflecting on the Journey to Successful Enterprise AI Implementations';
+  headerText = '';
+  subheaderText = '';
 
   constructor(private route: ActivatedRoute,
               private title: Title) { }
