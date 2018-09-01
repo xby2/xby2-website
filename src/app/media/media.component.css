@@ -13,3 +13,11 @@ svg {
 .row.values {
     margin: 2em 0;
 }
+
+.pres-title {
+    color: #f89829;
+}
+
+p.presenter-info {
+    font: italic bold;
+}

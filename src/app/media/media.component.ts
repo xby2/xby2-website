@@ -10,8 +10,8 @@ import {environment} from '../../environments/environment';
   styleUrls: ['./media.component.css']
 })
 export class MediaComponent implements OnInit {
-  headerText = 'ICEF 2018';
-  subheaderText = 'Reflecting on the Journey to Successful Enterprise AI Implementations';
+  headerText = '';
+  subheaderText = '';
 
   constructor(private route: ActivatedRoute,
               private title: Title) { }
