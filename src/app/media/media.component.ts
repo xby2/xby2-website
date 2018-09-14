@@ -3,13 +3,15 @@ import { Route } from '@angular/compiler/src/core';
 import { ActivatedRoute } from '@angular/router';
 import { Title } from '@angular/platform-browser';
 import {environment} from '../../environments/environment';
+import { Media } from './model/media';
 
 @Component({
-  selector: 'xby2-icef2018',
-  templateUrl: './ICEF2018.html',
+  selector: 'xby2-media',
+  templateUrl: './media.component.html',
   styleUrls: ['./media.component.css']
 })
 export class MediaComponent implements OnInit {
+  media: Media;
   headerText = '';
   subheaderText = '';
 
@@ -17,6 +19,11 @@ export class MediaComponent implements OnInit {
               private title: Title) { }
 
   ngOnInit() {
-    this.title.setTitle('ICEF 2018');
+    this.route.data.subscribe(data => {
+        this.media = data['media'];
+        if (this.media === null || typeof (this.media) === 'undefined') {
+            throw new Error(`'media' attribute required.`);
+        }
+    });
   }
 }

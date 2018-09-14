@@ -24,6 +24,7 @@ export const environment = {
     industries: 'industries.json',
     links: 'links.json',
     mindShares: 'mind-shares.json',
-    services: 'services.json'
+    services: 'services.json',
+    media: 'media.json'
   }
 };
