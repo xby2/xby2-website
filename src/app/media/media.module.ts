@@ -5,11 +5,10 @@ import { MediaComponent } from './media.component';
 import { CountUpModule } from 'countup.js-angular2';
 import { MediaResolver } from './resolver/media.resolver';
 import { MediaService } from './service/media.service';
-import {NoSanitizePipe} from './NoSanitizePipe';
 
 @NgModule({
   imports: [CommonModule, SharedModule, CountUpModule],
-  declarations: [MediaComponent, NoSanitizePipe],
+  declarations: [MediaComponent],
   providers: [
       MediaService,
       MediaResolver,

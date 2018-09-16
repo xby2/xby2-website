@@ -17,7 +17,9 @@
         <div *ngIf="media.resourceUrl != ''" class="text-center">
           <a class="btn btn-xby2 presentation-download" target="_blank" role="button" href="{{media.resourceUrl}}">Download Presentation</a>
         </div>
-        <div *ngIf="media.webinar != ''" [innerHtml]="media.webinar | noSanitize" class="text-center embedded-webinar"></div>
+        <div *ngIf="media.webinar != ''" class="text-center embedded-webinar">
+          <iframe width="560" height="315" [src]="safeUrl"  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
       </div>
     </div>
 </div>
