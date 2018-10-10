@@ -1,5 +1,5 @@
 <div class="card">
-  <img class="rounded-circle" [src]="'./assets/authors/' + mindShare.authorImageUrl" />
+  <img class="rounded-circle" [src]="assetPrefix + mindShare.authorImageUrl" />
   <h4>{{mindShare.title}}</h4>
   <xby2-author-info [authorName]="mindShare.authorName"
                    [authorTitle]="mindShare.authorTitle"></xby2-author-info>

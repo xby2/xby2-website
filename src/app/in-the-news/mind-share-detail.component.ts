@@ -3,6 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 import { MindShare } from '../shared/model/mind-share';
 import { Title } from '@angular/platform-browser';
 import { Preconditions } from '../shared/model/preconditions';
+import {environment} from '../../environments/environment';
 
 @Component({
   selector: 'xby2-mind-share-detail',
@@ -11,6 +12,7 @@ import { Preconditions } from '../shared/model/preconditions';
 })
 export class MindShareDetailComponent implements OnInit {
   mindShare: MindShare;
+  assetPrefix = environment.assetPrefixes.authors;
 
   constructor(private route: ActivatedRoute, private title: Title) {}
 

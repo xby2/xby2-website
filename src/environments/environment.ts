@@ -10,7 +10,8 @@ export const environment = {
   assetPrefixes: {
       clientStories : './assets/client-story/',
       perks : './assets/perks/',
-      companyValues: './assets/values/'
+      companyValues: './assets/values/',
+      authors: './assets/authors/'
   },
   /*
     For local development using the mock API data, do the following:
