@@ -15,10 +15,12 @@
           <span>{{mindShare.publishDate | date: 'shortDate'}}</span>
         </div>
         <div class="publish-info">
-          Originally Published By
-          <a [href]="mindShare.publishUrl" target="_blank">
-            {{mindShare.publishName}}
-          </a>
+          <span *ngIf="!mindShare.isPublication">Originally Published By
+            <a [href]="mindShare.publishUrl" target="_blank">
+              {{mindShare.publishName}}
+            </a>
+          </span>
+          <span *ngIf="mindShare.isPublication">{{mindShare.authorTitle}}</span>
         </div>
       </div>
     </div>
