@@ -22,7 +22,7 @@
         </button>
     </div>
     <div class="col-3 d-none d-md-block">
-      <img [src]="'./assets/authors/' + featuredMindShare.authorImageUrl" />
+      <img [src]="assetPrefix + featuredMindShare.authorImageUrl" />
       <xby2-author-info [authorName]="featuredMindShare.authorName"
                          [authorTitle]="featuredMindShare.authorTitle" >
       </xby2-author-info>

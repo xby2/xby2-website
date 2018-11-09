@@ -7,7 +7,7 @@ import { map } from 'rxjs/operators';
 
 @Injectable()
 export class MediaService {
-    private url = environment.baseCmsUrl + environment.endpoints.media;
+    private url = '../assets/data/media.json';
 
     constructor(private httpClient: HttpClient) {}
 
@@ -16,15 +16,11 @@ export class MediaService {
     }
 
     getMedia(id: string): Observable<Media> {
-        if (environment.usingLocalData) {
-            return this.getMediaItems().pipe(
-                map(
-                    mediaItems =>
-                        mediaItems.filter(media => media.id === id)[0]
-                )
-            );
-        }
-
-        return this.httpClient.get<Media>(this.url + '/' + id);
+        return this.getMediaItems().pipe(
+            map(
+                mediaItems =>
+                    mediaItems.filter(media => media.id === id)[0]
+            )
+        );
     }
 }
