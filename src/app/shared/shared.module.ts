@@ -23,6 +23,8 @@ import { ContactService } from './service/contact.service';
 import { ServicesResolver } from './resolver/services.resolver';
 import { ServiceService } from './service/service.service';
 import { IndustryService } from './service/industry.service';
+import { RequestCache } from '../caching/request-cache.service';
+import { MessageService } from '../caching/message.service';
 
 @NgModule({
   imports: [CommonModule, AppRoutingModule],
@@ -49,7 +51,9 @@ import { IndustryService } from './service/industry.service';
     ContactService,
     ServicesResolver,
     ServiceService,
-    IndustryService
+    IndustryService,
+    RequestCache,
+    MessageService
   ],
   exports: [
     ClientStoryListingComponent,
