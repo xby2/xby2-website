@@ -19,6 +19,13 @@ import { CareersModule } from './careers/careers.module';
 import { ContactUsModule } from './contact-us/contact-us.module';
 import { CoreModule } from './core/core.module';
 
+import {HTTP_INTERCEPTORS} from '@angular/common/http';
+import {CachingInterceptor} from './caching/caching-interceptor';
+
+/** Http interceptor providers  */
+export const httpInterceptorProviders = [
+    { provide: HTTP_INTERCEPTORS, useClass: CachingInterceptor, multi: true },
+];
 @NgModule({
   declarations: [AppComponent],
   imports: [
@@ -35,6 +42,9 @@ import { CoreModule } from './core/core.module';
     CareersModule,
     ContactUsModule,
     CoreModule
+  ],
+  providers: [
+      httpInterceptorProviders
   ],
   bootstrap: [AppComponent]
 })
