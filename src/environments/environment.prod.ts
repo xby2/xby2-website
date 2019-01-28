@@ -3,9 +3,9 @@ export const environment = {
   apiUrl: 'https://xby2-website-api.azurewebsites.net',
   googleAnalyticsTrackingId: 'UA-114675726-2',
   assetPrefixes: {
-    clientStories : '',
-    perks : '',
-    companyValues : '',
+    clientStories: '',
+    perks: '',
+    companyValues: '',
     authors: ''
   },
   /*
@@ -14,7 +14,7 @@ export const environment = {
   */
   usingLocalData: false,
   baseCmsUrl:
-    'https://xby2-website-cms.azurewebsites.net/wp-json/xby2/v1/',
+    'https://xby2-website-cms-linux-prod.azurewebsites.net/wp-json/xby2/v1/',
   endpoints: {
     companyValues: 'company-values',
     frequentlyAskedQuestions: 'frequently-asked-questions',
