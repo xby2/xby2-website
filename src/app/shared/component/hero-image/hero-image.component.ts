@@ -8,10 +8,12 @@ import { Preconditions } from '../../model/preconditions';
 })
 export class HeroImageComponent implements OnInit {
   @Input() imageUrl: string;
+  @Input() text: string;
 
-  constructor() {}
+  constructor() { }
 
   ngOnInit() {
     Preconditions.IsNotUndefinedOrNull('imageUrl', this.imageUrl);
+    Preconditions.IsNotUndefinedOrNull('text', this.imageUrl);
   }
 }

@@ -9,7 +9,7 @@ export const environment = {
     authors: ''
   },
   locationSpecificContent: {
-    homepageHeader: 'We are Architects for the<br /> Insurance & Healthcare Industries'
+    homepageHeader: 'We are Architects for the<br /> Insurance & Retail Industries'
   },
   /*
     For local development using the mock API data, set usingLocalData to true.

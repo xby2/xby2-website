@@ -8,10 +8,13 @@ export const environment = {
   apiUrl: 'http://localhost:4300',
   googleAnalyticsTrackingId: '',
   assetPrefixes: {
-      clientStories : './assets/client-story/',
-      perks : './assets/perks/',
-      companyValues: './assets/values/',
-      authors: './assets/authors/'
+    clientStories: './assets/client-story/',
+    perks: './assets/perks/',
+    companyValues: './assets/values/',
+    authors: './assets/authors/'
+  },
+  locationSpecificContent: {
+    homepageHeader: 'We are Architects for the<br /> Insurance & Healthcare Industries'
   },
   /*
     For local development using the mock API data, do the following:

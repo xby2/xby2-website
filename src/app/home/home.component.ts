@@ -8,6 +8,7 @@ import { CollectedOpenPosition } from '../shared/model/collected-open-position';
 import { OpenPositionService } from '../shared/service/open-position.service';
 import { Title } from '@angular/platform-browser';
 import { Preconditions } from '../shared/model/preconditions';
+import { environment } from '../../environments/environment';
 
 @Component({
   selector: 'xby2-home',
@@ -21,12 +22,13 @@ export class HomeComponent implements OnInit {
   featuredOpenPositions: OpenPosition[];
   collectedOpenPositions: CollectedOpenPosition[];
   heroImageUrl = './assets/home-page.jpg';
+  locationSpecificHeaderText = environment.locationSpecificContent.homepageHeader;
 
   constructor(
     private route: ActivatedRoute,
     private openPositionService: OpenPositionService,
     private title: Title
-  ) {}
+  ) { }
 
   ngOnInit() {
     this.title.setTitle('X by 2');

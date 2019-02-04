@@ -1,21 +1,16 @@
-<xby2-hero-image [imageUrl]="heroImageUrl">
-  We are Architects for the<br />
-  Insurance & Healthcare Industries
+<xby2-hero-image [imageUrl]="heroImageUrl" [text]="locationSpecificHeaderText">
 </xby2-hero-image>
 <div class="container">
   <div class="row">
     <div class="col">
       <h1>Services</h1>
       <div class="row">
-        <xby2-home-service-card *ngFor="let service of services"
-                             class="col-12 col-md-6 col-lg-4"
-                            [service]="service">
+        <xby2-home-service-card *ngFor="let service of services" class="col-12 col-md-6 col-lg-4" [service]="service">
         </xby2-home-service-card>
       </div>
       <div class="row">
         <div class="col">
-          <button class="btn btn-xby2 btn-xby2-light"
-                 [routerLink]="'services'">
+          <button class="btn btn-xby2 btn-xby2-light" [routerLink]="'services'">
             See All Services
           </button>
         </div>
