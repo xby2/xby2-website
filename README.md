@@ -1,4 +1,4 @@
-# X by 2 Website
+# X by 2 Website | [![Build status](https://dev.azure.com/xby2/website/_apis/build/status/website-CI)](https://dev.azure.com/xby2/website/_build/latest?definitionId=11)
 
 ## Getting Started
 
