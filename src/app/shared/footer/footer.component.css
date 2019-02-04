@@ -2,12 +2,18 @@
     text-align: center;
 }
 
+/* for svg/img mix in social media icons to match Font Awesome */
+img {
+  vertical-align: -.125em;
+}
+/*end*/
+
 .container-fluid {
     background-color: #363636;
 }
 
 .container {
-    padding: 1em;
+    padding: 1.5rem;
 }
 
 p {
@@ -18,20 +24,20 @@ p {
 a {
     color: #fff;
     font-weight: bold;
-    font-size: 1.1em;
+    font-size: 1.1rem;
 }
 
 .socialMedia {
-    margin-bottom: 1em;
+    margin-bottom: 1rem;
 }
 
 .socialMedia a {
-    margin: 0 0.5em;
+    margin: 0 0.5rem;
     text-decoration: none;
 }
 
 .copyright {
-    font-size: 0.9em;
+    font-size: 0.9rem;
 }
 
 @media (min-width: 768px) {

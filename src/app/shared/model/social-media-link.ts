@@ -1,4 +1,5 @@
 export interface SocialMediaLink {
-    icon: string;
-    link: string;
+  icon: string;
+  link: string;
+  image: string;
 }
