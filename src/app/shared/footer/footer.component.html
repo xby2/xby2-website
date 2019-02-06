@@ -1,13 +1,13 @@
 <div class="container-fluid">
   <div class="container">
     <div class="row">
-      <div class="col-12 col-md-4 socialMedia">
+      <div class="col-12 col-md-5 col-lg-4 socialMedia">
         <a *ngFor="let socialMediaLink of socialMediaLinks" href="{{socialMediaLink.link}}" target="_blank">
           <i *ngIf="socialMediaLink.icon" class="{{socialMediaLink.icon}}"></i>
           <img *ngIf="socialMediaLink.image" [src]="socialMediaLink.image">
         </a>
       </div>
-      <div class="col-12 col-md-4">
+      <div class="col-12 col-md-3 col-lg-4">
         <a href="https://www.entrepreneur.com/top-company-culture" target="_blank">
           <img src="./assets/top-culture-badge.png">
         </a>
