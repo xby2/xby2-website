@@ -8,7 +8,6 @@ import { CollectedOpenPosition } from '../shared/model/collected-open-position';
 import { OpenPositionService } from '../shared/service/open-position.service';
 import { Title } from '@angular/platform-browser';
 import { Preconditions } from '../shared/model/preconditions';
-import { environment } from '../../environments/environment';
 import { Client } from './client';
 
 @Component({
@@ -24,7 +23,6 @@ export class HomeComponent implements OnInit {
   collectedOpenPositions: CollectedOpenPosition[];
   clients: Client[];
   heroImageUrl = './assets/home-page.jpg';
-  locationSpecificHeaderText = environment.locationSpecificContent.homepageHeader;
 
   constructor(
     private route: ActivatedRoute,
@@ -53,8 +51,6 @@ export class HomeComponent implements OnInit {
       'clients',
       this.clients
     );
-
-    console.log(this.clients);
 
     if (this.featuredOpenPositions !== null) {
       this.collectedOpenPositions = this.openPositionService.collectOpenPositions(

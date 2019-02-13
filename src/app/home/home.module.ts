@@ -8,6 +8,7 @@ import { FeaturedClientStoriesComponent } from './component/featured-client-stor
 import { HomeCareersComponent } from './component/home-careers/home-careers.component';
 import { FeaturedOpenPositionsResolver } from './resolver/featured-open-positions.resolver';
 import { FeaturedClientStoriesResolver } from './resolver/featured-client-stories.resolver';
+import { HomeHeaderComponent } from './component/home-header/home-header.component';
 
 @NgModule({
   imports: [
@@ -19,6 +20,7 @@ import { FeaturedClientStoriesResolver } from './resolver/featured-client-storie
     FeaturedMindShareComponent,
     FeaturedClientStoriesComponent,
     HomeCareersComponent,
+    HomeHeaderComponent,
   ],
   providers: [
     FeaturedMindShareResolver,
