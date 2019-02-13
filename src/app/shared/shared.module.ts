@@ -11,7 +11,6 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { ModalComponent } from './navbar/component/modal/modal.component';
 import { SocialMediaLinkService } from './footer/service/social-media-link.service';
 import { Xby2LocationService } from './footer/service/xby2-location.service';
-import { FormsModule } from '@angular/forms';
 import { LogoComponent } from './component/logo/logo.component';
 import { OpenPositionService } from './service/open-position.service';
 import { ButtonGroupComponent } from './component/button-group/button-group.component';
@@ -25,6 +24,7 @@ import { ServiceService } from './service/service.service';
 import { IndustryService } from './service/industry.service';
 import { RequestCache } from '../caching/request-cache.service';
 import { MessageService } from '../caching/message.service';
+import { ServiceCardComponent } from './service-card/service-card.component';
 
 @NgModule({
   imports: [CommonModule, AppRoutingModule],
@@ -40,7 +40,8 @@ import { MessageService } from '../caching/message.service';
     LogoComponent,
     HeroImageComponent,
     AuthorInfoComponent,
-    OpenPositionCardComponent
+    OpenPositionCardComponent,
+    ServiceCardComponent
   ],
   providers: [
     LinksService,
@@ -67,7 +68,8 @@ import { MessageService } from '../caching/message.service';
     LogoComponent,
     HeroImageComponent,
     AuthorInfoComponent,
-    OpenPositionCardComponent
+    OpenPositionCardComponent,
+    ServiceCardComponent
   ]
 })
-export class SharedModule {}
+export class SharedModule { }

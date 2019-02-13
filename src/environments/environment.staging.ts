@@ -9,7 +9,7 @@ export const environment = {
     authors: ''
   },
   locationSpecificContent: {
-    homepageHeader: 'We are Architects for the<br /> Insurance & Healthcare Industries'
+    homepageHeader: 'STRATEGY - ARCHITECTURE - EXECUTION<br>Transforming business through technology.'
   },
   /*
     For local development using the mock API data, set usingLocalData to true.
@@ -17,7 +17,7 @@ export const environment = {
   */
   usingLocalData: false,
   baseCmsUrl:
-    'https://xby2-website-cms-staging.azurewebsites.net/wp-json/xby2/v1/',
+    'https://xby2-website-cms-linux-prod.azurewebsites.net/wp-json/xby2/v1/',
   endpoints: {
     companyValues: 'company-values',
     frequentlyAskedQuestions: 'frequently-asked-questions',

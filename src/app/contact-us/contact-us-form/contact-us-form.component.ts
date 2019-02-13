@@ -2,7 +2,7 @@ import { Component, OnInit, Inject } from '@angular/core';
 import { NgForm, FormBuilder, FormGroup } from '@angular/forms';
 import { ContactMessage } from '../../shared/model/contact-message';
 import { ContactService } from '../../shared/service/contact.service';
-import { Toastr, TOASTR_TOKEN } from '../../core/service/toastr.service';
+import { Toastr, TOASTR_TOKEN } from '../../core/toastr.service';
 
 @Component({
   selector: 'xby2-contact-us-form',
@@ -18,7 +18,7 @@ export class ContactUsFormComponent implements OnInit {
     private contactService: ContactService,
     private formBuilder: FormBuilder,
     @Inject(TOASTR_TOKEN) private toastr: Toastr
-  ) {}
+  ) { }
 
   ngOnInit() {
     this.contactForm = this.formBuilder.group({

@@ -1,6 +1,6 @@
 import { NgModule, Optional, SkipSelf } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { TOASTR_TOKEN, Toastr } from './service/toastr.service';
+import { TOASTR_TOKEN, Toastr } from './toastr.service';
 
 const toastr: Toastr = window['toastr'];
 

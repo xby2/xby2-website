@@ -5,7 +5,6 @@ import { FeaturedMindShareComponent } from './component/featured-mind-share/feat
 import { FeaturedMindShareResolver } from './resolver/featured-mind-share.resolver';
 import { SharedModule } from '../shared/shared.module';
 import { FeaturedClientStoriesComponent } from './component/featured-client-stories/featured-client-stories.component';
-import { HomeServiceCardComponent } from './component/home-service-card/home-service-card.component';
 import { HomeCareersComponent } from './component/home-careers/home-careers.component';
 import { FeaturedOpenPositionsResolver } from './resolver/featured-open-positions.resolver';
 import { FeaturedClientStoriesResolver } from './resolver/featured-client-stories.resolver';
@@ -17,10 +16,9 @@ import { FeaturedClientStoriesResolver } from './resolver/featured-client-storie
   ],
   declarations: [
     HomeComponent,
-    HomeServiceCardComponent,
     FeaturedMindShareComponent,
     FeaturedClientStoriesComponent,
-    HomeCareersComponent
+    HomeCareersComponent,
   ],
   providers: [
     FeaturedMindShareResolver,

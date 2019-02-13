@@ -11,7 +11,6 @@ import { FeaturedMindShareResolver } from './home/resolver/featured-mind-share.r
 import { AboutUsComponent } from './about-us/about-us.component';
 import { MediaComponent } from './media/media.component';
 import { ServicesResolver } from './shared/resolver/services.resolver';
-import { ServicesComponent } from './services/services.component';
 import { FeaturedOpenPositionsResolver } from './home/resolver/featured-open-positions.resolver';
 import { FeaturedClientStoriesResolver } from './home/resolver/featured-client-stories.resolver';
 import { ClientStoriesResolver } from './client-stories/resolver/client-stories.resolver.';
@@ -21,13 +20,14 @@ import { ClientStoriesComponent } from './client-stories/client-stories.componen
 import { MindShareDetailComponent } from './in-the-news/mind-share-detail.component';
 import { InTheNewsComponent } from './in-the-news/in-the-news.component';
 import { MindSharesResolver } from './in-the-news/resolver/mind-shares.resolver';
-import { IndustryResolver} from './shared/resolver/industry.resolver';
+import { IndustryResolver } from './shared/resolver/industry.resolver';
 import { MindShareResolver } from './in-the-news/resolver/mind-share.resolver';
 import { PerksResolver } from './careers/resolver/perks.resolver';
 import { FrequentlyAskedQuestionsResolver } from './careers/resolver/frequently-asked-questions.resolver';
 import { CompanyValuesResolver } from './about-us/resolver/company-values.resolver';
 import { Xby2LocationsResolver } from './contact-us/resolver/xby2-locations.resolver';
 import { MediaResolver } from './media/resolver/media.resolver';
+import { ClientsResolver } from './home/resolver/clients.resolver';
 
 const routes: Routes = [
   {
@@ -37,7 +37,8 @@ const routes: Routes = [
       services: ServicesResolver,
       featuredClientStories: FeaturedClientStoriesResolver,
       featuredMindShare: FeaturedMindShareResolver,
-      featuredOpenPositions: FeaturedOpenPositionsResolver
+      featuredOpenPositions: FeaturedOpenPositionsResolver,
+      clients: ClientsResolver
     }
   },
   {
@@ -55,16 +56,10 @@ const routes: Routes = [
     }
   },
   {
-    path: 'services',
-    component: ServicesComponent,
-    resolve: {
-      services: ServicesResolver
-    }
-  },
-  {
     path: 'client-stories',
     component: ClientStoriesComponent,
-    resolve: {clientStories: ClientStoriesResolver, industries: IndustryResolver} },
+    resolve: { clientStories: ClientStoriesResolver, industries: IndustryResolver }
+  },
   {
     path: 'client-stories/:id',
     component: ClientStoryDetailComponent,

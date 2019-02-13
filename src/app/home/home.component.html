@@ -3,21 +3,21 @@
 <div class="container">
   <div class="row">
     <div class="col">
-      <h1>Services</h1>
+      <h1>Creating Impact From Start To Finish</h1>
       <div class="row">
-        <xby2-home-service-card *ngFor="let service of services" class="col-12 col-md-6 col-lg-4" [service]="service">
-        </xby2-home-service-card>
-      </div>
-      <div class="row">
-        <div class="col">
-          <button class="btn btn-xby2 btn-xby2-light" [routerLink]="'services'">
-            See All Services
-          </button>
-        </div>
+        <xby2-service-card *ngFor="let service of services" class="col-12 col-md-6 col-lg-4" [service]="service">
+        </xby2-service-card>
       </div>
     </div>
   </div>
 </div>
+<!-- In Progress, images need editing <div class="container">
+  <div class="row">
+    <h1 class="col-12">Diverse Client Partners</h1>
+    <img *ngFor="let client of clients" class="col-12 col-sm-4 col-lg-3 client"
+      [src]="'./assets/clients/' + client.imageUrl" [alt]="client.alt">
+  </div>
+</div>-->
 <xby2-featured-client-stories [featuredClientStories]="featuredClientStories">
 </xby2-featured-client-stories>
 <xby2-featured-mind-share [featuredMindShare]="featuredMindShare">

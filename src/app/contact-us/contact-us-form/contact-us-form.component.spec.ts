@@ -3,7 +3,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { ContactUsFormComponent } from './contact-us-form.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ContactService } from '../../shared/service/contact.service';
-import { TOASTR_TOKEN } from '../../core/service/toastr.service';
+import { TOASTR_TOKEN } from '../../core/toastr.service';
 
 describe('ContactUsFormComponent', () => {
   let component: ContactUsFormComponent;

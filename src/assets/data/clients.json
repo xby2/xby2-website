@@ -1,0 +1,50 @@
+[
+  {
+    "alt": "AETNA",
+    "imageUrl": "aetna.png"
+  },
+  {
+    "alt": "Amerisure",
+    "imageUrl": "amerisure.jpg"
+  },
+  {
+    "alt": "Auto Owner's Insurance",
+    "imageUrl": "auto-owners.jpg"
+  },
+  {
+    "alt": "CIGNA",
+    "imageUrl": "cigna.jpg"
+  },
+  {
+    "alt": "Domino's",
+    "imageUrl": "dominos.png"
+  },
+  {
+    "alt": "Farm Bureau Insurance",
+    "imageUrl": "farm-bureau-insurance.png"
+  },
+  {
+    "alt": "Farmers Insurance",
+    "imageUrl": "farmers.jpg"
+  },
+  {
+    "alt": "iHeartMEDIA",
+    "imageUrl": "iheartmedia.jpg"
+  },
+  {
+    "alt": "NASCO",
+    "imageUrl": "nasco.png"
+  },
+  {
+    "alt": "National Life",
+    "imageUrl": "national-life.jpg"
+  },
+  {
+    "alt": "OfficeMax",
+    "imageUrl": "officemax.png"
+  },
+  {
+    "alt": "Pan American Life",
+    "imageUrl": "pan-american-life.jpg"
+  }
+]

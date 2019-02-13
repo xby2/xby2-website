@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Service } from '../../../shared/model/service';
-import { Preconditions } from '../../../shared/model/preconditions';
+import { Service } from '../model/service';
+import { Preconditions } from '../model/preconditions';
 
 @Component({
   selector: 'xby2-service-card',
@@ -9,10 +9,8 @@ import { Preconditions } from '../../../shared/model/preconditions';
 })
 export class ServiceCardComponent implements OnInit {
   @Input() service: Service;
-  @Input() isFirst;
-  @Input() isLast;
 
-  constructor() {}
+  constructor() { }
 
   ngOnInit() {
     Preconditions.IsNotUndefinedOrNull('service', this.service);
