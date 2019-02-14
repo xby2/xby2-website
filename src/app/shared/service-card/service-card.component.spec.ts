@@ -1,7 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { ServiceCardComponent } from './service-card.component';
 import { NO_ERRORS_SCHEMA } from '@angular/core';
-import { Service } from '../../../shared/model/service';
+import { Service } from '../model/service';
 
 describe('ServiceCardComponent', () => {
   let component: ServiceCardComponent;

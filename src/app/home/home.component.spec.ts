@@ -15,12 +15,13 @@ describe('HomeComponent', () => {
         data: {
           services: [],
           featuredClientStories: [],
-          featuredMindShare: {}
+          featuredMindShare: {},
+          clients: []
         }
       }
     };
     const mockOpenPositionService = {
-      collectOpenPositions() {}
+      collectOpenPositions() { }
     };
 
     TestBed.configureTestingModule({
