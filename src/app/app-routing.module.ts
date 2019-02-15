@@ -45,10 +45,12 @@ const routes: Routes = [
       values: CompanyValuesResolver
     }
   },
+  /* removing for v1.1.0 release
   {
     path: 'media/ICTC2019',
     component: MediaComponent,
   },
+  */
   {
     path: 'client-stories',
     component: ClientStoriesComponent,
