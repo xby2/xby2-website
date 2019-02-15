@@ -1,0 +1,21 @@
+.container-fluid {
+  background-color: #fff;
+}
+
+h1 {
+  margin-bottom: 0.25rem;
+}
+
+h2 {
+  font-size: 1.25rem;
+  color: #000;
+  margin-bottom: 1rem;
+}
+
+img {
+  padding-left: 0;
+  padding-right: 0;
+  height: 100%;
+  width: 100%;
+  margin-bottom: 1rem;
+}

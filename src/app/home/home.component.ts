@@ -8,7 +8,6 @@ import { CollectedOpenPosition } from '../shared/model/collected-open-position';
 import { OpenPositionService } from '../shared/service/open-position.service';
 import { Title } from '@angular/platform-browser';
 import { Preconditions } from '../shared/model/preconditions';
-import { Client } from './client';
 
 @Component({
   selector: 'xby2-home',
@@ -21,7 +20,6 @@ export class HomeComponent implements OnInit {
   featuredMindShare: MindShare;
   featuredOpenPositions: OpenPosition[];
   collectedOpenPositions: CollectedOpenPosition[];
-  clients: Client[];
   heroImageUrl = './assets/home-page.jpg';
 
   constructor(
@@ -36,7 +34,6 @@ export class HomeComponent implements OnInit {
     this.featuredClientStories = this.route.snapshot.data.featuredClientStories;
     this.featuredMindShare = this.route.snapshot.data.featuredMindShare;
     this.featuredOpenPositions = this.route.snapshot.data.featuredOpenPositions;
-    this.clients = this.route.snapshot.data.clients;
 
     Preconditions.IsNotUndefinedOrNull('services', this.services);
     Preconditions.IsNotUndefinedOrNull(
@@ -46,10 +43,6 @@ export class HomeComponent implements OnInit {
     Preconditions.IsNotUndefinedOrNull(
       'featuredMindShare',
       this.featuredMindShare
-    );
-    Preconditions.IsNotUndefinedOrNull(
-      'clients',
-      this.clients
     );
 
     if (this.featuredOpenPositions !== null) {

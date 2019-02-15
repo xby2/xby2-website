@@ -27,7 +27,6 @@ import { FrequentlyAskedQuestionsResolver } from './careers/resolver/frequently-
 import { CompanyValuesResolver } from './about-us/resolver/company-values.resolver';
 import { Xby2LocationsResolver } from './contact-us/resolver/xby2-locations.resolver';
 import { MediaResolver } from './media/resolver/media.resolver';
-import { ClientsResolver } from './home/resolver/clients.resolver';
 
 const routes: Routes = [
   {
@@ -37,8 +36,7 @@ const routes: Routes = [
       services: ServicesResolver,
       featuredClientStories: FeaturedClientStoriesResolver,
       featuredMindShare: FeaturedMindShareResolver,
-      featuredOpenPositions: FeaturedOpenPositionsResolver,
-      clients: ClientsResolver
+      featuredOpenPositions: FeaturedOpenPositionsResolver
     }
   },
   {

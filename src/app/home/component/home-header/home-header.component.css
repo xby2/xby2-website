@@ -52,7 +52,7 @@ h2 {
 
 @media (min-width: 768px) {
   .container {
-    background-image: url('../../../../assets/home-header/991px.jpg');
+    background-image: url('../../../../assets/home-header/large.jpg');
   }
 
   .row {
@@ -61,10 +61,6 @@ h2 {
 }
 
 @media (min-width: 992px) {
-  .container {
-    background-image: url('../../../../assets/home-header/1199px.jpg');
-  }
-
   h2 {
     font-size: 2.4em;
     line-height: 1;
@@ -72,10 +68,6 @@ h2 {
 }
 
 @media (min-width: 1200px) {
-  .container {
-    background-image: url('../../../../assets/home-header/large.jpg');
-  }
-
   h2 {
     font-size: 3em;
   }
