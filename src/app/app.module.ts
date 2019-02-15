@@ -17,13 +17,14 @@ import { CoreModule } from './core/core.module';
 
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
 import { CachingInterceptor } from './caching/caching-interceptor';
+import { MediaComponent } from './media/media.component';
 
 /** Http interceptor providers  */
 export const httpInterceptorProviders = [
   { provide: HTTP_INTERCEPTORS, useClass: CachingInterceptor, multi: true },
 ];
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, MediaComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
