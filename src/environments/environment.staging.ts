@@ -1,7 +1,11 @@
 export const environment = {
   production: true,
-  apiUrl: 'https://xby2-website-api-staging.azurewebsites.net',
   googleAnalyticsTrackingId: 'UA-114675726-1',
+  emailSubmissionApi: {
+    url: 'https://api.mailjet.com/v3.1/send',
+    username: '41e75d55b595aac2579b85bf16e5cc36',
+    password: 'a5aab43cbf94ca42cf9c2bfadd813bc7'
+  },
   assetPrefixes: {
     clientStories: '',
     perks: '',

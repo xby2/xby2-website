@@ -5,8 +5,12 @@
 
 export const environment = {
   production: false,
-  apiUrl: 'http://localhost:4300',
   googleAnalyticsTrackingId: '',
+  emailSubmissionApi: {
+    url: 'https://api.mailjet.com/v3.1/send',
+    username: '41e75d55b595aac2579b85bf16e5cc36',
+    password: 'a5aab43cbf94ca42cf9c2bfadd813bc7'
+  },
   assetPrefixes: {
     clientStories: './assets/client-story/',
     perks: './assets/perks/',

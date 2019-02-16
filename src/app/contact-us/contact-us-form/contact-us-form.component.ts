@@ -61,7 +61,7 @@ export class ContactUsFormComponent implements OnInit {
   private handleFailure() {
     this.submitDisabled = false;
     this.toastr.error(
-      'We\'re having an issue, please email us at web@xby2.com.'
+      'Sorry, we\'re having an issue.'
     );
   }
 }
