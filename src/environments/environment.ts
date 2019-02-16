@@ -13,9 +13,6 @@ export const environment = {
     companyValues: './assets/values/',
     authors: './assets/authors/'
   },
-  locationSpecificContent: {
-    homepageHeader: 'STRATEGY - ARCHITECTURE - EXECUTION<br>Transforming business through technology.'
-  },
   /*
     For local development using the mock API data, do the following:
     - set usingLocalData to true.
@@ -34,7 +31,6 @@ export const environment = {
     industries: 'industries.json',
     links: 'links.json',
     mindShares: 'mind-shares.json',
-    services: 'services.json',
-    media: 'media.json'
+    services: 'services.json'
   }
 };

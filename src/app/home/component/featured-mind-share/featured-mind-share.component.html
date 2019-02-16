@@ -6,36 +6,30 @@
   </div>
   <div class="row">
     <div class="col d-md-none">
-        <img [src]="'./assets/authors/' + featuredMindShare.authorImageUrl" />
-        <h4>{{featuredMindShare.title}}</h4>
-        <xby2-author-info [authorName]="featuredMindShare.authorName"
-                         [authorTitle]="featuredMindShare.authorTitle" >
-        </xby2-author-info>
-        <p>{{featuredMindShare.shortDescription}}</p>
-        <button class="btn btn-xby2"
-                [routerLink]="['insights', featuredMindShare.id]">
-          Read More
-        </button>
-        <button class="btn btn-xby2 btn-xby2-light"
-              [routerLink]="'insights'">
-          See All Articles
-        </button>
+      <img [src]="assetPrefix + featuredMindShare.authorImageUrl" />
+      <h4>{{featuredMindShare.title}}</h4>
+      <xby2-author-info [authorName]="featuredMindShare.authorName" [authorTitle]="featuredMindShare.authorTitle">
+      </xby2-author-info>
+      <p>{{featuredMindShare.shortDescription}}</p>
+      <button class="btn btn-xby2" [routerLink]="['insights', featuredMindShare.id]">
+        Read More
+      </button>
+      <button class="btn btn-xby2 btn-xby2-light" [routerLink]="'insights'">
+        See All Articles
+      </button>
     </div>
     <div class="col-3 d-none d-md-block">
       <img [src]="assetPrefix + featuredMindShare.authorImageUrl" />
-      <xby2-author-info [authorName]="featuredMindShare.authorName"
-                         [authorTitle]="featuredMindShare.authorTitle" >
+      <xby2-author-info [authorName]="featuredMindShare.authorName" [authorTitle]="featuredMindShare.authorTitle">
       </xby2-author-info>
     </div>
     <div class="col-9 d-none d-md-block text-center">
       <h4>{{featuredMindShare.title}}</h4>
       <p>{{featuredMindShare.shortDescription}}</p>
-      <button class="btn btn-xby2"
-             [routerLink]="['insights', featuredMindShare.id]">
+      <button class="btn btn-xby2" [routerLink]="['insights', featuredMindShare.id]">
         Read More
       </button>
-      <button class="btn btn-xby2 btn-xby2-light"
-              [routerLink]="'insights'">
+      <button class="btn btn-xby2 btn-xby2-light" [routerLink]="'insights'">
         See All Articles
       </button>
     </div>

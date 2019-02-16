@@ -8,9 +8,6 @@ export const environment = {
     companyValues: '',
     authors: ''
   },
-  locationSpecificContent: {
-    homepageHeader: 'STRATEGY - ARCHITECTURE - EXECUTION<br>Transforming business through technology.'
-  },
   /*
     For local development using the mock API data, set usingLocalData to true.
     This will connect to local JSON files instead of the CMS.
@@ -28,7 +25,6 @@ export const environment = {
     industries: 'industries',
     links: 'links',
     mindShares: 'mind-shares',
-    services: 'services',
-    media: 'media.json'
+    services: 'services'
   }
 };
