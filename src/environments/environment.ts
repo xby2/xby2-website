@@ -5,6 +5,7 @@
 
 export const environment = {
   production: false,
+  apiUrl: '',
   googleAnalyticsTrackingId: '',
   assetPrefixes: {
     clientStories: './assets/client-story/',

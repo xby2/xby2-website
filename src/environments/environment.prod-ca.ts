@@ -1,5 +1,6 @@
 export const environment = {
   production: true,
+  apiUrl: '',
   googleAnalyticsTrackingId: 'UA-114675726-2',
   assetPrefixes: {
     clientStories: '',

@@ -14,7 +14,7 @@ export class ContactService {
   private apiUrl: string;
 
   constructor(private httpClient: HttpClient) {
-    this.apiUrl = environment.emailSubmissionApi.url;
+    this.apiUrl = environment.apiUrl;
   }
 
   postContactForm(email: ContactMessage): Observable<any> {
