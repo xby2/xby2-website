@@ -1,29 +1,8 @@
-.container-fluid {
-  background-color: #fff;
-}
-
-.container {
-  padding-top: 0;
-  padding-bottom: 0;
-}
-
-img {
-  width: 100%;
-  height: 100%;
-  padding: 1rem 0;
-}
-
-h1 {
-  font-size: 2.25rem;
+.specialties {
+  text-align: center;
+  background-color: #6f7175;
+  margin: 0 15px;
+  padding: 1rem;
   color: #fff;
-}
-
-h2 {
-  color: #fff;
-}
-
-.subheader {
-  background-color: #f89829;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  font-size: 1.5rem;
 }

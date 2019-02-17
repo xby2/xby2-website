@@ -9,6 +9,7 @@ import { Preconditions } from '../model/preconditions';
 })
 export class ServiceCardComponent implements OnInit {
   @Input() service: Service;
+  @Input() hideViewClientStory: boolean;
 
   constructor() { }
 

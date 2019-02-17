@@ -9,10 +9,9 @@
       {{point}}
     </li>
   </ul>
-  <div class="card-bottom">
-    <button class="btn btn-xby2" 
-            [routerLink]="['/client-stories', service.clientStoryId]">
-        View Client Story
+  <div *ngIf="!hideViewClientStory" class="card-bottom">
+    <button class="btn btn-xby2" [routerLink]="['/client-stories', service.clientStoryId]">
+      View Client Story
     </button>
   </div>
 </div>

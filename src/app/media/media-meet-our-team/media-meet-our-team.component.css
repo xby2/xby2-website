@@ -1,0 +1,9 @@
+.container-fluid {
+  background-color: #fff;
+}
+
+img {
+  width: 75%;
+  display: block;
+  margin: 0 auto;
+}
