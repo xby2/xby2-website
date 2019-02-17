@@ -27,7 +27,7 @@ export class ContactService {
     };
 
     return this.httpClient
-      .post<ContactMessage>(this.apiUrl, body, httpOptions)
+      .post<ContactMessage>(this.apiUrl + '/email', body, httpOptions)
       .pipe(catchError(this.handleError));
   }
 
