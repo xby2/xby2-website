@@ -1,6 +1,6 @@
 export const environment = {
   production: true,
-  apiUrl: '',
+  apiUrl: 'https://xby2-website-api-uat-ncus.azurewebsites.net',
   googleAnalyticsTrackingId: 'UA-114675726-1',
   assetPrefixes: {
     clientStories: '',
