@@ -32,4 +32,8 @@ h2 {
   img {
     height: auto;
   }
+
+  .logo {
+    border-bottom: 10px solid #97979b;
+  }
 }

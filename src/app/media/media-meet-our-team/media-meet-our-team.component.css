@@ -5,5 +5,23 @@
 img {
   width: 75%;
   display: block;
-  margin: 0 auto;
+  margin: 0 auto 1rem auto;
+}
+
+h2 {
+  text-align: left;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+h3 {
+  color: #f89829;
+  text-transform: none;
+  text-align: left;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+h4 {
+  color: #f89829;
 }
