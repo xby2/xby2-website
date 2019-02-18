@@ -1,36 +1,46 @@
 <xby2-media-header></xby2-media-header>
-<div class="container-fluid">
+<div class="container-fluid" style="background-color: #fff;">
   <div class="container">
     <div class="row">
       <h2 class="col">Get to Know X by 2</h2>
     </div>
     <div class="row">
-      <p class="col">Located in Toronto, X by 2 has over 20 years of experience
-        working with leading insurers developing strategies and executing
-        transformational enterprise initiatives. Bilingual in both business and
-        technology, our team of architects and program leaders understand the
-        changing insurance landscape, planning and delivering core insurance systems,
-        strategic business applications, and enterprise integrations.</p>
+      <p class="col">
+        Located in Toronto, X by 2 has over 20 years of experience working with
+        leading insurers developing strategies and executing transformational
+        enterprise initiatives. Bilingual in both business and technology, our
+        team of architects and program leaders understand the changing insurance
+        landscape, planning and delivering core insurance systems, strategic
+        business applications, and enterprise integrations.
+      </p>
     </div>
   </div>
 </div>
 <div class="container">
   <div class="row">
-    <h1 class="col">Driving Insurer Success Through Digital Transformation</h1>
+    <h1 class="col" style="text-transform: none; font-size: 2rem">
+      Driving Insurer Success Through Digital Transformation
+    </h1>
   </div>
   <div class="row">
-    <h2 class="col">From Payer to Product, we help clients capitalize on
-      technology to drive growth and achieve long-term success.</h2>
+    <p class="col" style="text-align: center">
+      We help clients capitalize on technology to drive growth and achieve
+      long-term success.
+    </p>
   </div>
   <div class="row">
-    <xby2-service-card *ngFor="let service of services" class="col-12 col-md-6 col-lg-4" [service]="service"
-      [hideViewClientStory]="true">
+    <xby2-service-card
+      *ngFor="let service of services"
+      class="col-12 col-md-6 col-lg-4"
+      [service]="service"
+      [hideViewClientStory]="true"
+    >
     </xby2-service-card>
   </div>
   <div class="row">
     <div class="col specialties">
-      P&C . LIFE . HEALTH . PERSONAL . COMMERCIAL . BUSINESS . SPECIALTY .
-      AUTO . HOME & PROPERTY
+      P&C . LIFE . HEALTH . PERSONAL . COMMERCIAL . BUSINESS . SPECIALTY . AUTO
+      . HOME & PROPERTY
     </div>
   </div>
 </div>
