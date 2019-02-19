@@ -26,6 +26,8 @@ import { PerksResolver } from './careers/resolver/perks.resolver';
 import { FrequentlyAskedQuestionsResolver } from './careers/resolver/frequently-asked-questions.resolver';
 import { CompanyValuesResolver } from './about-us/resolver/company-values.resolver';
 import { Xby2LocationsResolver } from './contact-us/resolver/xby2-locations.resolver';
+import { LegacyMediaComponent } from './media/legacy-media/legacy-media.component';
+import { MediaResolver } from './media/legacy-media/media.resolver';
 
 const routes: Routes = [
   {
@@ -49,6 +51,11 @@ const routes: Routes = [
     path: 'media/ICTC2019',
     component: MediaComponent,
     resolve: { services: ServicesResolver }
+  },
+  {
+    path: 'media/:id',
+    component: LegacyMediaComponent,
+    resolve: { media: MediaResolver }
   },
   {
     path: 'client-stories',

@@ -1,0 +1,27 @@
+<xby2-page-header [headerText]="headerText" [subheaderText]="subheaderText">
+</xby2-page-header>
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <span *ngFor="let img of media.authorImages">
+        <img class="presenter-image" src="{{img}}" />
+      </span>
+      <h3 class="pres-title">{{media.title}}</h3>
+      <p class="presenter-info" *ngFor="let title of media.presenterTitles">
+        {{title}}
+      </p>
+      <p class="conf-name"><i>{{media.conferenceName}}</i></p>
+      <br />
+      <div class="body" [innerHtml]="media.body"></div>
+      <div *ngIf="media.resourceUrl != ''" class="text-center">
+        <a class="btn btn-xby2 presentation-download" target="_blank" role="button"
+          href="{{media.resourceUrl}}">Download Presentation</a>
+      </div>
+      <div *ngIf="media.webinar != ''" class="text-center embedded-webinar">
+        <iframe width="560" height="315" [src]="safeUrl" frameborder="0" allow="autoplay; encrypted-media"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</div>

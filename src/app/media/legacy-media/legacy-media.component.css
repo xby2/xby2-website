@@ -1,0 +1,45 @@
+.container-fluid {
+  background-color: #fff;
+}
+
+svg {
+  color: #f89829;
+}
+
+.description {
+  text-align: center;
+}
+
+.row.values {
+  margin: 2em 0;
+}
+
+.pres-title {
+  color: #f89829;
+  text-align: left;
+}
+
+p.presenter-info {
+  font: italic bold;
+  margin-bottom: 0;
+}
+
+.presenter-image {
+  margin-right: 10px;
+}
+
+.presentation-download {
+  text-transform: uppercase;
+  background-color: #f89829;
+  text-align: center;
+  font-weight: 600;
+  padding: 0.2em 1em;
+  color: #fff !important;
+  margin: 0 auto;
+  border-radius: 1em;
+  cursor: pointer;
+}
+
+.embedded-webinar{
+  margin-top: 15px;
+}

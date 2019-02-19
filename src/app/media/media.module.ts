@@ -5,6 +5,7 @@ import { MediaHeaderComponent } from './media-header/media-header.component';
 import { MediaMeetOurTeamComponent } from './media-meet-our-team/media-meet-our-team.component';
 import { MediaContactComponent } from './media-contact/media-contact.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { LegacyMediaComponent } from './legacy-media/legacy-media.component';
 
 @NgModule({
   imports: [
@@ -12,11 +13,12 @@ import { ReactiveFormsModule } from '@angular/forms';
     SharedModule,
     ReactiveFormsModule
   ],
-  declarations: [MediaHeaderComponent, MediaMeetOurTeamComponent, MediaContactComponent],
+  declarations: [MediaHeaderComponent, MediaMeetOurTeamComponent, MediaContactComponent, LegacyMediaComponent],
   exports: [
     MediaHeaderComponent,
     MediaMeetOurTeamComponent,
-    MediaContactComponent
+    MediaContactComponent,
+    LegacyMediaComponent
   ]
 })
 export class MediaModule { }
