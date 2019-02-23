@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Title } from '@angular/platform-browser';
 import { Service } from '../shared/model/service';
+import { environment } from '../../environments/environment';
 
 @Component({
   selector: 'xby2-media',
@@ -10,6 +11,7 @@ import { Service } from '../shared/model/service';
 })
 export class MediaComponent implements OnInit {
   services: Service[];
+  enableLinkedInTag: boolean = environment.enableLinkedInTag;
 
   constructor(
     private route: ActivatedRoute,

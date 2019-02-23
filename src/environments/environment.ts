@@ -7,6 +7,7 @@ export const environment = {
   production: false,
   apiUrl: '',
   googleAnalyticsTrackingId: '',
+  enableLinkedInTag: false,
   assetPrefixes: {
     clientStories: './assets/client-story/',
     perks: './assets/perks/',
