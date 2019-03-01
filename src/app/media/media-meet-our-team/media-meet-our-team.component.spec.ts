@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { MediaMeetOurTeamComponent } from './media-meet-our-team.component';
+import { NO_ERRORS_SCHEMA } from '@angular/compiler/src/core';
 
 describe('MediaMeetOurTeamComponent', () => {
   let component: MediaMeetOurTeamComponent;
@@ -8,9 +9,9 @@ describe('MediaMeetOurTeamComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ MediaMeetOurTeamComponent ]
-    })
-    .compileComponents();
+      declarations: [MediaMeetOurTeamComponent],
+      schemas: [NO_ERRORS_SCHEMA]
+    }).compileComponents();
   }));
 
   beforeEach(() => {
