@@ -4,7 +4,9 @@
       <h1 class="col">Don't Miss A Thing!</h1>
     </div>
     <div class="row">
-      <h2 class="col">Be the first the receive our downloadable presentation and informational brochure.</h2>
+      <h2 class="col">
+        Sign up to receive event updates and helpful insights from X by 2.
+      </h2>
     </div>
   </div>
 </div>
@@ -12,54 +14,94 @@
   <div class="container">
     <form [formGroup]="contactForm" (ngSubmit)="submitForm()" novalidate>
       <div class="row">
-        <div class="form-group col-md-3" [ngClass]="{
+        <div
+          class="form-group col-md-3"
+          [ngClass]="{
             'has-error':
               (contactForm.get('firstName').touched ||
                 contactForm.get('firstName').dirty) &&
               !contactForm.get('firstName').valid
-          }">
-          <input type="text" formControlName="firstName" class="form-control" name="firstName" required
-            placeholder="First Name*" />
-          <div *ngIf="
+          }"
+        >
+          <input
+            type="text"
+            formControlName="firstName"
+            class="form-control"
+            name="firstName"
+            required
+            placeholder="First Name*"
+          />
+          <div
+            *ngIf="
               contactForm.get('firstName').invalid &&
               contactForm.get('firstName').touched
-            " class="alert alert-danger">
+            "
+            class="alert alert-danger"
+          >
             First Name is required.
           </div>
         </div>
-        <div class="form-group col-md-3" [ngClass]="{
+        <div
+          class="form-group col-md-3"
+          [ngClass]="{
             'has-error':
               (contactForm.get('lastName').touched ||
                 contactForm.get('lastName').dirty) &&
               !contactForm.get('lastName').valid
-          }">
-          <input type="text" formControlName="lastName" class="form-control" name="lastName" required
-            placeholder="Last Name*" />
-          <div *ngIf="
+          }"
+        >
+          <input
+            type="text"
+            formControlName="lastName"
+            class="form-control"
+            name="lastName"
+            required
+            placeholder="Last Name*"
+          />
+          <div
+            *ngIf="
               contactForm.get('lastName').invalid &&
               contactForm.get('lastName').touched
-            " class="alert alert-danger">
+            "
+            class="alert alert-danger"
+          >
             Last Name is required.
           </div>
         </div>
-        <div class="form-group col-md-6" [ngClass]="{
+        <div
+          class="form-group col-md-6"
+          [ngClass]="{
             'has-error':
               (contactForm.get('email').touched ||
                 contactForm.get('email').dirty) &&
               !contactForm.get('email').valid
-          }">
-          <input type="text" formControlName="email" class="form-control" name="email" required
-            placeholder="Business Email*" />
-          <div *ngIf="
+          }"
+        >
+          <input
+            type="text"
+            formControlName="email"
+            class="form-control"
+            name="email"
+            required
+            placeholder="Business Email*"
+          />
+          <div
+            *ngIf="
               contactForm.get('email').invalid &&
               contactForm.get('email').touched
-            " class="alert alert-danger">
+            "
+            class="alert alert-danger"
+          >
             Business Email is required.
           </div>
         </div>
       </div>
       <div class="row">
-        <button class="btn btn-xby2  btn-xby2-large" [disabled]="!contactForm.valid || submitDisabled" type="submit">
+        <button
+          class="btn btn-xby2  btn-xby2-large"
+          [disabled]="!contactForm.valid || submitDisabled"
+          type="submit"
+        >
           Sign Up Now
         </button>
       </div>
