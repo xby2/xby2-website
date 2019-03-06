@@ -1,8 +1,0 @@
-[
-    { "label": "About Us", "link": "/about-us" },
-    { "label": "Services", "link": "/services" },
-    { "label": "Client Stories", "link": "/client-stories" },
-    { "label": "Insights", "link": "/insights" },
-    { "label": "Careers", "link": "/careers" },
-    { "label": "Contact Us", "link": "/contact-us", "class": "contact-us" }
-]
