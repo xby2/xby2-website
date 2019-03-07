@@ -6,7 +6,7 @@
 export const environment = {
   production: false,
   apiUrl: '',
-  googleAnalyticsTrackingId: '',
+  googleAnalyticsTrackingId: 'UA-114675726-1',
   enableLinkedInTag: false,
   assetPrefixes: {
     clientStories: './assets/client-story/',
@@ -20,18 +20,18 @@ export const environment = {
     - set the baseCmsUrl to ../assets/data/
     - set all endpoints to point to their respective .json files.
   */
-  usingLocalData: true,
-  baseCmsUrl: '../assets/data/',
+  usingLocalData: false,
+  baseCmsUrl: 'https://xby2-website-cms.azurewebsites.net/wp-json/xby2/v1/',
   endpoints: {
-    companyValues: 'company-values.json',
-    frequentlyAskedQuestions: 'frequently-asked-questions.json',
-    perks: 'perks.json',
-    recruitingValues: 'recruiting-values.json',
-    locations: 'locations.json',
-    clientStories: 'client-stories.json',
-    industries: 'industries.json',
-    links: 'links.json',
-    mindShares: 'mind-shares.json',
-    services: 'services.json'
+    companyValues: 'company-values',
+    frequentlyAskedQuestions: 'frequently-asked-questions',
+    perks: 'perks',
+    recruitingValues: 'recruiting-values',
+    locations: 'locations',
+    clientStories: 'client-stories',
+    industries: 'industries',
+    links: 'links',
+    mindShares: 'mind-shares',
+    services: 'services'
   }
 };
