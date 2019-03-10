@@ -11,7 +11,7 @@ import { environment } from '../../environments/environment';
 })
 export class ContactUsComponent implements OnInit {
   headerText = 'Contact Us';
-  subheaderText = "Have a question? Let's start a conversation.";
+  subheaderText = `Have a question? Let's start a conversation.`;
   location: Xby2Location = environment.location;
   zoomLevel = 6;
 
