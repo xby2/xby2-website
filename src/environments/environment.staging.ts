@@ -27,5 +27,16 @@ export const environment = {
     links: 'links',
     mindShares: 'mind-shares',
     services: 'services'
+  },
+  location: {
+    name: 'USA',
+    address: '35055 W Twelve Mile Rd',
+    address2: 'Suite 220',
+    city: 'Farmington Hills',
+    state: 'MI',
+    zip: '48331',
+    phone: '248.538.9292',
+    latitude: 42.497343,
+    longitude: -83.396382
   }
 };

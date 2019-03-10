@@ -14,8 +14,7 @@ export const environment = {
     This will connect to local JSON files instead of the CMS.
   */
   usingLocalData: false,
-  baseCmsUrl:
-    'https://xby2-website-cms.azurewebsites.net/wp-json/xby2/v1/',
+  baseCmsUrl: 'https://xby2-website-cms.azurewebsites.net/wp-json/xby2/v1/',
   endpoints: {
     companyValues: 'company-values',
     frequentlyAskedQuestions: 'frequently-asked-questions',
@@ -27,5 +26,16 @@ export const environment = {
     links: 'links',
     mindShares: 'mind-shares',
     services: 'services'
+  },
+  location: {
+    name: 'USA',
+    address: '35055 W Twelve Mile Rd',
+    address2: 'Suite 220',
+    city: 'Farmington Hills',
+    state: 'MI',
+    zip: '48331',
+    phone: '248.538.9292',
+    latitude: 42.497343,
+    longitude: -83.396382
   }
 };

@@ -25,7 +25,6 @@ import { MindShareResolver } from './in-the-news/resolver/mind-share.resolver';
 import { PerksResolver } from './careers/resolver/perks.resolver';
 import { FrequentlyAskedQuestionsResolver } from './careers/resolver/frequently-asked-questions.resolver';
 import { CompanyValuesResolver } from './about-us/resolver/company-values.resolver';
-import { Xby2LocationsResolver } from './contact-us/resolver/xby2-locations.resolver';
 import { LegacyMediaComponent } from './media/legacy-media/legacy-media.component';
 import { MediaResolver } from './media/legacy-media/media.resolver';
 
@@ -60,7 +59,10 @@ const routes: Routes = [
   {
     path: 'client-stories',
     component: ClientStoriesComponent,
-    resolve: { clientStories: ClientStoriesResolver, industries: IndustryResolver }
+    resolve: {
+      clientStories: ClientStoriesResolver,
+      industries: IndustryResolver
+    }
   },
   {
     path: 'client-stories/:id',
@@ -79,10 +81,7 @@ const routes: Routes = [
   },
   {
     path: 'contact-us',
-    component: ContactUsComponent,
-    resolve: {
-      locations: Xby2LocationsResolver
-    }
+    component: ContactUsComponent
   },
   {
     path: 'careers',
@@ -100,11 +99,11 @@ const routes: Routes = [
     resolve: {
       openPosition: OpenPositionResolver
     }
-  },
+  }
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

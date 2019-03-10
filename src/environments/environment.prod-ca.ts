@@ -26,5 +26,16 @@ export const environment = {
     links: 'links',
     mindShares: 'mind-shares',
     services: 'services'
+  },
+  location: {
+    name: 'Canada',
+    address: '100 University Avenue',
+    address2: 'Floor 6',
+    city: 'Toronto',
+    state: 'ON',
+    zip: 'M5J 1V6',
+    phone: '905.267.0223',
+    latitude: 43.657411,
+    longitude: -79.603429
   }
 };
