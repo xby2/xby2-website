@@ -19,3 +19,13 @@ svg {
 .row.values {
     margin: 2em 0;
 }
+
+:host ::ng-deep br {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  :host ::ng-deep br {
+    display: block;
+  }
+}

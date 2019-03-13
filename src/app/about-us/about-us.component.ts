@@ -12,8 +12,8 @@ import { environment } from '../../environments/environment';
 })
 export class AboutUsComponent implements OnInit {
   headerText = 'About Us';
-  subheaderText = 'Helping companies achieve their most strategic goals ' +
-    'through transformational technology.';
+  subheaderText = 'Helping healthcare and insurance organizations achieve ' +
+    'their most<br> strategic goals through transformational technology.';
   values: CompanyValue[];
   assetPrefix = environment.assetPrefixes.companyValues;
 

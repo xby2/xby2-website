@@ -3,9 +3,8 @@
     <div class="row">
       <div class="col">
         <h1>{{ headerText }}</h1>
-        <h2>{{ subheaderText }}</h2>
-        <button *ngIf="buttonText" class="btn btn-xby2"
-                (click)="handleButtonClick()">
+        <h2 [innerHtml]="subheaderText"></h2>
+        <button *ngIf="buttonText" class="btn btn-xby2" (click)="handleButtonClick()">
           {{ buttonText }}
         </button>
       </div>

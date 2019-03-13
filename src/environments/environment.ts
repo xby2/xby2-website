@@ -9,10 +9,10 @@ export const environment = {
   googleAnalyticsTrackingId: 'UA-114675726-1',
   enableLinkedInTag: false,
   assetPrefixes: {
-    clientStories: './assets/client-story/',
-    perks: './assets/perks/',
-    companyValues: './assets/values/',
-    authors: './assets/authors/'
+    clientStories: '',
+    perks: '',
+    companyValues: '',
+    authors: ''
   },
   /*
     For local development using the mock API data, do the following:
