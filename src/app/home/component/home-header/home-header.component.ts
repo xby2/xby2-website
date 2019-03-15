@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { environment } from '../../../../environments/environment';
 
 @Component({
   selector: 'xby2-home-header',
@@ -6,10 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home-header.component.css']
 })
 export class HomeHeaderComponent implements OnInit {
+  homeHeaderText = environment.locationSpecificInformation.homeHeaderText;
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }

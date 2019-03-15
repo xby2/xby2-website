@@ -37,5 +37,10 @@ export const environment = {
     phone: '905.267.0223',
     latitude: 43.657411,
     longitude: -79.603429
+  },
+  locationSpecificInformation: {
+    homeHeaderText: 'Transforming business<br>through technology.',
+    aboutUsSubheaderText:
+      'Helping companies achieve their most strategic goals through transformational technology.'
   }
 };
