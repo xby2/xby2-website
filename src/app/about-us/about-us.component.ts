@@ -12,13 +12,11 @@ import { environment } from '../../environments/environment';
 })
 export class AboutUsComponent implements OnInit {
   headerText = 'About Us';
-  subheaderText = 'Helping healthcare and insurance organizations achieve ' +
-    'their most<br> strategic goals through transformational technology.';
+  subheaderText = environment.locationSpecificInformation.aboutUsSubheaderText;
   values: CompanyValue[];
   assetPrefix = environment.assetPrefixes.companyValues;
 
-  constructor(private route: ActivatedRoute,
-    private title: Title) { }
+  constructor(private route: ActivatedRoute, private title: Title) {}
 
   ngOnInit() {
     this.values = this.route.snapshot.data.values;

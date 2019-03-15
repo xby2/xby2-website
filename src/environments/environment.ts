@@ -44,5 +44,11 @@ export const environment = {
     phone: '248.538.9292',
     latitude: 42.497343,
     longitude: -83.396382
+  },
+  locationSpecificInformation: {
+    homeHeaderText:
+      'Guiding Digital Transformation for<br> Healthcare & Insurance companies.',
+    aboutUsSubheaderText:
+      'Helping healthcare and insurance organizations achieve their most<br> strategic goals through transformational technology.'
   }
 };
