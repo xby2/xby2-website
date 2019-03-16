@@ -8,7 +8,7 @@ import { Service } from '../../shared/model/service';
   templateUrl: './loma2019.component.html',
   styleUrls: ['./loma2019.component.css']
 })
-export class LOMA2019Component implements OnInit {
+export class Loma2019Component implements OnInit {
   services: Service[];
 
   constructor(
