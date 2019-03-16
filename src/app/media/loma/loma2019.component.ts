@@ -17,7 +17,7 @@ export class Loma2019Component implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.title.setTitle('ICTC 2019 - X by 2');
+    this.title.setTitle('LOMA 2019 - X by 2');
     this.services = this.route.snapshot.data.services;
   }
 }
