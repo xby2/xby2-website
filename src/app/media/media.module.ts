@@ -6,6 +6,8 @@ import { MediaMeetOurTeamComponent } from './media-meet-our-team/media-meet-our-
 import { MediaContactComponent } from './media-contact/media-contact.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { LegacyMediaComponent } from './legacy-media/legacy-media.component';
+import { LOMA2019Component } from './loma2019/loma2019.component';
+import { Loma2019MeetOurTeamComponent } from './LOMA2019/loma2019-meet-our-team/loma2019-meet-our-team.component';
 
 @NgModule({
   imports: [
@@ -13,7 +15,14 @@ import { LegacyMediaComponent } from './legacy-media/legacy-media.component';
     SharedModule,
     ReactiveFormsModule
   ],
-  declarations: [MediaHeaderComponent, MediaMeetOurTeamComponent, MediaContactComponent, LegacyMediaComponent],
+  declarations: [
+    MediaHeaderComponent,
+    MediaMeetOurTeamComponent,
+    MediaContactComponent,
+    LegacyMediaComponent,
+    LOMA2019Component,
+    Loma2019MeetOurTeamComponent
+  ],
   exports: [
     MediaHeaderComponent,
     MediaMeetOurTeamComponent,

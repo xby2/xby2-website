@@ -19,6 +19,10 @@ h3 {
 
 @media (min-width: 768px) {
     .card {
-        height: 22em;
+      height: 23rem;
+    }
+
+    .card.hide-view-client-story {
+      height: 21rem;
     }
 }

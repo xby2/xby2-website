@@ -1,0 +1,42 @@
+<xby2-media-header imageUrl="LOMAHeader.jpg" header1="What’s Next?" header2="Setting the Agenda for Life" dateLocation="<b>April 1-3, 2019<br class='d-lg-none' />
+  <span class='d-none d-lg-inline'> | </span>Baltimore Marriott Waterfront, MD</b>"></xby2-media-header>
+<div class="container-fluid" style="background-color: #fff;">
+  <div class="container">
+    <div class="row">
+      <h2 class="col">Get to Know X by 2</h2>
+    </div>
+    <div class="row">
+      <p class="col">
+        X by 2 is an IT consultancy that leads the strategy, architecture, and execution of enterprise transformation
+        initiatives in the insurance industry. Having served more than 25 leading insurers, our architects and program
+        leaders understand the insurance domain and have proven experience leading insurers through digital
+        transformation from start to finish.
+      </p>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <h1 class="col">
+      Driving Insurer Success Through Digital Transformation
+    </h1>
+  </div>
+  <div class="row">
+    <p class="col" style="text-align: center; margin-bottom: 2rem;">
+      We help clients capitalize on technology to drive growth and achieve
+      long-term success.
+    </p>
+  </div>
+  <div class="row">
+    <xby2-service-card *ngFor="let service of services" class="col-12 col-md-6 col-lg-4 mx-auto" [service]="service"
+      [hideViewClientStory]="true">
+    </xby2-service-card>
+  </div>
+  <div class="row">
+    <div class="col specialties">
+      INDIVIDUAL . GROUP . LIFE . ANNUITIES . RETIREMENT . LTC . DISABILITY
+    </div>
+  </div>
+</div>
+<xby2-loma2019-meet-our-team></xby2-loma2019-meet-our-team>
+<xby2-media-contact></xby2-media-contact>

@@ -27,6 +27,7 @@ import { FrequentlyAskedQuestionsResolver } from './careers/resolver/frequently-
 import { CompanyValuesResolver } from './about-us/resolver/company-values.resolver';
 import { LegacyMediaComponent } from './media/legacy-media/legacy-media.component';
 import { MediaResolver } from './media/legacy-media/media.resolver';
+import { LOMA2019Component } from './media/loma2019/loma2019.component';
 
 const routes: Routes = [
   {
@@ -49,6 +50,11 @@ const routes: Routes = [
   {
     path: 'media/ICTC2019',
     component: MediaComponent,
+    resolve: { services: ServicesResolver }
+  },
+  {
+    path: 'media/LOMA2019',
+    component: LOMA2019Component,
     resolve: { services: ServicesResolver }
   },
   {
@@ -106,4 +112,4 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }
