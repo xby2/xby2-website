@@ -16,6 +16,12 @@ describe('MediaHeaderComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(MediaHeaderComponent);
     component = fixture.componentInstance;
+
+    component.dateLocation = '';
+    component.header1 = '';
+    component.header2 = '';
+    component.imageUrl = '';
+
     fixture.detectChanges();
   });
 

@@ -17,6 +17,15 @@ export class MediaHeaderComponent implements OnInit {
     if (this.imageUrl == null) {
       throw new Error('\'imageUrl\' attribute required.');
     }
+    if (this.header1 == null) {
+      throw new Error('\'header1\' attribute required.');
+    }
+    if (this.header2 == null) {
+      throw new Error('\'header2\' attribute required.');
+    }
+    if (this.dateLocation == null) {
+      throw new Error('\'dateLocation\' attribute required.');
+    }
   }
 
 }
