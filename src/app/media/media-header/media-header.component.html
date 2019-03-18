@@ -1,39 +1,36 @@
 <div class="container-fluid logo">
   <div class="container">
     <div class="row h-100">
-      <div class="col-12 col-md-6 my-auto header-image">
+      <div class=" col-12 col-md-6 my-auto header-image">
         <img src="./assets/{{imageUrl}}" />
       </div>
       <div class="d-none d-md-block col-md-6 subheader">
         <div class="row">
-          <h1 class="col" [innerHTML]="header1"></h1>
-        </div>
-        <div class="row">
-          <h2 class="col" [innerHTML]="header2">
-          </h2>
-        </div>
-        <div class="row">
-          <h2 class="col" [innerHTML]="dateLocation">
-          </h2>
+          <div class="col" style="padding-left: 0; padding-right: 0; margin-top: 3%;">
+            <h1 [innerHTML]="header1"></h1>
+            <h2 class="col" [innerHTML]="header2"></h2>
+            <h2 class="col" [innerHTML]="dateLocation">
+            </h2>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
-<div class="container-fluid d-md-none" style="background-color: #f89829; border-bottom: 10px solid #97979b">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-md-6 col-lg-8 subheader">
-        <div class="row">
-          <h1 class="col" [innerHTML]="header1"></h1>
-        </div>
-        <div class="row">
-          <h2 class="col" [innerHTML]="header2">
-          </h2>
-        </div>
-        <div class="row">
-          <h2 class="col" [innerHTML]="dateLocation">
-          </h2>
+  <div class="container-fluid d-md-none" style="background-color: #f89829; border-bottom: 10px solid #97979b">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-8 subheader">
+          <div class="row">
+            <h1 class="col" [innerHTML]="header1"></h1>
+          </div>
+          <div class="row">
+            <h2 class="col" [innerHTML]="header2">
+            </h2>
+          </div>
+          <div class="row">
+            <h2 class="col" [innerHTML]="dateLocation">
+            </h2>
+          </div>
         </div>
       </div>
     </div>
