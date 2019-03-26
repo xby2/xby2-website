@@ -3,6 +3,7 @@ export const environment = {
   apiUrl: 'https://xby2-website-api-uat-ncus.azurewebsites.net',
   googleAnalyticsTrackingId: 'UA-114675726-1',
   enableLinkedInTag: false,
+  enableHubSpotTracking: false,
   assetPrefixes: {
     clientStories: '',
     perks: '',

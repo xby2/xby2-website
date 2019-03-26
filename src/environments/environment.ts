@@ -8,6 +8,7 @@ export const environment = {
   apiUrl: '',
   googleAnalyticsTrackingId: 'UA-114675726-1',
   enableLinkedInTag: false,
+  enableHubSpotTracking: false,
   assetPrefixes: {
     clientStories: '',
     perks: '',
