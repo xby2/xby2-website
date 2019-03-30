@@ -8,6 +8,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { LegacyMediaComponent } from './legacy-media/legacy-media.component';
 import { Loma2019Component } from './loma/loma2019.component';
 import { Loma2019MeetOurTeamComponent } from './loma/loma2019-meet-our-team/loma2019-meet-our-team.component';
+import { NexusAi2019Component } from './nexusai2019/nexusai2019.component';
+import { NexusAi2019MeetOurTeamComponent } from './nexusai2019/nexusai2019-meet-our-team/nexusai2019-meet-our-team.component';
 
 @NgModule({
   imports: [
@@ -21,7 +23,9 @@ import { Loma2019MeetOurTeamComponent } from './loma/loma2019-meet-our-team/loma
     MediaContactComponent,
     LegacyMediaComponent,
     Loma2019Component,
-    Loma2019MeetOurTeamComponent
+    Loma2019MeetOurTeamComponent,
+    NexusAi2019Component,
+    NexusAi2019MeetOurTeamComponent,
   ],
   exports: [
     MediaHeaderComponent,

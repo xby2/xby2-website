@@ -28,6 +28,7 @@ import { CompanyValuesResolver } from './about-us/resolver/company-values.resolv
 import { LegacyMediaComponent } from './media/legacy-media/legacy-media.component';
 import { MediaResolver } from './media/legacy-media/media.resolver';
 import { Loma2019Component } from './media/loma/loma2019.component';
+import { NexusAi2019Component } from './media/nexusai2019/nexusai2019.component';
 
 const routes: Routes = [
   {
@@ -46,6 +47,11 @@ const routes: Routes = [
     resolve: {
       values: CompanyValuesResolver
     }
+  },
+  {
+    path: 'NexusAI2019',
+    component: NexusAi2019Component,
+    resolve: { services: ServicesResolver }
   },
   {
     path: 'media/ICTC2019',
