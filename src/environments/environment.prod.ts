@@ -4,6 +4,7 @@ export const environment = {
   googleAnalyticsTrackingId: 'UA-114675726-2',
   enableLinkedInTag: true,
   enableHubSpotTracking: true,
+  canadaRedirectApiKey: 'adf5b1c72fe6d0cd714a54d40c1258c72887e8ab18874d9071cdcfe7',
   assetPrefixes: {
     clientStories: '',
     perks: '',

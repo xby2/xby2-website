@@ -1,7 +1,6 @@
-<xby2-page-header [headerText]="headerText"
-                 [subheaderText]="subheaderText"
-                 [buttonText]="buttonText"
-                 (buttonClick)="scrollToOpenPositions()">
+<xby2-navbar></xby2-navbar>
+<xby2-page-header [headerText]="headerText" [subheaderText]="subheaderText" [buttonText]="buttonText"
+  (buttonClick)="scrollToOpenPositions()">
 </xby2-page-header>
 <div class="row pictures">
   <div class="col-12 col-md-6 col-no-padding">
@@ -11,14 +10,12 @@
     <img src="./assets/careers2.png">
   </div>
 </div>
-<xby2-our-values-section
-  [companyValues]="companyValues">
+<xby2-our-values-section [companyValues]="companyValues">
 </xby2-our-values-section>
 <xby2-meet-our-people-section></xby2-meet-our-people-section>
 <xby2-perks-section [perks]="perks"></xby2-perks-section>
-<xby2-open-positions-section
-  [collectedOpenPositions]="collectedOpenPositions">
+<xby2-open-positions-section [collectedOpenPositions]="collectedOpenPositions">
 </xby2-open-positions-section>
-<xby2-frequently-asked-questions
-  [frequentlyAskedQuestions]="frequentlyAskedQuestions">
+<xby2-frequently-asked-questions [frequentlyAskedQuestions]="frequentlyAskedQuestions">
 </xby2-frequently-asked-questions>
+<xby2-footer></xby2-footer>

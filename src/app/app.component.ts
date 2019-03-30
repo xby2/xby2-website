@@ -2,6 +2,7 @@ import { Component, OnInit, Inject } from '@angular/core';
 import { Router, NavigationStart, NavigationEnd } from '@angular/router';
 import { Location, PopStateEvent } from '@angular/common';
 import { environment } from '../environments/environment';
+import { GeolocationService } from './core/geolocation.service';
 
 declare let ga: Function;
 
@@ -14,7 +15,20 @@ export class AppComponent implements OnInit {
   private lastPoppedUrl: string;
   private yScrollStack: number[] = [];
 
-  constructor(private router: Router, private location: Location) {
+  constructor(
+    private router: Router,
+    private location: Location,
+    private geolocationService: GeolocationService) {
+    if (environment.canadaRedirectApiKey !== '') {
+      this.geolocationService.getCountryCode().subscribe(
+        response => {
+          if (response === 'CA') {
+            window.location.href = 'https://xby2.ca' + window.location.pathname;
+          }
+        }
+      );
+    }
+
     if (!this.hasGoogleAnalyticsTrackingId()) {
       return;
     }

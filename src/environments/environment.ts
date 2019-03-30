@@ -9,6 +9,7 @@ export const environment = {
   googleAnalyticsTrackingId: 'UA-114675726-1',
   enableLinkedInTag: false,
   enableHubSpotTracking: false,
+  canadaRedirectApiKey: '',
   assetPrefixes: {
     clientStories: '',
     perks: '',

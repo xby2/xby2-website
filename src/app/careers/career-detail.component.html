@@ -1,3 +1,4 @@
+<xby2-navbar></xby2-navbar>
 <div class="container">
   <div class="row">
     <div class="col-12 col-md-8 col-lg-9">
@@ -7,27 +8,23 @@
         <li>{{ openPosition.team }}</li>
         <li>{{ openPosition.commitment }}</li>
       </ul>
-      
+
       <div class="d-md-none">
-        <xby2-career-details-action-items
-          [shareLinks]="shareLinks"
-          [applyUrl]="openPosition.applyUrl"
+        <xby2-career-details-action-items [shareLinks]="shareLinks" [applyUrl]="openPosition.applyUrl"
           [applyText]="applyText"></xby2-career-details-action-items>
-      </div>         
-      
+      </div>
+
       <div id="description" [innerHtml]="openPosition.description"></div>
-      <div *ngFor="let section of openPosition.sections;"
-              class="section">
+      <div *ngFor="let section of openPosition.sections;" class="section">
         <h2>{{ section.text }}</h2>
         <ul [innerHtml]="section.content">
         </ul>
       </div>
     </div>
     <div class="col-12 col-md-4 col-lg-3">
-      <xby2-career-details-action-items
-        [shareLinks]="shareLinks"
-        [applyUrl]="openPosition.applyUrl"
+      <xby2-career-details-action-items [shareLinks]="shareLinks" [applyUrl]="openPosition.applyUrl"
         [applyText]="applyText"></xby2-career-details-action-items>
     </div>
   </div>
 </div>
+<xby2-footer></xby2-footer>

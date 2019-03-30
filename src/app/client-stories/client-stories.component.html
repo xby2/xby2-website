@@ -1,29 +1,25 @@
-<xby2-page-header [headerText]="headerText"
-                 [subheaderText]="subheaderText">
+<xby2-navbar></xby2-navbar>
+<xby2-page-header [headerText]="headerText" [subheaderText]="subheaderText">
 </xby2-page-header>
 
 <div class="container">
   <div class="row">
-    <xby2-button-group class="col text-center"
-                     [buttonGroupItems]="buttonGroupItems"
-                     (registerClick)="performFilter($event)"></xby2-button-group>
+    <xby2-button-group class="col text-center" [buttonGroupItems]="buttonGroupItems"
+      (registerClick)="performFilter($event)"></xby2-button-group>
   </div>
   <div class="row">
-    <xby2-client-story-listing
-       class="col-12 col-md-6 col-lg-4 mx-auto"
-      *ngFor="let clientStory of filteredClientStories |
-              slice: 0:clientStoryDisplayCount"
-      [clientStory]="clientStory">
+    <xby2-client-story-listing class="col-12 col-md-6 col-lg-4 mx-auto" *ngFor="let clientStory of filteredClientStories |
+              slice: 0:clientStoryDisplayCount" [clientStory]="clientStory">
     </xby2-client-story-listing>
   </div>
   <div class="row">
     <div class="col">
-      <button *ngIf="clientStoryDisplayCount < filteredClientStories?.length"
-              class="btn btn-xby2 btn-xby2-light" type="button"
-              (click)="loadMoreClientStories()">
+      <button *ngIf="clientStoryDisplayCount < filteredClientStories?.length" class="btn btn-xby2 btn-xby2-light"
+        type="button" (click)="loadMoreClientStories()">
         Load More
       </button>
     </div>
   </div>
-  
+
 </div>
+<xby2-footer></xby2-footer>

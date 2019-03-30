@@ -1,3 +1,4 @@
+<xby2-navbar></xby2-navbar>
 <div class="container">
   <div class="row">
     <div class="col">
@@ -7,8 +8,7 @@
   <div class="row">
     <div class="col">
       <div class="details">
-        <img class="rounded-circle"
-             [src]="assetPrefix + mindShare.authorImageUrl" />
+        <img class="rounded-circle" [src]="assetPrefix + mindShare.authorImageUrl" />
         <div class="author-info">
           <span>By <b>{{mindShare.authorName}}</b></span>
           <span class="divider"> / </span>
@@ -38,7 +38,7 @@
     </div>
   </div>
 </div>
-<xby2-next-item-section *ngIf="mindShare.nextMindShareId"
-                       [title]="mindShare.nextMindShareTitle"
-                       [link]="['/insights', mindShare.nextMindShareId]">
+<xby2-next-item-section *ngIf="mindShare.nextMindShareId" [title]="mindShare.nextMindShareTitle"
+  [link]="['/insights', mindShare.nextMindShareId]">
 </xby2-next-item-section>
+<xby2-footer></xby2-footer>

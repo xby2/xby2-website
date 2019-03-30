@@ -1,28 +1,24 @@
-<xby2-page-header [headerText]="headerText"
-                 [subheaderText]="subheaderText">
+<xby2-navbar></xby2-navbar>
+<xby2-page-header [headerText]="headerText" [subheaderText]="subheaderText">
 </xby2-page-header>
 
 <div class="container">
   <div class="row">
-    <xby2-button-group class="col text-center"
-                     [buttonGroupItems]="buttonGroupItems"
-                     (registerClick)="performFilter($event)"></xby2-button-group>
+    <xby2-button-group class="col text-center" [buttonGroupItems]="buttonGroupItems"
+      (registerClick)="performFilter($event)"></xby2-button-group>
   </div>
   <div class="row">
-    <xby2-mind-share-listing
-       class="col-12 col-md-6 col-lg-4 mx-auto"
-      *ngFor="let mindShare of filteredMindShares |
-              slice: 0:mindShareDisplayCount"
-      [mindShare]="mindShare">
+    <xby2-mind-share-listing class="col-12 col-md-6 col-lg-4 mx-auto" *ngFor="let mindShare of filteredMindShares |
+              slice: 0:mindShareDisplayCount" [mindShare]="mindShare">
     </xby2-mind-share-listing>
   </div>
   <div class="row">
     <div class="col">
-      <button *ngIf="mindShareDisplayCount < filteredMindShares?.length"
-              class="btn btn-xby2 btn-xby2-light" type="button"
-              (click)="loadMoreMindShares()">
+      <button *ngIf="mindShareDisplayCount < filteredMindShares?.length" class="btn btn-xby2 btn-xby2-light"
+        type="button" (click)="loadMoreMindShares()">
         Load More
       </button>
     </div>
   </div>
 </div>
+<xby2-footer></xby2-footer>

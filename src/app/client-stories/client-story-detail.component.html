@@ -1,3 +1,4 @@
+<xby2-navbar></xby2-navbar>
 <xby2-hero-image [imageUrl]="assetPrefix + clientStory.imageUrl">
   <div class="description">
     {{clientStory.title}}
@@ -17,5 +18,7 @@
     </xby2-content-section>
   </div>
 </div>
-<xby2-next-item-section *ngIf="clientStory.nextClientStoryId" [title]="clientStory.nextClientStoryTitle" [link]="['/client-stories', clientStory.nextClientStoryId]">
+<xby2-next-item-section *ngIf="clientStory.nextClientStoryId" [title]="clientStory.nextClientStoryTitle"
+  [link]="['/client-stories', clientStory.nextClientStoryId]">
 </xby2-next-item-section>
+<xby2-footer></xby2-footer>

@@ -1,3 +1,4 @@
+<xby2-navbar></xby2-navbar>
 <xby2-page-header [headerText]="headerText" [subheaderText]="subheaderText">
 </xby2-page-header>
 <div class="container">
@@ -6,15 +7,8 @@
       <xby2-contact-us-form></xby2-contact-us-form>
     </div>
     <div class="col-12 col-md-6">
-      <agm-map
-        [latitude]="location.latitude"
-        [longitude]="location.longitude"
-        [zoom]="zoomLevel"
-      >
-        <agm-marker
-          [latitude]="location.latitude"
-          [longitude]="location.longitude"
-        >
+      <agm-map [latitude]="location.latitude" [longitude]="location.longitude" [zoom]="zoomLevel">
+        <agm-marker [latitude]="location.latitude" [longitude]="location.longitude">
           <agm-info-window>{{ location.name }}</agm-info-window>
         </agm-marker>
       </agm-map>
@@ -33,3 +27,4 @@
     </div>
   </div>
 </div>
+<xby2-footer></xby2-footer>
