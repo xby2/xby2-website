@@ -6,6 +6,7 @@ import { SharedModule } from '../shared/shared.module';
 import { AgmCoreModule } from '@agm/core';
 import { ContactUsFormComponent } from './contact-us-form/contact-us-form.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ScriptHackComponent } from '../scripthack/scripthack.component';
 
 @NgModule({
   imports: [
@@ -16,7 +17,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     }),
     ReactiveFormsModule
   ],
-  declarations: [ContactUsComponent, ContactUsFormComponent],
+  declarations: [ContactUsComponent, ContactUsFormComponent, ScriptHackComponent],
   exports: [ContactUsComponent]
 })
-export class ContactUsModule {}
+export class ContactUsModule { }

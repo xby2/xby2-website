@@ -18,6 +18,7 @@ import { CoreModule } from './core/core.module';
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
 import { CachingInterceptor } from './caching/caching-interceptor';
 import { MediaComponent } from './media/media.component';
+import { ScriptHackComponent } from './scripthack/scripthack.component';
 
 /** Http interceptor providers  */
 export const httpInterceptorProviders = [
