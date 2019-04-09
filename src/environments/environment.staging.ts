@@ -4,7 +4,8 @@ export const environment = {
   googleAnalyticsTrackingId: 'UA-114675726-1',
   enableLinkedInTag: false,
   enableHubSpotTracking: false,
-  canadaRedirectApiKey: 'adf5b1c72fe6d0cd714a54d40c1258c72887e8ab18874d9071cdcfe7',
+  canadaRedirectApiKey:
+    'adf5b1c72fe6d0cd714a54d40c1258c72887e8ab18874d9071cdcfe7',
   assetPrefixes: {
     clientStories: '',
     perks: '',
@@ -29,17 +30,30 @@ export const environment = {
     mindShares: 'mind-shares',
     services: 'services'
   },
-  location: {
-    name: 'USA',
-    address: '35055 W Twelve Mile Rd',
-    address2: 'Suite 220',
-    city: 'Farmington Hills',
-    state: 'MI',
-    zip: '48331',
-    phone: '248.538.9292',
-    latitude: 42.497343,
-    longitude: -83.396382
-  },
+  locations: [
+    {
+      name: 'USA',
+      address: '35055 W Twelve Mile Rd',
+      address2: 'Suite 220',
+      city: 'Farmington Hills',
+      state: 'MI',
+      zip: '48331',
+      phone: '248.538.9292',
+      latitude: 42.497343,
+      longitude: -83.396382
+    },
+    {
+      name: 'Canada',
+      address: '100 University Avenue',
+      address2: 'Floor 6',
+      city: 'Toronto',
+      state: 'ON',
+      zip: 'M5J 1V6',
+      phone: '905.267.0223',
+      latitude: 43.657411,
+      longitude: -79.603429
+    }
+  ],
   locationSpecificInformation: {
     homeHeaderText:
       'Guiding Digital Transformation for<br> Healthcare & Insurance companies.',

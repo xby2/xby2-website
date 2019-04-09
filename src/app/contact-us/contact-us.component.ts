@@ -12,7 +12,7 @@ import { environment } from '../../environments/environment';
 export class ContactUsComponent implements OnInit {
   headerText = 'Contact Us';
   subheaderText = `Have a question? Let's start a conversation.`;
-  location: Xby2Location = environment.location;
+  locations: Xby2Location[] = environment.locations;
   zoomLevel = 6;
 
   constructor(private activatedRoute: ActivatedRoute, private title: Title) {}
