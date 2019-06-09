@@ -1,7 +1,11 @@
 <xby2-navbar></xby2-navbar>
-<xby2-media-header imageUrl="icef2019.png" header1="DRIVE BUSINESS VALUE WITH AI"
-  header2="Unleash Analytics, AI & Data to Deliver Customer Experience, Value Creation and Automation" dateLocation="<b>May 2-3, 2019<br class='d-lg-none' />
-  <span class='d-none d-lg-inline'> | </span>Renaissance Chicago Downtown</b>"></xby2-media-header>
+<xby2-media-header
+  imageUrl="icef2019.png"
+  header1="DRIVE BUSINESS VALUE WITH AI"
+  header2="Unleash Analytics, AI & Data to Deliver Customer Experience, Value Creation and Automation"
+  dateLocation="<b>May 2-3, 2019<br class='d-lg-none' />
+  <span class='d-none d-lg-inline'> | </span>Renaissance Chicago Downtown</b>"
+></xby2-media-header>
 <div class="container-fluid" style="background-color: #fff;">
   <div class="container">
     <div class="row">
@@ -9,10 +13,12 @@
     </div>
     <div class="row">
       <p class="col">
-        X by 2 is an IT consultancy that leads the strategy, architecture, and execution of enterprise transformation
-        initiatives in the insurance industry. Experts in the insurance domain, our architects and program leaders help
-        insurers translate their business goals into strategies and initiatives that fully capture and apply the power
-        of data and technology.
+        X by 2 is an IT consultancy that leads the strategy, architecture, and
+        execution of enterprise transformation initiatives in the insurance
+        industry. Experts in the insurance domain, our architects and program
+        leaders help insurers translate their business goals into strategies and
+        initiatives that fully capture and apply the power of data and
+        technology.
       </p>
     </div>
   </div>
@@ -30,8 +36,12 @@
     </p>
   </div>
   <div class="row">
-    <xby2-service-card *ngFor="let service of services" class="col-12 col-md-6 col-lg-4 mx-auto" [service]="service"
-      [hideViewClientStory]="true">
+    <xby2-service-card
+      *ngFor="let service of services"
+      class="col-12 col-sm-6 col-lg-3 mx-auto"
+      [service]="service"
+      [hideViewClientStory]="true"
+    >
     </xby2-service-card>
   </div>
   <div class="row">

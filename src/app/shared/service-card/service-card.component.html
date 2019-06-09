@@ -1,17 +1,15 @@
 <div class="card" [class.hide-view-client-story]="hideViewClientStory">
   <img [src]="service.imageUrl" />
   <h3>
-    <span class="text">{{service.title}}</span>
+    <span class="text">{{ service.title }}</span>
   </h3>
-  <p>{{service.text}}</p>
+  <p>{{ service.text }}</p>
   <ul>
-    <li *ngFor="let point of service.points">
-      {{point}}
-    </li>
+    <li *ngFor="let point of service.points" [innerHTML]="point"></li>
   </ul>
   <div *ngIf="!hideViewClientStory" class="card-bottom">
-    <button class="btn btn-xby2" [routerLink]="['/client-stories', service.clientStoryId]">
-      View Client Story
+    <button class="btn btn-xby2" [routerLink]="[service.buttonUrl]">
+      {{ service.buttonText }}
     </button>
   </div>
 </div>

@@ -5,5 +5,6 @@ export class Service {
   class?: string;
   fullText: string;
   points: string[];
-  clientStoryId: string;
+  buttonText: string;
+  buttonUrl: string;
 }

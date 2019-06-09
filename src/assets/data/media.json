@@ -5,11 +5,9 @@
     "presenterTitles": [
       "Ahsan Siddiqi, Director - IT and Data Strategy, Architecture, X by 2"
     ],
-    "conferenceName" : "Insurance-Canada Executive Forum 2018",
-    "body": "<p>\r\n We all hear about the promise of artificial intelligence. How it can be a competitive advantage or disadvantage if you don't have it. There is a lot of talk about the art of the possible.  The journeys to bringing a valuable AI use case to mainstream business processes is rarely told. There is no template, no guaranteed process.\r\n      So let's look at successful journeys through the rear view mirror and understand what worked and what didn't. Let's draw insights and best practices across people, process, and technology perspectives.\r\n        <\/p>\r\n        <p>\r\n          So let's look at successful journeys through the rear view mirror and understand what worked and what didn't. Let's draw insights and best practices across people, process, and technology perspectives.\r\n <\/p><p>Click <a href=\"mailto:sales@xby2.com\">HERE<\/a> to have an X by 2 Architect walk you through the presentation.<\/p>",
-    "authorImages": [
-      "assets/authors/ahsan-siddiqi.jpg"
-    ],
+    "conferenceName": "Insurance-Canada Executive Forum 2018",
+    "body": "<p>\r\n We all hear about the promise of artificial intelligence. How it can be a competitive advantage or disadvantage if you don't have it. There is a lot of talk about the art of the possible.  The journeys to bringing a valuable AI use case to mainstream business processes is rarely told. There is no template, no guaranteed process.\r\n      So let's look at successful journeys through the rear view mirror and understand what worked and what didn't. Let's draw insights and best practices across people, process, and technology perspectives.\r\n        </p>\r\n        <p>\r\n          So let's look at successful journeys through the rear view mirror and understand what worked and what didn't. Let's draw insights and best practices across people, process, and technology perspectives.\r\n </p><p>Click <a href=\"mailto:sales@xby2.com\">HERE</a> to have an X by 2 Architect walk you through the presentation.</p>",
+    "authorImages": ["assets/authors/ahsan-siddiqi.jpg"],
     "resourceUrl": "assets/media/ICEF 2018 v0.7.pdf",
     "webinar": ""
   },
@@ -20,8 +18,8 @@
       "Ahsan Siddiqi, Director - IT and Data Strategy, Architecture",
       "Syed N. Haider - Director, IT & Data Architecture"
     ],
-    "conferenceName" : "Webinar",
-    "body": "<p>Although the general pace of innovation has been slow, the emergence of new paradigms in the field of Data and Analytics has increased disruptive pressures on IT and business leaders in the P&C industry.<\/p>\r\n        <p>In this webinar, \u201CModern Data Platforms: Dealing with Disruption in the Era of Advanced Analytics and AI,\u201D X by 2 shared practical strategies and tactics to adapt your traditional data platforms to cope with such pressures. Our talk focused on the following two areas:<\/p>\r\n        <ul>\r\n          <li>Enterprise Architecture strategies that enable your data infrastructure to serve both traditional and more advanced algorithmic use-cases.<\/li>\r\n          <li>Patterns to bridge the Business-IT divide for efficient and timely delivery of strategic data capabilities.<\/li>\r\n        <\/ul><p>Have Questions? Click <a href=\"mailto:ASiddiqi@xby2.com\">HERE<\/a> to contact Ahsan.<\/p>",
+    "conferenceName": "Webinar",
+    "body": "<p>Although the general pace of innovation has been slow, the emergence of new paradigms in the field of Data and Analytics has increased disruptive pressures on IT and business leaders in the P&C industry.</p>\r\n        <p>In this webinar, \u201CModern Data Platforms: Dealing with Disruption in the Era of Advanced Analytics and AI,\u201D X by 2 shared practical strategies and tactics to adapt your traditional data platforms to cope with such pressures. Our talk focused on the following two areas:</p>\r\n        <ul>\r\n          <li>Enterprise Architecture strategies that enable your data infrastructure to serve both traditional and more advanced algorithmic use-cases.</li>\r\n          <li>Patterns to bridge the Business-IT divide for efficient and timely delivery of strategic data capabilities.</li>\r\n        </ul><p>Have Questions? Click <a href=\"mailto:ASiddiqi@xby2.com\">HERE</a> to contact Ahsan.</p>",
     "authorImages": [
       "assets/authors/ahsan-siddiqi.jpg",
       "assets/authors/syed-haider.jpg"
@@ -29,5 +27,4 @@
     "resourceUrl": "assets/media/Insurance-Canada Webinar Presentation Download.pdf",
     "webinar": "https://www.youtube.com/embed/Wpj0f9zP2rM"
   }
-
 ]

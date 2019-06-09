@@ -5,7 +5,11 @@
     <div class="col">
       <h1>Creating Impact From Start To Finish.</h1>
       <div class="row">
-        <xby2-service-card *ngFor="let service of services" class="col-12 col-md-6 col-lg-4" [service]="service">
+        <xby2-service-card
+          *ngFor="let service of services"
+          class="col-12 col-sm-6 col-lg-3"
+          [service]="service"
+        >
         </xby2-service-card>
       </div>
     </div>
