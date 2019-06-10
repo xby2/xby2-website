@@ -49,11 +49,11 @@ h3 {
 
 @media (min-width: 992px) {
   .card {
-    height: 26rem;
+    height: 21rem;
   }
 
   .card.hide-view-client-story {
-    height: 22rem;
+    height: 18rem;
   }
 
   h3 {
@@ -67,14 +67,6 @@ h3 {
 }
 
 @media (min-width: 1200px) {
-  .card {
-    height: 28rem;
-  }
-
-  .card.hide-view-client-story {
-    height: 24rem;
-  }
-
   h3 {
     font-size: 1.35rem;
   }
