@@ -27,6 +27,14 @@ h3 {
     height: 20rem;
   }
 
+  .card.is-divisible-by-3 {
+    height: 21rem;
+  }
+
+  .card.hide-view-client-story.card.is-divisible-by-3 {
+    height: 18rem;
+  }
+
   div.card-bottom {
     height: auto;
     position: absolute;
@@ -45,6 +53,14 @@ h3 {
   .card.hide-view-client-story {
     height: 19rem;
   }
+
+  .card.is-divisible-by-3 {
+    height: 22rem;
+  }
+
+  .card.hide-view-client-story.card.is-divisible-by-3 {
+    height: 19rem;
+  }
 }
 
 @media (min-width: 992px) {
@@ -53,6 +69,14 @@ h3 {
   }
 
   .card.hide-view-client-story {
+    height: 18rem;
+  }
+
+  .card.is-divisible-by-3 {
+    height: 21rem;
+  }
+
+  .card.hide-view-client-story.card.is-divisible-by-3 {
     height: 18rem;
   }
 
@@ -67,6 +91,14 @@ h3 {
 }
 
 @media (min-width: 1200px) {
+  .card.is-divisible-by-3 {
+    height: 23rem;
+  }
+
+  .card.hide-view-client-story.card.is-divisible-by-3 {
+    height: 20rem;
+  }
+
   h3 {
     font-size: 1.35rem;
   }

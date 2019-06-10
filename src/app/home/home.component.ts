@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { Service } from '../shared/model/service';
 import { OpenPosition } from '../shared/model/open-position';
 import { ClientStory } from '../shared/model/client-story';
 import { MindShare } from '../shared/model/mind-share';
@@ -8,6 +7,8 @@ import { CollectedOpenPosition } from '../shared/model/collected-open-position';
 import { OpenPositionService } from '../shared/service/open-position.service';
 import { Title } from '@angular/platform-browser';
 import { Preconditions } from '../shared/model/preconditions';
+import { environment } from '../../environments/environment';
+import { Service } from '../shared/model/service';
 
 @Component({
   selector: 'xby2-home',
@@ -15,7 +16,7 @@ import { Preconditions } from '../shared/model/preconditions';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  services: Service[];
+  services: Service[] = environment.services;
   featuredClientStories: ClientStory[];
   featuredMindShare: MindShare;
   featuredOpenPositions: OpenPosition[];
@@ -26,11 +27,10 @@ export class HomeComponent implements OnInit {
     private route: ActivatedRoute,
     private openPositionService: OpenPositionService,
     private title: Title
-  ) { }
+  ) {}
 
   ngOnInit() {
     this.title.setTitle('X by 2');
-    this.services = this.route.snapshot.data.services;
     this.featuredClientStories = this.route.snapshot.data.featuredClientStories;
     this.featuredMindShare = this.route.snapshot.data.featuredMindShare;
     this.featuredOpenPositions = this.route.snapshot.data.featuredOpenPositions;

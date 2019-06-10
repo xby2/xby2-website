@@ -10,8 +10,9 @@ import { Preconditions } from '../model/preconditions';
 export class ServiceCardComponent implements OnInit {
   @Input() service: Service;
   @Input() hideViewClientStory: boolean;
+  @Input() isDivisibleBy3: boolean;
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit() {
     Preconditions.IsNotUndefinedOrNull('service', this.service);

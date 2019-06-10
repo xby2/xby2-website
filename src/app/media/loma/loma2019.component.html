@@ -39,8 +39,10 @@
     <xby2-service-card
       *ngFor="let service of services"
       class="col-12 col-sm-6 mx-auto"
+      [ngClass]="services.length % 3 === 0 ? 'col-lg-4' : ''"
       [service]="service"
       [hideViewClientStory]="true"
+      [isDivisibleBy3]="services.length % 3 === 0"
     >
     </xby2-service-card>
   </div>

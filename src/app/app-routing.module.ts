@@ -10,7 +10,6 @@ import { CareerDetailComponent } from './careers/career-detail.component';
 import { FeaturedMindShareResolver } from './home/resolver/featured-mind-share.resolver';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { MediaComponent } from './media/media.component';
-import { ServicesResolver } from './shared/resolver/services.resolver';
 import { FeaturedOpenPositionsResolver } from './home/resolver/featured-open-positions.resolver';
 import { FeaturedClientStoriesResolver } from './home/resolver/featured-client-stories.resolver';
 import { ClientStoriesResolver } from './client-stories/resolver/client-stories.resolver.';
@@ -35,7 +34,6 @@ const routes: Routes = [
     path: '',
     component: HomeComponent,
     resolve: {
-      services: ServicesResolver,
       featuredClientStories: FeaturedClientStoriesResolver,
       featuredMindShare: FeaturedMindShareResolver,
       featuredOpenPositions: FeaturedOpenPositionsResolver
@@ -50,18 +48,15 @@ const routes: Routes = [
   },
   {
     path: 'NexusAI2019',
-    component: NexusAi2019Component,
-    resolve: { services: ServicesResolver }
+    component: NexusAi2019Component
   },
   {
     path: 'media/ICTC2019',
-    component: MediaComponent,
-    resolve: { services: ServicesResolver }
+    component: MediaComponent
   },
   {
     path: 'media/LOMA2019',
-    component: Loma2019Component,
-    resolve: { services: ServicesResolver }
+    component: Loma2019Component
   },
   {
     path: 'media/:id',
@@ -118,4 +113,4 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

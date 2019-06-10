@@ -19,8 +19,6 @@ import { MindShareService } from './service/mind-share.service';
 import { AuthorInfoComponent } from './component/author-info/author-info.component';
 import { OpenPositionCardComponent } from './component/open-position-card/open-position-card.component';
 import { ContactService } from './service/contact.service';
-import { ServicesResolver } from './resolver/services.resolver';
-import { ServiceService } from './service/service.service';
 import { IndustryService } from './service/industry.service';
 import { RequestCache } from '../caching/request-cache.service';
 import { MessageService } from '../caching/message.service';
@@ -50,8 +48,6 @@ import { ServiceCardComponent } from './service-card/service-card.component';
     OpenPositionService,
     MindShareService,
     ContactService,
-    ServicesResolver,
-    ServiceService,
     IndustryService,
     RequestCache,
     MessageService
@@ -72,4 +68,4 @@ import { ServiceCardComponent } from './service-card/service-card.component';
     ServiceCardComponent
   ]
 })
-export class SharedModule { }
+export class SharedModule {}

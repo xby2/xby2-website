@@ -1,4 +1,8 @@
-<div class="card" [class.hide-view-client-story]="hideViewClientStory">
+<div
+  class="card"
+  [class.hide-view-client-story]="hideViewClientStory"
+  [class.is-divisible-by-3]="isDivisibleBy3"
+>
   <img [src]="service.imageUrl" />
   <h3>
     <span class="text">{{ service.title }}</span>

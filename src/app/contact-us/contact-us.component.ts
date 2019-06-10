@@ -15,7 +15,7 @@ export class ContactUsComponent implements OnInit {
   locations: Xby2Location[] = environment.locations;
   zoomLevel = 6;
 
-  constructor(private activatedRoute: ActivatedRoute, private title: Title) {}
+  constructor(private title: Title) {}
 
   ngOnInit() {
     this.title.setTitle('Contact Us - X by 2');
