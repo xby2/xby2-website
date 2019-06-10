@@ -108,20 +108,12 @@ export const environment = {
         'Customizable solutions providing speed to market and significant cost benefits.',
       points: [
         // tslint:disable-next-line: max-line-length
-<<<<<<< HEAD
         '<a href=\"assets/media/data_quality_frameworks.pdf\" target=\"_blank\" onClick=\"ga(\'send\', \'event\', { eventCategory: \'Downloads\', eventAction: \'Downloaded PDF\', eventLabel: \'DataQualityFrameworks\', eventValue: 1 });\">Data Quality Frameworks</a>',
-=======
-        "<a href=\"assets/media/data_quality_frameworks.pdf\" target=\"_blank\" onClick=\"ga('send', 'event', { eventCategory: 'Downloads', eventAction: 'Downloaded PDF', eventLabel: 'DataQualityFrameworks', eventValue: 1 });\">Data Quality Frameworks</a>",
->>>>>>> 5b639d4647df1a621737b6f9e145bc22210d6149
         'Clinical/EMR Integration Platform',
         'Healthcare Core Integration Models',
         'Healthcare Analytics Use Models',
         // tslint:disable-next-line: max-line-length
-<<<<<<< HEAD
         '<a href=\"assets/media/apis_iq_adaptors_to_cad.pdf\" target=\"_blank\" onClick=\"ga(\'send\', \'event\', { eventCategory: \'Downloads\', eventAction: \'Downloaded PDF\', eventLabel: \'APiSIQAdaptorsToCAD\', eventValue: 1 });\">APiS-IQ Adaptors to CAD</a>'
-=======
-        "<a href=\"assets/media/apis_iq_adaptors_to_cad.pdf\" target=\"_blank\" onClick=\"ga('send', 'event', { eventCategory: 'Downloads', eventAction: 'Downloaded PDF', eventLabel: 'APiSIQAdaptorsToCAD', eventValue: 1 });\">APiS-IQ Adaptors to CAD</a>"
->>>>>>> 5b639d4647df1a621737b6f9e145bc22210d6149
       ],
       buttonText: 'Contact Us',
       buttonUrl: '/contact-us',
