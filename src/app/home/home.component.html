@@ -7,8 +7,10 @@
       <div class="row">
         <xby2-service-card
           *ngFor="let service of services"
-          class="col-12 col-sm-6"
+          class="col-12 col-sm-6 mx-auto"
+          [ngClass]="services.length % 3 === 0 ? 'col-lg-4' : ''"
           [service]="service"
+          [isDivisibleBy3]="services.length % 3 === 0"
         >
         </xby2-service-card>
       </div>

@@ -59,5 +59,65 @@ export const environment = {
       'Guiding Digital Transformation for<br> Healthcare & Insurance companies.',
     aboutUsSubheaderText:
       'Helping healthcare and insurance organizations achieve their most<br> strategic goals through transformational technology.'
-  }
+  },
+  services: [
+    {
+      title: 'Strategy & Roadmap',
+      text:
+        'Aligning people, processes, information\nand technology to drive business growth.\n',
+      points: ['IT Strategy', 'Core Systems', 'Data and Information', 'Cloud'],
+      buttonText: 'View Client Story',
+      buttonUrl: '/client-stories/core-system-integration',
+      imageUrl:
+        'https://xby2-website-cms.azurewebsites.net/wp-content/uploads/2019/03/enterprise-architecture.svg'
+    },
+    {
+      title: 'Architecture',
+      text:
+        'Utilizing modern architectural approaches for greater technological agility.',
+      points: [
+        'Enterprise Architecture',
+        'App/Solution Architecture',
+        'Data Architecture',
+        'Integration Architecture'
+      ],
+      buttonText: 'View Client Story',
+      buttonUrl: '/client-stories/core-system-integration',
+      imageUrl:
+        'https://xby2-website-cms.azurewebsites.net/wp-content/uploads/2019/03/app-solution-architecture.svg'
+    },
+    {
+      title: 'Mobilization & Execution',
+      text:
+        'Pragmatic leadership to design and deliver strategic business capabilities.',
+      points: [
+        'Program Leadership',
+        'Architecture Leadership',
+        'Change Management',
+        'Agile Solution Development',
+        'Systems Integration'
+      ],
+      buttonText: 'View Client Story',
+      buttonUrl: '/client-stories/core-system-integration',
+      imageUrl:
+        'https://xby2-website-cms.azurewebsites.net/wp-content/uploads/2019/03/data-architecture.svg'
+    },
+    {
+      title: 'Solution Accelerators',
+      text:
+        'Customizable solutions providing speed to market and significant cost benefits.',
+      points: [
+        // tslint:disable-next-line: max-line-length
+        '<a href=\"assets/media/data_quality_frameworks.pdf\" target=\"_blank\" onClick=\"ga(\'send\', \'event\', { eventCategory: \'Downloads\', eventAction: \'Downloaded PDF\', eventLabel: \'DataQualityFrameworks\', eventValue: 1 });\">Data Quality Frameworks</a>',
+        'Clinical/EMR Integration Platform',
+        'Healthcare Core Integration Models',
+        'Healthcare Analytics Use Models',
+        // tslint:disable-next-line: max-line-length
+        '<a href=\"assets/media/apis_iq_adaptors_to_cad.pdf\" target=\"_blank\" onClick=\"ga(\'send\', \'event\', { eventCategory: \'Downloads\', eventAction: \'Downloaded PDF\', eventLabel: \'APiSIQAdaptorsToCAD\', eventValue: 1 });\">APiS-IQ Adaptors to CAD</a>'
+      ],
+      buttonText: 'Contact Us',
+      buttonUrl: '/contact-us',
+      imageUrl: '/assets/accelerator_icon.jpg'
+    }
+  ]
 };
