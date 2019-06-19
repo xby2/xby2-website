@@ -56,7 +56,7 @@ export const environment = {
   ],
   locationSpecificInformation: {
     homeHeaderText:
-      'Guiding Digital Transformation for<br> Healthcare & Insurance companies.',
+      'Digital Transformation for<br> Healthcare & Insurance companies.',
     aboutUsSubheaderText:
       'Helping healthcare and insurance organizations achieve their most<br> strategic goals through transformational technology.'
   },
