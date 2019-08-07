@@ -28,6 +28,7 @@ import { LegacyMediaComponent } from './media/legacy-media/legacy-media.componen
 import { MediaResolver } from './media/legacy-media/media.resolver';
 import { Loma2019Component } from './media/loma/loma2019.component';
 import { NexusAi2019Component } from './media/nexusai2019/nexusai2019.component';
+import { SpaComponent } from './media/spa/spa.component';
 
 const routes: Routes = [
   {
@@ -57,6 +58,10 @@ const routes: Routes = [
   {
     path: 'media/LOMA2019',
     component: Loma2019Component
+  },
+  {
+    path: 'media/singlepageapplications',
+    component: SpaComponent
   },
   {
     path: 'media/:id',

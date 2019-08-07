@@ -10,6 +10,7 @@ import { Loma2019Component } from './loma/loma2019.component';
 import { Loma2019MeetOurTeamComponent } from './loma/loma2019-meet-our-team/loma2019-meet-our-team.component';
 import { NexusAi2019Component } from './nexusai2019/nexusai2019.component';
 import { NexusAi2019MeetOurTeamComponent } from './nexusai2019/nexusai2019-meet-our-team/nexusai2019-meet-our-team.component';
+import { SpaComponent } from './spa/spa.component';
 
 @NgModule({
   imports: [
@@ -26,6 +27,7 @@ import { NexusAi2019MeetOurTeamComponent } from './nexusai2019/nexusai2019-meet-
     Loma2019MeetOurTeamComponent,
     NexusAi2019Component,
     NexusAi2019MeetOurTeamComponent,
+    SpaComponent,
   ],
   exports: [
     MediaHeaderComponent,
