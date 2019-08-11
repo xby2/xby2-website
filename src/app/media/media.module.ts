@@ -11,13 +11,10 @@ import { Loma2019MeetOurTeamComponent } from './loma/loma2019-meet-our-team/loma
 import { NexusAi2019Component } from './nexusai2019/nexusai2019.component';
 import { NexusAi2019MeetOurTeamComponent } from './nexusai2019/nexusai2019-meet-our-team/nexusai2019-meet-our-team.component';
 import { SpaComponent } from './spa/spa.component';
+import { InsuranceTransformationComponent } from './insurancetransformation/insurancetransformation.component';
 
 @NgModule({
-  imports: [
-    CommonModule,
-    SharedModule,
-    ReactiveFormsModule
-  ],
+  imports: [CommonModule, SharedModule, ReactiveFormsModule],
   declarations: [
     MediaHeaderComponent,
     MediaMeetOurTeamComponent,
@@ -28,6 +25,7 @@ import { SpaComponent } from './spa/spa.component';
     NexusAi2019Component,
     NexusAi2019MeetOurTeamComponent,
     SpaComponent,
+    InsuranceTransformationComponent
   ],
   exports: [
     MediaHeaderComponent,
@@ -37,4 +35,4 @@ import { SpaComponent } from './spa/spa.component';
     Loma2019Component
   ]
 })
-export class MediaModule { }
+export class MediaModule {}
