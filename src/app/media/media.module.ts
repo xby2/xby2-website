@@ -12,6 +12,7 @@ import { NexusAi2019Component } from './nexusai2019/nexusai2019.component';
 import { NexusAi2019MeetOurTeamComponent } from './nexusai2019/nexusai2019-meet-our-team/nexusai2019-meet-our-team.component';
 import { SpaComponent } from './spa/spa.component';
 import { InsuranceTransformationComponent } from './insurancetransformation/insurancetransformation.component';
+import { EnterprisedataplatformComponent } from './enterprisedataplatform/enterprisedataplatform.component';
 
 @NgModule({
   imports: [CommonModule, SharedModule, ReactiveFormsModule],
@@ -25,7 +26,8 @@ import { InsuranceTransformationComponent } from './insurancetransformation/insu
     NexusAi2019Component,
     NexusAi2019MeetOurTeamComponent,
     SpaComponent,
-    InsuranceTransformationComponent
+    InsuranceTransformationComponent,
+    EnterprisedataplatformComponent
   ],
   exports: [
     MediaHeaderComponent,

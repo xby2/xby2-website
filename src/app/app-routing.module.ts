@@ -30,6 +30,7 @@ import { Loma2019Component } from './media/loma/loma2019.component';
 import { NexusAi2019Component } from './media/nexusai2019/nexusai2019.component';
 import { SpaComponent } from './media/spa/spa.component';
 import { InsuranceTransformationComponent } from './media/insurancetransformation/insurancetransformation.component';
+import { EnterprisedataplatformComponent } from './media/enterprisedataplatform/enterprisedataplatform.component';
 
 const routes: Routes = [
   {
@@ -67,6 +68,10 @@ const routes: Routes = [
   {
     path: 'media/insurancetransformation',
     component: InsuranceTransformationComponent
+  },
+  {
+    path: 'media/enterprisedataplatform',
+    component: EnterprisedataplatformComponent
   },
   {
     path: 'media/:id',
